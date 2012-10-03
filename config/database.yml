@@ -1,0 +1,29 @@
+defaults: &defaults
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: root
+  password: chimpance99
+  socket: /tmp/mysql.sock
+
+development:
+  database: infinity_development
+  <<: *defaults
+
+test: &test
+  database: infinity_test
+  <<: *defaults
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  host:
+  database: infinity_production
+  pool: 5
+  username:
+  password:
+
+cucumber:
+  <<: *test
