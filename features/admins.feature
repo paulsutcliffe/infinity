@@ -7,4 +7,4 @@ Escenario: Ingresar como administrador
   Cuando visito "/admins/ingresar"
   Y lleno el formulario con los datos del administrador
   Cuando presiono "Ingresar"
-  Entonces debería ver "Ingreso al sistema con éxito"
+  Entonces debería ver "Signed in successfully."

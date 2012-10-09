@@ -38,9 +38,8 @@ gem "page_title_helper"
 gem "sitemap_generator"
 
 group :test do
-  gem "cucumber-rails"
-  gem "database_cleaner"
-  gem "factory_girl_rails", "~> 1.7.0"
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
 end
 
 gem 'rspec-rails', :group => [:development, :test]
