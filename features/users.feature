@@ -2,7 +2,7 @@
 Característica: usuarios
 
 Escenario: Registrarse como un usuario
-  Dado que estoy en la página principal
+  Dado que estoy en la página inicial
   Cuando hago click en "Sign Up"
   Y lleno "Email" con "paul@kosmyka.com"
   Y lleno "Password" con "hackme"
