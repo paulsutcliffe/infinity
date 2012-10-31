@@ -16,12 +16,12 @@ Escenario: Agregar una foto
 
 @admin
 Escenario: Eliminar una foto existente
-  Cuando existe la imagen de destino "destination_picture.jpg"
+  Cuando existe la imagen "destination_picture.jpg" del destino "South America"
   Y hago click en "Delete"
   Entonces debería ver "Picture deleted successfully."
   Y no debería ver "destination_picture.jpg"
 
 Escenario: El usuario puede ver las fotos de los destinos
-  Cuando existe la imagen de destino "destination_picture.jpg"
+  Cuando existe la imagen "destination_picture.jpg" del destino "South America"
   Entonces debería ver "destination_picture.jpg"
   Y no debería ver los controles de administración

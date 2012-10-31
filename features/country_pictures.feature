@@ -1,7 +1,7 @@
 #language: es
 Característica: administración de las fotos de los paises
 
-Antecedentes: Fotos pertenecen a paises y paises pertencen a un destino
+Antecedentes: Fotos pertenecen a paises
   Dado que existe el país "Peru" del destino "South America"
   Cuando hago click en "Destinations"
   Y hago click en "South America"
@@ -17,12 +17,12 @@ Escenario: Agregar una foto
 
 @admin
 Escenario: Eliminar una foto existente
-  Cuando existe la imagen de país "country_picture.jpg"
+  Cuando existe la imagen "country_picture.jpg" del país "Peru"
   Y hago click en "Delete"
   Entonces debería ver "Picture deleted successfully."
   Y no debería ver "country_picture.jpg"
 
 Escenario: El usuario puede ver las fotos de los países
-  Cuando existe la imagen de país "country_picture.jpg"
+  Cuando existe la imagen "country_picture.jpg" del país "Peru"
   Entonces debería ver "country_picture.jpg"
   Y no debería ver los controles de administración

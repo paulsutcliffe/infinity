@@ -1,3 +1,4 @@
-Cuando /^existe la imagen de país "(.*?)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Cuando /^existe la imagen "(.*?)" del país "(.*?)"$/ do |imagen, pais|
+  country = Pais.find_by_name(pais)
+  PaisPicture.new(:country_id => country, :pais_picture => File.new("features/support/pais_picture.jpg", "r")).save!
 end
