@@ -1,3 +1,10 @@
-Dado /^que estoy en la página "(.*?)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Dado /^que existe el miembro "(.*?)"$/ do |nombre|
+  Member.new(:name => nombre).save!
 end
+
+
+
+
+
+
+
