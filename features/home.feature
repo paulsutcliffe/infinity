@@ -5,7 +5,7 @@ Característica: los usuarios deberían de ver los últimos items de cada secci�
 Antecedentes: existe un item de cada una de las secciones
   Cuando existe el Slide "slide.jpg"
 
-Escenario: landing page
+Escenario: los visitantes navegan por el landing page
   Dado que estoy en la página inicial
   Entonces debería ver la imagen "slide.jpg"
 

@@ -12,7 +12,7 @@ Escenario: Agregar miembro
   Y lleno "Description" con "Descripción ampliada del perfil de José Chavez"
   Y uso la imagen "member.jpg"
   Cuando presiono "Save"
-  Entonces debería ver "Miembro creado correctamente"
+  Entonces debería ver "Member created successfully."
   Y debería ver "José Chavez"
   Y debería ver "jose@infinity.com"
   Y debería ver "Descripción ampliada del perfil de José Chavez"
@@ -27,7 +27,7 @@ Escenario: Editar un miembro existente
   Y lleno "Name" con "Miguel Grau"
   Y uso la imagen "member2.jpg"
   Cuando presiono "Save"
-  Entonces debería ver "Miembro actualizado correctamente"
+  Entonces debería ver "Miembro updated successfully."
   Y debería ver "Miguel Grau"
   Y debería ver la imagen "member2.jpg"
 
@@ -37,7 +37,7 @@ Escenario: Eliminar un miembro existente
   Y que estoy en la página inicial
   Cuando hago click en "Members"
   Y hago click en "Delete"
-  Entonces debería ver "Miembro eliminado exitosamente"
+  Entonces debería ver "Miembro deleted successfully."
   Y no debería ver "José Chavez"
 
 Escenario: El usuario puede ver los miembros
