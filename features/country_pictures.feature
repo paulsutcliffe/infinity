@@ -3,9 +3,7 @@ Característica: administración de las fotos de los paises
 
 Antecedentes: Fotos pertenecen a paises
   Dado que existe el país "Peru" del destino "South America"
-  Cuando hago click en "Destinations"
-  Y hago click en "South America"
-  Y hago click en "Peru"
+  Cuando estoy en la página del país "Perú"
 
 @admin
 Escenario: Agregar una foto

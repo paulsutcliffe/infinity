@@ -3,9 +3,7 @@ Característica: administración los viajes
 
 Antecedentes: Viajes pertenecen a Paises
   Dado que existe el país "Peru" del destino "South America"
-  Cuando hago click en "Destinations"
-  Y hago click en "South America"
-  Y hago click en "Peru"
+  Cuando estoy en la página del país "Perú"
 
 @admin
 Escenario: Agregar un viaje

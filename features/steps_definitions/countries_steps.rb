@@ -10,9 +10,9 @@ end
 
 Dado /^que existe el país "(.*?)" del destino "(.*?)"$/ do |nombre, destino|
   if Destino.find_by_name(destino)
-    @destino = Destino.find_by_name(destino)
+    @destination = Destino.find_by_name(destino)
   else
-    @destino = Destino.new(:name => destino).save!
+    @destination = Destino.new(:name => destino).save!
   end
-  Country.new(:destino_id => @destino.id, :name => nombre, :description => "Come and see the magic of " + nombre, :map => File.new("features/support/country_map.jpg", "r")).save!
+  Country.new(:destino_id => @destination, :name => nombre, :description => "Come and see the magic of " + nombre, :map => File.new("features/support/country_map.jpg", "r")).save!
 end
