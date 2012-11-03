@@ -19,6 +19,7 @@ group :development do
   gem 'compass', '>= 0.13.alpha.0'
   gem 'compass-rails', '>= 1.0.2'
   gem 'susy'
+  gem 'viewcumber'
 end
 
 gem "haml"
