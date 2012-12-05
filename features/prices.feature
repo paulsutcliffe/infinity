@@ -16,7 +16,7 @@ Escenario: Agregar un precio
 
 @admin
 Escenario: Editar un precio existente
-  Dado que existe el precio "1" del viaje "Machu Picchu"
+  Dado que existe el precio de "Nov 25" a "Dec 07" del viaje "Machu Picchu"
   Cuando hago click en "Edit"
   Y lleno el formulario para el precio de "Dec 09" a "Dec 21"
   Entonces debería ver "Price updated successfully."
