@@ -105,11 +105,6 @@ GEM
       json (>= 1.4.6)
     git (1.2.5)
     haml (3.1.7)
-    haml-rails (0.3.4)
-      actionpack (~> 3.0)
-      activesupport (~> 3.0)
-      haml (~> 3.0)
-      railties (~> 3.0)
     has_scope (0.5.1)
     highline (1.6.15)
     hike (1.2.1)
@@ -243,7 +238,6 @@ DEPENDENCIES
   devise
   friendly_id (~> 4.0.0.beta14)
   haml
-  haml-rails
   inherited_resources
   jquery-rails
   json
@@ -254,6 +248,7 @@ DEPENDENCIES
   paperclip (~> 2.0)
   rails (= 3.0.3)
   rake (~> 0.9.2)
+  rdoc
   rspec-rails
   sass
   sitemap_generator
