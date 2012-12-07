@@ -1,0 +1,89 @@
+
+:css
+  #preface-top .royalSlider{width:950px; height:250px}
+  .rsOverflow{position:relative}
+  .rsABlock{position:absolute; top:5px; /* bottom:auto;*/  left:auto;  right:35px}
+  .rsDefault .rsPreloader {background-image:url(/javascripts/libs/royal-slider-9.2/preloaders/preloader-white.gif)}
+  .rsDefault .rsCloseVideoIcn {background: url('/javascripts/libs/royal-slider-9.2/rs-default.png') -64px 0}
+  #postscript-bottom.partners ul.slider{width:950px; height:80px}
+  #postscript-bottom .rsABlock{position:absolute; top:5px; left:0}
+:javascript
+  // HOME SLIDER
+  jQuery(document).ready(function($) {
+    $('.royalSlider').royalSlider({
+      autoPlay: {
+      // autoplay options go gere
+      enabled: true,
+      pauseOnHover: true,
+      stopAtAction: false
+    },
+    block: {
+    // animated blocks options go gere
+      fadeEffect: false,
+      moveEffect: 'top',
+      delay: 500,
+      speed: 150,
+      easing:'easeOutSine'
+    },
+    arrowsNav: true,
+    allowCSS3: true,
+    arrowsNavAutoHide: false,
+    fadeinLoadedSlide: false,
+    controlNavigationSpacing: 0,
+    controlNavigation: 'bullets',
+    imageScaleMode: 'none',
+    imageAlignCenter:false,
+    blockLoop: true,
+    loop: true,
+    numImagesToPreload: 6,
+    transitionType: 'move',
+    keyboardNavEnabled: true,
+    sliderDrag: true,
+    sliderTouch: true,
+    keyboardNavEnabled: true,
+    });
+
+  // PARTNERS
+    $('ul.slider').royalSlider({
+      autoPlay: {
+      // autoplay options go gere
+      enabled: true,
+      pauseOnHover: true,
+      stopAtAction: false,
+      delay: 6000,
+    },
+    block: {
+    // animated blocks options go gere
+      fadeEffect: false,
+      moveEffect: 'bottom',
+      delay: 500,
+      speed: 150,
+      easing:'easeOutQuad'
+    },
+    transitionDuration:2000,
+    arrowsNav: true,
+    allowCSS3: true,
+    arrowsNavAutoHide: false,
+    fadeinLoadedSlide: false,
+    controlNavigationSpacing: 0,
+    imageScaleMode: 'none',
+    imageAlignCenter:false,
+    blockLoop: true,
+    loop: true,
+    numImagesToPreload: 6,
+    transitionType: 'move',
+    keyboardNavEnabled: true,
+    sliderDrag: true,
+    sliderTouch: true,
+    keyboardNavEnabled: true,
+    slidesOrientation: 'vertical',
+    });
+
+
+
+
+
+  });  // END OF DOCUMENT READY
+
+
+

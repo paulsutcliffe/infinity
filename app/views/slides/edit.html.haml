@@ -1,0 +1,8 @@
+#content
+  %h2.page-title
+    = page_title! t('slide.edit')
+  .content
+    = render 'form'
+    %nav
+      = link_to I18n.t('show'), @slide, :class => 'button show'
+      = link_to I18n.t('back'), slides_path, :class => 'button back'

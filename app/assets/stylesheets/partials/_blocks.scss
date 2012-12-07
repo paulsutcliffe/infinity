@@ -1,0 +1,86 @@
+
+@mixin block {
+  margin: 0 0 $space-block 0;
+}
+@mixin sidebar-block {
+  margin: 0 0 $space-top 0;
+}
+
+// BLOCKS
+#content {
+  .infinity-description,
+  .noticia,
+  .promotion-package,
+  .video {
+    @include block;
+    @include clearfix2;
+  }
+
+  .infinity-description {
+    @include bevel-cyan;
+    background-position: 50% 100%;
+    padding-bottom: $space-block;
+  }
+
+  .noticia,
+  .promotion-package {
+    margin-bottom: $space-block * 2;
+  }
+
+  .promotion-package {
+    img {float: right; margin-top: 3px; padding-left: $space; background: white}
+  }
+
+
+}
+
+#sidebar-first {
+  section, nav {
+    @include sidebar-block;
+    @include clearfix2;
+    @include sidebarshadowbug(0, 3px);
+    padding: $space * 2;
+  }
+  .search-travel {
+    @include sombreado;
+  }
+
+  .contact-us {
+    .attention-number {
+      font-size: $font-size-menu * 2;
+      display: block;
+    }
+    .attention-days {
+      font-size: $font-size-small;
+    }
+  }
+
+  .health, .testimony {
+    @include sombreado;
+  }
+
+  // continuar editando sidebar en layout
+  #destinations.index &,
+  #destinations.show &,
+  #work-with-us.index &,
+  .login &{
+    // login page
+    nav, section {
+      @include sidebarshadowbug(3px, 0);
+      @include box-sizing;
+    }
+    .navegate-by {
+      @include sombreado;
+      @include span(6);
+      @include default-list;
+    }
+    b {
+      font-weight: bold;
+      margin-bottom: $space*3;
+      display: block;
+    }
+  }
+
+}
+
+

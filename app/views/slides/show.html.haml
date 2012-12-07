@@ -1,0 +1,20 @@
+%ul.breadcrumb
+  %li
+    = link_to 'Home', '#'
+
+#sidebar-first
+  = render 'sidebar_first'
+
+#content
+  %h1.page-title
+    = page_title! "slide"
+
+  #sidebar-second
+    = image_tag '/images/img-show-destinations-mapa.jpg'
+
+    .controls
+      .navigation
+        = link_to I18n.t('back'), slides_path, :class => 'button back'
+      - if current_admin
+        .admin
+          = link_to I18n.t('edit'), edit_slide_path(@slide), :class => 'button edit'

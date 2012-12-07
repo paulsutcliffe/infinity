@@ -1,0 +1,347 @@
+/*
+=============================================================
+MAIN STRUCTURE
+=============================================================
+*/
+
+body ul, body ol, body footer nav li,
+html body footer nav,
+html body footer .copyright,
+.navigation li, header nav li{padding:0; margin:0}
+.typography p, .content p, section[role="main"] > article p{margin-top:0}
+
+body{
+  @include blueprint-debug;
+  font-family:$font-primary;
+  .wrapper {
+    @include container;
+  /*  @include showgrid; */
+    header, nav, footer .inner {
+      @include column(24);
+      nav {
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    .inner {
+      @include container;
+    }
+  }
+}
+
+
+.region {
+  @include column(24);
+}
+
+.region:after {
+  content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0;
+}
+.region {
+  zoom:1
+}
+
+a {
+  color:$primary-color-text;
+  text-decoration:none;
+}
+
+
+
+
+
+
+/*
+=============================================================
+HEADER - FOOTER
+=============================================================
+*/
+
+.region {
+  padding-bottom: $space-block;
+}
+
+
+
+.site-info {
+  @include absolute(top, right, 0px, 0px);
+  @include align-right;
+  width: 200px;
+  font-size: $font-size-text;
+  font-weight: lighter;
+
+  .phone-list, .email-list{
+    color:tint($primary-color-text, $tint);
+  }
+  span {
+    border-left: 1px solid;
+    padding-left:$space;
+    &:first-child{
+      border:0;
+    }
+  }
+
+}
+
+
+
+
+
+/* SLIDER */
+.royalSlider .royalSlide, .royalSlider .royalWrapper{background:none !important}
+.button, #preface-top .royalSlider .royalCaptionItem{@extend .button; padding:0; width:$space * 15; text-align:center}
+
+
+
+/* Estructura DOM
+======================================================= */
+html {background: $primary-color;}
+body {
+  background: white;
+  header {
+    position:relative;
+    margin: $space * 5 0 $space;
+  }
+
+  footer {
+    background:$primary-color ;
+    height:90px;
+    nav {
+      @include span(18);
+    }
+    .copyright {
+      @include column(6);
+      text-align:right;
+    }
+    .author {
+      @include column(24);
+      font-size: $font-size-small;
+      margin-top: $space-top;
+      a {
+        position: relative; top: 2px;
+        // original line --> @include inline-block(right);
+        @include inline-block;
+      }
+    }
+  }
+}
+
+
+#postscript-bottom {
+  background:$primary-color;
+  h2.title {
+    width: 100%; padding: $space-block 0; position: relative;
+    border-bottom: 0;
+    @include bevel-cyan;
+    &:after {
+      @include triangle;
+      position: absolute; bottom: 0; left: 48%;
+
+    }
+  }
+  .social-links {
+    margin-bottom: $space-bottom;
+  }
+}
+
+
+
+/* Headings
+======================================================= */
+
+h1.page-title, h2.title {
+  @include title;
+  margin: 0 0 $space-heading;
+  .partners & {
+    text-align:center;
+    @include bevel-cyan;
+  }
+}
+
+h1.page-title {
+  @include page-title;
+}
+
+
+/* Texts
+======================================================= */
+.content p, section[role="main"] > article p,  /* pff */
+p {margin: 0 0 $space-paragraph 0; line-height: $line-height-paragraph; font-weight: lighter; font-size: $font-size-text;
+  text-align: justify }
+
+
+.current {font-weight: bold}
+
+/* Navegación
+======================================================= */
+
+header, footer {
+  nav {
+    @include navigation;
+  }
+}
+
+nav {
+  header & {
+    li.last {
+          a {
+            padding-right:5px;
+          }
+        }
+    .footer-only {
+      display:none;
+    }
+    ul:after {
+      content:""; width:960px; height:5px; background:$primary-color; position:absolute; bottom:0; left:0;
+    }
+  }
+  footer & {
+    background: $primary-color;
+    color:white;
+    ul {
+      li {
+        margin: 0; float:left;
+        a {
+          background:$primary-color-text;
+          color: white; font-size: $font-size-small;
+          @include padding-x(1, 0,0,0,0)
+        }
+      }
+    }
+  }
+}
+
+
+#preface-top {
+  padding: 0 0 $space * 8;
+  margin:0 0 $space-bottom;
+  @include bevel-cyan-small;
+  background-position: 50% 100%;
+  .not-front & {
+    margin-bottom: 0;
+  }
+}
+
+body .rsDefault .rsBullets {
+  background: none;
+  bottom: auto;
+  top: 100%;
+  padding-top: $space * 3;
+}
+
+body .rsDefault .rsBullet {
+  height: 17px;
+  width: 17px;
+  background: url(../images/backgrounds/slider-controls.jpg) no-repeat 0 -3px;
+}
+
+body .rsDefault .rsBullet.rsNavSelected {
+  background: url(../images/backgrounds/slider-controls.jpg) no-repeat -20px -3px;
+}
+
+body .rsDefault .rsArrowIcn {
+  background-color: $primary-color;
+}
+
+body .rsDefault .rsArrowIcn:hover {
+  background-color: $primary-color-text;
+}
+
+/*
+=============================================================
+APARIENCIA
+=============================================================
+*/
+
+
+#content {
+  @include column(16);
+  float:left;
+
+
+  #destinations &,
+  .login & {
+    @include column(17);
+    margin-right: 0;
+  }
+
+  #testimonies & {
+    @include column(20);
+    @include prepend(2);
+  }
+}
+
+#sidebar-first {
+  // revisar en blocks.scss demás parámetros
+  @include column(7);
+  @include prepend(1);
+  float:right;
+  margin-right:0;
+
+  #destinations.index &,
+  #destinations.show &,
+  #work-with-us.index &,
+  .login & {
+    @include sidebar(left);
+    @include column(6);
+    @include prepend(0);
+    @include append(1);
+    margin-right: 0;
+    nav {
+      @include span(6);
+    }
+  }
+}
+
+#sidebar-second {
+  float: right;
+}
+
+
+/* Espaciados de los elementos
+======================================================= */
+
+
+
+/* Botones
+======================================================= */
+a.button {
+  @include button(right);
+}
+a.button_{
+  @include submit(left);
+}
+
+button, .actions input {
+  @include submit(right);
+}
+
+
+.breadcrumbs {
+  font-size: $font-size-small;
+}
+
+
+/* Párrafos después de los títulos de página
+======================================================= */
+h1.page-title + p {margin: $space*4 0 $space*10; padding:0 0 $space*10 0; @include bevel-cyan; background-position: 50% 100% }
+
+
+
+.field.field-map,
+.field.field-link,
+.field.field-content {
+  width: 100%; float: left; clear: left;
+  #destinations.show & {
+    width: auto;
+  }
+}
+
+#slider-destinations {
+  @include bevel-cyan-small;
+  background-position: 50% 100%;
+  padding-bottom: $space-bottom;
+}
+
+

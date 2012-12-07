@@ -1,0 +1,188 @@
+
+
+@mixin page-title {
+  font-size:$font-size-page-heading;
+  font-weight: lighter;
+  border-bottom: 1px solid tint($primary-color-text, $tint-low);
+  padding-bottom: $space*2;
+}
+
+@mixin title {
+  font-size:$font-size-heading;
+  font-weight: lighter;
+  border-bottom: 1px solid tint($primary-color-text, $tint-low);
+  padding-bottom: $space*2;
+}
+
+@mixin bevel-cyan {
+  background: url(../images/backgrounds/bevel-cyan.jpg) no-repeat 50% 0 white;
+}
+
+@mixin bevel-cyan-small {
+  background: url(../images/backgrounds/bevel-cyan-small.jpg) no-repeat 50% 0 white;
+}
+
+@mixin box-sizing {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;
+}
+
+
+@mixin navigation {
+  @include no-bullets;
+  @include horizontal-list;
+  ul {
+    width:102%; // for lavaLamp
+    position:relative; // for lavaLamp noJs
+    li {
+      a {
+        padding:10px 31px;
+        display:block;
+        font-size: $font-size-menu;
+      }
+    }
+    li.backLava {
+      border-bottom:5px solid $primary-color-text;
+    }
+    li.last {
+      a {
+        padding-right:39px;
+      }
+    }
+  }
+}
+
+@mixin full-line-break {
+  width: 100%; float: left; clear: left;
+}
+
+@mixin absolute($side-vertical, $side-horizontal, $coord-y, $coord-x) {
+  position: absolute;
+  #{$side-vertical}: $coord-y;
+  #{$side-horizontal}: $coord-x;
+}
+@mixin relative($side-vertical, $side-horizontal, $coord-y, $coord-x) {
+  position: relative;
+  #{$side-vertical}: $coord-y;
+  #{$side-horizontal}: $coord-x;
+}
+
+@mixin align-right {
+  text-align:right;
+}
+
+@mixin sidebar($orient) {
+  float: $orient;
+}
+
+@mixin sidebarshadowbug($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+
+/* Texts
+======================================================= */
+
+/* Box model
+======================================================= */
+@mixin inline-block-parent($alignment) {
+}
+
+@mixin inline-block-($direction) {
+  display:inline-block;
+  *display:inline; *zoom:1;
+  text-align:$direction;
+}
+
+@mixin clearfix2 {
+  &:after {
+    content: "."; display: block; line-height: 0; clear: both; visibility: hidden; height: 0;
+  }
+  &:after {
+    *zoom: 1;
+  }
+}
+
+/* Padding combinations
+======================================================= */
+@mixin padding-x($multiply, $top, $right, $bottom, $left) {
+  padding:5px * $multiply - $top 10px *$multiply -$right 5px * $multiply - $bottom 10px *$multiply -$left;
+}
+@mixin padding-y($multiply, $top, $right, $bottom, $left) {
+  padding:10px * $multiply - $top 5px *$multiply -$right 10px * $multiply - $bottom 5px *$multiply -$left;
+}
+
+/* css Triangles
+======================================================= */
+@mixin triangle {
+  border-color:transparent transparent $primary-color;
+  border-style:solid;
+  border-width:30px;
+  width:0; height:0;
+  content: "";
+}
+
+@mixin bullets {
+  width: 10px;
+  height: 10px;
+  background: $primary-color;
+
+  // original line --> @include inline-block(left);
+  @include inline-block;
+
+  @include border-radius(20px);
+
+}
+
+/* Buttons
+======================================================= */
+@mixin button-style {
+  font-size: $font-size-menu;
+  text-transform: uppercase;
+  padding: $space * 1 $space * 4;
+  width: auto;
+  font-weight: lighter;
+  border: 0;
+  font-family: $font-primary;
+  line-height: $line-height-paragraph;
+}
+
+@mixin button($float) {
+  background: $primary-color;
+  color: $primary-color-text;
+  float: $float;
+  @include button-style;
+}
+@mixin submit($float) {
+  background: $primary-color-text;
+  color: white;
+  float: $float;
+  @include button-style;
+}
+
+
+/* Fancy
+======================================================= */
+@mixin sombreado {
+  @include box-shadow($color-shadow 1px 1px 5px, $color-shadow -1px -1px 5px);
+}
+
+
+@mixin default-list {
+  li {
+    width: 100%;
+    padding: 0;
+    margin-bottom: $space * 3;
+    &:before {
+      @include bullets;
+      content:"";
+      margin-right: $space;
+    }
+    a, span {
+      font-size: $font-size-menu;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+}

@@ -1,8 +1,5 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+@import "http://fonts.googleapis.com/css?family=Dosis:500,400,300";
+/* line 17, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +21,1011 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
+}
+
+/* line 116, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* GRID 
+---------------------------------------------------- */
+/* COLORS 
+---------------------------------------------------- */
+/* TIPOGRAPHY 
+---------------------------------------------------- */
+/* LAYOUT
+---------------------------------------------------- */
+/* OTHER 
+---------------------------------------------------- */
+/* Texts
+======================================================= */
+/* Box model
+======================================================= */
+/* Padding combinations
+======================================================= */
+/* css Triangles
+======================================================= */
+/* Buttons
+======================================================= */
+/* Fancy
+======================================================= */
+/* line 8, ../../app/assets/stylesheets/partials/_forms.scss */
+#sidebar-first form {
+  width: 230px;
+}
+
+/* line 14, ../../app/assets/stylesheets/partials/_forms.scss */
+#sidebar-first select {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/* line 20, ../../app/assets/stylesheets/partials/_forms.scss */
+.field {
+  margin-bottom: 15px;
+}
+/* line 22, ../../app/assets/stylesheets/partials/_forms.scss */
+.field .description {
+  font-size: 14px;
+  margin: 5px 0 0 150px;
+}
+
+/* line 28, ../../app/assets/stylesheets/partials/_forms.scss */
+label {
+  width: 150px;
+  float: left;
+}
+
+/* line 33, ../../app/assets/stylesheets/partials/_forms.scss */
+input {
+  width: 200px;
+}
+
+/* line 37, ../../app/assets/stylesheets/partials/_forms.scss */
+.required {
+  font-size: 14px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  background: url(../images/backgrounds/bevel-cyan.jpg) no-repeat 50% 0 white;
+  background-position: 0 100%;
+}
+
+/* line 3, ../../app/assets/stylesheets/partials/_lists.scss */
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 60, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul li:first-child, ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul li.last {
+  padding-right: 0;
+}
+/* line 5, ../../app/assets/stylesheets/partials/_lists.scss */
+ul.breadcrumb {
+  margin-bottom: 25px;
+  overflow: visible;
+  width: 100%;
+  float: left;
+  clear: left;
+}
+/* line 10, ../../app/assets/stylesheets/partials/_lists.scss */
+ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 20;
+  padding-right: 20;
+  white-space: normal;
+}
+/* line 48, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul li:first-child, ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul li.last {
+  padding-right: 0;
+}
+/* line 13, ../../app/assets/stylesheets/partials/_lists.scss */
+ul li .partner {
+  float: left;
+  position: relative;
+  width: 158px;
+  height: 85px;
+  text-align: center;
+}
+/* line 20, ../../app/assets/stylesheets/partials/_lists.scss */
+.partners ul.slider {
+  border-bottom: 5px solid #3b3b3d;
+  margin-bottom: 5px;
+}
+/* line 172, ../../app/assets/stylesheets/partials/_mixins.scss */
+ul.default-list li {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 15px;
+}
+/* line 176, ../../app/assets/stylesheets/partials/_mixins.scss */
+ul.default-list li:before {
+  width: 10px;
+  height: 10px;
+  background: #67cddc;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  content: "";
+  margin-right: 5px;
+}
+/* line 7, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+ul.default-list li:before {
+  *display: inline;
+}
+/* line 181, ../../app/assets/stylesheets/partials/_mixins.scss */
+ul.default-list li a, ul.default-list li span {
+  font-size: 18px;
+}
+/* line 184, ../../app/assets/stylesheets/partials/_mixins.scss */
+ul.default-list li span {
+  font-weight: bold;
+}
+/* line 31, ../../app/assets/stylesheets/partials/_lists.scss */
+#testimonies #content ul li {
+  clear: left;
+  padding: 0 60px;
+  margin: 0 0 60px;
+}
+/* line 35, ../../app/assets/stylesheets/partials/_lists.scss */
+#testimonies #content ul li h3 {
+  font-weight: bold;
+}
+/* line 38, ../../app/assets/stylesheets/partials/_lists.scss */
+#testimonies #content ul li img {
+  float: left;
+  margin: 0 30px 0 0;
+}
+
+/* line 50, ../../app/assets/stylesheets/partials/_lists.scss */
+.social-links {
+  text-align: right;
+}
+/* line 52, ../../app/assets/stylesheets/partials/_lists.scss */
+.social-links .label, .social-links ul, .social-links li, .social-links a {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  vertical-align: top;
+  padding: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+/* line 7, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.social-links .label, .social-links ul, .social-links li, .social-links a {
+  *display: inline;
+}
+/* line 62, ../../app/assets/stylesheets/partials/_lists.scss */
+.social-links .label {
+  margin-top: 3px;
+}
+
+/* line 70, ../../app/assets/stylesheets/partials/_lists.scss */
+#sidebar-first dl dt {
+  margin-bottom: 5px;
+}
+/* line 73, ../../app/assets/stylesheets/partials/_lists.scss */
+#sidebar-first dl dd {
+  border-bottom: 1px solid tint(#3b3b3d, 70%);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* line 14, ../../app/assets/stylesheets/partials/_blocks.scss */
+#content .infinity-description,
+#content .noticia,
+#content .promotion-package,
+#content .video {
+  margin: 0 0 50px 0;
+}
+/* line 98, ../../app/assets/stylesheets/partials/_mixins.scss */
+#content .infinity-description:after,
+#content .noticia:after,
+#content .promotion-package:after,
+#content .video:after {
+  content: ".";
+  display: block;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+/* line 101, ../../app/assets/stylesheets/partials/_mixins.scss */
+#content .infinity-description:after,
+#content .noticia:after,
+#content .promotion-package:after,
+#content .video:after {
+  *zoom: 1;
+}
+/* line 19, ../../app/assets/stylesheets/partials/_blocks.scss */
+#content .infinity-description {
+  background: url(../images/backgrounds/bevel-cyan.jpg) no-repeat 50% 0 white;
+  background-position: 50% 100%;
+  padding-bottom: 50px;
+}
+/* line 26, ../../app/assets/stylesheets/partials/_blocks.scss */
+#content .noticia,
+#content .promotion-package {
+  margin-bottom: 100px;
+}
+/* line 31, ../../app/assets/stylesheets/partials/_blocks.scss */
+#content .promotion-package img {
+  float: right;
+  margin-top: 3px;
+  padding-left: 5px;
+  background: white;
+}
+
+/* line 38, ../../app/assets/stylesheets/partials/_blocks.scss */
+#sidebar-first section, #sidebar-first nav {
+  margin: 0 0 30px 0;
+  margin-left: 0;
+  margin-right: 3px;
+  padding: 10px;
+}
+/* line 98, ../../app/assets/stylesheets/partials/_mixins.scss */
+#sidebar-first section:after, #sidebar-first nav:after {
+  content: ".";
+  display: block;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+/* line 101, ../../app/assets/stylesheets/partials/_mixins.scss */
+#sidebar-first section:after, #sidebar-first nav:after {
+  *zoom: 1;
+}
+/* line 44, ../../app/assets/stylesheets/partials/_blocks.scss */
+#sidebar-first .search-travel {
+  -webkit-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
+  -moz-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
+  box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
+}
+/* line 49, ../../app/assets/stylesheets/partials/_blocks.scss */
+#sidebar-first .contact-us .attention-number {
+  font-size: 36px;
+  display: block;
+}
+/* line 53, ../../app/assets/stylesheets/partials/_blocks.scss */
+#sidebar-first .contact-us .attention-days {
+  font-size: 14px;
+}
+/* line 58, ../../app/assets/stylesheets/partials/_blocks.scss */
+#sidebar-first .health, #sidebar-first .testimony {
+  -webkit-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
+  -moz-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
+  box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
+}
+/* line 68, ../../app/assets/stylesheets/partials/_blocks.scss */
+#destinations.index #sidebar-first nav, #destinations.index #sidebar-first section, #destinations.show #sidebar-first nav, #destinations.show #sidebar-first section, #work-with-us.index #sidebar-first nav, #work-with-us.index #sidebar-first section, .login #sidebar-first nav, .login #sidebar-first section {
+  margin-left: 3px;
+  margin-right: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 72, ../../app/assets/stylesheets/partials/_blocks.scss */
+#destinations.index #sidebar-first .navegate-by, #destinations.show #sidebar-first .navegate-by, #work-with-us.index #sidebar-first .navegate-by, .login #sidebar-first .navegate-by {
+  -webkit-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
+  -moz-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
+  box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
+  width: 230px;
+}
+/* line 172, ../../app/assets/stylesheets/partials/_mixins.scss */
+#destinations.index #sidebar-first .navegate-by li, #destinations.show #sidebar-first .navegate-by li, #work-with-us.index #sidebar-first .navegate-by li, .login #sidebar-first .navegate-by li {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 15px;
+}
+/* line 176, ../../app/assets/stylesheets/partials/_mixins.scss */
+#destinations.index #sidebar-first .navegate-by li:before, #destinations.show #sidebar-first .navegate-by li:before, #work-with-us.index #sidebar-first .navegate-by li:before, .login #sidebar-first .navegate-by li:before {
+  width: 10px;
+  height: 10px;
+  background: #67cddc;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  content: "";
+  margin-right: 5px;
+}
+/* line 7, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+#destinations.index #sidebar-first .navegate-by li:before, #destinations.show #sidebar-first .navegate-by li:before, #work-with-us.index #sidebar-first .navegate-by li:before, .login #sidebar-first .navegate-by li:before {
+  *display: inline;
+}
+/* line 181, ../../app/assets/stylesheets/partials/_mixins.scss */
+#destinations.index #sidebar-first .navegate-by li a, #destinations.index #sidebar-first .navegate-by li span, #destinations.show #sidebar-first .navegate-by li a, #destinations.show #sidebar-first .navegate-by li span, #work-with-us.index #sidebar-first .navegate-by li a, #work-with-us.index #sidebar-first .navegate-by li span, .login #sidebar-first .navegate-by li a, .login #sidebar-first .navegate-by li span {
+  font-size: 18px;
+}
+/* line 184, ../../app/assets/stylesheets/partials/_mixins.scss */
+#destinations.index #sidebar-first .navegate-by li span, #destinations.show #sidebar-first .navegate-by li span, #work-with-us.index #sidebar-first .navegate-by li span, .login #sidebar-first .navegate-by li span {
+  font-weight: bold;
+}
+/* line 77, ../../app/assets/stylesheets/partials/_blocks.scss */
+#destinations.index #sidebar-first b, #destinations.show #sidebar-first b, #work-with-us.index #sidebar-first b, .login #sidebar-first b {
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/*
+=============================================================
+MAIN STRUCTURE
+=============================================================
+*/
+/* line 10, ../../app/assets/stylesheets/partials/_layout.scss */
+body ul, body ol, body footer nav li,
+html body footer nav,
+html body footer .copyright,
+.navigation li, header nav li {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 11, ../../app/assets/stylesheets/partials/_layout.scss */
+.typography p, .content p, section[role="main"] > article p {
+  margin-top: 0;
+}
+
+/* line 13, ../../app/assets/stylesheets/partials/_layout.scss */
+body {
+  font-family: "Dosis";
+}
+/* line 25, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_debug.scss */
+body .showgrid {
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 0% 50%, 960 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(3.125%, rgba(100, 100, 225, 0.25)), color-stop(3.125%, rgba(0, 0, 0, 0)), color-stop(4.16667%, rgba(0, 0, 0, 0)), color-stop(4.16667%, rgba(100, 100, 225, 0.25)), color-stop(7.29167%, rgba(100, 100, 225, 0.25)), color-stop(7.29167%, rgba(0, 0, 0, 0)), color-stop(8.33333%, rgba(0, 0, 0, 0)), color-stop(8.33333%, rgba(100, 100, 225, 0.25)), color-stop(11.45833%, rgba(100, 100, 225, 0.25)), color-stop(11.45833%, rgba(0, 0, 0, 0)), color-stop(12.5%, rgba(0, 0, 0, 0)), color-stop(12.5%, rgba(100, 100, 225, 0.25)), color-stop(15.625%, rgba(100, 100, 225, 0.25)), color-stop(15.625%, rgba(0, 0, 0, 0)), color-stop(16.66667%, rgba(0, 0, 0, 0)), color-stop(16.66667%, rgba(100, 100, 225, 0.25)), color-stop(19.79167%, rgba(100, 100, 225, 0.25)), color-stop(19.79167%, rgba(0, 0, 0, 0)), color-stop(20.83333%, rgba(0, 0, 0, 0)), color-stop(20.83333%, rgba(100, 100, 225, 0.25)), color-stop(23.95833%, rgba(100, 100, 225, 0.25)), color-stop(23.95833%, rgba(0, 0, 0, 0)), color-stop(25%, rgba(0, 0, 0, 0)), color-stop(25%, rgba(100, 100, 225, 0.25)), color-stop(28.125%, rgba(100, 100, 225, 0.25)), color-stop(28.125%, rgba(0, 0, 0, 0)), color-stop(29.16667%, rgba(0, 0, 0, 0)), color-stop(29.16667%, rgba(100, 100, 225, 0.25)), color-stop(32.29167%, rgba(100, 100, 225, 0.25)), color-stop(32.29167%, rgba(0, 0, 0, 0)), color-stop(33.33333%, rgba(0, 0, 0, 0)), color-stop(33.33333%, rgba(100, 100, 225, 0.25)), color-stop(36.45833%, rgba(100, 100, 225, 0.25)), color-stop(36.45833%, rgba(0, 0, 0, 0)), color-stop(37.5%, rgba(0, 0, 0, 0)), color-stop(37.5%, rgba(100, 100, 225, 0.25)), color-stop(40.625%, rgba(100, 100, 225, 0.25)), color-stop(40.625%, rgba(0, 0, 0, 0)), color-stop(41.66667%, rgba(0, 0, 0, 0)), color-stop(41.66667%, rgba(100, 100, 225, 0.25)), color-stop(44.79167%, rgba(100, 100, 225, 0.25)), color-stop(44.79167%, rgba(0, 0, 0, 0)), color-stop(45.83333%, rgba(0, 0, 0, 0)), color-stop(45.83333%, rgba(100, 100, 225, 0.25)), color-stop(48.95833%, rgba(100, 100, 225, 0.25)), color-stop(48.95833%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(100, 100, 225, 0.25)), color-stop(53.125%, rgba(100, 100, 225, 0.25)), color-stop(53.125%, rgba(0, 0, 0, 0)), color-stop(54.16667%, rgba(0, 0, 0, 0)), color-stop(54.16667%, rgba(100, 100, 225, 0.25)), color-stop(57.29167%, rgba(100, 100, 225, 0.25)), color-stop(57.29167%, rgba(0, 0, 0, 0)), color-stop(58.33333%, rgba(0, 0, 0, 0)), color-stop(58.33333%, rgba(100, 100, 225, 0.25)), color-stop(61.45833%, rgba(100, 100, 225, 0.25)), color-stop(61.45833%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(100, 100, 225, 0.25)), color-stop(65.625%, rgba(100, 100, 225, 0.25)), color-stop(65.625%, rgba(0, 0, 0, 0)), color-stop(66.66667%, rgba(0, 0, 0, 0)), color-stop(66.66667%, rgba(100, 100, 225, 0.25)), color-stop(69.79167%, rgba(100, 100, 225, 0.25)), color-stop(69.79167%, rgba(0, 0, 0, 0)), color-stop(70.83333%, rgba(0, 0, 0, 0)), color-stop(70.83333%, rgba(100, 100, 225, 0.25)), color-stop(73.95833%, rgba(100, 100, 225, 0.25)), color-stop(73.95833%, rgba(0, 0, 0, 0)), color-stop(75%, rgba(0, 0, 0, 0)), color-stop(75%, rgba(100, 100, 225, 0.25)), color-stop(78.125%, rgba(100, 100, 225, 0.25)), color-stop(78.125%, rgba(0, 0, 0, 0)), color-stop(79.16667%, rgba(0, 0, 0, 0)), color-stop(79.16667%, rgba(100, 100, 225, 0.25)), color-stop(82.29167%, rgba(100, 100, 225, 0.25)), color-stop(82.29167%, rgba(0, 0, 0, 0)), color-stop(83.33333%, rgba(0, 0, 0, 0)), color-stop(83.33333%, rgba(100, 100, 225, 0.25)), color-stop(86.45833%, rgba(100, 100, 225, 0.25)), color-stop(86.45833%, rgba(0, 0, 0, 0)), color-stop(87.5%, rgba(0, 0, 0, 0)), color-stop(87.5%, rgba(100, 100, 225, 0.25)), color-stop(90.625%, rgba(100, 100, 225, 0.25)), color-stop(90.625%, rgba(0, 0, 0, 0)), color-stop(91.66667%, rgba(0, 0, 0, 0)), color-stop(91.66667%, rgba(100, 100, 225, 0.25)), color-stop(94.79167%, rgba(100, 100, 225, 0.25)), color-stop(94.79167%, rgba(0, 0, 0, 0)), color-stop(95.83333%, rgba(0, 0, 0, 0)), color-stop(95.83333%, rgba(100, 100, 225, 0.25)), color-stop(98.95833%, rgba(100, 100, 225, 0.25)), color-stop(98.95833%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%), -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0px, rgba(100, 100, 225, 0.25) 0px, rgba(100, 100, 225, 0.25) 30px, rgba(0, 0, 0, 0) 30px, rgba(0, 0, 0, 0) 40px, rgba(100, 100, 225, 0.25) 40px, rgba(100, 100, 225, 0.25) 70px, rgba(0, 0, 0, 0) 70px, rgba(0, 0, 0, 0) 80px, rgba(100, 100, 225, 0.25) 80px, rgba(100, 100, 225, 0.25) 110px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 120px, rgba(100, 100, 225, 0.25) 120px, rgba(100, 100, 225, 0.25) 150px, rgba(0, 0, 0, 0) 150px, rgba(0, 0, 0, 0) 160px, rgba(100, 100, 225, 0.25) 160px, rgba(100, 100, 225, 0.25) 190px, rgba(0, 0, 0, 0) 190px, rgba(0, 0, 0, 0) 200px, rgba(100, 100, 225, 0.25) 200px, rgba(100, 100, 225, 0.25) 230px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 240px, rgba(100, 100, 225, 0.25) 240px, rgba(100, 100, 225, 0.25) 270px, rgba(0, 0, 0, 0) 270px, rgba(0, 0, 0, 0) 280px, rgba(100, 100, 225, 0.25) 280px, rgba(100, 100, 225, 0.25) 310px, rgba(0, 0, 0, 0) 310px, rgba(0, 0, 0, 0) 320px, rgba(100, 100, 225, 0.25) 320px, rgba(100, 100, 225, 0.25) 350px, rgba(0, 0, 0, 0) 350px, rgba(0, 0, 0, 0) 360px, rgba(100, 100, 225, 0.25) 360px, rgba(100, 100, 225, 0.25) 390px, rgba(0, 0, 0, 0) 390px, rgba(0, 0, 0, 0) 400px, rgba(100, 100, 225, 0.25) 400px, rgba(100, 100, 225, 0.25) 430px, rgba(0, 0, 0, 0) 430px, rgba(0, 0, 0, 0) 440px, rgba(100, 100, 225, 0.25) 440px, rgba(100, 100, 225, 0.25) 470px, rgba(0, 0, 0, 0) 470px, rgba(0, 0, 0, 0) 480px, rgba(100, 100, 225, 0.25) 480px, rgba(100, 100, 225, 0.25) 510px, rgba(0, 0, 0, 0) 510px, rgba(0, 0, 0, 0) 520px, rgba(100, 100, 225, 0.25) 520px, rgba(100, 100, 225, 0.25) 550px, rgba(0, 0, 0, 0) 550px, rgba(0, 0, 0, 0) 560px, rgba(100, 100, 225, 0.25) 560px, rgba(100, 100, 225, 0.25) 590px, rgba(0, 0, 0, 0) 590px, rgba(0, 0, 0, 0) 600px, rgba(100, 100, 225, 0.25) 600px, rgba(100, 100, 225, 0.25) 630px, rgba(0, 0, 0, 0) 630px, rgba(0, 0, 0, 0) 640px, rgba(100, 100, 225, 0.25) 640px, rgba(100, 100, 225, 0.25) 670px, rgba(0, 0, 0, 0) 670px, rgba(0, 0, 0, 0) 680px, rgba(100, 100, 225, 0.25) 680px, rgba(100, 100, 225, 0.25) 710px, rgba(0, 0, 0, 0) 710px, rgba(0, 0, 0, 0) 720px, rgba(100, 100, 225, 0.25) 720px, rgba(100, 100, 225, 0.25) 750px, rgba(0, 0, 0, 0) 750px, rgba(0, 0, 0, 0) 760px, rgba(100, 100, 225, 0.25) 760px, rgba(100, 100, 225, 0.25) 790px, rgba(0, 0, 0, 0) 790px, rgba(0, 0, 0, 0) 800px, rgba(100, 100, 225, 0.25) 800px, rgba(100, 100, 225, 0.25) 830px, rgba(0, 0, 0, 0) 830px, rgba(0, 0, 0, 0) 840px, rgba(100, 100, 225, 0.25) 840px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 880px, rgba(100, 100, 225, 0.25) 880px, rgba(100, 100, 225, 0.25) 910px, rgba(0, 0, 0, 0) 910px, rgba(0, 0, 0, 0) 920px, rgba(100, 100, 225, 0.25) 920px, rgba(100, 100, 225, 0.25) 950px, rgba(0, 0, 0, 0) 950px, rgba(0, 0, 0, 0) 960px);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%), -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0px, rgba(100, 100, 225, 0.25) 0px, rgba(100, 100, 225, 0.25) 30px, rgba(0, 0, 0, 0) 30px, rgba(0, 0, 0, 0) 40px, rgba(100, 100, 225, 0.25) 40px, rgba(100, 100, 225, 0.25) 70px, rgba(0, 0, 0, 0) 70px, rgba(0, 0, 0, 0) 80px, rgba(100, 100, 225, 0.25) 80px, rgba(100, 100, 225, 0.25) 110px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 120px, rgba(100, 100, 225, 0.25) 120px, rgba(100, 100, 225, 0.25) 150px, rgba(0, 0, 0, 0) 150px, rgba(0, 0, 0, 0) 160px, rgba(100, 100, 225, 0.25) 160px, rgba(100, 100, 225, 0.25) 190px, rgba(0, 0, 0, 0) 190px, rgba(0, 0, 0, 0) 200px, rgba(100, 100, 225, 0.25) 200px, rgba(100, 100, 225, 0.25) 230px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 240px, rgba(100, 100, 225, 0.25) 240px, rgba(100, 100, 225, 0.25) 270px, rgba(0, 0, 0, 0) 270px, rgba(0, 0, 0, 0) 280px, rgba(100, 100, 225, 0.25) 280px, rgba(100, 100, 225, 0.25) 310px, rgba(0, 0, 0, 0) 310px, rgba(0, 0, 0, 0) 320px, rgba(100, 100, 225, 0.25) 320px, rgba(100, 100, 225, 0.25) 350px, rgba(0, 0, 0, 0) 350px, rgba(0, 0, 0, 0) 360px, rgba(100, 100, 225, 0.25) 360px, rgba(100, 100, 225, 0.25) 390px, rgba(0, 0, 0, 0) 390px, rgba(0, 0, 0, 0) 400px, rgba(100, 100, 225, 0.25) 400px, rgba(100, 100, 225, 0.25) 430px, rgba(0, 0, 0, 0) 430px, rgba(0, 0, 0, 0) 440px, rgba(100, 100, 225, 0.25) 440px, rgba(100, 100, 225, 0.25) 470px, rgba(0, 0, 0, 0) 470px, rgba(0, 0, 0, 0) 480px, rgba(100, 100, 225, 0.25) 480px, rgba(100, 100, 225, 0.25) 510px, rgba(0, 0, 0, 0) 510px, rgba(0, 0, 0, 0) 520px, rgba(100, 100, 225, 0.25) 520px, rgba(100, 100, 225, 0.25) 550px, rgba(0, 0, 0, 0) 550px, rgba(0, 0, 0, 0) 560px, rgba(100, 100, 225, 0.25) 560px, rgba(100, 100, 225, 0.25) 590px, rgba(0, 0, 0, 0) 590px, rgba(0, 0, 0, 0) 600px, rgba(100, 100, 225, 0.25) 600px, rgba(100, 100, 225, 0.25) 630px, rgba(0, 0, 0, 0) 630px, rgba(0, 0, 0, 0) 640px, rgba(100, 100, 225, 0.25) 640px, rgba(100, 100, 225, 0.25) 670px, rgba(0, 0, 0, 0) 670px, rgba(0, 0, 0, 0) 680px, rgba(100, 100, 225, 0.25) 680px, rgba(100, 100, 225, 0.25) 710px, rgba(0, 0, 0, 0) 710px, rgba(0, 0, 0, 0) 720px, rgba(100, 100, 225, 0.25) 720px, rgba(100, 100, 225, 0.25) 750px, rgba(0, 0, 0, 0) 750px, rgba(0, 0, 0, 0) 760px, rgba(100, 100, 225, 0.25) 760px, rgba(100, 100, 225, 0.25) 790px, rgba(0, 0, 0, 0) 790px, rgba(0, 0, 0, 0) 800px, rgba(100, 100, 225, 0.25) 800px, rgba(100, 100, 225, 0.25) 830px, rgba(0, 0, 0, 0) 830px, rgba(0, 0, 0, 0) 840px, rgba(100, 100, 225, 0.25) 840px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 880px, rgba(100, 100, 225, 0.25) 880px, rgba(100, 100, 225, 0.25) 910px, rgba(0, 0, 0, 0) 910px, rgba(0, 0, 0, 0) 920px, rgba(100, 100, 225, 0.25) 920px, rgba(100, 100, 225, 0.25) 950px, rgba(0, 0, 0, 0) 950px, rgba(0, 0, 0, 0) 960px);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%), -o-linear-gradient(left, rgba(0, 0, 0, 0) 0px, rgba(100, 100, 225, 0.25) 0px, rgba(100, 100, 225, 0.25) 30px, rgba(0, 0, 0, 0) 30px, rgba(0, 0, 0, 0) 40px, rgba(100, 100, 225, 0.25) 40px, rgba(100, 100, 225, 0.25) 70px, rgba(0, 0, 0, 0) 70px, rgba(0, 0, 0, 0) 80px, rgba(100, 100, 225, 0.25) 80px, rgba(100, 100, 225, 0.25) 110px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 120px, rgba(100, 100, 225, 0.25) 120px, rgba(100, 100, 225, 0.25) 150px, rgba(0, 0, 0, 0) 150px, rgba(0, 0, 0, 0) 160px, rgba(100, 100, 225, 0.25) 160px, rgba(100, 100, 225, 0.25) 190px, rgba(0, 0, 0, 0) 190px, rgba(0, 0, 0, 0) 200px, rgba(100, 100, 225, 0.25) 200px, rgba(100, 100, 225, 0.25) 230px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 240px, rgba(100, 100, 225, 0.25) 240px, rgba(100, 100, 225, 0.25) 270px, rgba(0, 0, 0, 0) 270px, rgba(0, 0, 0, 0) 280px, rgba(100, 100, 225, 0.25) 280px, rgba(100, 100, 225, 0.25) 310px, rgba(0, 0, 0, 0) 310px, rgba(0, 0, 0, 0) 320px, rgba(100, 100, 225, 0.25) 320px, rgba(100, 100, 225, 0.25) 350px, rgba(0, 0, 0, 0) 350px, rgba(0, 0, 0, 0) 360px, rgba(100, 100, 225, 0.25) 360px, rgba(100, 100, 225, 0.25) 390px, rgba(0, 0, 0, 0) 390px, rgba(0, 0, 0, 0) 400px, rgba(100, 100, 225, 0.25) 400px, rgba(100, 100, 225, 0.25) 430px, rgba(0, 0, 0, 0) 430px, rgba(0, 0, 0, 0) 440px, rgba(100, 100, 225, 0.25) 440px, rgba(100, 100, 225, 0.25) 470px, rgba(0, 0, 0, 0) 470px, rgba(0, 0, 0, 0) 480px, rgba(100, 100, 225, 0.25) 480px, rgba(100, 100, 225, 0.25) 510px, rgba(0, 0, 0, 0) 510px, rgba(0, 0, 0, 0) 520px, rgba(100, 100, 225, 0.25) 520px, rgba(100, 100, 225, 0.25) 550px, rgba(0, 0, 0, 0) 550px, rgba(0, 0, 0, 0) 560px, rgba(100, 100, 225, 0.25) 560px, rgba(100, 100, 225, 0.25) 590px, rgba(0, 0, 0, 0) 590px, rgba(0, 0, 0, 0) 600px, rgba(100, 100, 225, 0.25) 600px, rgba(100, 100, 225, 0.25) 630px, rgba(0, 0, 0, 0) 630px, rgba(0, 0, 0, 0) 640px, rgba(100, 100, 225, 0.25) 640px, rgba(100, 100, 225, 0.25) 670px, rgba(0, 0, 0, 0) 670px, rgba(0, 0, 0, 0) 680px, rgba(100, 100, 225, 0.25) 680px, rgba(100, 100, 225, 0.25) 710px, rgba(0, 0, 0, 0) 710px, rgba(0, 0, 0, 0) 720px, rgba(100, 100, 225, 0.25) 720px, rgba(100, 100, 225, 0.25) 750px, rgba(0, 0, 0, 0) 750px, rgba(0, 0, 0, 0) 760px, rgba(100, 100, 225, 0.25) 760px, rgba(100, 100, 225, 0.25) 790px, rgba(0, 0, 0, 0) 790px, rgba(0, 0, 0, 0) 800px, rgba(100, 100, 225, 0.25) 800px, rgba(100, 100, 225, 0.25) 830px, rgba(0, 0, 0, 0) 830px, rgba(0, 0, 0, 0) 840px, rgba(100, 100, 225, 0.25) 840px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 880px, rgba(100, 100, 225, 0.25) 880px, rgba(100, 100, 225, 0.25) 910px, rgba(0, 0, 0, 0) 910px, rgba(0, 0, 0, 0) 920px, rgba(100, 100, 225, 0.25) 920px, rgba(100, 100, 225, 0.25) 950px, rgba(0, 0, 0, 0) 950px, rgba(0, 0, 0, 0) 960px);
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%), -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0px, rgba(100, 100, 225, 0.25) 0px, rgba(100, 100, 225, 0.25) 30px, rgba(0, 0, 0, 0) 30px, rgba(0, 0, 0, 0) 40px, rgba(100, 100, 225, 0.25) 40px, rgba(100, 100, 225, 0.25) 70px, rgba(0, 0, 0, 0) 70px, rgba(0, 0, 0, 0) 80px, rgba(100, 100, 225, 0.25) 80px, rgba(100, 100, 225, 0.25) 110px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 120px, rgba(100, 100, 225, 0.25) 120px, rgba(100, 100, 225, 0.25) 150px, rgba(0, 0, 0, 0) 150px, rgba(0, 0, 0, 0) 160px, rgba(100, 100, 225, 0.25) 160px, rgba(100, 100, 225, 0.25) 190px, rgba(0, 0, 0, 0) 190px, rgba(0, 0, 0, 0) 200px, rgba(100, 100, 225, 0.25) 200px, rgba(100, 100, 225, 0.25) 230px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 240px, rgba(100, 100, 225, 0.25) 240px, rgba(100, 100, 225, 0.25) 270px, rgba(0, 0, 0, 0) 270px, rgba(0, 0, 0, 0) 280px, rgba(100, 100, 225, 0.25) 280px, rgba(100, 100, 225, 0.25) 310px, rgba(0, 0, 0, 0) 310px, rgba(0, 0, 0, 0) 320px, rgba(100, 100, 225, 0.25) 320px, rgba(100, 100, 225, 0.25) 350px, rgba(0, 0, 0, 0) 350px, rgba(0, 0, 0, 0) 360px, rgba(100, 100, 225, 0.25) 360px, rgba(100, 100, 225, 0.25) 390px, rgba(0, 0, 0, 0) 390px, rgba(0, 0, 0, 0) 400px, rgba(100, 100, 225, 0.25) 400px, rgba(100, 100, 225, 0.25) 430px, rgba(0, 0, 0, 0) 430px, rgba(0, 0, 0, 0) 440px, rgba(100, 100, 225, 0.25) 440px, rgba(100, 100, 225, 0.25) 470px, rgba(0, 0, 0, 0) 470px, rgba(0, 0, 0, 0) 480px, rgba(100, 100, 225, 0.25) 480px, rgba(100, 100, 225, 0.25) 510px, rgba(0, 0, 0, 0) 510px, rgba(0, 0, 0, 0) 520px, rgba(100, 100, 225, 0.25) 520px, rgba(100, 100, 225, 0.25) 550px, rgba(0, 0, 0, 0) 550px, rgba(0, 0, 0, 0) 560px, rgba(100, 100, 225, 0.25) 560px, rgba(100, 100, 225, 0.25) 590px, rgba(0, 0, 0, 0) 590px, rgba(0, 0, 0, 0) 600px, rgba(100, 100, 225, 0.25) 600px, rgba(100, 100, 225, 0.25) 630px, rgba(0, 0, 0, 0) 630px, rgba(0, 0, 0, 0) 640px, rgba(100, 100, 225, 0.25) 640px, rgba(100, 100, 225, 0.25) 670px, rgba(0, 0, 0, 0) 670px, rgba(0, 0, 0, 0) 680px, rgba(100, 100, 225, 0.25) 680px, rgba(100, 100, 225, 0.25) 710px, rgba(0, 0, 0, 0) 710px, rgba(0, 0, 0, 0) 720px, rgba(100, 100, 225, 0.25) 720px, rgba(100, 100, 225, 0.25) 750px, rgba(0, 0, 0, 0) 750px, rgba(0, 0, 0, 0) 760px, rgba(100, 100, 225, 0.25) 760px, rgba(100, 100, 225, 0.25) 790px, rgba(0, 0, 0, 0) 790px, rgba(0, 0, 0, 0) 800px, rgba(100, 100, 225, 0.25) 800px, rgba(100, 100, 225, 0.25) 830px, rgba(0, 0, 0, 0) 830px, rgba(0, 0, 0, 0) 840px, rgba(100, 100, 225, 0.25) 840px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 880px, rgba(100, 100, 225, 0.25) 880px, rgba(100, 100, 225, 0.25) 910px, rgba(0, 0, 0, 0) 910px, rgba(0, 0, 0, 0) 920px, rgba(100, 100, 225, 0.25) 920px, rgba(100, 100, 225, 0.25) 950px, rgba(0, 0, 0, 0) 950px, rgba(0, 0, 0, 0) 960px);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%), linear-gradient(left, rgba(0, 0, 0, 0) 0px, rgba(100, 100, 225, 0.25) 0px, rgba(100, 100, 225, 0.25) 30px, rgba(0, 0, 0, 0) 30px, rgba(0, 0, 0, 0) 40px, rgba(100, 100, 225, 0.25) 40px, rgba(100, 100, 225, 0.25) 70px, rgba(0, 0, 0, 0) 70px, rgba(0, 0, 0, 0) 80px, rgba(100, 100, 225, 0.25) 80px, rgba(100, 100, 225, 0.25) 110px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 120px, rgba(100, 100, 225, 0.25) 120px, rgba(100, 100, 225, 0.25) 150px, rgba(0, 0, 0, 0) 150px, rgba(0, 0, 0, 0) 160px, rgba(100, 100, 225, 0.25) 160px, rgba(100, 100, 225, 0.25) 190px, rgba(0, 0, 0, 0) 190px, rgba(0, 0, 0, 0) 200px, rgba(100, 100, 225, 0.25) 200px, rgba(100, 100, 225, 0.25) 230px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 240px, rgba(100, 100, 225, 0.25) 240px, rgba(100, 100, 225, 0.25) 270px, rgba(0, 0, 0, 0) 270px, rgba(0, 0, 0, 0) 280px, rgba(100, 100, 225, 0.25) 280px, rgba(100, 100, 225, 0.25) 310px, rgba(0, 0, 0, 0) 310px, rgba(0, 0, 0, 0) 320px, rgba(100, 100, 225, 0.25) 320px, rgba(100, 100, 225, 0.25) 350px, rgba(0, 0, 0, 0) 350px, rgba(0, 0, 0, 0) 360px, rgba(100, 100, 225, 0.25) 360px, rgba(100, 100, 225, 0.25) 390px, rgba(0, 0, 0, 0) 390px, rgba(0, 0, 0, 0) 400px, rgba(100, 100, 225, 0.25) 400px, rgba(100, 100, 225, 0.25) 430px, rgba(0, 0, 0, 0) 430px, rgba(0, 0, 0, 0) 440px, rgba(100, 100, 225, 0.25) 440px, rgba(100, 100, 225, 0.25) 470px, rgba(0, 0, 0, 0) 470px, rgba(0, 0, 0, 0) 480px, rgba(100, 100, 225, 0.25) 480px, rgba(100, 100, 225, 0.25) 510px, rgba(0, 0, 0, 0) 510px, rgba(0, 0, 0, 0) 520px, rgba(100, 100, 225, 0.25) 520px, rgba(100, 100, 225, 0.25) 550px, rgba(0, 0, 0, 0) 550px, rgba(0, 0, 0, 0) 560px, rgba(100, 100, 225, 0.25) 560px, rgba(100, 100, 225, 0.25) 590px, rgba(0, 0, 0, 0) 590px, rgba(0, 0, 0, 0) 600px, rgba(100, 100, 225, 0.25) 600px, rgba(100, 100, 225, 0.25) 630px, rgba(0, 0, 0, 0) 630px, rgba(0, 0, 0, 0) 640px, rgba(100, 100, 225, 0.25) 640px, rgba(100, 100, 225, 0.25) 670px, rgba(0, 0, 0, 0) 670px, rgba(0, 0, 0, 0) 680px, rgba(100, 100, 225, 0.25) 680px, rgba(100, 100, 225, 0.25) 710px, rgba(0, 0, 0, 0) 710px, rgba(0, 0, 0, 0) 720px, rgba(100, 100, 225, 0.25) 720px, rgba(100, 100, 225, 0.25) 750px, rgba(0, 0, 0, 0) 750px, rgba(0, 0, 0, 0) 760px, rgba(100, 100, 225, 0.25) 760px, rgba(100, 100, 225, 0.25) 790px, rgba(0, 0, 0, 0) 790px, rgba(0, 0, 0, 0) 800px, rgba(100, 100, 225, 0.25) 800px, rgba(100, 100, 225, 0.25) 830px, rgba(0, 0, 0, 0) 830px, rgba(0, 0, 0, 0) 840px, rgba(100, 100, 225, 0.25) 840px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 880px, rgba(100, 100, 225, 0.25) 880px, rgba(100, 100, 225, 0.25) 910px, rgba(0, 0, 0, 0) 910px, rgba(0, 0, 0, 0) 920px, rgba(100, 100, 225, 0.25) 920px, rgba(100, 100, 225, 0.25) 950px, rgba(0, 0, 0, 0) 950px, rgba(0, 0, 0, 0) 960px);
+  -webkit-background-size: 100% 18px, auto;
+  -moz-background-size: 100% 18px, auto;
+  -o-background-size: 100% 18px, auto;
+  background-size: 100% 18px, auto;
+  background-position: left top;
+}
+/* line 16, ../../app/assets/stylesheets/partials/_layout.scss */
+body .wrapper {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  /*  @include showgrid; */
+}
+/* line 19, ../../app/assets/stylesheets/partials/_layout.scss */
+body .wrapper header, body .wrapper nav, body .wrapper footer .inner {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+}
+/* line 147, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body .wrapper header, * html body .wrapper nav, * html body .wrapper footer .inner {
+  overflow-x: hidden;
+}
+/* line 25, ../../app/assets/stylesheets/partials/_layout.scss */
+body footer {
+  width: 100%;
+}
+/* line 27, ../../app/assets/stylesheets/partials/_layout.scss */
+body footer .inner {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 34, ../../app/assets/stylesheets/partials/_layout.scss */
+.region {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+}
+/* line 147, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .region {
+  overflow-x: hidden;
+}
+
+/* line 38, ../../app/assets/stylesheets/partials/_layout.scss */
+.region:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 41, ../../app/assets/stylesheets/partials/_layout.scss */
+.region {
+  zoom: 1;
+}
+
+/* line 45, ../../app/assets/stylesheets/partials/_layout.scss */
+a {
+  color: #3b3b3d;
+  text-decoration: none;
+}
+
+/*
+=============================================================
+HEADER - FOOTER
+=============================================================
+*/
+/* line 61, ../../app/assets/stylesheets/partials/_layout.scss */
+.region {
+  padding-bottom: 50px;
+}
+
+/* line 67, ../../app/assets/stylesheets/partials/_layout.scss */
+.site-info {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: right;
+  width: 200px;
+  font-size: 17px;
+  font-weight: lighter;
+}
+/* line 74, ../../app/assets/stylesheets/partials/_layout.scss */
+.site-info .phone-list, .site-info .email-list {
+  color: tint(#3b3b3d, 50%);
+}
+/* line 77, ../../app/assets/stylesheets/partials/_layout.scss */
+.site-info span {
+  border-left: 1px solid;
+  padding-left: 5px;
+}
+/* line 80, ../../app/assets/stylesheets/partials/_layout.scss */
+.site-info span:first-child {
+  border: 0;
+}
+
+/* SLIDER */
+/* line 92, ../../app/assets/stylesheets/partials/_layout.scss */
+.royalSlider .royalSlide, .royalSlider .royalWrapper {
+  background: none !important;
+}
+
+/* line 93, ../../app/assets/stylesheets/partials/_layout.scss */
+.button, #preface-top .royalSlider .royalCaptionItem, #preface-top .royalSlider .royalCaptionItem {
+  padding: 0;
+  width: 75px;
+  text-align: center;
+}
+
+/* Estructura DOM
+======================================================= */
+/* line 99, ../../app/assets/stylesheets/partials/_layout.scss */
+html {
+  background: #67cddc;
+}
+
+/* line 100, ../../app/assets/stylesheets/partials/_layout.scss */
+body {
+  background: white;
+}
+/* line 102, ../../app/assets/stylesheets/partials/_layout.scss */
+body header {
+  position: relative;
+  margin: 25px 0 5px;
+}
+/* line 107, ../../app/assets/stylesheets/partials/_layout.scss */
+body footer {
+  background: #67cddc;
+  height: 90px;
+}
+/* line 110, ../../app/assets/stylesheets/partials/_layout.scss */
+body footer nav {
+  width: 710px;
+}
+/* line 113, ../../app/assets/stylesheets/partials/_layout.scss */
+body footer .copyright {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+  text-align: right;
+}
+/* line 147, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body footer .copyright {
+  overflow-x: hidden;
+}
+/* line 117, ../../app/assets/stylesheets/partials/_layout.scss */
+body footer .author {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+/* line 147, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body footer .author {
+  overflow-x: hidden;
+}
+/* line 121, ../../app/assets/stylesheets/partials/_layout.scss */
+body footer .author a {
+  position: relative;
+  top: 2px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+}
+/* line 7, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+body footer .author a {
+  *display: inline;
+}
+
+/* line 131, ../../app/assets/stylesheets/partials/_layout.scss */
+#postscript-bottom {
+  background: #67cddc;
+}
+/* line 133, ../../app/assets/stylesheets/partials/_layout.scss */
+#postscript-bottom h2.title {
+  width: 100%;
+  padding: 50px 0;
+  position: relative;
+  border-bottom: 0;
+  background: url(../images/backgrounds/bevel-cyan.jpg) no-repeat 50% 0 white;
+}
+/* line 137, ../../app/assets/stylesheets/partials/_layout.scss */
+#postscript-bottom h2.title:after {
+  border-color: transparent transparent #67cddc;
+  border-style: solid;
+  border-width: 30px;
+  width: 0;
+  height: 0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+}
+/* line 143, ../../app/assets/stylesheets/partials/_layout.scss */
+#postscript-bottom .social-links {
+  margin-bottom: 60px;
+}
+
+/* Headings
+======================================================= */
+/* line 153, ../../app/assets/stylesheets/partials/_layout.scss */
+h1.page-title, h2.title {
+  font-size: 24px;
+  font-weight: lighter;
+  border-bottom: 1px solid tint(#3b3b3d, 70%);
+  padding-bottom: 10px;
+  margin: 0 0 10px;
+}
+/* line 156, ../../app/assets/stylesheets/partials/_layout.scss */
+.partners h1.page-title, .partners h2.title {
+  text-align: center;
+  background: url(../images/backgrounds/bevel-cyan.jpg) no-repeat 50% 0 white;
+}
+
+/* line 162, ../../app/assets/stylesheets/partials/_layout.scss */
+h1.page-title {
+  font-size: 32px;
+  font-weight: lighter;
+  border-bottom: 1px solid tint(#3b3b3d, 70%);
+  padding-bottom: 10px;
+}
+
+/* Texts
+======================================================= */
+/* line 170, ../../app/assets/stylesheets/partials/_layout.scss */
+.content p, section[role="main"] > article p,
+p {
+  margin: 0 0 15px 0;
+  line-height: 115%;
+  font-weight: lighter;
+  font-size: 17px;
+  text-align: justify;
+}
+
+/* line 174, ../../app/assets/stylesheets/partials/_layout.scss */
+.current {
+  font-weight: bold;
+}
+
+/* Navegación
+======================================================= */
+/* line 180, ../../app/assets/stylesheets/partials/_layout.scss */
+header nav, footer nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 11, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+header nav li, footer nav li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 60, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header nav li, footer nav li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header nav li:first-child, header nav li.first, footer nav li:first-child, footer nav li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header nav li:last-child, footer nav li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header nav li.last, footer nav li.last {
+  padding-right: 0;
+}
+/* line 33, ../../app/assets/stylesheets/partials/_mixins.scss */
+header nav ul, footer nav ul {
+  width: 102%;
+  position: relative;
+}
+/* line 37, ../../app/assets/stylesheets/partials/_mixins.scss */
+header nav ul li a, footer nav ul li a {
+  padding: 10px 31px;
+  display: block;
+  font-size: 18px;
+}
+/* line 43, ../../app/assets/stylesheets/partials/_mixins.scss */
+header nav ul li.backLava, footer nav ul li.backLava {
+  border-bottom: 5px solid #3b3b3d;
+}
+/* line 47, ../../app/assets/stylesheets/partials/_mixins.scss */
+header nav ul li.last a, footer nav ul li.last a {
+  padding-right: 39px;
+}
+
+/* line 188, ../../app/assets/stylesheets/partials/_layout.scss */
+header nav li.last a {
+  padding-right: 5px;
+}
+/* line 192, ../../app/assets/stylesheets/partials/_layout.scss */
+header nav .footer-only {
+  display: none;
+}
+/* line 195, ../../app/assets/stylesheets/partials/_layout.scss */
+header nav ul:after {
+  content: "";
+  width: 960px;
+  height: 5px;
+  background: #67cddc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* line 199, ../../app/assets/stylesheets/partials/_layout.scss */
+footer nav {
+  background: #67cddc;
+  color: white;
+}
+/* line 203, ../../app/assets/stylesheets/partials/_layout.scss */
+footer nav ul li {
+  margin: 0;
+  float: left;
+}
+/* line 205, ../../app/assets/stylesheets/partials/_layout.scss */
+footer nav ul li a {
+  background: #3b3b3d;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+}
+
+/* line 216, ../../app/assets/stylesheets/partials/_layout.scss */
+#preface-top {
+  padding: 0 0 40px;
+  margin: 0 0 60px;
+  background: url(../images/backgrounds/bevel-cyan-small.jpg) no-repeat 50% 0 white;
+  background-position: 50% 100%;
+}
+/* line 221, ../../app/assets/stylesheets/partials/_layout.scss */
+.not-front #preface-top {
+  margin-bottom: 0;
+}
+
+/* line 226, ../../app/assets/stylesheets/partials/_layout.scss */
+body .rsDefault .rsBullets {
+  background: none;
+  bottom: auto;
+  top: 100%;
+  padding-top: 15px;
+}
+
+/* line 233, ../../app/assets/stylesheets/partials/_layout.scss */
+body .rsDefault .rsBullet {
+  height: 17px;
+  width: 17px;
+  background: url(../images/backgrounds/slider-controls.jpg) no-repeat 0 -3px;
+}
+
+/* line 239, ../../app/assets/stylesheets/partials/_layout.scss */
+body .rsDefault .rsBullet.rsNavSelected {
+  background: url(../images/backgrounds/slider-controls.jpg) no-repeat -20px -3px;
+}
+
+/* line 243, ../../app/assets/stylesheets/partials/_layout.scss */
+body .rsDefault .rsArrowIcn {
+  background-color: #67cddc;
+}
+
+/* line 247, ../../app/assets/stylesheets/partials/_layout.scss */
+body .rsDefault .rsArrowIcn:hover {
+  background-color: #3b3b3d;
+}
+
+/*
+=============================================================
+APARIENCIA
+=============================================================
+*/
+/* line 258, ../../app/assets/stylesheets/partials/_layout.scss */
+#content {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 630px;
+  float: left;
+}
+/* line 147, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #content {
+  overflow-x: hidden;
+}
+/* line 264, ../../app/assets/stylesheets/partials/_layout.scss */
+#destinations #content, .login #content {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 670px;
+  margin-right: 0;
+}
+/* line 147, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #destinations #content, * html .login #content {
+  overflow-x: hidden;
+}
+/* line 269, ../../app/assets/stylesheets/partials/_layout.scss */
+#testimonies #content {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 790px;
+  padding-left: 80px;
+}
+/* line 147, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #testimonies #content {
+  overflow-x: hidden;
+}
+
+/* line 275, ../../app/assets/stylesheets/partials/_layout.scss */
+#sidebar-first {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 270px;
+  padding-left: 40px;
+  float: right;
+  margin-right: 0;
+}
+/* line 147, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #sidebar-first {
+  overflow-x: hidden;
+}
+/* line 285, ../../app/assets/stylesheets/partials/_layout.scss */
+#destinations.index #sidebar-first, #destinations.show #sidebar-first, #work-with-us.index #sidebar-first, .login #sidebar-first {
+  float: left;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+  padding-left: 0px;
+  padding-right: 40px;
+  margin-right: 0;
+}
+/* line 147, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #destinations.index #sidebar-first, * html #destinations.show #sidebar-first, * html #work-with-us.index #sidebar-first, * html .login #sidebar-first {
+  overflow-x: hidden;
+}
+/* line 291, ../../app/assets/stylesheets/partials/_layout.scss */
+#destinations.index #sidebar-first nav, #destinations.show #sidebar-first nav, #work-with-us.index #sidebar-first nav, .login #sidebar-first nav {
+  width: 230px;
+}
+
+/* line 297, ../../app/assets/stylesheets/partials/_layout.scss */
+#sidebar-second {
+  float: right;
+}
+
+/* Espaciados de los elementos
+======================================================= */
+/* Botones
+======================================================= */
+/* line 309, ../../app/assets/stylesheets/partials/_layout.scss */
+a.button, #preface-top .royalSlider a.royalCaptionItem {
+  background: #67cddc;
+  color: #3b3b3d;
+  float: right;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  width: auto;
+  font-weight: lighter;
+  border: 0;
+  font-family: "Dosis";
+  line-height: 115%;
+}
+
+/* line 312, ../../app/assets/stylesheets/partials/_layout.scss */
+a.button_ {
+  background: #3b3b3d;
+  color: white;
+  float: left;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  width: auto;
+  font-weight: lighter;
+  border: 0;
+  font-family: "Dosis";
+  line-height: 115%;
+}
+
+/* line 316, ../../app/assets/stylesheets/partials/_layout.scss */
+button, .actions input {
+  background: #3b3b3d;
+  color: white;
+  float: right;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  width: auto;
+  font-weight: lighter;
+  border: 0;
+  font-family: "Dosis";
+  line-height: 115%;
+}
+
+/* line 321, ../../app/assets/stylesheets/partials/_layout.scss */
+.breadcrumbs {
+  font-size: 14px;
+}
+
+/* Párrafos después de los títulos de página
+======================================================= */
+/* line 328, ../../app/assets/stylesheets/partials/_layout.scss */
+h1.page-title + p {
+  margin: 20px 0 50px;
+  padding: 0 0 50px 0;
+  background: url(../images/backgrounds/bevel-cyan.jpg) no-repeat 50% 0 white;
+  background-position: 50% 100%;
+}
+
+/* line 334, ../../app/assets/stylesheets/partials/_layout.scss */
+.field.field-map,
+.field.field-link,
+.field.field-content {
+  width: 100%;
+  float: left;
+  clear: left;
+}
+/* line 336, ../../app/assets/stylesheets/partials/_layout.scss */
+#destinations.show .field.field-map, #destinations.show
+.field.field-link, #destinations.show
+.field.field-content {
+  width: auto;
+}
+
+/* line 341, ../../app/assets/stylesheets/partials/_layout.scss */
+#slider-destinations {
+  background: url(../images/backgrounds/bevel-cyan-small.jpg) no-repeat 50% 0 white;
+  background-position: 50% 100%;
+  padding-bottom: 60px;
 }

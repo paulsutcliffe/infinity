@@ -1,0 +1,79 @@
+
+
+ul {
+  @include horizontal-list;
+  &.breadcrumb {
+    margin-bottom: $space-block/2;
+    overflow: visible;
+    @include full-line-break;
+  }
+  li {
+    @include horizontal-list-item(20, left);
+    white-space: normal;
+    .partner {
+      float:left;
+      position:relative;
+      width:158px; height:85px; text-align:center;
+    }
+  }
+  // horizontal lists
+  .partners &.slider {
+    border-bottom:$border-menu-width solid $primary-color-text;
+    margin-bottom:$space;
+  }
+
+  &.default-list {
+    @include default-list;
+  }
+
+  // testimonies.index
+  #testimonies #content & {
+    li {
+      clear: left;
+      padding: 0 60px;
+      margin: 0 0 $space-bottom;
+      h3 {
+        font-weight: bold;
+      }
+      img {
+        float: left;
+        margin: 0 $space*6 0 0;
+      }
+      p {
+      }
+    }
+  }
+
+}
+
+// postscript-bottom social links
+.social-links {
+  text-align:right;
+  .label, ul, li, a {
+
+    // original line --> @include inline-block(right);
+    @include inline-block;
+
+    vertical-align: top;
+    padding: 0;
+    font-size: $font-size-small;
+    text-transform: uppercase;
+  }
+  .label {
+    margin-top: 3px;
+  }
+}
+
+
+// sidebar dl
+dl {
+  #sidebar-first & dt {
+    margin-bottom: $space;
+  }
+  #sidebar-first & dd {
+    border-bottom: 1px solid $color-shadow;
+    padding-bottom: $space;
+    margin-bottom: $space * 3;
+    font-size: $font-size-small;
+  }
+}

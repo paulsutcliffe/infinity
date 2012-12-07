@@ -1,0 +1,23 @@
+#sidebar-first
+  =# render 'sidebar_first'
+
+#content
+  %h1.page-title
+    = page_title! I18n.t('slides.index')
+
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('slide.new'), new_slide_path
+
+  .content
+    - for slide in @slides
+      %div{ :class => 'block' + cycle('odd', 'even') }
+
+
+    .controls
+      .navigation
+        = link_to I18n.t('show'), slide, :class => 'button show'
+      - if current_admin
+        .admin
+          = link_to I18n.t('edit'), edit_slide_path(slide), :class => 'button edit'
+          = link_to I18n.t('destroy'), slide, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
