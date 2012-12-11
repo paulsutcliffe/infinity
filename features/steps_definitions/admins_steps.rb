@@ -20,7 +20,7 @@ end
 
 Cuando /^lleno el formulario con los datos del administrador$/ do
   fill_in "Email", :with => email
-  fill_in "Contraseña", :with => password
+  fill_in "Password", :with => password
 end
 
 Dado /^que estoy en la página inicial$/ do
