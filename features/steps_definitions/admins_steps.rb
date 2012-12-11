@@ -19,7 +19,7 @@ Cuando /^visito "(.*?)"$/ do |pagina|
 end
 
 Cuando /^lleno el formulario con los datos del administrador$/ do
-  fill_in "E-mail", :with => email
+  fill_in "Email", :with => email
   fill_in "Contraseña", :with => password
 end
 
