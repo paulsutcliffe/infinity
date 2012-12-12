@@ -1,5 +1,3 @@
-#sidebar-first
-  =# render 'sidebar_first'
 
 #content
   %h1.page-title
@@ -7,17 +5,19 @@
 
   - if current_admin
     .admin.create
-      = link_to I18n.t('slide.new'), new_slide_path
+      = link_to I18n.t('slide.new'), new_slide_path, :class => 'button new'
 
   .content
     - for slide in @slides
-      %div{ :class => 'block' + cycle('odd', 'even') }
+      %div{ :class => 'block ' + cycle('odd', 'even') }
+        = image_tag slide.slide(:medium)
 
 
-    .controls
-      .navigation
-        = link_to I18n.t('show'), slide, :class => 'button show'
-      - if current_admin
-        .admin
-          = link_to I18n.t('edit'), edit_slide_path(slide), :class => 'button edit'
-          = link_to I18n.t('destroy'), slide, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+        .controls
+          .navigation
+            = link_to I18n.t('show'), slide, :class => 'button show'
+          - if current_admin
+            .admin
+              = link_to I18n.t('edit'), edit_slide_path(slide), :class => 'button edit'
+              = link_to I18n.t('destroy'), slide, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+

@@ -2,4 +2,26 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  will_paginate:
+    previous_label: "Previous"
+    next_label: "Next"
+    page_gap: "&hellip;"
+
+  app:
+    name: Infinity 
+  layout:
+    copyright: All rights reserved.
+    desenvolvimento: Web design and Web Development by
+  show: Show
+  edit: Edit
+  destroy: Delete
+  confirm_delete: Are you sure?
+  submit: Save
+  send: Submit
+  back: Back
+  logout: Logout
+
+  slides:
+    index: Slides
+  slide:
+    new: New Slide

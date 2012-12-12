@@ -16,12 +16,12 @@
       %script{:src => '/javascripts/libs/ie-support/ie-scripts.js'}
     = yield :scripts
 
-  %body
+  %body{:id => bodyid, :class => bodyclass}
     - if notice
       %p.notice= notice
     .wrapper
       %header{:role => 'banner'}
-        = link_to image_tag('/images/logo.png'), '#'
+        = link_to image_tag('/images/logo.png'), root_path
         = render 'layouts/banner'
         = render 'layouts/menu'
       %section.region{:role => 'main'}

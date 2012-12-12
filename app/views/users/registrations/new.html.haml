@@ -13,5 +13,8 @@
     = f.label :password_confirmation
     %br/
     = f.password_field :password_confirmation
+
+  = render(:partial => 'users/registrations/user_attributes', :locals => { :f => f })
+
   %div= f.submit "Sign up"
 = render :partial => "devise/shared/links"

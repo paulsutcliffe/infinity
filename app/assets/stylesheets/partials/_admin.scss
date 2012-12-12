@@ -1,0 +1,38 @@
+
+
+
+.admin {
+  &.create {
+    width: 100%; margin-bottom: $space * 6;
+    float: left; clear: left;
+    .button {
+      float: left;
+    }
+  }
+}
+
+a.button {
+
+  .admin & {
+    /*float: none;*/
+  }
+}
+
+
+#slides {
+  .block {
+    width: 100%; margin: 0 0 $space * 4;
+    float: left; clear: left;
+    img {
+      float: left;
+    }
+    .navigation {
+      float: left; clear: left;
+    }
+    .admin {
+      float: left;
+    }
+  }
+
+
+}

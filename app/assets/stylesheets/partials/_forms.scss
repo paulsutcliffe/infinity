@@ -41,3 +41,5 @@ input {
   @include bevel-cyan;
   background-position: 0 100%;
 }
+
+input[type="submit"], submit {cursor: pointer}

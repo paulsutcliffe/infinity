@@ -4,9 +4,7 @@
 
 #preface-top
   .royalSlider.rsDefault
-    .rsContent
-      = image_tag "/images/slides/img-slide.jpg", :class => 'rsImg'
-      = link_to 'Ver más', :class => 'button rsABlock'
-    .rsContent
-      = image_tag "/images/slides/img-slide-2.jpg", :class => 'rsImg'
-      = link_to 'Ver más', :class => 'button rsABlock'
+    - @slides.each do |slide|
+      .rsContent
+        = image_tag slide.slide(:full), :class => 'rsImg'
+        = link_to 'Ver más', '', :class => 'button rsABlock'
