@@ -5,33 +5,25 @@ Característica: adminstrar los slides
 @admin
 Escenario: Crear un Slide
   Cuando hago click en "Slides"
-  Y hago click en "Nuevo Slide"
+  Y hago click en "New Slide"
   Y uso la imagen "slide.jpg"
-  Y lleno "Heading 1" con "Viaja por el mundo"
-  Y lleno "Heading 2" con "con los paquetes de Infinity"
   Cuando presiono "Save"
-  Entonces debería ver "Slide created correctly"
+  Entonces debería ver "Slide was successfully created."
   Y debería ver la imagen "slide.jpg"
-  Y debería ver "Viaja por el mundo"
-  Y debería ver "con los paquetes de Infinity"
 
 @admin
 Escenario: Editar un Slide
-  Cuando existe el Slide "imagen.jpg"
+  Cuando existe el Slide "slide.jpg"
   Y hago click en "Slides"
-  Y hago click en "Editar"
+  Y hago click en "Edit"
   Y uso la imagen "slide2.jpg"
-  Y lleno "Encabezado 1" con "Viaja por sudamerica"
-  Y lleno "Encabezado 2" con "con las promociones de Infinity"
-  Cuando presiono "Guardar"
-  Entonces debería ver "Slide actualizado correctamente"
+  Cuando presiono "Save"
+  Entonces debería ver "Slide was successfully updated."
   Y debería ver la imagen "slide2.jpg"
-  Y debería ver "Viaja por sudamerica"
-  Y debería ver "con las promociones de Infinity"
 
 @admin
 Escenario: Eliminar un Slide
   Cuando existe el Slide "slide.jpg"
   Y hago click en "Slides"
-  Y hago click en "Eliminar"
-  Entonces debería ver "Slide eliminado correctamente"
+  Y hago click en "Delete"
+  Entonces debería ver "Slide was successfully destroyed."

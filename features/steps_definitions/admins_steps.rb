@@ -4,10 +4,10 @@ password = 'infinity99'
 Before('@admin') do
   Admin.new(:email => email, :password => password, :password_confirmation => password).save!
 
-  visit '/admins/ingresar'
+  visit '/admins/sign_in'
   fill_in "Email", :with => email
   fill_in "Password", :with => password
-  click_button "Sign In"
+  click_button "Sign in"
 end
 
 Dado /^que existe un administrador$/ do

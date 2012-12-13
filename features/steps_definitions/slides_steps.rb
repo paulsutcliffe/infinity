@@ -3,7 +3,7 @@ Cuando /^hago click en "(.*?)"$/ do |link|
 end
 
 Cuando /^uso la imagen "(.*?)"$/ do |archivo|
-  attach_file("Imagen", File.expand_path(archivo))
+  attach_file("Picture", File.expand_path("features/support/" + archivo))
 end
 
 Cuando /^lleno "(.*?)" con "(.*?)"$/ do |campo, valor|
@@ -15,5 +15,5 @@ Entonces /^debería ver la imagen "(.*?)"$/ do |archivo|
 end
 
 Cuando /^existe el Slide "(.*?)"$/ do |imagen|
-  Slide.new(:nombre => nombre, :encabezado1 => "Encabezado 1", :encabezado2 => "Encabezado 2", :slide => File.new("features/support/#{imagen}", "r")).save!
+  Slide.new(:slide => File.new("features/support/#{imagen}", "r")).save!
 end
