@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121211021545) do
+ActiveRecord::Schema.define(:version => 20121214045759) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -29,6 +29,18 @@ ActiveRecord::Schema.define(:version => 20121211021545) do
 
   add_index "admins", ["email"], :name => "index_admins_on_email", :unique => true
   add_index "admins", ["reset_password_token"], :name => "index_admins_on_reset_password_token", :unique => true
+
+  create_table "milestones", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "telefono2"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "milestone_picture_file_name"
+    t.string   "milestone_picture_content_type"
+    t.integer  "milestone_picture_file_size"
+    t.datetime "milestone_picture_updated_at"
+  end
 
   create_table "slides", :force => true do |t|
     t.datetime "created_at"

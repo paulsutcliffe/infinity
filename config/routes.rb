@@ -1,4 +1,6 @@
 Infinity::Application.routes.draw do
+  resources :milestones
+
   devise_for :users
 
   devise_for :admins

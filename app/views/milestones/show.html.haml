@@ -1,0 +1,11 @@
+%p
+  %strong t('activerecord.attributes.milestone.title')
+  = @milestone.title
+%p
+  %strong t('activerecord.attributes.milestone.description')
+  = @milestone.description
+%p
+  %strong t('activerecord.attributes.milestone.telefono2')
+  = @milestone.telefono2
+
+== #{ link_to t('edit'), edit_milestone_path(@milestone) } | #{ link_to t('back'), milestones_path }

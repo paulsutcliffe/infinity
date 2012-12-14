@@ -25,3 +25,8 @@ en:
     index: Slides
   slide:
     new: New Slide
+
+  milestones:
+    index: Milestones
+  milestone:
+    new: New Milestone

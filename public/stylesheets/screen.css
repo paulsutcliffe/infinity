@@ -898,7 +898,7 @@ APARIENCIA
   overflow-x: hidden;
 }
 /* line 269, ../../app/assets/stylesheets/partials/_layout.scss */
-#testimonies #content {
+#milestones #content {
   display: inline;
   float: left;
   margin-right: 10px;
@@ -906,7 +906,7 @@ APARIENCIA
   padding-left: 80px;
 }
 /* line 147, ../../../../../.rvm/gems/ruby-1.8.7-p352/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #testimonies #content {
+* html #milestones #content {
   overflow-x: hidden;
 }
 
@@ -1060,22 +1060,22 @@ h1.page-title + p {
 }
 
 /* line 23, ../../app/assets/stylesheets/partials/_admin.scss */
-#slides .block {
+#slides .block, #milestones .block {
   width: 100%;
   margin: 0 0 20px;
   float: left;
   clear: left;
 }
 /* line 26, ../../app/assets/stylesheets/partials/_admin.scss */
-#slides .block img {
+#slides .block img, #milestones .block img {
   float: left;
 }
 /* line 29, ../../app/assets/stylesheets/partials/_admin.scss */
-#slides .block .navigation {
+#slides .block .navigation, #milestones .block .navigation {
   float: left;
   clear: left;
 }
 /* line 32, ../../app/assets/stylesheets/partials/_admin.scss */
-#slides .block .admin {
+#slides .block .admin, #milestones .block .admin {
   float: left;
 }
