@@ -2,38 +2,22 @@
 
 %nav
   %ul.menu
-    %li
-      = link_to_unless_current 'Inicio', root_path, :class => lavalamp('homes') do
-        %span
-          Inicio
-    %li{:class => 'selectedLava'}
-      = link_to_unless_current 'Destinations', slides_path  do
-        %span
-          Destinations
-    %li
-      = link_to_unless_current 'Offers', '#' do
-        %span
-          Offers
-    %li
-      = link_to_unless_current 'Travels', '#' do
-        %span
-          Travels
-    %li
-      = link_to_unless_current 'Bookings', '#' do
-        %span
-          Bookings
-    %li
-      = link_to_unless_current 'News', '#' do
-        %span
-          News
-    %li
-      = link_to_unless_current 'Health', '#' do
-        %span
-          Health
-    %li.last
-      = link_to_unless_current 'Staff', '#' do
-        %span
-          Staff
+
+    / menu_li(page_name, controller_name, path)
+    = menu_li('Inicio', 'homes', root_path)
+    = menu_li('Destinations', 'destinations', destinations_path)
+    = menu_li('Slides', 'slides', slides_path)
+    = menu_li('Offers', 'offers', root_path)
+    = menu_li('Travels', 'travels', root_path)
+    = menu_li('Bookings', 'bookings', root_path)
+    = menu_li('News', 'news', root_path)
+    = menu_li('Health', 'health', root_path)
+    = menu_li('Staff', 'staff', root_path)
+    = menu_li('Slides', 'slides', slides_path)
+    = menu_li('Milestones', 'milestones', milestones_path)
+    = menu_li('About Us', '', root_path)
+    = menu_li('Terms of Usage', '', root_path)
+
     %li.admin-link
       = link_to_unless_current 'Slides', slides_path do
         %span
