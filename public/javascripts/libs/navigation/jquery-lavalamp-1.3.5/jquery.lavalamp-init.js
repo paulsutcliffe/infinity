@@ -4,7 +4,7 @@ $(function() {
   $("header .menu").lavaLamp({
     fx: 'easeOutExpo',
 	speed: 1000,
-	click: function() {return false;},
+	//click: function() {return false;},
 	setOnClick: false
    //fx: 'easeOutBack',
    //autoResize:true,

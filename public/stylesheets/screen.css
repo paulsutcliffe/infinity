@@ -776,7 +776,7 @@ header nav ul, footer nav ul {
   position: relative;
 }
 /* line 37, ../../app/assets/stylesheets/partials/_mixins.scss */
-header nav ul li a, footer nav ul li a {
+header nav ul li a, header nav ul li span, footer nav ul li a, footer nav ul li span {
   padding: 10px 31px;
   display: block;
   font-size: 18px;

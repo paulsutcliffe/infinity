@@ -1,0 +1,12 @@
+  ul.menu {
+      overflow:hidden; /* hidden auto, makes sure the container fits the floated list-items below */
+  }
+  ul.menu li{
+      position:relative; /* allows us to set the z-index */
+      z-index:5; /* raises the z-index of the line item 5 levels all other elements */
+      float:left; /* floats list items to the left, creating a horizontal menu */
+  }
+  ul.menu li.backLava {
+     /* background-color:#fc0;
+      border-bottom:5px solid brown;*/
+  }

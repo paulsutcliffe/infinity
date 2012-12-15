@@ -7,14 +7,8 @@
   / <![endif]
   %head
     %title= 'Mockup'
-    == <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    = stylesheet_link_tag '/stylesheets/screen.css'
-    = javascript_include_tag '/javascripts/jquery.js'
-    /[if lt IE 9]
-      %script{:src => 'http://html5shim.googlecode.com/svn/trunk/html5.js'}
-      %script{:src => '/javascripts/libs/ie-support/malsup-corner/jquery.corner.js'}
-      %script{:src => '/javascripts/libs/ie-support/ie-scripts.js'}
-    = yield :scripts
+    = render 'layouts/head'
+    = yield :javascript
 
   %body{:id => bodyid, :class => bodyclass}
     - if notice

@@ -34,7 +34,7 @@
     width:102%; // for lavaLamp
     position:relative; // for lavaLamp noJs
     li {
-      a {
+      a, span {
         padding:10px 31px;
         display:block;
         font-size: $font-size-menu;

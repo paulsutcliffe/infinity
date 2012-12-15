@@ -1,26 +1,13 @@
-= javascript_include_tag '/javascripts/jquery-easing/jquery.easing.1.3.js', '/javascripts/libs/navigation/jquery-lavalamp-1.3.5/jquery.lavalamp-1.3.5.min.js', '/javascripts/libs/navigation/jquery-lavalamp-1.3.5/jquery.lavalamp-init.js'
-:css
-  ul.menu {
-      overflow:hidden; /* hidden auto, makes sure the container fits the floated list-items below */
-  }
-  ul.menu li{
-      position:relative; /* allows us to set the z-index */
-      z-index:5; /* raises the z-index of the line item 5 levels all other elements */
-      float:left; /* floats list items to the left, creating a horizontal menu */
-  }
-  ul.menu li.backLava {
-     /* background-color:#fc0;
-      border-bottom:5px solid brown;*/
-  }
+/ requires lavalamp menu, check layouts/head
 
 %nav
   %ul.menu
     %li
-      = link_to_unless_current 'Home', '#', :class => 'selectedLava' do
+      = link_to_unless_current 'Inicio', root_path, :class => lavalamp('homes') do
         %span
-          Home
-    %li
-      = link_to_unless_current 'Destinations', '#' do
+          Inicio
+    %li{:class => 'selectedLava'}
+      = link_to_unless_current 'Destinations', slides_path  do
         %span
           Destinations
     %li
