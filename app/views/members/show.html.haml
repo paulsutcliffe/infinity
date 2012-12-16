@@ -1,0 +1,14 @@
+%p
+  %strong t('activerecord.attributes.member.name')
+  = @member.name
+%p
+  %strong t('activerecord.attributes.member.email')
+  = @member.email
+%p
+  %strong t('activerecord.attributes.member.position')
+  = @member.position
+%p
+  %strong t('activerecord.attributes.member.description')
+  = @member.description
+
+== #{ link_to t('edit'), edit_member_path(@member) } | #{ link_to t('back'), members_path }

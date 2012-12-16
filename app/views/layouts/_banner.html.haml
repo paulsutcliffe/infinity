@@ -7,5 +7,6 @@
 
   - unless current_user
     .login-links
+      = link_to 'Admin Login', new_admin_session_path
       = link_to 'Sign up', new_user_session_path
       = link_to 'Compare travels', '#'

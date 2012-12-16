@@ -1,0 +1,26 @@
+%h1 
+  =t('destinations.index.title')
+
+%table
+  %thead
+    %tr
+      %th 
+        =t('activerecord.attributes.destination.name')
+      %th 
+        =t('activerecord.attributes.destination.description')
+      %th 
+        =t('activerecord.attributes.destination.image_map')
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for destination in @destinations
+      %tr{ :class => cycle(:odd, :even) }
+        %td= destination.name
+        %td= destination.description
+        %td= destination.image_map
+        %td= link_to t('show'), destination
+        %td= link_to t('edit'), edit_destination_path(destination)
+        %td= link_to t('destroy'), destination, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('destination.new'), new_destination_path

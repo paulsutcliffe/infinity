@@ -1,0 +1,30 @@
+
+
+#content
+  %h1.page-title
+    = page_title! I18n.t('members.index')
+
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('member.new'), new_member_path, :class => 'button new'
+
+  .content
+    - for member in @members
+      %div{ :class => 'block ' + cycle('odd', 'even') }
+        = image_tag member.member(:medium)
+        = member.name
+        = member.email
+        = member.position
+        = member.description
+
+        .controls
+          .navigation
+            = link_to I18n.t('show'), member, :class => 'button show'
+          - if current_admin
+            .admin
+              = link_to I18n.t('edit'), edit_member_path(member), :class => 'button edit'
+              = link_to I18n.t('destroy'), member, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+
+
+
+  

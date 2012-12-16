@@ -1,0 +1,10 @@
+#content
+  %h1.page-title
+    = page_title! t('member.new')
+  .content
+    = render 'form'
+    %nav
+      = link_to I18n.t('show'), @member, :class => 'button show'
+      = link_to I18n.t('back'), members_path, :class => 'button back'
+
+

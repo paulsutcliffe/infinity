@@ -30,3 +30,8 @@ en:
     index: Milestones
   milestone:
     new: New Milestone
+
+  members:
+    index: Members
+  member:
+    new: New Member

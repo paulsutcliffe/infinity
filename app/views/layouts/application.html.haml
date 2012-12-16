@@ -12,7 +12,9 @@
 
   %body{:id => bodyid, :class => bodyclass}
     - if notice
-      %p.notice= notice
+      - javascript_tag do
+        var alerta_mensaje =  "#{notice}"
+
     .wrapper
       %header{:role => 'banner'}
         = link_to image_tag('/images/logo.png'), root_path

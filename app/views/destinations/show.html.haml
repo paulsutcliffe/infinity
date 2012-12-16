@@ -1,0 +1,11 @@
+%p
+  %strong t('activerecord.attributes.destination.name')
+  = @destination.name
+%p
+  %strong t('activerecord.attributes.destination.description')
+  = @destination.description
+%p
+  %strong t('activerecord.attributes.destination.image_map')
+  = @destination.image_map
+
+== #{ link_to t('edit'), edit_destination_path(@destination) } | #{ link_to t('back'), destinations_path }

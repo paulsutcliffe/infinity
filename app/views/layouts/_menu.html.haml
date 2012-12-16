@@ -6,27 +6,23 @@
     / menu_li(page_name, controller_name, path)
     = menu_li('Inicio', 'homes', root_path)
     = menu_li('Destinations', 'destinations', destinations_path)
-    = menu_li('Slides', 'slides', slides_path)
     = menu_li('Offers', 'offers', root_path)
     = menu_li('Travels', 'travels', root_path)
     = menu_li('Bookings', 'bookings', root_path)
     = menu_li('News', 'news', root_path)
     = menu_li('Health', 'health', root_path)
     = menu_li('Staff', 'staff', root_path)
-    = menu_li('Slides', 'slides', slides_path)
-    = menu_li('Milestones', 'milestones', milestones_path)
-    = menu_li('About Us', '', root_path)
-    = menu_li('Terms of Usage', '', root_path)
 
-    %li.admin-link
-      = link_to_unless_current 'Slides', slides_path do
-        %span
-          Slides
-    %li.admin-link
-      = link_to_unless_current 'Milestones', milestones_path do
-        %span
-          Milestones
+    - if current_admin
+      = menu_li('Slides', 'slides', slides_path)
+      = menu_li('Milestones', 'milestones', milestones_path)
+      = menu_li('Members', 'members', members_path)
+      = menu_li('Log out', 'any', destroy_admin_session_path)
 
+    %li.footer-only
+      = link_to_unless_current 'Members', members_path do
+        %span
+          Members
     %li.footer-only
       = link_to_unless_current 'About Us', '#' do
         %span
