@@ -1,6 +1,8 @@
 %p
   %strong t('activerecord.attributes.milestone.title')
   = @milestone.title
+
+  = image_tag @milestone.milestone_picture(:medium)
 %p
   %strong t('activerecord.attributes.milestone.description')
   = @milestone.description

@@ -192,9 +192,11 @@ nav {
     .footer-only {
       display:none;
     }
+    ul:before,
     ul:after {
       content:""; width:960px; height:5px; background:$primary-color; position:absolute; bottom:0; left:0;
     }
+    ul:before { bottom: 38px; display: none}
   }
   footer & {
     background: $primary-color;
@@ -210,6 +212,10 @@ nav {
       }
     }
   }
+}
+
+.infinity-admin header nav ul:before {
+  display: block;
 }
 
 
