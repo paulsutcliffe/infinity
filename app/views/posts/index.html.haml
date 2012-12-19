@@ -1,0 +1,29 @@
+%h1 
+  =t('posts.index.title')
+
+%table
+  %thead
+    %tr
+      %th 
+        =t('activerecord.attributes.post.title')
+      %th 
+        =t('activerecord.attributes.post.content')
+      %th 
+        =t('activerecord.attributes.post.important')
+      %th 
+        =t('activerecord.attributes.post.landing_page')
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for post in @posts
+      %tr{ :class => cycle(:odd, :even) }
+        %td= post.title
+        %td= post.content
+        %td= post.important
+        %td= post.landing_page
+        %td= link_to t('show'), post
+        %td= link_to t('edit'), edit_post_path(post)
+        %td= link_to t('destroy'), post, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('post.new'), new_post_path

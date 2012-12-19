@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121219032530) do
+ActiveRecord::Schema.define(:version => 20121219062551) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -62,17 +62,17 @@ ActiveRecord::Schema.define(:version => 20121219032530) do
     t.datetime "milestone_picture_updated_at"
   end
 
-  create_table "news", :force => true do |t|
+  create_table "posts", :force => true do |t|
     t.string   "title"
     t.text     "content"
-    t.boolean  "important",                 :default => false
-    t.boolean  "landing_page",              :default => false
+    t.boolean  "important",                  :default => false
+    t.boolean  "landing_page",               :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "news_picture_file_name"
-    t.string   "news_picture_content_type"
-    t.integer  "news_picture_file_size"
-    t.datetime "news_picture_updated_at"
+    t.string   "posts_picture_file_name"
+    t.string   "posts_picture_content_type"
+    t.integer  "posts_picture_file_size"
+    t.datetime "posts_picture_updated_at"
   end
 
   create_table "slides", :force => true do |t|

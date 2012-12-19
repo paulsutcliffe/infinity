@@ -7,14 +7,14 @@ Escenario: agregar noticia
   Dado que estoy en la página inicial
   Cuando hago click en "News"
   Y hago click en "New New"
-  Y lleno "title" con "Feriado largo generará millones por actividad turística"
-  Y lleno "content" con "Artículo textual de la noticia Feriado largo generará millones por actividad turística"
-  Y uso la imagen "news_picture.jpg"
+  Y lleno "Title" con "Feriado largo generará millones por actividad turística"
+  Y lleno "Content" con "Artículo textual de la noticia Feriado largo generará millones por actividad turística"
+  Y adjunto la imagen "posts_picture.jpg" en "post_posts_picture"
   Cuando presiono "Save"
-  Entonces debería ver "New created successfully."
+  Entonces debería ver "Post was successfully created."
   Y debería ver "Feriado largo generará millones por actividad turística"
-  Y debería ver "Artículo textual de la noticia Feriado largo generará millones por actividad turística"" 
-  Y debería ver la imagen "news_picture.jpg"
+  Y debería ver "Artículo textual de la noticia Feriado largo generará millones por actividad turística"
+  Y debería ver la imagen "posts_picture.jpg"
 
 @admin
 Escenario: editar noticia
@@ -22,12 +22,12 @@ Escenario: editar noticia
   Y que estoy en la página inicial
   Cuando hago click en "News"
   Y hago click en "Edit"
-  Y lleno "title" con "Ejecutivo declaró feriado largo este fin de semana"
-  Y uso la imagen "news_picture2.jpg"
+  Y lleno "Title" con "Ejecutivo declaró feriado largo este fin de semana"
+  Y uso la imagen "posts_picture2.jpg"
   Cuando presiono "Save"
   Entonces debería ver "New updated successfully."
   Y debería ver "Ejecutivo declaró feriado largo este fin de semana"
-  Y debería ver la imagen "news_picture2.jpg" 
+  Y debería ver la imagen "posts_picture2.jpg" 
 
 @admin
 Escenario: eliminar noticia

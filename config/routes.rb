@@ -1,5 +1,5 @@
 Infinity::Application.routes.draw do
-  resources :news
+  resources :posts
 
   resources :members
 

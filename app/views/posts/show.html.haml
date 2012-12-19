@@ -1,0 +1,14 @@
+%p
+  %strong t('activerecord.attributes.post.title')
+  = @post.title
+%p
+  %strong t('activerecord.attributes.post.content')
+  = @post.content
+%p
+  %strong t('activerecord.attributes.post.important')
+  = @post.important
+%p
+  %strong t('activerecord.attributes.post.landing_page')
+  = @post.landing_page
+
+== #{ link_to t('edit'), edit_post_path(@post) } | #{ link_to t('back'), posts_path }

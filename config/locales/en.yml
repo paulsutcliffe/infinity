@@ -36,7 +36,7 @@ en:
   member:
     new: New Member
 
-  news:
+  posts:
     index: News
-  new:
+  post:
     new: New New
