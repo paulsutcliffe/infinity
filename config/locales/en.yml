@@ -35,3 +35,8 @@ en:
     index: Members
   member:
     new: New Member
+
+  news:
+    index: News
+  new:
+    new: New New

@@ -1,4 +1,6 @@
 Infinity::Application.routes.draw do
+  resources :news
+
   resources :members
 
   resources :destinations
