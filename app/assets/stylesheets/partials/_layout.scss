@@ -363,3 +363,13 @@ h1.page-title + p {margin: $space*4 0 $space*10; padding:0 0 $space*10 0; @inclu
 }
 
 
+/* Estilos slider
+======================================================= */
+#preface-top .royalSlider{width:950px; height:250px}
+.rsOverflow{position:relative}
+body .rsABlock{position:absolute; top:5px;  left:auto;  right:35px}
+body .rsDefault .rsPreloader {background-image:url(/javascripts/libs/royal-slider-9.2/preloaders/preloader-white.gif)}
+body .rsDefault .rsCloseVideoIcn {background: url('/javascripts/libs/royal-slider-9.2/rs-default.png') -64px 0}
+#postscript-bottom.partners ul.slider{width:950px; height:80px}
+#postscript-bottom .rsABlock{position:absolute; top:5px; left:0}
+/* END: Estilos slider */

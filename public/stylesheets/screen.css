@@ -1053,6 +1053,51 @@ h1.page-title + p {
   clear: left;
 }
 
+/* Estilos slider
+======================================================= */
+/* line 368, ../../app/assets/stylesheets/partials/_layout.scss */
+#preface-top .royalSlider {
+  width: 950px;
+  height: 250px;
+}
+
+/* line 369, ../../app/assets/stylesheets/partials/_layout.scss */
+.rsOverflow {
+  position: relative;
+}
+
+/* line 370, ../../app/assets/stylesheets/partials/_layout.scss */
+body .rsABlock {
+  position: absolute;
+  top: 5px;
+  left: auto;
+  right: 35px;
+}
+
+/* line 371, ../../app/assets/stylesheets/partials/_layout.scss */
+body .rsDefault .rsPreloader {
+  background-image: url(/javascripts/libs/royal-slider-9.2/preloaders/preloader-white.gif);
+}
+
+/* line 372, ../../app/assets/stylesheets/partials/_layout.scss */
+body .rsDefault .rsCloseVideoIcn {
+  background: url("/javascripts/libs/royal-slider-9.2/rs-default.png") -64px 0;
+}
+
+/* line 373, ../../app/assets/stylesheets/partials/_layout.scss */
+#postscript-bottom.partners ul.slider {
+  width: 950px;
+  height: 80px;
+}
+
+/* line 374, ../../app/assets/stylesheets/partials/_layout.scss */
+#postscript-bottom .rsABlock {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+/* END: Estilos slider */
 /* line 5, ../../app/assets/stylesheets/partials/_admin.scss */
 .admin.create {
   width: 100%;

@@ -1,12 +1,12 @@
 -# content_for :scripts do
-= render 'layouts/royal_slider'
-= render 'layouts/royal_slider_init'
+= # render 'layouts/royal_slider'
+= # render 'layouts/royal_slider_init'
 
 #preface-top
   .royalSlider.rsDefault
-  - if @slides
-    - @slides.each do |slide|
-      .rsContent
-        = image_tag slide.slide(:full), :class => 'rsImg'
-        = link_to 'Ver más', '', :class => 'button rsABlock'
+    - if @slides
+      - @slides.each do |slide|
+        .rsContent
+          = image_tag slide.slide(:full), :class => 'rsImg'
+          = link_to 'Ver más', '', :class => 'button rsABlock'
 
