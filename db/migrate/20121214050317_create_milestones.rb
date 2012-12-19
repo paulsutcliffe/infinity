@@ -3,7 +3,6 @@ class CreateMilestones < ActiveRecord::Migration
     create_table :milestones do |t|
       t.string :title
       t.text :description
-      t.string :telefono2
 
       t.timestamps
     end
