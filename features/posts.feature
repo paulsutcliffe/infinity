@@ -9,7 +9,7 @@ Escenario: agregar noticia
   Y hago click en "New New"
   Y lleno "Title" con "Feriado largo generará millones por actividad turística"
   Y lleno "Content" con "Artículo textual de la noticia Feriado largo generará millones por actividad turística"
-  Y adjunto la imagen "posts_picture.jpg" en "post_posts_picture"
+  Y adjunto "posts_picture.jpg" en "post_posts_picture"
   Cuando presiono "Save"
   Entonces debería ver "Post was successfully created."
   Y debería ver "Feriado largo generará millones por actividad turística"
@@ -23,9 +23,9 @@ Escenario: editar noticia
   Cuando hago click en "News"
   Y hago click en "Edit"
   Y lleno "Title" con "Ejecutivo declaró feriado largo este fin de semana"
-  Y uso la imagen "posts_picture2.jpg"
+  Y adjunto "posts_picture2.jpg" en "post_posts_picture"
   Cuando presiono "Save"
-  Entonces debería ver "New updated successfully."
+  Entonces debería ver "Post was successfully updated."
   Y debería ver "Ejecutivo declaró feriado largo este fin de semana"
   Y debería ver la imagen "posts_picture2.jpg" 
 
@@ -35,10 +35,11 @@ Escenario: eliminar noticia
   Y que estoy en la página inicial
   Cuando hago click en "News"
   Y hago click en "Delete"
-  Entonces debería ver "New deleted successfully."
+  Entonces debería ver "Post was successfully destroyed."
   Y no debería ver "Feriado largo generará millones por actividad turística"
 
 Escenario: el usuario puede ver las noticias
+  Dado que estoy en la página inicial
   Cuando hago click en "News"
   Entonces debería ver "Feriado largo generará millones por actividad turística"
   Y no debería ver los controles de administración
