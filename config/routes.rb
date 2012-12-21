@@ -1,4 +1,12 @@
 Infinity::Application.routes.draw do
+  resources :carts
+
+  resources :prices
+
+  resources :extensions
+
+  resources :travels
+
   resources :posts
 
   resources :members

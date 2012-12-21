@@ -1,0 +1,6 @@
+%h1
+  = t('extension.edit.title')
+
+= render 'form'
+
+== #{ link_to t('show'), @extension } | #{ link_to t('back'), extensions_path }

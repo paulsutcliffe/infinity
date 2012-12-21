@@ -1,0 +1,19 @@
+- form_for(@cart) do |f|
+  
+  - if @cart.errors.any?
+    #errorExplanation
+      %h2= t('activerecord.errors.messages.cart.invalid_record')
+      %ul
+      - @cart.errors.full_messages.each do |msg|
+        %li= msg
+  .field
+    = f.label :quantity
+    %br
+    = f.text_field :quantity
+  .field
+    = f.label :travel_id
+    %br
+    = f.text_field :travel_id
+
+  .actions
+    = f.submit I18n.t('submit')

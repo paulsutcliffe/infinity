@@ -1,0 +1,47 @@
+%h1 
+  =t('travels.index.title')
+
+%table
+  %thead
+    %tr
+      %th 
+        =t('activerecord.attributes.travel.name')
+      %th 
+        =t('activerecord.attributes.travel.overview')
+      %th 
+        =t('activerecord.attributes.travel.advantages')
+      %th 
+        =t('activerecord.attributes.travel.price')
+      %th 
+        =t('activerecord.attributes.travel.days')
+      %th 
+        =t('activerecord.attributes.travel.departures')
+      %th 
+        =t('activerecord.attributes.travel.maxgroupsize')
+      %th 
+        =t('activerecord.attributes.travel.travel_map')
+      %th 
+        =t('activerecord.attributes.travel.notes')
+      %th 
+        =t('activerecord.attributes.travel.country_id')
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for travel in @travels
+      %tr{ :class => cycle(:odd, :even) }
+        %td= travel.name
+        %td= travel.overview
+        %td= travel.advantages
+        %td= travel.price
+        %td= travel.days
+        %td= travel.departures
+        %td= travel.maxgroupsize
+        %td= travel.travel_map
+        %td= travel.notes
+        %td= travel.country_id
+        %td= link_to t('show'), travel
+        %td= link_to t('edit'), edit_travel_path(travel)
+        %td= link_to t('destroy'), travel, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('travel.new'), new_travel_path

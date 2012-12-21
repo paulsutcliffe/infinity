@@ -1,0 +1,23 @@
+%h1 
+  =t('carts.index.title')
+
+%table
+  %thead
+    %tr
+      %th 
+        =t('activerecord.attributes.cart.quantity')
+      %th 
+        =t('activerecord.attributes.cart.travel_id')
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for cart in @carts
+      %tr{ :class => cycle(:odd, :even) }
+        %td= cart.quantity
+        %td= cart.travel_id
+        %td= link_to t('show'), cart
+        %td= link_to t('edit'), edit_cart_path(cart)
+        %td= link_to t('destroy'), cart, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('cart.new'), new_cart_path

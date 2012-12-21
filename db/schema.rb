@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121219062551) do
+ActiveRecord::Schema.define(:version => 20121221032728) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -82,6 +82,21 @@ ActiveRecord::Schema.define(:version => 20121219062551) do
     t.string   "slide_content_type"
     t.integer  "slide_file_size"
     t.datetime "slide_updated_at"
+  end
+
+  create_table "travels", :force => true do |t|
+    t.string   "name"
+    t.text     "overview"
+    t.text     "advantages"
+    t.string   "price"
+    t.integer  "days"
+    t.integer  "departures"
+    t.integer  "maxgroupsize"
+    t.text     "travel_map"
+    t.text     "notes"
+    t.integer  "country_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|

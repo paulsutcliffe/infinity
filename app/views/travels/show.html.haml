@@ -1,0 +1,32 @@
+%p
+  %strong t('activerecord.attributes.travel.name')
+  = @travel.name
+%p
+  %strong t('activerecord.attributes.travel.overview')
+  = @travel.overview
+%p
+  %strong t('activerecord.attributes.travel.advantages')
+  = @travel.advantages
+%p
+  %strong t('activerecord.attributes.travel.price')
+  = @travel.price
+%p
+  %strong t('activerecord.attributes.travel.days')
+  = @travel.days
+%p
+  %strong t('activerecord.attributes.travel.departures')
+  = @travel.departures
+%p
+  %strong t('activerecord.attributes.travel.maxgroupsize')
+  = @travel.maxgroupsize
+%p
+  %strong t('activerecord.attributes.travel.travel_map')
+  = @travel.travel_map
+%p
+  %strong t('activerecord.attributes.travel.notes')
+  = @travel.notes
+%p
+  %strong t('activerecord.attributes.travel.country_id')
+  = @travel.country_id
+
+== #{ link_to t('edit'), edit_travel_path(@travel) } | #{ link_to t('back'), travels_path }

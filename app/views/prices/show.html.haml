@@ -1,0 +1,29 @@
+%p
+  %strong t('activerecord.attributes.price.class')
+  = @price.class
+%p
+  %strong t('activerecord.attributes.price.price')
+  = @price.price
+%p
+  %strong t('activerecord.attributes.price.single')
+  = @price.single
+%p
+  %strong t('activerecord.attributes.price.internal_air')
+  = @price.internal_air
+%p
+  %strong t('activerecord.attributes.price.available')
+  = @price.available
+%p
+  %strong t('activerecord.attributes.price.start_date')
+  = @price.start_date
+%p
+  %strong t('activerecord.attributes.price.due_date')
+  = @price.due_date
+%p
+  %strong t('activerecord.attributes.price.party')
+  = @price.party
+%p
+  %strong t('activerecord.attributes.price.travel_id')
+  = @price.travel_id
+
+== #{ link_to t('edit'), edit_price_path(@price) } | #{ link_to t('back'), prices_path }

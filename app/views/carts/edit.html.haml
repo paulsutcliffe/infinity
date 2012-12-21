@@ -1,0 +1,6 @@
+%h1
+  = t('cart.edit.title')
+
+= render 'form'
+
+== #{ link_to t('show'), @cart } | #{ link_to t('back'), carts_path }

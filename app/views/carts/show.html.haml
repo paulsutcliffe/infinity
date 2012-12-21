@@ -1,0 +1,8 @@
+%p
+  %strong t('activerecord.attributes.cart.quantity')
+  = @cart.quantity
+%p
+  %strong t('activerecord.attributes.cart.travel_id')
+  = @cart.travel_id
+
+== #{ link_to t('edit'), edit_cart_path(@cart) } | #{ link_to t('back'), carts_path }
