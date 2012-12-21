@@ -1,0 +1,26 @@
+%p
+  %strong t('activerecord.attributes.country.name')
+  = @country.name
+%p
+  %strong t('activerecord.attributes.country.time_zone')
+  = @country.time_zone
+%p
+  %strong t('activerecord.attributes.country.weather')
+  = @country.weather
+%p
+  %strong t('activerecord.attributes.country.voltage')
+  = @country.voltage
+%p
+  %strong t('activerecord.attributes.country.currency')
+  = @country.currency
+%p
+  %strong t('activerecord.attributes.country.description')
+  = @country.description
+%p
+  %strong t('activerecord.attributes.country.image_map')
+  = @country.image_map
+%p
+  %strong t('activerecord.attributes.country.destination_id')
+  = @country.destination_id
+
+== #{ link_to t('edit'), edit_country_path(@country) } | #{ link_to t('back'), countries_path }

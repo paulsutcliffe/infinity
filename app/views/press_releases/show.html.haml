@@ -1,0 +1,5 @@
+%p
+  %strong t('activerecord.attributes.press_release.title')
+  = @press_release.title
+
+== #{ link_to t('edit'), edit_press_release_path(@press_release) } | #{ link_to t('back'), press_releases_path }

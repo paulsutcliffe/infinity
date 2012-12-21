@@ -1,4 +1,12 @@
 Infinity::Application.routes.draw do
+  resources :country_pictures
+
+  resources :countries
+
+  resources :destination_pictures
+
+  resources :press_releases
+
   resources :carts
 
   resources :prices

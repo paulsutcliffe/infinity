@@ -1,0 +1,17 @@
+%p
+  %strong t('activerecord.attributes.country_picture.country_picture_file_name')
+  = @country_picture.country_picture_file_name
+%p
+  %strong t('activerecord.attributes.country_picture.country_picture_content_type')
+  = @country_picture.country_picture_content_type
+%p
+  %strong t('activerecord.attributes.country_picture.country_picture_file_size')
+  = @country_picture.country_picture_file_size
+%p
+  %strong t('activerecord.attributes.country_picture.country_picture_updated_at')
+  = @country_picture.country_picture_updated_at
+%p
+  %strong t('activerecord.attributes.country_picture.country_id')
+  = @country_picture.country_id
+
+== #{ link_to t('edit'), edit_country_picture_path(@country_picture) } | #{ link_to t('back'), country_pictures_path }

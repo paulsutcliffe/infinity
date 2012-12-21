@@ -1,0 +1,2 @@
+module DestinationPicturesHelper
+end

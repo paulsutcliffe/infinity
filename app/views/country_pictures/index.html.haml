@@ -1,0 +1,32 @@
+%h1 
+  =t('country_pictures.index.title')
+
+%table
+  %thead
+    %tr
+      %th 
+        =t('activerecord.attributes.country_picture.country_picture_file_name')
+      %th 
+        =t('activerecord.attributes.country_picture.country_picture_content_type')
+      %th 
+        =t('activerecord.attributes.country_picture.country_picture_file_size')
+      %th 
+        =t('activerecord.attributes.country_picture.country_picture_updated_at')
+      %th 
+        =t('activerecord.attributes.country_picture.country_id')
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for country_picture in @country_pictures
+      %tr{ :class => cycle(:odd, :even) }
+        %td= country_picture.country_picture_file_name
+        %td= country_picture.country_picture_content_type
+        %td= country_picture.country_picture_file_size
+        %td= country_picture.country_picture_updated_at
+        %td= country_picture.country_id
+        %td= link_to t('show'), country_picture
+        %td= link_to t('edit'), edit_country_picture_path(country_picture)
+        %td= link_to t('destroy'), country_picture, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('country_picture.new'), new_country_picture_path

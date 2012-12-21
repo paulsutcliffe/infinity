@@ -1,0 +1,17 @@
+%p
+  %strong t('activerecord.attributes.destination_picture.destination_picture_file_name')
+  = @destination_picture.destination_picture_file_name
+%p
+  %strong t('activerecord.attributes.destination_picture.destination_picture_content_type')
+  = @destination_picture.destination_picture_content_type
+%p
+  %strong t('activerecord.attributes.destination_picture.destination_picture_file_size')
+  = @destination_picture.destination_picture_file_size
+%p
+  %strong t('activerecord.attributes.destination_picture.destination_picture_updated_at')
+  = @destination_picture.destination_picture_updated_at
+%p
+  %strong t('activerecord.attributes.destination_picture.destination_id')
+  = @destination_picture.destination_id
+
+== #{ link_to t('edit'), edit_destination_picture_path(@destination_picture) } | #{ link_to t('back'), destination_pictures_path }

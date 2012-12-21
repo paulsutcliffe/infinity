@@ -1,0 +1,2 @@
+module CountryPicturesHelper
+end
