@@ -14,7 +14,7 @@
         %span
           = I18n.t('about.history')  
     %li
-      = link_to_unless_current I18n.t('about.prices'), '#' do
+      = link_to_unless_current I18n.t('about.prices'), prices_abouts_path do
         %span
           = I18n.t('about.prices')  
     %li
@@ -22,10 +22,10 @@
         %span
           = I18n.t('about.global')  
     %li
-      = link_to_unless_current I18n.t('about.staff'), '#' do
+      = link_to_unless_current I18n.t('about.staff'), know_our_staff_abouts_path do
         %span
           = I18n.t('about.staff')  
     %li
-      = link_to_unless_current I18n.t('about.work'), '#' do
+      = link_to_unless_current I18n.t('about.work'), work_with_us_abouts_path do
         %span
           = I18n.t('about.work')  

@@ -11,7 +11,34 @@ Gretel::Crumbs.layout do
   crumb :about do
     link I18n.t('abouts.index'), abouts_path
   end
-  
+
+  crumb :about_history do |about|
+    link I18n.t('about.history'), history_abouts_path
+    parent :about, about
+  end
+
+  crumb :about_prices do |about|
+    link I18n.t('about.prices'), prices_abouts_path
+    parent :about, about
+  end
+
+  crumb :about_global do |about|
+    link I18n.t('about.global'), global_proyection_abouts_path
+    parent :about, about
+  end
+
+  crumb :about_staff do |about|
+    link I18n.t('about.staff'), know_our_staff_abouts_path
+    parent :about, about 
+  end
+
+  crumb :about_work do |about|
+    link I18n.t('about.work'), work_with_us_abouts_path
+    parent :about, about 
+  end
+
+
+ 
   # crumb :project do |project|
   #   link lambda { |project| "#{project.name} (#{project.id.to_s})" }, project_path(project)
   #   parent :projects
