@@ -1,4 +1,10 @@
 Infinity::Application.routes.draw do
+
+
+  scope() do
+    resources :abouts, :path => "nosotros"
+  end
+
   resources :country_pictures
 
   resources :countries

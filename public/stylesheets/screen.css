@@ -213,13 +213,13 @@ ul li .partner {
   border-bottom: 5px solid #3b3b3d;
   margin-bottom: 5px;
 }
-/* line 172, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 173, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li {
   width: 100%;
   padding: 0;
   margin-bottom: 15px;
 }
-/* line 176, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 177, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li:before {
   width: 10px;
   height: 10px;
@@ -241,11 +241,11 @@ ul.default-list li:before {
 ul.default-list li:before {
   *display: inline;
 }
-/* line 181, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 182, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li a, ul.default-list li span {
   font-size: 18px;
 }
-/* line 184, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 185, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li span {
   font-weight: bold;
 }
@@ -309,7 +309,7 @@ ul.default-list li span {
 #content .video {
   margin: 0 0 50px 0;
 }
-/* line 98, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 99, ../../app/assets/stylesheets/partials/_mixins.scss */
 #content .infinity-description:after,
 #content .noticia:after,
 #content .promotion-package:after,
@@ -321,7 +321,7 @@ ul.default-list li span {
   visibility: hidden;
   height: 0;
 }
-/* line 101, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 102, ../../app/assets/stylesheets/partials/_mixins.scss */
 #content .infinity-description:after,
 #content .noticia:after,
 #content .promotion-package:after,
@@ -354,7 +354,7 @@ ul.default-list li span {
   margin-right: 3px;
   padding: 10px;
 }
-/* line 98, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 99, ../../app/assets/stylesheets/partials/_mixins.scss */
 #sidebar-first section:after, #sidebar-first nav:after {
   content: ".";
   display: block;
@@ -363,7 +363,7 @@ ul.default-list li span {
   visibility: hidden;
   height: 0;
 }
-/* line 101, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 102, ../../app/assets/stylesheets/partials/_mixins.scss */
 #sidebar-first section:after, #sidebar-first nav:after {
   *zoom: 1;
 }
@@ -404,13 +404,13 @@ ul.default-list li span {
   box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
   width: 230px;
 }
-/* line 172, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 173, ../../app/assets/stylesheets/partials/_mixins.scss */
 #destinations.index #sidebar-first .navegate-by li, #destinations.show #sidebar-first .navegate-by li, #work-with-us.index #sidebar-first .navegate-by li, .login #sidebar-first .navegate-by li {
   width: 100%;
   padding: 0;
   margin-bottom: 15px;
 }
-/* line 176, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 177, ../../app/assets/stylesheets/partials/_mixins.scss */
 #destinations.index #sidebar-first .navegate-by li:before, #destinations.show #sidebar-first .navegate-by li:before, #work-with-us.index #sidebar-first .navegate-by li:before, .login #sidebar-first .navegate-by li:before {
   width: 10px;
   height: 10px;
@@ -432,11 +432,11 @@ ul.default-list li span {
 #destinations.index #sidebar-first .navegate-by li:before, #destinations.show #sidebar-first .navegate-by li:before, #work-with-us.index #sidebar-first .navegate-by li:before, .login #sidebar-first .navegate-by li:before {
   *display: inline;
 }
-/* line 181, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 182, ../../app/assets/stylesheets/partials/_mixins.scss */
 #destinations.index #sidebar-first .navegate-by li a, #destinations.index #sidebar-first .navegate-by li span, #destinations.show #sidebar-first .navegate-by li a, #destinations.show #sidebar-first .navegate-by li span, #work-with-us.index #sidebar-first .navegate-by li a, #work-with-us.index #sidebar-first .navegate-by li span, .login #sidebar-first .navegate-by li a, .login #sidebar-first .navegate-by li span {
   font-size: 18px;
 }
-/* line 184, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 185, ../../app/assets/stylesheets/partials/_mixins.scss */
 #destinations.index #sidebar-first .navegate-by li span, #destinations.show #sidebar-first .navegate-by li span, #work-with-us.index #sidebar-first .navegate-by li span, .login #sidebar-first .navegate-by li span {
   font-weight: bold;
 }
@@ -710,6 +710,7 @@ h1.page-title {
   font-size: 32px;
   font-weight: lighter;
   border-bottom: 1px solid tint(#3b3b3d, 70%);
+  border-bottom: 1px solid #C4C4C4;
   padding-bottom: 10px;
 }
 
@@ -770,22 +771,22 @@ header nav li:last-child, footer nav li:last-child {
 header nav li.last, footer nav li.last {
   padding-right: 0;
 }
-/* line 33, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 34, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul, footer nav ul {
   width: 102%;
   position: relative;
 }
-/* line 37, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 38, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul li a, header nav ul li span, footer nav ul li a, footer nav ul li span {
   padding: 10px 31px;
   display: block;
   font-size: 18px;
 }
-/* line 43, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 44, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul li.backLava, footer nav ul li.backLava {
   border-bottom: 5px solid #3b3b3d;
 }
-/* line 47, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 48, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul li.last a, footer nav ul li.last a {
   padding-right: 39px;
 }
@@ -897,7 +898,7 @@ APARIENCIA
   overflow-x: hidden;
 }
 /* line 270, ../../app/assets/stylesheets/partials/_layout.scss */
-#destinations #content, .login #content {
+.not-front.sidebar-first #content, #destinations #content, .login #content {
   display: inline;
   float: left;
   margin-right: 10px;
@@ -905,7 +906,7 @@ APARIENCIA
   margin-right: 0;
 }
 /* line 147, ../../../../../.rvm/gems/ruby-1.8.7-p352/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #destinations #content, * html .login #content {
+* html .not-front.sidebar-first #content, * html #destinations #content, * html .login #content {
   overflow-x: hidden;
 }
 /* line 275, ../../app/assets/stylesheets/partials/_layout.scss */
@@ -935,8 +936,8 @@ APARIENCIA
 * html #sidebar-first {
   overflow-x: hidden;
 }
-/* line 291, ../../app/assets/stylesheets/partials/_layout.scss */
-#destinations.index #sidebar-first, #destinations.show #sidebar-first, #work-with-us.index #sidebar-first, .login #sidebar-first {
+/* line 292, ../../app/assets/stylesheets/partials/_layout.scss */
+.not-front.sidebar-first #sidebar-first, #destinations.index #sidebar-first, #destinations.show #sidebar-first, #work-with-us.index #sidebar-first, .login #sidebar-first {
   float: left;
   display: inline;
   float: left;
@@ -947,15 +948,15 @@ APARIENCIA
   margin-right: 0;
 }
 /* line 147, ../../../../../.rvm/gems/ruby-1.8.7-p352/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #destinations.index #sidebar-first, * html #destinations.show #sidebar-first, * html #work-with-us.index #sidebar-first, * html .login #sidebar-first {
+* html .not-front.sidebar-first #sidebar-first, * html #destinations.index #sidebar-first, * html #destinations.show #sidebar-first, * html #work-with-us.index #sidebar-first, * html .login #sidebar-first {
   overflow-x: hidden;
 }
-/* line 297, ../../app/assets/stylesheets/partials/_layout.scss */
-#destinations.index #sidebar-first nav, #destinations.show #sidebar-first nav, #work-with-us.index #sidebar-first nav, .login #sidebar-first nav {
+/* line 298, ../../app/assets/stylesheets/partials/_layout.scss */
+.not-front.sidebar-first #sidebar-first nav, #destinations.index #sidebar-first nav, #destinations.show #sidebar-first nav, #work-with-us.index #sidebar-first nav, .login #sidebar-first nav {
   width: 230px;
 }
 
-/* line 303, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 304, ../../app/assets/stylesheets/partials/_layout.scss */
 #sidebar-second {
   float: right;
 }
@@ -964,7 +965,7 @@ APARIENCIA
 ======================================================= */
 /* Botones
 ======================================================= */
-/* line 315, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 316, ../../app/assets/stylesheets/partials/_layout.scss */
 a.button, #preface-top .royalSlider a.royalCaptionItem {
   background: #67cddc;
   color: #3b3b3d;
@@ -979,7 +980,7 @@ a.button, #preface-top .royalSlider a.royalCaptionItem {
   line-height: 115%;
 }
 
-/* line 318, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 319, ../../app/assets/stylesheets/partials/_layout.scss */
 a.button_ {
   background: #3b3b3d;
   color: white;
@@ -994,7 +995,7 @@ a.button_ {
   line-height: 115%;
 }
 
-/* line 322, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 323, ../../app/assets/stylesheets/partials/_layout.scss */
 button, .actions input {
   background: #3b3b3d;
   color: white;
@@ -1009,14 +1010,14 @@ button, .actions input {
   line-height: 115%;
 }
 
-/* line 327, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 328, ../../app/assets/stylesheets/partials/_layout.scss */
 .breadcrumbs {
   font-size: 14px;
 }
 
 /* Párrafos después de los títulos de página
 ======================================================= */
-/* line 334, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 335, ../../app/assets/stylesheets/partials/_layout.scss */
 h1.page-title + p {
   margin: 20px 0 50px;
   padding: 0 0 50px 0;
@@ -1024,7 +1025,7 @@ h1.page-title + p {
   background-position: 50% 100%;
 }
 
-/* line 340, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 341, ../../app/assets/stylesheets/partials/_layout.scss */
 .field.field-map,
 .field.field-link,
 .field.field-content {
@@ -1032,21 +1033,21 @@ h1.page-title + p {
   float: left;
   clear: left;
 }
-/* line 342, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 343, ../../app/assets/stylesheets/partials/_layout.scss */
 #destinations.show .field.field-map, #destinations.show
 .field.field-link, #destinations.show
 .field.field-content {
   width: auto;
 }
 
-/* line 347, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 348, ../../app/assets/stylesheets/partials/_layout.scss */
 #slider-destinations {
   background: url(../images/backgrounds/bevel-cyan-small.jpg) no-repeat 50% 0 white;
   background-position: 50% 100%;
   padding-bottom: 60px;
 }
 
-/* line 359, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 360, ../../app/assets/stylesheets/partials/_layout.scss */
 #content .content {
   width: 100%;
   float: left;
@@ -1055,18 +1056,18 @@ h1.page-title + p {
 
 /* Estilos slider
 ======================================================= */
-/* line 368, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 369, ../../app/assets/stylesheets/partials/_layout.scss */
 #preface-top .royalSlider {
   width: 950px;
   height: 250px;
 }
 
-/* line 369, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 370, ../../app/assets/stylesheets/partials/_layout.scss */
 .rsOverflow {
   position: relative;
 }
 
-/* line 370, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 371, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsABlock {
   position: absolute;
   top: 5px;
@@ -1074,23 +1075,23 @@ body .rsABlock {
   right: 35px;
 }
 
-/* line 371, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 372, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsPreloader {
   background-image: url(/javascripts/libs/royal-slider-9.2/preloaders/preloader-white.gif);
 }
 
-/* line 372, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 373, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsCloseVideoIcn {
   background: url("/javascripts/libs/royal-slider-9.2/rs-default.png") -64px 0;
 }
 
-/* line 373, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 374, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom.partners ul.slider {
   width: 950px;
   height: 80px;
 }
 
-/* line 374, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 375, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom .rsABlock {
   position: absolute;
   top: 5px;

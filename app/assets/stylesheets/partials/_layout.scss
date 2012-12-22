@@ -265,7 +265,7 @@ APARIENCIA
   @include column(16);
   float:left;
 
-
+  .not-front.sidebar-first &,
   #destinations &,
   .login & {
     @include column(17);
@@ -285,6 +285,7 @@ APARIENCIA
   float:right;
   margin-right:0;
 
+  .not-front.sidebar-first &,
   #destinations.index &,
   #destinations.show &,
   #work-with-us.index &,

@@ -38,6 +38,7 @@ gem "page_title_helper"
 gem "sitemap_generator"
 gem 'rdoc'
 gem "rake", "~>0.9.2"
+gem 'gretel'
 
 group :test do
   gem 'cucumber-rails'

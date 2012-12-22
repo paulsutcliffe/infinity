@@ -21,6 +21,9 @@ en:
   back: Back
   logout: Logout
 
+  home:
+    index: Home
+
   slides:
     index: Slides
   slide:
@@ -40,3 +43,7 @@ en:
     index: News
   post:
     new: New New
+
+  abouts:
+    index: About Us
+    title: Diferénciate con Infinity
