@@ -1,6 +1,8 @@
 Infinity::Application.routes.draw do
 
 
+  resources :testimonies
+
   scope() do
     resources :abouts, :path => 'about-us' do
       match 'about-us/history' => "about-us#history"

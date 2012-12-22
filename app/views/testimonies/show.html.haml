@@ -1,0 +1,8 @@
+%p
+  %strong t('activerecord.attributes.testimony.name')
+  = @testimony.name
+%p
+  %strong t('activerecord.attributes.testimony.description')
+  = @testimony.description
+
+== #{ link_to t('edit'), edit_testimony_path(@testimony) } | #{ link_to t('back'), testimonies_path }

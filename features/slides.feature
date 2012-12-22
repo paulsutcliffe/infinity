@@ -1,6 +1,6 @@
 #language: es
 
-Característica: adminstrar los slides
+Característica: administrar los slides
 
 @admin
 Escenario: Crear un Slide

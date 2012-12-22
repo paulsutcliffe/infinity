@@ -54,3 +54,9 @@ en:
     global: Global Proyection
     staff: Know our Members
     work: Work with Us
+
+  testimonies:
+    index: Testimonies
+
+  testimony:
+    new: New Testimony

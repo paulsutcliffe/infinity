@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121222023158) do
+ActiveRecord::Schema.define(:version => 20121222052324) do
 
   create_table "abouts", :force => true do |t|
     t.datetime "created_at"
@@ -153,6 +153,17 @@ ActiveRecord::Schema.define(:version => 20121222023158) do
     t.string   "slide_content_type"
     t.integer  "slide_file_size"
     t.datetime "slide_updated_at"
+  end
+
+  create_table "testimonies", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "testimony_picture_file_name"
+    t.string   "testimony_picture_content_type"
+    t.integer  "testimony_picture_file_size"
+    t.datetime "testimony_picture_updated_at"
   end
 
   create_table "travels", :force => true do |t|
