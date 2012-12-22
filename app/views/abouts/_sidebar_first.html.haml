@@ -10,12 +10,22 @@
         %span
           = I18n.t('abouts.index')  
     %li
-      = link_to I18n.t('about.history'), '#'
+      = link_to_unless_current I18n.t('about.history'), history_abouts_path do
+        %span
+          = I18n.t('about.history')  
     %li
-      = link_to I18n.t('about.prices'), '#'
+      = link_to_unless_current I18n.t('about.prices'), '#' do
+        %span
+          = I18n.t('about.prices')  
     %li
-      = link_to I18n.t('about.global'), '#'
+      = link_to_unless_current I18n.t('about.global'), global_proyection_abouts_path do
+        %span
+          = I18n.t('about.global')  
     %li
-      = link_to I18n.t('about.staff'), '#'
+      = link_to_unless_current I18n.t('about.staff'), '#' do
+        %span
+          = I18n.t('about.staff')  
     %li
-      = link_to I18n.t('about.work'), '#'
+      = link_to_unless_current I18n.t('about.work'), '#' do
+        %span
+          = I18n.t('about.work')  

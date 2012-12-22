@@ -4,10 +4,14 @@ Infinity::Application.routes.draw do
   resources :testimonies
 
   scope() do
-    resources :abouts, :path => 'about-us' do
-      match 'about-us/history' => "about-us#history"
+    resources :abouts, :path => I18n.t('abouts.url') do
+      get 'history' => "abouts#history", :on => :collection
+      get 'global_proyection' => "abouts#global_proyection", :on => :collection
     end
   end
+
+
+  
 
   resources :abouts
   resources :country_pictures

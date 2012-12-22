@@ -8,7 +8,7 @@ Gretel::Crumbs.layout do
     link I18n.t('homes.index'), root_path
   end
 
-  crumb :nosotros do
+  crumb :about do
     link I18n.t('abouts.index'), abouts_path
   end
   
