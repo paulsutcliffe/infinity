@@ -21,7 +21,7 @@ en:
   back: Back
   logout: Logout
 
-  home:
+  homes:
     index: Home
 
   slides:
@@ -46,4 +46,11 @@ en:
 
   abouts:
     index: About Us
-    title: Diferénciate con Infinity
+    url: about-us
+    title: Make the difference with Infinity
+  about:
+    history: History
+    prices: Prices
+    global: Global Proyection
+    staff: Know our Members
+    work: Work with Us

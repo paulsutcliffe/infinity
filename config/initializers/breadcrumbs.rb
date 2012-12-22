@@ -5,16 +5,12 @@ Gretel::Crumbs.layout do
   # Example crumbs:
   
   crumb :root do
-    link I18n.t('home.index'), root_path
+    link I18n.t('homes.index'), root_path
   end
 
   crumb :nosotros do
-    link "Nosotros", abouts_path
+    link I18n.t('abouts.index'), abouts_path
   end
-  
-  # crumb :projects do
-  #   link "Projects", projects_path
-  # end
   
   # crumb :project do |project|
   #   link lambda { |project| "#{project.name} (#{project.id.to_s})" }, project_path(project)

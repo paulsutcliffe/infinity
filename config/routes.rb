@@ -2,9 +2,12 @@ Infinity::Application.routes.draw do
 
 
   scope() do
-    resources :abouts, :path => "nosotros"
+    resources :abouts, :path => 'about-us' do
+      match 'about-us/history' => "about-us#history"
+    end
   end
 
+  resources :abouts
   resources :country_pictures
 
   resources :countries

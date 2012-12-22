@@ -213,13 +213,13 @@ ul li .partner {
   border-bottom: 5px solid #3b3b3d;
   margin-bottom: 5px;
 }
-/* line 173, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 178, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li {
   width: 100%;
   padding: 0;
   margin-bottom: 15px;
 }
-/* line 177, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 182, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li:before {
   width: 10px;
   height: 10px;
@@ -241,11 +241,11 @@ ul.default-list li:before {
 ul.default-list li:before {
   *display: inline;
 }
-/* line 182, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 187, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li a, ul.default-list li span {
   font-size: 18px;
 }
-/* line 185, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 190, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li span {
   font-weight: bold;
 }
@@ -309,7 +309,7 @@ ul.default-list li span {
 #content .video {
   margin: 0 0 50px 0;
 }
-/* line 99, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 100, ../../app/assets/stylesheets/partials/_mixins.scss */
 #content .infinity-description:after,
 #content .noticia:after,
 #content .promotion-package:after,
@@ -321,7 +321,7 @@ ul.default-list li span {
   visibility: hidden;
   height: 0;
 }
-/* line 102, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 103, ../../app/assets/stylesheets/partials/_mixins.scss */
 #content .infinity-description:after,
 #content .noticia:after,
 #content .promotion-package:after,
@@ -354,7 +354,7 @@ ul.default-list li span {
   margin-right: 3px;
   padding: 10px;
 }
-/* line 99, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 100, ../../app/assets/stylesheets/partials/_mixins.scss */
 #sidebar-first section:after, #sidebar-first nav:after {
   content: ".";
   display: block;
@@ -363,7 +363,7 @@ ul.default-list li span {
   visibility: hidden;
   height: 0;
 }
-/* line 102, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 103, ../../app/assets/stylesheets/partials/_mixins.scss */
 #sidebar-first section:after, #sidebar-first nav:after {
   *zoom: 1;
 }
@@ -372,6 +372,10 @@ ul.default-list li span {
   -webkit-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
   -moz-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
   box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
+  -moz-box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
+  -webkit-box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
+  -o-box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
+  box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
 }
 /* line 49, ../../app/assets/stylesheets/partials/_blocks.scss */
 #sidebar-first .contact-us .attention-number {
@@ -387,9 +391,13 @@ ul.default-list li span {
   -webkit-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
   -moz-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
   box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
+  -moz-box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
+  -webkit-box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
+  -o-box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
+  box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
 }
-/* line 68, ../../app/assets/stylesheets/partials/_blocks.scss */
-#destinations.index #sidebar-first nav, #destinations.index #sidebar-first section, #destinations.show #sidebar-first nav, #destinations.show #sidebar-first section, #work-with-us.index #sidebar-first nav, #work-with-us.index #sidebar-first section, .login #sidebar-first nav, .login #sidebar-first section {
+/* line 69, ../../app/assets/stylesheets/partials/_blocks.scss */
+.not-front.sidebar-first #sidebar-first nav, .not-front.sidebar-first #sidebar-first section, #destinations.index #sidebar-first nav, #destinations.index #sidebar-first section, #destinations.show #sidebar-first nav, #destinations.show #sidebar-first section, #work-with-us.index #sidebar-first nav, #work-with-us.index #sidebar-first section, .login #sidebar-first nav, .login #sidebar-first section {
   margin-left: 3px;
   margin-right: 0;
   -moz-box-sizing: border-box;
@@ -397,21 +405,25 @@ ul.default-list li span {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 72, ../../app/assets/stylesheets/partials/_blocks.scss */
-#destinations.index #sidebar-first .navegate-by, #destinations.show #sidebar-first .navegate-by, #work-with-us.index #sidebar-first .navegate-by, .login #sidebar-first .navegate-by {
+/* line 73, ../../app/assets/stylesheets/partials/_blocks.scss */
+.not-front.sidebar-first #sidebar-first .navegate-by, #destinations.index #sidebar-first .navegate-by, #destinations.show #sidebar-first .navegate-by, #work-with-us.index #sidebar-first .navegate-by, .login #sidebar-first .navegate-by {
   -webkit-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
   -moz-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
   box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
+  -moz-box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
+  -webkit-box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
+  -o-box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
+  box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
   width: 230px;
 }
-/* line 173, ../../app/assets/stylesheets/partials/_mixins.scss */
-#destinations.index #sidebar-first .navegate-by li, #destinations.show #sidebar-first .navegate-by li, #work-with-us.index #sidebar-first .navegate-by li, .login #sidebar-first .navegate-by li {
+/* line 178, ../../app/assets/stylesheets/partials/_mixins.scss */
+.not-front.sidebar-first #sidebar-first .navegate-by li, #destinations.index #sidebar-first .navegate-by li, #destinations.show #sidebar-first .navegate-by li, #work-with-us.index #sidebar-first .navegate-by li, .login #sidebar-first .navegate-by li {
   width: 100%;
   padding: 0;
   margin-bottom: 15px;
 }
-/* line 177, ../../app/assets/stylesheets/partials/_mixins.scss */
-#destinations.index #sidebar-first .navegate-by li:before, #destinations.show #sidebar-first .navegate-by li:before, #work-with-us.index #sidebar-first .navegate-by li:before, .login #sidebar-first .navegate-by li:before {
+/* line 182, ../../app/assets/stylesheets/partials/_mixins.scss */
+.not-front.sidebar-first #sidebar-first .navegate-by li:before, #destinations.index #sidebar-first .navegate-by li:before, #destinations.show #sidebar-first .navegate-by li:before, #work-with-us.index #sidebar-first .navegate-by li:before, .login #sidebar-first .navegate-by li:before {
   width: 10px;
   height: 10px;
   background: #67cddc;
@@ -429,19 +441,19 @@ ul.default-list li span {
   margin-right: 5px;
 }
 /* line 7, ../../../../../.rvm/gems/ruby-1.8.7-p352/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-#destinations.index #sidebar-first .navegate-by li:before, #destinations.show #sidebar-first .navegate-by li:before, #work-with-us.index #sidebar-first .navegate-by li:before, .login #sidebar-first .navegate-by li:before {
+.not-front.sidebar-first #sidebar-first .navegate-by li:before, #destinations.index #sidebar-first .navegate-by li:before, #destinations.show #sidebar-first .navegate-by li:before, #work-with-us.index #sidebar-first .navegate-by li:before, .login #sidebar-first .navegate-by li:before {
   *display: inline;
 }
-/* line 182, ../../app/assets/stylesheets/partials/_mixins.scss */
-#destinations.index #sidebar-first .navegate-by li a, #destinations.index #sidebar-first .navegate-by li span, #destinations.show #sidebar-first .navegate-by li a, #destinations.show #sidebar-first .navegate-by li span, #work-with-us.index #sidebar-first .navegate-by li a, #work-with-us.index #sidebar-first .navegate-by li span, .login #sidebar-first .navegate-by li a, .login #sidebar-first .navegate-by li span {
+/* line 187, ../../app/assets/stylesheets/partials/_mixins.scss */
+.not-front.sidebar-first #sidebar-first .navegate-by li a, .not-front.sidebar-first #sidebar-first .navegate-by li span, #destinations.index #sidebar-first .navegate-by li a, #destinations.index #sidebar-first .navegate-by li span, #destinations.show #sidebar-first .navegate-by li a, #destinations.show #sidebar-first .navegate-by li span, #work-with-us.index #sidebar-first .navegate-by li a, #work-with-us.index #sidebar-first .navegate-by li span, .login #sidebar-first .navegate-by li a, .login #sidebar-first .navegate-by li span {
   font-size: 18px;
 }
-/* line 185, ../../app/assets/stylesheets/partials/_mixins.scss */
-#destinations.index #sidebar-first .navegate-by li span, #destinations.show #sidebar-first .navegate-by li span, #work-with-us.index #sidebar-first .navegate-by li span, .login #sidebar-first .navegate-by li span {
+/* line 190, ../../app/assets/stylesheets/partials/_mixins.scss */
+.not-front.sidebar-first #sidebar-first .navegate-by li span, #destinations.index #sidebar-first .navegate-by li span, #destinations.show #sidebar-first .navegate-by li span, #work-with-us.index #sidebar-first .navegate-by li span, .login #sidebar-first .navegate-by li span {
   font-weight: bold;
 }
-/* line 77, ../../app/assets/stylesheets/partials/_blocks.scss */
-#destinations.index #sidebar-first b, #destinations.show #sidebar-first b, #work-with-us.index #sidebar-first b, .login #sidebar-first b {
+/* line 78, ../../app/assets/stylesheets/partials/_blocks.scss */
+.not-front.sidebar-first #sidebar-first b, #destinations.index #sidebar-first b, #destinations.show #sidebar-first b, #work-with-us.index #sidebar-first b, .login #sidebar-first b {
   font-weight: bold;
   margin-bottom: 15px;
   display: block;
@@ -696,6 +708,7 @@ h1.page-title, h2.title {
   font-size: 24px;
   font-weight: lighter;
   border-bottom: 1px solid tint(#3b3b3d, 70%);
+  border-bottom: 1px solid #c4c4c4;
   padding-bottom: 10px;
   margin: 0 0 10px;
 }
@@ -710,7 +723,7 @@ h1.page-title {
   font-size: 32px;
   font-weight: lighter;
   border-bottom: 1px solid tint(#3b3b3d, 70%);
-  border-bottom: 1px solid #C4C4C4;
+  border-bottom: 1px solid #c4c4c4;
   padding-bottom: 10px;
 }
 
@@ -771,22 +784,22 @@ header nav li:last-child, footer nav li:last-child {
 header nav li.last, footer nav li.last {
   padding-right: 0;
 }
-/* line 34, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 35, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul, footer nav ul {
   width: 102%;
   position: relative;
 }
-/* line 38, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 39, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul li a, header nav ul li span, footer nav ul li a, footer nav ul li span {
   padding: 10px 31px;
   display: block;
   font-size: 18px;
 }
-/* line 44, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 45, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul li.backLava, footer nav ul li.backLava {
   border-bottom: 5px solid #3b3b3d;
 }
-/* line 48, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 49, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul li.last a, footer nav ul li.last a {
   padding-right: 39px;
 }

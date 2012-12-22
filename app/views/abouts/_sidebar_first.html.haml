@@ -6,13 +6,16 @@
     Navegate by
   %ul
     %li
-      %span Account Login
+      = link_to_unless_current I18n.t('abouts.index'), abouts_path do
+        %span
+          = I18n.t('abouts.index')  
     %li
-      = link_to 'Travel Agent Registration', '#'
+      = link_to I18n.t('about.history'), '#'
     %li
-      = link_to 'Traveller Registration', '#'
+      = link_to I18n.t('about.prices'), '#'
     %li
-      = link_to 'Personal Information Forms', '#'
+      = link_to I18n.t('about.global'), '#'
     %li
-      = link_to 'Guest Comments', '#'
-
+      = link_to I18n.t('about.staff'), '#'
+    %li
+      = link_to I18n.t('about.work'), '#'

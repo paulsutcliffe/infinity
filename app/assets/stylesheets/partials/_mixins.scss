@@ -4,7 +4,7 @@
   font-size:$font-size-page-heading;
   font-weight: lighter;
   border-bottom: 1px solid tint($primary-color-text, $tint-low);
-  border-bottom: 1px solid #C4C4C4;
+  border-bottom: 1px solid $gray;
   padding-bottom: $space*2;
 }
 
@@ -12,6 +12,7 @@
   font-size:$font-size-heading;
   font-weight: lighter;
   border-bottom: 1px solid tint($primary-color-text, $tint-low);
+  border-bottom: 1px solid $gray;
   padding-bottom: $space*2;
 }
 
@@ -166,6 +167,10 @@
 ======================================================= */
 @mixin sombreado {
   @include box-shadow($color-shadow 1px 1px 5px, $color-shadow -1px -1px 5px);
+  -moz-box-shadow: $gray 1px 1px 5px, $gray -1px -1px 5px;
+  -webkit-box-shadow: $gray 1px 1px 5px, $gray -1px -1px 5px;
+  -o-box-shadow: $gray 1px 1px 5px, $gray -1px -1px 5px;
+  box-shadow: $gray 1px 1px 5px, $gray -1px -1px 5px
 }
 
 
