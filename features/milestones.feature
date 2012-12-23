@@ -39,6 +39,8 @@ Escenario: eliminar hito
   Y no debería ver "Premio a la mejor agencia de viajes"
 
 Escenario: el usuario puede ver los hitos
+  Dado que existe el hito "Premio a la mejor agencia de viajes"
+  Y que estoy en la página inicial
   Cuando hago click en "Milestones"
   Entonces debería ver "Premio a la mejor agencia de viajes"
   Y no debería ver los controles de administración

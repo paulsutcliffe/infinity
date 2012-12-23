@@ -1,8 +1,8 @@
 # language: es
-
+@javascript
 Característica: administrar los testimonios 
 
-@admin
+@admin 
 Escenario: crear un testimonio
   Dado que estoy en la página inicial
   Cuando hago click en "Testimonies"

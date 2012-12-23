@@ -42,7 +42,7 @@ en:
   posts:
     index: News
   post:
-    new: New New
+    new: New Post
 
   abouts:
     index: About Us
@@ -60,3 +60,9 @@ en:
 
   testimony:
     new: New Testimony
+
+  milestones:
+    index: Milestones
+
+  milestone:
+    new: New Milestone

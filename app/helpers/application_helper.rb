@@ -1,6 +1,15 @@
 module ApplicationHelper
 
   # list menu maker
+  def menu_li_footer(current_page, current_controller, current_url)
+    content_tag(:li, :class => 'footer-only') do
+      link_to_unless_current current_page, current_url do
+        content_tag(:span, current_page)
+      end
+    end
+  end
+
+  # list menu maker
   def menu_li(current_page, current_controller, current_url)
     content_tag(:li, :class => lavalamp(current_controller)) do
       link_to_unless_current current_page, current_url do

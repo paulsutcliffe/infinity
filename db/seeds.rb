@@ -30,3 +30,21 @@ Milestone.create(
   :title => 'Avión de Oro 2012',
   :description => 'Galardón otorgado por haber recibido la mayor cantidad de turistas desde distintas partes del mundo.',
   :milestone_picture => File.open(File.join(Rails.root, '/features/support/milestone_picture2.jpg')))
+
+#############################################################################
+# Posts Model
+#############################################################################
+Post.delete_all
+Post.create(
+  :title => 'Feriado largo generará millones por actividad turística',
+  :content => 'Artículo textual de la noticia Feriado largo generará millones por actividad turística',
+  :important => true,
+  :landing_page => true,
+  :posts_picture => File.open(File.join(Rails.root, '/features/support/post_picture.jpg')))
+
+Post.create(
+  :title => 'Se incrementó la taza de los intereses en los peajes de colectivos',
+  :content => 'here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words',
+  :important => false,
+  :landing_page => false,
+  :posts_picture => File.open(File.join(Rails.root, '/features/support/post_picture2.jpg')))
