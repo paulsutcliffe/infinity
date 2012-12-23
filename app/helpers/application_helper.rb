@@ -34,9 +34,14 @@ module ApplicationHelper
  #   "#{simple_format(truncate(post, :length => length))}"
  # end
 
-#  def paragraph(text, length)
-#    "#{sanitize(simple_format(truncate(text, :length => length)), :tags => %w(p i br b))}"
-#  end
+  def paragraph(text)
+    "#{sanitize(simple_format(text), :tags => %w(p i br b))}".html_safe
+  end
+
+  def paragraph_truncate(text, length)
+    "#{sanitize(simple_format(truncate(text, :length => length)), :tags => %w(p i br b))}".html_safe
+  end
+
 #  def paragraph(text, length)
 #    "#{simple_format(truncate(text, :length => length))}"
 #  end

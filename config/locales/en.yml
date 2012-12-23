@@ -49,6 +49,7 @@ en:
     url: about-us
     title: Make the difference with Infinity
   about:
+    edit: Edit About Infinity
     history: History
     prices: Prices
     global: Global Proyection
@@ -66,3 +67,4 @@ en:
 
   milestone:
     new: New Milestone
+

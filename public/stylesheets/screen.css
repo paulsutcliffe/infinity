@@ -1065,7 +1065,7 @@ h1.page-title + p {
 }
 
 /* line 363, ../../app/assets/stylesheets/partials/_layout.scss */
-#content .content {
+#content .not-front .content {
   width: 100%;
   float: left;
   clear: left;

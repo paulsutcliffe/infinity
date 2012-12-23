@@ -11,12 +11,14 @@
 
 #content
   %section.infinity-description
-    %h2.title
-      Luxury travel with Infinity Perú
-    .content
-      %p
-        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-      = image_tag '/images/img-front-main.jpg'
+    - @about_infinity.each do |about_infinity|
+      %h2.title
+        = about_infinity.title_landing_page
+      .content
+        = paragraph(about_infinity.text_landing_page)
+        = image_tag(about_infinity.about_picture(:landing_page))
+      - if current_admin
+        = link_to I18n.t('edit'), edit_about_path(about_infinity)
  
   %section.noticia
     - @last_post.each do |last_post|

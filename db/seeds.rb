@@ -63,3 +63,13 @@ Testimony.create(
   :description => 'La atención fue muy especial.',
   :landing_page => true,
   :testimony_picture => File.open(File.join(Rails.root, '/features/support/testimony_picture2.jpg')))
+
+#############################################################################
+# Abouts Model
+#############################################################################
+About.delete_all
+About.create(
+  :title_landing_page => 'Luxury Travel with Infinity Peru',
+  :text_landing_page => 'Ut facilisis lectus eget erat ullamcorper porta. Integer nec orci dui. Ut ipsum mi, pretium interdum egestas convallis, mattis quis urna. Nam tincidunt quam eget leo tincidunt ultricies. Nullam in nisi purus, at imperdiet est. Duis scelerisque varius imperdiet. Vestibulum purus lectus, pulvinar ut pretium ac',
+  :about_picture => File.new(File.join(Rails.root, '/features/support/about_picture.jpg')))
+

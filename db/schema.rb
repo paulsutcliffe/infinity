@@ -13,6 +13,15 @@
 ActiveRecord::Schema.define(:version => 20121222052324) do
 
   create_table "abouts", :force => true do |t|
+    t.string   "title_landing_page"
+    t.text     "text_landing_page"
+    t.text     "history"
+    t.text     "global_proyection"
+    t.text     "work_with_us"
+    t.string   "about_picture_file_name"
+    t.string   "about_picture_content_type"
+    t.integer  "about_picture_file_size"
+    t.datetime "about_picture_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

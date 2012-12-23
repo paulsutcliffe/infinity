@@ -360,7 +360,7 @@ h1.page-title + p {margin: $space*4 0 $space*10; padding:0 0 $space*10 0; @inclu
 
 
 #content {
-  .content {
+  .not-front .content {
     width: 100%;
     float: left; clear: left;
   }

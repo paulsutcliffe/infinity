@@ -1,11 +1,17 @@
 class AboutsController < InheritedResources::Base
 
 
-  def history
+# http://stackoverflow.com/questions/2139996/ruby-on-rails-redirect-toback
 
-    respond_to do |format|
-      format.html
-      format.xml { render :xml => @clients }
-    end
-  end
+# def edit
+# session[:return_to] = request.referer
+# redirect_to session.delete[:return_to]
+
+# end
+
+# def update
+#  session[:return_to] = request.referer
+#  update! {redirect_to session.delete[:return_to]}
+# end
+
 end

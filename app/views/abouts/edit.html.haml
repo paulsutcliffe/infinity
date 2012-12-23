@@ -1,6 +1,7 @@
-%h1
-  = t('about.edit.title')
+#content
+  %h1.page-title
+    = t('about.edit')
 
-= render 'form'
+  = render 'form'
 
 == #{ link_to t('show'), @about } | #{ link_to t('back'), abouts_path }
