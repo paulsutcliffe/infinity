@@ -47,5 +47,5 @@
       %h3
         = last_testimony.name
       = #paragraph(last_testimony.description, 10)
-      = sanitize(simple_format(truncate(last_testimony.description, :length => 5)), :tags => %w(p i br b))
+      = sanitize(simple_format(truncate(last_testimony.description, :length => 45)), :tags => %w(p i br b))
       = image_tag(last_testimony.testimony_picture(:landing_page))

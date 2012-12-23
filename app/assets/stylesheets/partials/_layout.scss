@@ -204,10 +204,13 @@ nav {
     ul {
       li {
         margin: 0; float:left;
-        a {
+        a, span {
           background:$primary-color-text;
           color: white; font-size: $font-size-small;
           @include padding-x(1, 0,0,0,0)
+        }
+        span {
+         background: $gray;
         }
       }
     }
