@@ -1,5 +1,8 @@
 class AboutsController < InheritedResources::Base
 
+def history
+  @about = About.limit(1)
+end
 
 # http://stackoverflow.com/questions/2139996/ruby-on-rails-redirect-toback
 
