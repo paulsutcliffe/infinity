@@ -158,6 +158,7 @@ ActiveRecord::Schema.define(:version => 20121222052324) do
   create_table "testimonies", :force => true do |t|
     t.string   "name"
     t.text     "description"
+    t.boolean  "landing_page",                   :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "testimony_picture_file_name"

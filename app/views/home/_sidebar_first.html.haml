@@ -43,6 +43,9 @@
   %h2.title
     Testimony
   .content
-    %p
-      Far far away, behind the word mountains, far from the countries Vokalia
-    = image_tag '/images/img-sidebar-front.jpg'
+    - @last_testimony.each do |last_testimony|
+      %h3
+        = last_testimony.name
+      = #paragraph(last_testimony.description, 10)
+      = sanitize(simple_format(truncate(last_testimony.description, :length => 5)), :tags => %w(p i br b))
+      = image_tag(last_testimony.testimony_picture(:landing_page))

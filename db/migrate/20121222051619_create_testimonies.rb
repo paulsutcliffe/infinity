@@ -3,7 +3,7 @@ class CreateTestimonies < ActiveRecord::Migration
     create_table :testimonies do |t|
       t.string :name
       t.text :description
-
+      t.boolean :landing_page, :default => false
       t.timestamps
     end
   end

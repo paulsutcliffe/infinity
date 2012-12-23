@@ -48,3 +48,18 @@ Post.create(
   :important => false,
   :landing_page => false,
   :posts_picture => File.open(File.join(Rails.root, '/features/support/post_picture2.jpg')))
+#############################################################################
+# Testimonies Model
+#############################################################################
+Testimony.delete_all
+Testimony.create(
+  :name => 'Pedro Perez',
+  :description => 'Me brindaron un servicio de maravilla.',
+  :landing_page => false,
+  :testimony_picture => File.open(File.join(Rails.root, '/features/support/testimony_picture.jpg')))
+
+Testimony.create(
+  :name => 'Roberto Contreras',
+  :description => 'La atención fue muy especial.',
+  :landing_page => true,
+  :testimony_picture => File.open(File.join(Rails.root, '/features/support/testimony_picture2.jpg')))

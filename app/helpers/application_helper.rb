@@ -1,5 +1,7 @@
 module ApplicationHelper
 
+# helpers for menu
+#########################################################################
   # list menu maker
   def menu_li_footer(current_page, current_controller, current_url)
     content_tag(:li, :class => 'footer-only') do
@@ -25,19 +27,21 @@ module ApplicationHelper
     end
   end
 
+#########################################################################
 
 
-  def paragraph(post, length)
-    "#{truncate(post.descripcion, :length => length)}"
-  end
+ # def paragraph(post, length)
+ #   "#{simple_format(truncate(post, :length => length))}"
+ # end
 
-  def agregar_clase_segun_tipo(post)
-    "#{post.tipo == 'Diseño y Web'? 'foto' : 'video'}"
-  end
+#  def paragraph(text, length)
+#    "#{sanitize(simple_format(truncate(text, :length => length)), :tags => %w(p i br b))}"
+#  end
+#  def paragraph(text, length)
+#    "#{simple_format(truncate(text, :length => length))}"
+#  end
+#
 
-  def agregar_tipo_como_clase(post)
-    post.tipo.gsub(/ /,"").downcase
-  end
 
 
 
