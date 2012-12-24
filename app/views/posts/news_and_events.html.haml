@@ -1,4 +1,4 @@
-= breadcrumb :posts
+= breadcrumb :posts_news_and_events
 
 #sidebar-first
   = render 'sidebar_first'
@@ -26,6 +26,7 @@
             .admin
               = link_to I18n.t('edit'), edit_post_path(post), :class => 'button edit'
               = link_to I18n.t('destroy'), post, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+
 
 
 

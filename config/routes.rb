@@ -5,12 +5,16 @@ Infinity::Application.routes.draw do
 
   scope() do
     resources :abouts, :path => I18n.t('abouts.url') do
-
       get 'work_with_us'        => "abouts#work", :on => :collection
       get 'history'             => "abouts#history", :on => :collection
       get 'awards'              => "abouts#awards", :on => :collection
       get 'global_proyection'   => "abouts#global_proyection", :on => :collection
       get 'know_our_staff'      => "abouts#staff", :on => :collection
+    end
+
+    resources :posts, :path => I18n.t('posts.url') do
+      get 'news_and_events'   => "posts#news_and_events", :on => :collection
+      get 'press_releases' => "posts#press_releases", :on => :collection
     end
   end
 
@@ -33,7 +37,6 @@ Infinity::Application.routes.draw do
 
   resources :travels
 
-  resources :posts
 
   resources :members
 

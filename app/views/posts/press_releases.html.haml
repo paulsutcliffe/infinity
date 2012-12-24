@@ -1,0 +1,33 @@
+= breadcrumb :posts_press_releases
+
+#sidebar-first
+  = render 'sidebar_first'
+
+#content
+  %h1.page-title
+    = page_title! I18n.t('press_releases.index')
+
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('press_release.new'), new_press_release_path, :class => 'button create'
+
+  .content
+    - for press_release in @press_releases
+      %div{ :class => 'block ' + cycle('odd', 'even') }
+        %h2
+          = press_release.title
+        .content
+          = press_release.content 
+
+        .controls
+          .navigation
+            = link_to I18n.t('show'), press_release, :class => 'button show'
+          - if current_admin
+            .admin
+              = link_to I18n.t('edit'), edit_press_release_path(press_release), :class => 'button edit'
+              = link_to I18n.t('destroy'), press_release, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+
+
+
+
+

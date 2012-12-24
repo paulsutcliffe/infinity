@@ -41,8 +41,15 @@ en:
 
   posts:
     index: News
+    url: news
+    title: News and Events
   post:
     new: New Post
+
+  press_releases:
+    index: Press Releases
+  press_release:
+    new: New Press Release
 
   abouts:
     index: About Us

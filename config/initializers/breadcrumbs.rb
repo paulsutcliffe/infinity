@@ -37,6 +37,20 @@ Gretel::Crumbs.layout do
     parent :about, about 
   end
 
+  # posts
+  crumb :posts do
+    link I18n.t('posts.index'), news_and_events_posts_path
+  end
+
+  crumb :posts_news_and_events do |post|
+    link I18n.t('posts.title'), news_and_events_posts_path
+    parent :posts, post
+  end
+
+  crumb :posts_press_releases do |post|
+    link I18n.t('press_releases.index'), press_releases_posts_path
+    parent :posts, post
+  end
 
  
   # crumb :project do |project|
