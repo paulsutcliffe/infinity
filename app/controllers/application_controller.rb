@@ -1,6 +1,11 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+
+  def slides_in_all_pages
+    @slides = Slide.all
+  end
+
   def bodyid
     @bodyid = params[:controller].parameterize
   end
@@ -35,6 +40,7 @@ class ApplicationController < ActionController::Base
     @bodyclass = @bodyclass + ' ' + @front + ' ' + @admin + ' ' + @user + ' ' + @sidebar
   end
 
+  helper_method :slides_in_all_pages
   helper_method :bodyid
   helper_method :bodyclass
 

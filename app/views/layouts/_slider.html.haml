@@ -2,10 +2,10 @@
 = # render 'layouts/royal_slider'
 = # render 'layouts/royal_slider_init'
 
-#preface-top
+#preface-top.test
   .royalSlider.rsDefault
-    - if @slides
-      - @slides.each do |slide|
+    - if slides_in_all_pages
+      - slides_in_all_pages.each do |slide|
         .rsContent
           = image_tag slide.slide(:full), :class => 'rsImg'
           = link_to 'Ver más', '', :class => 'button rsABlock'
