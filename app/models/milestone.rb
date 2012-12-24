@@ -5,7 +5,7 @@ validates_attachment_content_type :milestone_picture, :content_type => [ 'image/
 validates_attachment_size :milestone_picture, :less_than => 1.megabytes
 
 has_attached_file :milestone_picture, :styles => {
-  :medium => { :geometry => '110#', :quality => 80, :format => 'jpg' } 
+  :thumb => { :geometry => '150x150#', :quality => 80, :format => 'jpg' } 
 }
 
 end

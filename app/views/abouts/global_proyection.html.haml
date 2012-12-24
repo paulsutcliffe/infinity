@@ -7,3 +7,7 @@
 #content
   %h1.page-title
     = I18n.t('about.global')
+  .content
+    - about_infinity.each do |about| 
+      = paragraph(about.global_proyection)
+      = image_tag(about.global_proyection_picture(:default))

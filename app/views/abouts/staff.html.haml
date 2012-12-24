@@ -6,3 +6,18 @@
 #content
   %h1.page-title
     = I18n.t('about.staff')
+  .content
+    .member-portraits
+      - @members.each do |member|
+        = image_tag(member.member_picture(:thumb)) 
+    .member-details
+      - @members.each do |member|
+        .field-member
+          = image_tag(member.member_picture(:default))
+          %h2.title
+            = member.name
+          %h3
+            = member.position
+            = member.email 
+          = paragraph(member.description)
+          

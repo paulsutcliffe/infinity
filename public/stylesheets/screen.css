@@ -213,13 +213,13 @@ ul li .partner {
   border-bottom: 5px solid #3b3b3d;
   margin-bottom: 5px;
 }
-/* line 178, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 179, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li {
   width: 100%;
   padding: 0;
   margin-bottom: 15px;
 }
-/* line 182, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 183, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li:before {
   width: 10px;
   height: 10px;
@@ -241,11 +241,11 @@ ul.default-list li:before {
 ul.default-list li:before {
   *display: inline;
 }
-/* line 187, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 188, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li a, ul.default-list li span {
   font-size: 18px;
 }
-/* line 190, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 191, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li span {
   font-weight: bold;
 }
@@ -309,7 +309,7 @@ ul.default-list li span {
 #content .video {
   margin: 0 0 50px 0;
 }
-/* line 100, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 101, ../../app/assets/stylesheets/partials/_mixins.scss */
 #content .infinity-description:after,
 #content .noticia:after,
 #content .promotion-package:after,
@@ -321,7 +321,7 @@ ul.default-list li span {
   visibility: hidden;
   height: 0;
 }
-/* line 103, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 104, ../../app/assets/stylesheets/partials/_mixins.scss */
 #content .infinity-description:after,
 #content .noticia:after,
 #content .promotion-package:after,
@@ -354,7 +354,7 @@ ul.default-list li span {
   margin-right: 3px;
   padding: 10px;
 }
-/* line 100, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 101, ../../app/assets/stylesheets/partials/_mixins.scss */
 #sidebar-first section:after, #sidebar-first nav:after {
   content: ".";
   display: block;
@@ -363,7 +363,7 @@ ul.default-list li span {
   visibility: hidden;
   height: 0;
 }
-/* line 103, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 104, ../../app/assets/stylesheets/partials/_mixins.scss */
 #sidebar-first section:after, #sidebar-first nav:after {
   *zoom: 1;
 }
@@ -416,13 +416,13 @@ ul.default-list li span {
   box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
   width: 230px;
 }
-/* line 178, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 179, ../../app/assets/stylesheets/partials/_mixins.scss */
 .not-front.sidebar-first #sidebar-first .navegate-by li, #destinations.index #sidebar-first .navegate-by li, #destinations.show #sidebar-first .navegate-by li, #work-with-us.index #sidebar-first .navegate-by li, .login #sidebar-first .navegate-by li {
   width: 100%;
   padding: 0;
   margin-bottom: 15px;
 }
-/* line 182, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 183, ../../app/assets/stylesheets/partials/_mixins.scss */
 .not-front.sidebar-first #sidebar-first .navegate-by li:before, #destinations.index #sidebar-first .navegate-by li:before, #destinations.show #sidebar-first .navegate-by li:before, #work-with-us.index #sidebar-first .navegate-by li:before, .login #sidebar-first .navegate-by li:before {
   width: 10px;
   height: 10px;
@@ -444,11 +444,11 @@ ul.default-list li span {
 .not-front.sidebar-first #sidebar-first .navegate-by li:before, #destinations.index #sidebar-first .navegate-by li:before, #destinations.show #sidebar-first .navegate-by li:before, #work-with-us.index #sidebar-first .navegate-by li:before, .login #sidebar-first .navegate-by li:before {
   *display: inline;
 }
-/* line 187, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 188, ../../app/assets/stylesheets/partials/_mixins.scss */
 .not-front.sidebar-first #sidebar-first .navegate-by li a, .not-front.sidebar-first #sidebar-first .navegate-by li span, #destinations.index #sidebar-first .navegate-by li a, #destinations.index #sidebar-first .navegate-by li span, #destinations.show #sidebar-first .navegate-by li a, #destinations.show #sidebar-first .navegate-by li span, #work-with-us.index #sidebar-first .navegate-by li a, #work-with-us.index #sidebar-first .navegate-by li span, .login #sidebar-first .navegate-by li a, .login #sidebar-first .navegate-by li span {
   font-size: 18px;
 }
-/* line 190, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 191, ../../app/assets/stylesheets/partials/_mixins.scss */
 .not-front.sidebar-first #sidebar-first .navegate-by li span, #destinations.index #sidebar-first .navegate-by li span, #destinations.show #sidebar-first .navegate-by li span, #work-with-us.index #sidebar-first .navegate-by li span, .login #sidebar-first .navegate-by li span {
   font-weight: bold;
 }
@@ -725,6 +725,7 @@ h1.page-title {
   border-bottom: 1px solid tint(#3b3b3d, 70%);
   border-bottom: 1px solid #c4c4c4;
   padding-bottom: 10px;
+  overflow: hidden;
 }
 
 /* Texts
@@ -784,22 +785,22 @@ header nav li:last-child, footer nav li:last-child {
 header nav li.last, footer nav li.last {
   padding-right: 0;
 }
-/* line 35, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 36, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul, footer nav ul {
   width: 102%;
   position: relative;
 }
-/* line 39, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 40, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul li a, header nav ul li span, footer nav ul li a, footer nav ul li span {
   padding: 10px 31px;
   display: block;
   font-size: 18px;
 }
-/* line 45, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 46, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul li.backLava, footer nav ul li.backLava {
   border-bottom: 5px solid #3b3b3d;
 }
-/* line 49, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 50, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul li.last a, footer nav ul li.last a {
   padding-right: 39px;
 }
@@ -1070,21 +1071,48 @@ h1.page-title + p {
   float: left;
   clear: left;
 }
+/* line 367, ../../app/assets/stylesheets/partials/_layout.scss */
+#abouts.history.not-front #content img {
+  margin: 0 15px 15px 0;
+  float: left;
+}
+
+/* line 373, ../../app/assets/stylesheets/partials/_layout.scss */
+#abouts.awards .field-image {
+  width: 150px;
+  margin: 0 15px 15px 0;
+  float: left;
+}
+
+/* line 379, ../../app/assets/stylesheets/partials/_layout.scss */
+#abouts.staff .field-member {
+  margin: 0 0 60px;
+}
+/* line 381, ../../app/assets/stylesheets/partials/_layout.scss */
+#abouts.staff .field-member img {
+  margin: 0 0 15px 15px;
+  float: right;
+}
+
+/* line 384, ../../app/assets/stylesheets/partials/_layout.scss */
+.break {
+  clear: left;
+}
 
 /* Estilos slider
 ======================================================= */
-/* line 372, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 392, ../../app/assets/stylesheets/partials/_layout.scss */
 #preface-top .royalSlider {
   width: 950px;
   height: 250px;
 }
 
-/* line 373, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 393, ../../app/assets/stylesheets/partials/_layout.scss */
 .rsOverflow {
   position: relative;
 }
 
-/* line 374, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 394, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsABlock {
   position: absolute;
   top: 5px;
@@ -1092,23 +1120,23 @@ body .rsABlock {
   right: 35px;
 }
 
-/* line 375, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 395, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsPreloader {
   background-image: url(/javascripts/libs/royal-slider-9.2/preloaders/preloader-white.gif);
 }
 
-/* line 376, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 396, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsCloseVideoIcn {
   background: url("/javascripts/libs/royal-slider-9.2/rs-default.png") -64px 0;
 }
 
-/* line 377, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 397, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom.partners ul.slider {
   width: 950px;
   height: 80px;
 }
 
-/* line 378, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 398, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom .rsABlock {
   position: absolute;
   top: 5px;

@@ -5,10 +5,8 @@
   = render 'sidebar_first'
 
 #content
-  %h1.page-title
-    = I18n.t('about.history')
-
-  - @about.each do |about|
-    = paragraph(about.history) 
-    - if current_admin
-      = link_to I18n.t('edit'), edit_about_path(about)
+  - about_infinity.each do |about|
+    = image_tag(about.about_picture(:default)) 
+    %h1.page-title
+      = I18n.t('about.history')
+    = paragraph(about.history)

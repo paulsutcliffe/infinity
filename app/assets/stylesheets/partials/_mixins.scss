@@ -6,6 +6,7 @@
   border-bottom: 1px solid tint($primary-color-text, $tint-low);
   border-bottom: 1px solid $gray;
   padding-bottom: $space*2;
+  overflow: hidden
 }
 
 @mixin title {
@@ -192,3 +193,14 @@
     }
   }
 }
+
+@mixin image-right {
+  margin: 0 0 $space-img $space-img;
+  float: right;
+}
+
+@mixin image-matriz {
+  margin: 0 $space-img $space-img 0;
+  float: left; 
+}
+

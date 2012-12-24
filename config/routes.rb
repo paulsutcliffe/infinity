@@ -8,7 +8,7 @@ Infinity::Application.routes.draw do
 
       get 'work_with_us'        => "abouts#work", :on => :collection
       get 'history'             => "abouts#history", :on => :collection
-      get 'prices'              => "abouts#prices", :on => :collection
+      get 'awards'              => "abouts#awards", :on => :collection
       get 'global_proyection'   => "abouts#global_proyection", :on => :collection
       get 'know_our_staff'      => "abouts#staff", :on => :collection
     end

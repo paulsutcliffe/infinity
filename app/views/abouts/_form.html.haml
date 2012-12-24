@@ -17,6 +17,14 @@
     = f.text_area :text_landing_page
 
   .field
+    = f.label :picture_landing_page
+    = f.file_field :picture_landing_page
+
+  .field
+    = f.label :about_us
+    = f.text_area :about_us
+
+  .field
     = f.label :about_picture
     = f.file_field :about_picture
 
@@ -27,6 +35,9 @@
   .field
     = f.label :global_proyection
     = f.text_area :global_proyection
+  .field
+    = f.label :global_proyection_picture
+    = f.file_field :global_proyection_picture
 
   .field
     = f.label :work_with_us

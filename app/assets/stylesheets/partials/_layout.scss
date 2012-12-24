@@ -364,7 +364,27 @@ h1.page-title + p {margin: $space*4 0 $space*10; padding:0 0 $space*10 0; @inclu
     width: 100%;
     float: left; clear: left;
   }
+  #abouts.history.not-front & img {
+    @include image-matriz;
+  }
 }
+
+#abouts.awards {
+  .field-image {
+    width: 150px; 
+    @include image-matriz;
+  }
+}
+
+#abouts.staff .field-member {
+  margin: 0 0 $space-bottom;
+  img{@include image-right;}
+}
+
+.break {
+  clear: left;
+}
+
 
 
 /* Estilos slider
@@ -377,3 +397,6 @@ body .rsDefault .rsCloseVideoIcn {background: url('/javascripts/libs/royal-slide
 #postscript-bottom.partners ul.slider{width:950px; height:80px}
 #postscript-bottom .rsABlock{position:absolute; top:5px; left:0}
 /* END: Estilos slider */
+
+
+

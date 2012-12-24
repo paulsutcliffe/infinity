@@ -17,8 +17,8 @@ Gretel::Crumbs.layout do
     parent :about, about
   end
 
-  crumb :about_prices do |about|
-    link I18n.t('about.prices'), prices_abouts_path
+  crumb :about_awards do |about|
+    link I18n.t('about.awards'), awards_abouts_path
     parent :about, about
   end
 
