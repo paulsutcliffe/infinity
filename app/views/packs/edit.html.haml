@@ -1,0 +1,6 @@
+%h1
+  = t('pack.edit.title')
+
+= render 'form'
+
+== #{ link_to t('show'), @pack } | #{ link_to t('back'), packs_path }

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121222052324) do
+ActiveRecord::Schema.define(:version => 20121225014730) do
 
   create_table "abouts", :force => true do |t|
     t.string   "title_landing_page"
@@ -129,6 +129,18 @@ ActiveRecord::Schema.define(:version => 20121222052324) do
     t.string   "milestone_picture_content_type"
     t.integer  "milestone_picture_file_size"
     t.datetime "milestone_picture_updated_at"
+  end
+
+  create_table "packs", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "pack_picture_file_name"
+    t.string   "pack_picture_content_type"
+    t.integer  "pack_picture_file_size"
+    t.datetime "pack_picture_updated_at"
   end
 
   create_table "posts", :force => true do |t|

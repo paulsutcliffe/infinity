@@ -1,6 +1,8 @@
 Infinity::Application.routes.draw do
 
 
+  resources :packs
+
   resources :testimonies
 
   scope() do
