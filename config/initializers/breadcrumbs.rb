@@ -45,6 +45,11 @@ Gretel::Crumbs.layout do
     parent :about, about 
   end
 
+  # packs
+  crumb :pack do
+    link I18n.t('packs.index'), packs_path
+  end
+
   # posts
   crumb :posts do
     link I18n.t('posts.index'), news_and_events_posts_path

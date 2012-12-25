@@ -213,13 +213,13 @@ ul li .partner {
   border-bottom: 5px solid #3b3b3d;
   margin-bottom: 5px;
 }
-/* line 180, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 183, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li {
   width: 100%;
   padding: 0;
   margin-bottom: 15px;
 }
-/* line 184, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 187, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li:before {
   width: 10px;
   height: 10px;
@@ -241,11 +241,11 @@ ul.default-list li:before {
 ul.default-list li:before {
   *display: inline;
 }
-/* line 189, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 192, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li a, ul.default-list li span {
   font-size: 18px;
 }
-/* line 192, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 195, ../../app/assets/stylesheets/partials/_mixins.scss */
 ul.default-list li span {
   font-weight: bold;
 }
@@ -297,7 +297,7 @@ ul.default-list li span {
 #content .video {
   margin: 0 0 50px 0;
 }
-/* line 102, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 105, ../../app/assets/stylesheets/partials/_mixins.scss */
 #content .infinity-description:after,
 #content .noticia:after,
 #content .promotion-package:after,
@@ -309,7 +309,7 @@ ul.default-list li span {
   visibility: hidden;
   height: 0;
 }
-/* line 105, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 108, ../../app/assets/stylesheets/partials/_mixins.scss */
 #content .infinity-description:after,
 #content .noticia:after,
 #content .promotion-package:after,
@@ -413,13 +413,13 @@ ul.default-list li span {
   box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
   width: 230px;
 }
-/* line 180, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 183, ../../app/assets/stylesheets/partials/_mixins.scss */
 .not-front.sidebar-first #sidebar-first .navegate-by li, #devise-sessions.new #sidebar-first .navegate-by li, #testimonies.index #sidebar-first .navegate-by li, .login #sidebar-first .navegate-by li {
   width: 100%;
   padding: 0;
   margin-bottom: 15px;
 }
-/* line 184, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 187, ../../app/assets/stylesheets/partials/_mixins.scss */
 .not-front.sidebar-first #sidebar-first .navegate-by li:before, #devise-sessions.new #sidebar-first .navegate-by li:before, #testimonies.index #sidebar-first .navegate-by li:before, .login #sidebar-first .navegate-by li:before {
   width: 10px;
   height: 10px;
@@ -441,11 +441,11 @@ ul.default-list li span {
 .not-front.sidebar-first #sidebar-first .navegate-by li:before, #devise-sessions.new #sidebar-first .navegate-by li:before, #testimonies.index #sidebar-first .navegate-by li:before, .login #sidebar-first .navegate-by li:before {
   *display: inline;
 }
-/* line 189, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 192, ../../app/assets/stylesheets/partials/_mixins.scss */
 .not-front.sidebar-first #sidebar-first .navegate-by li a, .not-front.sidebar-first #sidebar-first .navegate-by li span, #devise-sessions.new #sidebar-first .navegate-by li a, #devise-sessions.new #sidebar-first .navegate-by li span, #testimonies.index #sidebar-first .navegate-by li a, #testimonies.index #sidebar-first .navegate-by li span, .login #sidebar-first .navegate-by li a, .login #sidebar-first .navegate-by li span {
   font-size: 18px;
 }
-/* line 192, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 195, ../../app/assets/stylesheets/partials/_mixins.scss */
 .not-front.sidebar-first #sidebar-first .navegate-by li span, #devise-sessions.new #sidebar-first .navegate-by li span, #testimonies.index #sidebar-first .navegate-by li span, .login #sidebar-first .navegate-by li span {
   font-weight: bold;
 }
@@ -463,7 +463,7 @@ ul.default-list li span {
   margin-right: 3px;
   padding: 10px;
 }
-/* line 102, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 105, ../../app/assets/stylesheets/partials/_mixins.scss */
 #sidebar-first section:after, #sidebar-first nav:after {
   content: ".";
   display: block;
@@ -472,7 +472,7 @@ ul.default-list li span {
   visibility: hidden;
   height: 0;
 }
-/* line 105, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 108, ../../app/assets/stylesheets/partials/_mixins.scss */
 #sidebar-first section:after, #sidebar-first nav:after {
   *zoom: 1;
 }
@@ -857,15 +857,18 @@ header nav ul, footer nav ul {
 }
 /* line 41, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul li a, header nav ul li span, footer nav ul li a, footer nav ul li span {
-  padding: 10px 31px;
+  /*padding:10px 28px;*/
+  padding: 10px 0;
+  width: 111px;
+  text-align: center;
   display: block;
   font-size: 18px;
 }
-/* line 47, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 50, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul li.backLava, footer nav ul li.backLava {
   border-bottom: 5px solid #3b3b3d;
 }
-/* line 51, ../../app/assets/stylesheets/partials/_mixins.scss */
+/* line 54, ../../app/assets/stylesheets/partials/_mixins.scss */
 header nav ul li.last a, footer nav ul li.last a {
   padding-right: 39px;
 }
@@ -1093,42 +1096,40 @@ h1.page-title + p {
   float: left;
 }
 
-/* line 340, ../../app/assets/stylesheets/partials/_layout.scss */
-#abouts.staff .field-member {
+/* line 341, ../../app/assets/stylesheets/partials/_layout.scss */
+#abouts.staff .field-member,
+#packs.index .field-image {
   margin: 0 0 60px;
-}
-/* line 342, ../../app/assets/stylesheets/partials/_layout.scss */
-#abouts.staff .field-member img {
   margin: 0 0 15px 15px;
   float: right;
 }
 
-/* line 346, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 347, ../../app/assets/stylesheets/partials/_layout.scss */
 #posts.news_and_events .field-image,
 #testimonies.index .field-image {
   margin: 0 15px 15px 0;
   float: left;
 }
 
-/* line 351, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 352, ../../app/assets/stylesheets/partials/_layout.scss */
 .break {
   clear: left;
 }
 
 /* Estilos slider
 ======================================================= */
-/* line 359, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 360, ../../app/assets/stylesheets/partials/_layout.scss */
 #preface-top .royalSlider {
   width: 950px;
   height: 250px;
 }
 
-/* line 360, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 361, ../../app/assets/stylesheets/partials/_layout.scss */
 .rsOverflow {
   position: relative;
 }
 
-/* line 361, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 362, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsABlock {
   position: absolute;
   top: 5px;
@@ -1136,23 +1137,23 @@ body .rsABlock {
   right: 35px;
 }
 
-/* line 362, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 363, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsPreloader {
   background-image: url(/javascripts/libs/royal-slider-9.2/preloaders/preloader-white.gif);
 }
 
-/* line 363, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 364, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsCloseVideoIcn {
   background: url("/javascripts/libs/royal-slider-9.2/rs-default.png") -64px 0;
 }
 
-/* line 364, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 365, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom.partners ul.slider {
   width: 950px;
   height: 80px;
 }
 
-/* line 365, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 366, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom .rsABlock {
   position: absolute;
   top: 5px;

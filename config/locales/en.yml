@@ -49,6 +49,12 @@ en:
     index: Members
   member:
     new: New Member
+ 
+  packs:
+    index: Packs
+    url: packs
+  pack:
+    new: New Pack
 
   posts:
     index: News

@@ -39,7 +39,10 @@
     position:relative; // for lavaLamp noJs
     li {
       a, span {
-        padding:10px 31px;
+        /*padding:10px 28px;*/
+        padding: 10px 0;
+        width: 111px;
+        text-align: center;
         display:block;
         font-size: $font-size-menu;
       }

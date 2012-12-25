@@ -1,0 +1,14 @@
+
+
+%nav.navegate-by
+  %h2.title
+    = I18n.t('packs.index') 
+  %ul
+    - @packs.each do |pack|
+      %li
+        = link_to_unless_current pack.title, pack_path(pack) do
+          %span
+            = pack.title
+
+
+

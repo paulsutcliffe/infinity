@@ -337,9 +337,10 @@ h1.page-title + p {margin: $space*4 0 $space*10; padding:0 0 $space*10 0; @inclu
   }
 }
 
-#abouts.staff .field-member {
+#abouts.staff .field-member,
+#packs.index .field-image {
   margin: 0 0 $space-bottom;
-  img{@include image-right;}
+  @include image-right;
 }
 
 #posts.news_and_events .field-image,

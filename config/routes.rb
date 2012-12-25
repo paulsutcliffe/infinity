@@ -1,7 +1,6 @@
 Infinity::Application.routes.draw do
 
 
-  resources :packs
 
   resources :testimonies
 
@@ -14,6 +13,9 @@ Infinity::Application.routes.draw do
       get 'global_proyection'   => "abouts#global_proyection", :on => :collection
       get 'know_our_staff'      => "abouts#staff", :on => :collection
     end
+
+    
+    resources :packs, :path => I18n.t('packs.url')
 
     resources :posts, :path => I18n.t('posts.url') do
       get 'news_and_events'   => "posts#news_and_events", :on => :collection

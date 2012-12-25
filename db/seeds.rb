@@ -8,7 +8,7 @@
 
 long_text = File.read(File.join(Rails.root, '/features/support/long_text.txt'))
 title_  = File.read(File.join(Rails.root, '/features/support/titles/title-1.txt'))
-
+title_pack  = File.read(File.join(Rails.root, '/features/support/packs/title-1.txt'))
 
 
 #############################################################################
@@ -54,6 +54,18 @@ Member.delete_all
   :position => 'Travel Advisor',
   :description => long_text,
   :member_picture => File.open(File.join(Rails.root, '/features/support/member_picture2.jpg')))
+end
+
+#############################################################################
+# Packs Model
+#############################################################################
+Pack.delete_all
+1.upto(4) do |i|
+  Pack.create(
+    :title =>  File.read(File.join(Rails.root, '/features/support/packs/title-' + "#{i}" + '.txt')),
+    :description => long_text,
+    :pack_picture => File.open(File.join(Rails.root, '/features/support/pack_picture.jpg'))
+  )
 end
 
 #############################################################################
