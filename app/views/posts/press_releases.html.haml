@@ -14,11 +14,10 @@
   .content
     - for press_release in @press_releases
       %div{ :class => 'block ' + cycle('odd', 'even') }
-        %h2
+        %h2.title
           = press_release.title
         .content
-          = press_release.content 
-
+          = paragraph(press_release.content)
         .controls
           .navigation
             = link_to I18n.t('show'), press_release, :class => 'button show'

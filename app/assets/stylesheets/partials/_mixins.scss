@@ -199,6 +199,11 @@
   float: right;
 }
 
+@mixin image-left {
+  margin: 0 $space-img $space-img 0;
+  float: left;
+}
+
 @mixin image-matriz {
   margin: 0 $space-img $space-img 0;
   float: left; 

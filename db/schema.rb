@@ -146,6 +146,7 @@ ActiveRecord::Schema.define(:version => 20121222052324) do
 
   create_table "press_releases", :force => true do |t|
     t.string   "title"
+    t.string   "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

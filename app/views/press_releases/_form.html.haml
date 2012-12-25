@@ -11,5 +11,9 @@
     %br
     = f.text_field :title
 
+  .field
+    = f.label :content
+    = f.text_area :content
+
   .actions
     = f.submit I18n.t('submit')

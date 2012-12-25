@@ -1077,42 +1077,55 @@ h1.page-title + p {
   float: left;
 }
 
-/* line 373, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 372, ../../app/assets/stylesheets/partials/_layout.scss */
+.block {
+  width: 100%;
+  float: left;
+  clear: left;
+}
+
+/* line 375, ../../app/assets/stylesheets/partials/_layout.scss */
 #abouts.awards .field-image {
   width: 150px;
   margin: 0 15px 15px 0;
   float: left;
 }
 
-/* line 379, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 381, ../../app/assets/stylesheets/partials/_layout.scss */
 #abouts.staff .field-member {
   margin: 0 0 60px;
 }
-/* line 381, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 383, ../../app/assets/stylesheets/partials/_layout.scss */
 #abouts.staff .field-member img {
   margin: 0 0 15px 15px;
   float: right;
 }
 
-/* line 384, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 386, ../../app/assets/stylesheets/partials/_layout.scss */
+#posts.news_and_events .field-image {
+  margin: 0 15px 15px 0;
+  float: left;
+}
+
+/* line 391, ../../app/assets/stylesheets/partials/_layout.scss */
 .break {
   clear: left;
 }
 
 /* Estilos slider
 ======================================================= */
-/* line 392, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 399, ../../app/assets/stylesheets/partials/_layout.scss */
 #preface-top .royalSlider {
   width: 950px;
   height: 250px;
 }
 
-/* line 393, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 400, ../../app/assets/stylesheets/partials/_layout.scss */
 .rsOverflow {
   position: relative;
 }
 
-/* line 394, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 401, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsABlock {
   position: absolute;
   top: 5px;
@@ -1120,23 +1133,23 @@ body .rsABlock {
   right: 35px;
 }
 
-/* line 395, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 402, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsPreloader {
   background-image: url(/javascripts/libs/royal-slider-9.2/preloaders/preloader-white.gif);
 }
 
-/* line 396, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 403, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsCloseVideoIcn {
   background: url("/javascripts/libs/royal-slider-9.2/rs-default.png") -64px 0;
 }
 
-/* line 397, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 404, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom.partners ul.slider {
   width: 950px;
   height: 80px;
 }
 
-/* line 398, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 405, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom .rsABlock {
   position: absolute;
   top: 5px;

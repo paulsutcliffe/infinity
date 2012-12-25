@@ -11,13 +11,33 @@
     .admin.create
       = link_to I18n.t('post.new'), new_post_path, :class => 'button create'
 
+  .content.posts-important
+    - for post in @posts_important
+      %div{ :class => 'block ' + cycle('odd', 'even') }
+        .label 
+          = I18n.t('posts.important')
+          %h2.title
+            = post.title
+          .content
+            .field-image
+              = image_tag(post.posts_picture(:default))
+            = paragraph(post.content)
+
+          .controls
+            .navigation
+              = link_to I18n.t('show'), post, :class => 'button show'
+            - if current_admin
+              .admin
+                = link_to I18n.t('edit'), edit_post_path(post), :class => 'button edit'
+                = link_to I18n.t('destroy'), post, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+
   .content
     - for post in @posts
       %div{ :class => 'block ' + cycle('odd', 'even') }
-        %h2
+        %h2.title
           = post.title
         .content
-          = post.content 
+          = paragraph(post.content)
 
         .controls
           .navigation
@@ -26,6 +46,7 @@
             .admin
               = link_to I18n.t('edit'), edit_post_path(post), :class => 'button edit'
               = link_to I18n.t('destroy'), post, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+
 
 
 

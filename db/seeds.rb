@@ -7,6 +7,9 @@
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
 long_text = File.read(File.join(Rails.root, '/features/support/long_text.txt'))
+title_  = File.read(File.join(Rails.root, '/features/support/titles/title-1.txt'))
+
+
 
 #############################################################################
 # Slide Model
@@ -35,7 +38,7 @@ Milestone.delete_all
     :milestone_picture => File.open(File.join(Rails.root, '/features/support/milestone_picture2.jpg')))
 end
 #############################################################################
-# Members Model
+# Member Model
 #############################################################################
 Member.delete_all
 1.upto(6) do |i|
@@ -54,7 +57,7 @@ Member.delete_all
 end
 
 #############################################################################
-# Posts Model
+# Post Model
 #############################################################################
 Post.delete_all
 Post.create(
@@ -70,6 +73,18 @@ Post.create(
   :important => false,
   :landing_page => false,
   :posts_picture => File.open(File.join(Rails.root, '/features/support/post_picture2.jpg')))
+
+#############################################################################
+# PressReleases Model
+#############################################################################
+PressRelease.delete_all
+1.upto(4) do |i|
+  PressRelease.create(
+    :title => File.read(File.join(Rails.root, '/features/support/titles/title-' + "#{i}" + '.txt')),
+    :content => long_text
+  )
+end
+
 #############################################################################
 # Testimonies Model
 #############################################################################

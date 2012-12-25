@@ -43,6 +43,7 @@ en:
     index: News
     url: news
     title: News and Events
+    important: Noticia Importante
   post:
     new: New Post
 
