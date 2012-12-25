@@ -65,15 +65,4 @@ ul {
 }
 
 
-// sidebar dl
-dl {
-  #sidebar-first & dt {
-    margin-bottom: $space;
-  }
-  #sidebar-first & dd {
-    border-bottom: 1px solid $color-shadow;
-    padding-bottom: $space;
-    margin-bottom: $space * 3;
-    font-size: $font-size-small;
-  }
-}
+

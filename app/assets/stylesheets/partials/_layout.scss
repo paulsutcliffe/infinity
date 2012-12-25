@@ -263,51 +263,10 @@ APARIENCIA
 =============================================================
 */
 
-
 #content {
   @include column(16);
   float:left;
-
-  .not-front.sidebar-first &,
-  #destinations &,
-  .login & {
-    @include column(17);
-    margin-right: 0;
-  }
-
-  #milestones & {
-    @include column(20);
-    @include prepend(2);
-  }
 }
-
-#sidebar-first {
-  // revisar en blocks.scss demás parámetros
-  @include column(7);
-  @include prepend(1);
-  float:right;
-  margin-right:0;
-
-  .not-front.sidebar-first &,
-  #destinations.index &,
-  #destinations.show &,
-  #work-with-us.index &,
-  .login & {
-    @include sidebar(left);
-    @include column(6);
-    @include prepend(0);
-    @include append(1);
-    margin-right: 0;
-    nav {
-      @include span(6);
-    }
-  }
-}
-
-#sidebar-second {
-  float: right;
-}
-
 
 /* Espaciados de los elementos
 ======================================================= */
@@ -383,7 +342,8 @@ h1.page-title + p {margin: $space*4 0 $space*10; padding:0 0 $space*10 0; @inclu
   img{@include image-right;}
 }
 
-#posts.news_and_events .field-image{
+#posts.news_and_events .field-image,
+#testimonies.index .field-image{
   @include image-left;
 }
 

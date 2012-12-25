@@ -21,6 +21,17 @@ en:
   back: Back
   logout: Logout
 
+  users:
+    url: servicios
+    session:
+      new: Sign In to Account
+  user:
+    root: Services
+    sign_in: Sign In
+    travel_agent_register: Register Travel Agent
+    travel_register: Traveler Register
+    client_comments: Client's Comments
+
   homes:
     index: Home
 

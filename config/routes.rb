@@ -4,6 +4,7 @@ Infinity::Application.routes.draw do
   resources :testimonies
 
   scope() do
+
     resources :abouts, :path => I18n.t('abouts.url') do
       get 'work_with_us'        => "abouts#work", :on => :collection
       get 'history'             => "abouts#history", :on => :collection
@@ -18,8 +19,17 @@ Infinity::Application.routes.draw do
     end
   end
 
+  devise_for :users, 
+               :controllers => { :registrations => "users/registrations",
+                                 :confirmations => "users/confirmations",
+                                 :sessions => 'devise/sessions'},
+             :skip => [:sessions] do
+    get '/sign_in'   => "devise/sessions#new",       :as => :new_user_session
+    post '/sign_in'  => 'devise/sessions#create',    :as => :user_session
+    get '/sign_out'  => 'devise/sessions#destroy',   :as => :destroy_user_session
+    get '/sign_up'   => "users/registrations#new",   :as => :new_user_registration
+  end
   
-
   resources :abouts
   resources :country_pictures
 
@@ -44,7 +54,6 @@ Infinity::Application.routes.draw do
 
   resources :milestones
 
-  devise_for :users
 
   devise_for :admins
 

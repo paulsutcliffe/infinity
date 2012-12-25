@@ -1,13 +1,21 @@
 Gretel::Crumbs.layout do
   
-  # Remember to restart your application after editing this file.
-  
-  # Example crumbs:
-  
   crumb :root do
     link I18n.t('homes.index'), root_path
   end
 
+  # users
+  crumb :user do
+    link I18n.t('user.root'), new_user_session_path
+  end
+
+  crumb :user_sign_in do |user|
+    link I18n.t('user.sign_in'), new_user_session_path
+    parent :user, user
+  end
+
+
+  # abouts
   crumb :about do
     link I18n.t('abouts.index'), abouts_path
   end
