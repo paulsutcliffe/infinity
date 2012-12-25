@@ -7,10 +7,23 @@ end
 
 def awards 
   @milestones = Milestone.all
+  respond_to do |format|
+    format.html 
+    format.js 
+  end
 end
 
 def staff
   @members = Member.all
+end
+
+def global_proyection
+  @global = About.limit(1)
+
+  respond_to do |format|
+    format.html 
+    format.js 
+  end
 end
 
 helper_method :about_infinity

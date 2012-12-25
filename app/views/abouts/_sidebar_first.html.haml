@@ -18,9 +18,7 @@
         %span
           = I18n.t('about.awards')  
     %li
-      = link_to_unless_current I18n.t('about.global'), global_proyection_abouts_path do
-        %span
-          = I18n.t('about.global')  
+      = link_to I18n.t('about.global'), global_proyection_abouts_path, :remote => true
     %li
       = link_to_unless_current I18n.t('about.staff'), know_our_staff_abouts_path do
         %span
