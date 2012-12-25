@@ -7,7 +7,8 @@
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
 long_text = File.read(File.join(Rails.root, '/features/support/long_text.txt'))
-title_  = File.read(File.join(Rails.root, '/features/support/titles/title-1.txt'))
+# title  = File.read(File.join(Rails.root, '/features/support/titles/title-' + '%s' + '.txt'))
+title_url = '/features/support/titles/title-' + '%s' + '.txt'
 title_pack  = File.read(File.join(Rails.root, '/features/support/packs/title-1.txt'))
 
 
@@ -92,7 +93,8 @@ Post.create(
 PressRelease.delete_all
 1.upto(4) do |i|
   PressRelease.create(
-    :title => File.read(File.join(Rails.root, '/features/support/titles/title-' + "#{i}" + '.txt')),
+    #:title => File.read(File.join(Rails.root, '/features/support/titles/title-' + "#{i}" + '.txt')),
+    :title => File.read(File.join(Rails.root, "#{title_url %i}")),
     :content => long_text
   )
 end

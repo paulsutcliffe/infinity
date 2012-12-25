@@ -6,7 +6,7 @@
   %ul
     - @packs.each do |pack|
       %li
-        = link_to_unless_current pack.title, pack_path(pack) do
+        = link_to_unless_current pack.title, pack_path(pack), :remote => true do
           %span
             = pack.title
 
