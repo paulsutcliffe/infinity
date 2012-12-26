@@ -1,6 +1,5 @@
 class DestinationsController < InheritedResources::Base
 
-
 def show
   @destination = Destination.find(params[:id])
   @countries = @destination.countries.order('name ASC')
