@@ -22,38 +22,36 @@ Slide.create(
 Slide.create(
   :slide => File.open(File.join(Rails.root, '/features/support/img-slide-2.jpg')))
 
-
 #############################################################################
-# Country Model
+# Destination Model has_many :countries
 #############################################################################
-Country.delete_all
-#Country.create(
-#  :name => 'Argentina'
-#)
-#Country.create(
-#  :name => 'Perú'
-#)
-#Country.create(
-#  :name => 'México'
-#)
-#Country.create(
-#  :name => 'Chile'
-#)
-#Country.create(
-#  :name => 'Brasil'
-#)
-#
-##############################################################################
-## Destination Model
-##############################################################################
 Destination.delete_all
-#Destination.create(
-#  :name => 'Latino América',
-#  :description => long_text )
-#Destination.create(
-#  :name => 'Europa',
-#  :description => long_text)
-#
+destino_latino = Destination.create(
+  :name => 'Latino América',
+  :description => long_text )
+destino_europa = Destination.create(
+  :name => 'Europa',
+  :description => long_text)
+
+Country.delete_all
+countries_la = destino_la.countries.create(
+  :name => 'Perú'
+)
+['Ecuador', 'Chile', 'Argentina', 'Brasil'].each do |c|
+  params = { 
+    :country_list => { :name => c }
+  }
+  destino_latino.countries.create(params[:country_list])
+end
+
+['Swiss', 'France', 'Germany', 'Russia', 'Italy'].each do |c|
+  params = {
+    :country_list => { :name => c }
+  }
+  destino_europa.countries.create(params[:country_list])
+end
+
+
 #############################################################################
 # Milestone Model
 #############################################################################
