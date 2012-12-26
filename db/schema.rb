@@ -69,6 +69,7 @@ ActiveRecord::Schema.define(:version => 20121225014730) do
     t.text     "description"
     t.text     "image_map"
     t.integer  "destination_id"
+    t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

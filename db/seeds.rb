@@ -34,7 +34,7 @@ destino_europa = Destination.create(
   :description => long_text)
 
 Country.delete_all
-countries_la = destino_la.countries.create(
+countries_latino = destino_latino.countries.create(
   :name => 'Perú'
 )
 ['Ecuador', 'Chile', 'Argentina', 'Brasil'].each do |c|

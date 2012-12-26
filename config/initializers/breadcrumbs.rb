@@ -54,6 +54,17 @@ Gretel::Crumbs.layout do
     parent :destinations
   end
 
+ # crumb :destination_countries do |countries|
+ #   link 'paises', 'peru.com'
+ #   parent :destination
+ # end
+ 
+  # countries belongs_to :destination
+  crumb :destination_country do |country|
+    link "#{country.name}", destination_country_path(country.destination, country)
+    parent :destination, country.destination
+  end
+
   # packs
   crumb :pack do
     link I18n.t('packs.index'), packs_path
