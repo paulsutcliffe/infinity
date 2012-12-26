@@ -1,26 +1,17 @@
-%h1 
-  =t('destinations.index.title')
 
-%table
-  %thead
-    %tr
-      %th 
-        =t('activerecord.attributes.destination.name')
-      %th 
-        =t('activerecord.attributes.destination.description')
-      %th 
-        =t('activerecord.attributes.destination.image_map')
-      %th{ :colspan => 3 }
-  
-  %tbody
-    - for destination in @destinations
-      %tr{ :class => cycle(:odd, :even) }
-        %td= destination.name
-        %td= destination.description
-        %td= destination.image_map
-        %td= link_to t('show'), destination
-        %td= link_to t('edit'), edit_destination_path(destination)
-        %td= link_to t('destroy'), destination, :confirm => I18n.t('confirm_delete'), :method => :delete
+= breadcrumb :destinations
 
-%br
-= link_to t('destination.new'), new_destination_path
+#sidebar-first
+  = render 'sidebar_first'
+
+#content
+  %h1.page-title
+    = I18n.t('destinations.index')
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('destination.new'), new_destination_path, :class => 'button new'
+
+  .content
+
+
+

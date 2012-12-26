@@ -97,6 +97,7 @@ ActiveRecord::Schema.define(:version => 20121225014730) do
     t.string   "name"
     t.text     "description"
     t.text     "image_map"
+    t.text     "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

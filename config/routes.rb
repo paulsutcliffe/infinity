@@ -13,7 +13,11 @@ Infinity::Application.routes.draw do
       get 'global_proyection'   => "abouts#global_proyection", :on => :collection
       get 'know_our_staff'      => "abouts#staff", :on => :collection
     end
-
+    
+    
+    resources :destinations do
+      resources :countries
+    end
     
     resources :packs, :path => I18n.t('packs.url')
 
@@ -37,7 +41,6 @@ Infinity::Application.routes.draw do
   resources :abouts
   resources :country_pictures
 
-  resources :countries
 
   resources :destination_pictures
 
@@ -54,7 +57,6 @@ Infinity::Application.routes.draw do
 
   resources :members
 
-  resources :destinations
 
   resources :milestones
 

@@ -40,6 +40,12 @@ en:
   slide:
     new: New Slide
 
+  destinations:
+    index: Destinations
+
+  destination:
+    new: New Destination
+
   milestones:
     index: Milestones
   milestone:

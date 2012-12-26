@@ -1,0 +1,28 @@
+- if params[:action] == 'index'
+  - @page_name = 'Destinations'
+- if params[:action] == 'show'
+  - @page_name = @destination.name
+
+
+%nav.navegate-by
+  %h2.title
+    = @page_name
+  %ul
+    - if params[:action] == 'index'
+      - @destinations.each do |destination|
+        %li
+          = #link_to_unless_current destination.name, destination_countries_path(destination) do
+          = link_to_unless_current destination.name, destination_path(destination) do
+            %span
+              = destination.name
+          .controls
+            .navigation
+            - if current_admin
+              .admin
+                = link_to I18n.t('edit'), edit_destination_path(destination), :class => 'button edit'
+                = link_to I18n.t('destroy'), destination, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+
+    - if params[:action] == 'show'
+      - @countries.each do |country|
+        = country.name
+   

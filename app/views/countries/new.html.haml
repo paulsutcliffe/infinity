@@ -1,6 +1,10 @@
 %h1 
   =t('country.new')
 
-= render 'form'
 
-= link_to t('back'), countries_path
+= form_for(@country, :url => {:country_id => params[:country_id], :action => 'create'}) do |f|
+  = render(:partial => 'form', :locals => {:f => f})
+  .actions
+    = f.submit I18n.t('submit')
+
+

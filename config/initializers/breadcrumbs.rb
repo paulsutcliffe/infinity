@@ -14,7 +14,6 @@ Gretel::Crumbs.layout do
     parent :user, user
   end
 
-
   # abouts
   crumb :about do
     link I18n.t('abouts.index'), abouts_path
@@ -43,6 +42,16 @@ Gretel::Crumbs.layout do
   crumb :about_work do |about|
     link I18n.t('about.work'), work_with_us_abouts_path
     parent :about, about 
+  end
+
+  # destinations
+  crumb :destinations do
+    link I18n.t('destinations.index'), destinations_path
+  end
+
+  crumb :destination do |destination|
+    link "#{destination.name}", destination_path(destination)
+    parent :destinations
   end
 
   # packs

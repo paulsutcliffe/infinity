@@ -4,7 +4,8 @@ class CreateDestinations < ActiveRecord::Migration
       t.string :name
       t.text :description
       t.text :image_map
-
+      t.text :slug
+    
       t.timestamps
     end
   end

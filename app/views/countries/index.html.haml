@@ -1,26 +1,13 @@
-%h1 
-  =t('countries.index.title')
+
+#content
+  %h1.page-title
+    = page_title! @destination.name 
+
+
 
 %table
   %thead
-    %tr
-      %th 
-        =t('activerecord.attributes.country.name')
-      %th 
-        =t('activerecord.attributes.country.time_zone')
-      %th 
-        =t('activerecord.attributes.country.weather')
-      %th 
-        =t('activerecord.attributes.country.voltage')
-      %th 
-        =t('activerecord.attributes.country.currency')
-      %th 
-        =t('activerecord.attributes.country.description')
-      %th 
-        =t('activerecord.attributes.country.image_map')
-      %th 
-        =t('activerecord.attributes.country.destination_id')
-      %th{ :colspan => 3 }
+
   
   %tbody
     - for country in @countries
@@ -33,9 +20,4 @@
         %td= country.description
         %td= country.image_map
         %td= country.destination_id
-        %td= link_to t('show'), country
-        %td= link_to t('edit'), edit_country_path(country)
-        %td= link_to t('destroy'), country, :confirm => I18n.t('confirm_delete'), :method => :delete
 
-%br
-= link_to t('country.new'), new_country_path

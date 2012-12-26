@@ -24,6 +24,37 @@ Slide.create(
 
 
 #############################################################################
+# Country Model
+#############################################################################
+Country.delete_all
+#Country.create(
+#  :name => 'Argentina'
+#)
+#Country.create(
+#  :name => 'Perú'
+#)
+#Country.create(
+#  :name => 'México'
+#)
+#Country.create(
+#  :name => 'Chile'
+#)
+#Country.create(
+#  :name => 'Brasil'
+#)
+#
+##############################################################################
+## Destination Model
+##############################################################################
+Destination.delete_all
+#Destination.create(
+#  :name => 'Latino América',
+#  :description => long_text )
+#Destination.create(
+#  :name => 'Europa',
+#  :description => long_text)
+#
+#############################################################################
 # Milestone Model
 #############################################################################
 Milestone.delete_all
