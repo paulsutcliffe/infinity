@@ -7,25 +7,13 @@
 
 #content
   %h1.page-title
-    = I18n.t('destinations.index') + ' with Infinity'
+    = @destination.name + ' with Infinity'
   - if current_admin
     .admin.create
-      = link_to I18n.t('destination.new'), new_destination_path, :class => 'button new'
+      = link_to I18n.t('destination_picture.new'), new_destination_destination_picture_path(@destination), :class => 'button new'
 
   .content
+    = @destination.description  
 
 
 
-
-
-%p
-  %strong t('activerecord.attributes.destination.name')
-  = @destination.name
-%p
-  %strong t('activerecord.attributes.destination.description')
-  = @destination.description
-%p
-  %strong t('activerecord.attributes.destination.image_map')
-  = @destination.image_map
-
-== #{ link_to t('edit'), edit_destination_path(@destination) } | #{ link_to t('back'), destinations_path }

@@ -17,6 +17,7 @@ Infinity::Application.routes.draw do
     
     resources :destinations do
       resources :countries
+      resources :destination_pictures
     end
     
     resources :packs, :path => I18n.t('packs.url')
@@ -42,7 +43,6 @@ Infinity::Application.routes.draw do
   resources :country_pictures
 
 
-  resources :destination_pictures
 
   resources :press_releases
 

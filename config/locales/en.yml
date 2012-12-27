@@ -46,6 +46,9 @@ en:
   destination:
     new: New Destination
 
+  destination_picture:
+    new: Add Picture
+
   milestones:
     index: Milestones
   milestone:
