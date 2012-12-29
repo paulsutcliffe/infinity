@@ -1,6 +1,9 @@
 
 
 = breadcrumb :destination, @destination
+= content_for :javascript do
+  = javascript_include_tag '/javascripts/destination_slider.js'
+
 
 #sidebar-first
   = render 'sidebar_first'
@@ -13,6 +16,9 @@
       = link_to I18n.t('destination_picture.new'), new_destination_destination_picture_path(@destination), :class => 'button new'
 
   .content
+    .destination_pictures_container
+      - @destination_pictures.each do |img|
+        = image_tag(img.destination_picture(:default))
     = @destination.description  
 
 

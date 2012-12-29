@@ -1160,6 +1160,12 @@ body .rsDefault .rsCloseVideoIcn {
   left: 0;
 }
 
+/* line 368, ../../app/assets/stylesheets/partials/_layout.scss */
+.destination_pictures_container {
+  width: 400px;
+  height: 400px;
+}
+
 /* END: Estilos slider */
 /* line 5, ../../app/assets/stylesheets/partials/_admin.scss */
 .admin.create {

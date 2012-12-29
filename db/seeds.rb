@@ -23,7 +23,7 @@ Slide.create(
   :slide => File.open(File.join(Rails.root, '/features/support/img-slide-2.jpg')))
 
 #############################################################################
-# Destination Model has_many :countries
+# Destination Model has_many :countries, :destination_pictures
 #############################################################################
 Destination.delete_all
 destino_latino = Destination.create(
@@ -50,6 +50,14 @@ end
   }
   destino_europa.countries.create(params[:country_list])
 end
+
+DestinationPicture.delete_all
+destino_latino.destination_pictures.create(
+  :destination_picture => File.open(File.join(Rails.root, '/features/support/destinations/latin-america.png'))
+)
+destino_latino.destination_pictures.create(
+  :destination_picture => File.open(File.join(Rails.root, '/features/support/destinations/latin-america2.jpeg'))
+)
 
 
 #############################################################################

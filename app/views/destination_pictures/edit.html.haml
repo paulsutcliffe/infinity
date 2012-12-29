@@ -1,6 +1,8 @@
 %h1
   = t('destination_picture.edit.title')
 
-= render 'form'
+= form_for(@destination_picture, :url => {:destination_picture_id => params[:destination_picture_id], :action => 'create', :html => {:multipart => true}})
+  = render(:partial => 'form', :locals => {:f => f})
+  .actions
+  = f.submit I18n.t('submit')
 
-== #{ link_to t('show'), @destination_picture } | #{ link_to t('back'), destination_pictures_path }
