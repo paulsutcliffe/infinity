@@ -1208,34 +1208,41 @@ body .destination_pictures_container.rsDefault .rsBullets {
   margin-bottom: 30px;
   float: left;
   clear: left;
+  position: relative;
 }
 /* line 8, ../../app/assets/stylesheets/partials/_admin.scss */
 .admin.create .button, .admin.create #preface-top .royalSlider .royalCaptionItem, #preface-top .royalSlider .admin.create .royalCaptionItem {
   float: left;
 }
+/* line 11, ../../app/assets/stylesheets/partials/_admin.scss */
+.admin.create .heading.button, .admin.create #preface-top .royalSlider .heading.royalCaptionItem, #preface-top .royalSlider .admin.create .heading.royalCaptionItem {
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
 
-/* line 16, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 19, ../../app/assets/stylesheets/partials/_admin.scss */
 .admin a.button, .admin #preface-top .royalSlider a.royalCaptionItem, #preface-top .royalSlider .admin a.royalCaptionItem {
   /*float: none;*/
 }
 
-/* line 23, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 26, ../../app/assets/stylesheets/partials/_admin.scss */
 #slides .block, #milestones .block {
   width: 100%;
   margin: 0 0 20px;
   float: left;
   clear: left;
 }
-/* line 26, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 29, ../../app/assets/stylesheets/partials/_admin.scss */
 #slides .block img, #milestones .block img {
   float: left;
 }
-/* line 29, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 32, ../../app/assets/stylesheets/partials/_admin.scss */
 #slides .block .navigation, #milestones .block .navigation {
   float: left;
   clear: left;
 }
-/* line 32, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 35, ../../app/assets/stylesheets/partials/_admin.scss */
 #slides .block .admin, #milestones .block .admin {
   float: left;
 }

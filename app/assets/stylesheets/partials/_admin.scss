@@ -4,9 +4,12 @@
 .admin {
   &.create {
     width: 100%; margin-bottom: $space * 6;
-    float: left; clear: left;
+    float: left; clear: left; position: relative;
     .button {
       float: left;
+    }
+    .button.heading {
+      position: absolute; top: -50px; right: 0
     }
   }
 }
