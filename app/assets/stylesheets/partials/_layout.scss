@@ -342,13 +342,9 @@ body .rsDefault .rsCloseVideoIcn {background: url('/javascripts/libs/royal-slide
 
 body .rsDefault .rsBullets { background: none; bottom: auto; top: 100%; padding-top: $space * 3}
 
-body .rsDefault .rsBullet {
-  height: 17px;
-  width: 17px;
-  background: url(../images/backgrounds/slider-controls.jpg) no-repeat 0 -3px;
-}
+body .rsDefault .rsBullet {height: 17px; width: 17px; background: url(../images/backgrounds/slider-controls.jpg) no-repeat -20px -3px; cursor: pointer}
 
-body .rsDefault .rsBullet.rsNavSelected {background: url(../images/backgrounds/slider-controls.jpg) no-repeat -20px -3px;}
+body .rsDefault .rsBullet.rsNavSelected {background: url(../images/backgrounds/slider-controls.jpg) no-repeat 0px -3px;}
 body .rsDefault .rsArrowIcn {background-color: $primary-color;}
 body .rsDefault .rsArrowIcn:hover {background-color: $primary-color-text;}
 
@@ -357,6 +353,9 @@ body .rsDefault .rsArrowIcn:hover {background-color: $primary-color-text;}
 .destination_pictures_container{width:400px; height:400px; position: relative; clear: left; margin: 0 0 $space*4}
 body .destination_pictures_container .rsABlock{position:absolute; bottom: 20px; top:auto; left:auto;  right:15px}
 body .destination_pictures_container.rsDefault .rsBullets { top: 10px; right: 10px; left: auto; text-align: right; padding:0}
+
+.destination_pictures_container .links {position: absolute; bottom: 15px; right: 15px; text-align: right}
+.destination_pictures_container .links a{margin-left:10px}
 /* END: Estilos slider */
 
 

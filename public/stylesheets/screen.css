@@ -1142,25 +1142,26 @@ body .rsDefault .rsBullets {
 body .rsDefault .rsBullet {
   height: 17px;
   width: 17px;
-  background: url(../images/backgrounds/slider-controls.jpg) no-repeat 0 -3px;
-}
-
-/* line 351, ../../app/assets/stylesheets/partials/_layout.scss */
-body .rsDefault .rsBullet.rsNavSelected {
   background: url(../images/backgrounds/slider-controls.jpg) no-repeat -20px -3px;
+  cursor: pointer;
 }
 
-/* line 352, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 347, ../../app/assets/stylesheets/partials/_layout.scss */
+body .rsDefault .rsBullet.rsNavSelected {
+  background: url(../images/backgrounds/slider-controls.jpg) no-repeat 0px -3px;
+}
+
+/* line 348, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsArrowIcn {
   background-color: #67cddc;
 }
 
-/* line 353, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 349, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsArrowIcn:hover {
   background-color: #3b3b3d;
 }
 
-/* line 357, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 353, ../../app/assets/stylesheets/partials/_layout.scss */
 .destination_pictures_container {
   width: 400px;
   height: 400px;
@@ -1169,7 +1170,7 @@ body .rsDefault .rsArrowIcn:hover {
   margin: 0 0 20px;
 }
 
-/* line 358, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 354, ../../app/assets/stylesheets/partials/_layout.scss */
 body .destination_pictures_container .rsABlock {
   position: absolute;
   bottom: 20px;
@@ -1178,13 +1179,26 @@ body .destination_pictures_container .rsABlock {
   right: 15px;
 }
 
-/* line 359, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 355, ../../app/assets/stylesheets/partials/_layout.scss */
 body .destination_pictures_container.rsDefault .rsBullets {
   top: 10px;
   right: 10px;
   left: auto;
   text-align: right;
   padding: 0;
+}
+
+/* line 357, ../../app/assets/stylesheets/partials/_layout.scss */
+.destination_pictures_container .links {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  text-align: right;
+}
+
+/* line 358, ../../app/assets/stylesheets/partials/_layout.scss */
+.destination_pictures_container .links a {
+  margin-left: 10px;
 }
 
 /* END: Estilos slider */

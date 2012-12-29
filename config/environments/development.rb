@@ -22,5 +22,8 @@ Infinity::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
+  # Agregado porque no permitía que borre fotos del country_pictures desde el country#show
+  config.action_controller.allow_forgery_protection = false
 end
 

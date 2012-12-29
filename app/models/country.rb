@@ -1,6 +1,6 @@
 class Country < ActiveRecord::Base
-  has_many :country_pictures
-  has_many :travels
+  has_many :country_pictures, :dependent => :destroy
+  has_many :travels, :dependent => :destroy
   belongs_to :destination
 
   extend FriendlyId

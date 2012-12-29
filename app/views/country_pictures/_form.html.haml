@@ -1,29 +1,11 @@
-- form_for(@country_picture) do |f|
-  
-  - if @country_picture.errors.any?
-    #errorExplanation
-      %h2= t('activerecord.errors.messages.country_picture.invalid_record')
-      %ul
-      - @country_picture.errors.full_messages.each do |msg|
-        %li= msg
-  .field
-    = f.label :country_picture_file_name
-    %br
-    = f.text_field :country_picture_file_name
-  .field
-    = f.label :country_picture_content_type
-    %br
-    = f.text_field :country_picture_content_type
-  .field
-    = f.label :country_picture_file_size
-    %br
-    = f.text_field :country_picture_file_size
-  .field
-    = f.label :country_picture_updated_at
-    %br
-    = f.datetime_select :country_picture_updated_at
-  .field
-    = f.label :country_id
-    %br
-    = f.text_field :country_id
+- if @country_picture.errors.any?
+  #errorExplanation
+    %h2= t('activerecord.errors.messages.country_picture.invalid_record')
+    %ul
+    - @country_picture.errors.full_messages.each do |msg|
+      %li= msg
+.field
+  = f.label :country_picture
+  %br
+  = f.file_field :country_picture
 
