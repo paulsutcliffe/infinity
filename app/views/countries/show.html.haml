@@ -11,6 +11,7 @@
   - if current_admin
     .admin.create
       = link_to I18n.t('country_picture.new'), new_destination_country_country_picture_path(@country.destination, @country), :class => 'button new'
+      = link_to I18n.t('destroy'), @destination_country, :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button heading'
   .content
     - if !@country_pictures.blank?
       .destination_pictures_container.rsDefault

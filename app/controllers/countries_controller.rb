@@ -14,7 +14,7 @@ def show
 end
 
 def create
-  create! { destination_countries_path(@destination) }
+  create! { destination_country_path(@destination, @country) }
 end
 
 def update
@@ -22,7 +22,7 @@ def update
 end
 
 def destroy
-  destroy! {destination_countries_path(@destination)}
+  destroy! {destination_path(@destination)}
 end
 
 end
