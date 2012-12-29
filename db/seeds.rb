@@ -11,6 +11,18 @@ long_text = File.read(File.join(Rails.root, '/features/support/long_text.txt'))
 title_url = '/features/support/titles/title-' + '%s' + '.txt'
 title_pack  = File.read(File.join(Rails.root, '/features/support/packs/title-1.txt'))
 
+#############################################################################
+# Admin Model
+#############################################################################
+Admin.delete_all
+Admin.create(
+    :email => 'paul@kosmyka.com',
+    :password => '1234567'
+  )
+Admin.create(
+    :email => 'ricardo@kosmyka.com',
+    :password => '1234567'
+  )
 
 #############################################################################
 # Slide Model

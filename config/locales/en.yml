@@ -2,6 +2,8 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  fullsize: See full size
+  
   will_paginate:
     previous_label: "Previous"
     next_label: "Next"
@@ -40,9 +42,16 @@ en:
   slide:
     new: New Slide
 
+  countries:
+    index: Countrys
+  country:
+    new: New Country
+
+  country_picture:
+    new: Add Country Picture
+
   destinations:
     index: Destinations
-
   destination:
     new: New Destination
 

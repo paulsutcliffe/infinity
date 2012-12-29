@@ -16,7 +16,9 @@ Infinity::Application.routes.draw do
     
     
     resources :destinations do
-      resources :countries
+      resources :countries do
+        resources :country_pictures
+      end
       resources :destination_pictures
     end
     
@@ -40,7 +42,6 @@ Infinity::Application.routes.draw do
   end
   
   resources :abouts
-  resources :country_pictures
 
 
 

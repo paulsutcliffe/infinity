@@ -9,17 +9,20 @@
   = render 'sidebar_first'
 
 #content
+  .content
+    - if @destination_pictures
+      .destination_pictures_container.rsDefault
+        - @destination_pictures.each do |img|
+          .rsContent
+            = image_tag(img.destination_picture(:default))
+            = link_to I18n.t('fullsize'), img.destination_picture(:large), :class => 'button rsABlock'
+
   %h1.page-title
     = @destination.name + ' with Infinity'
   - if current_admin
     .admin.create
-      = link_to I18n.t('destination_picture.new'), new_destination_destination_picture_path(@destination), :class => 'button new'
+      = link_to I18n.t('destination_picture.new'), new_destination_destination_picture_path(@destination), :class => 'button new', :target => '_blank'
 
-  .content
-    .destination_pictures_container
-      - @destination_pictures.each do |img|
-        = image_tag(img.destination_picture(:default))
-    = @destination.description  
-
+    = paragraph(@destination.description)
 
 

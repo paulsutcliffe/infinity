@@ -1,4 +1,6 @@
 = breadcrumb :destination_country, @country
+= content_for :javascript do
+  = javascript_include_tag '/javascripts/destination_slider.js'
 
 #sidebar-first
   = render 'sidebar_first'
@@ -6,8 +8,16 @@
 #content
   %h1.page-title
     = @country.name
-
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('country_picture.new'), new_destination_country_country_picture_path(@destination, @country), :class => 'button new'
   .content
+    - if @country_pictures
+      .destination_pictures_container.rsDefault
+        - @country_pictures.each do |img|
+          .rsContent
+            = image_tag(img.country_picture(:default))
+            = link_to I18n.t('fullsize'), img.country_picture(:large), :class => 'button rsABlock', :target => '_blank'
 
 
 

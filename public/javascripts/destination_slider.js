@@ -8,9 +8,8 @@ $(document).ready(function($) {
       stopAtAction: false
     },
     transitionType:'fade',
-    arrowsNav: true,
+    arrowsNav: false,
     allowCSS3: true,
-    arrowsNavAutoHide: false,
     fadeinLoadedSlide: false,
     controlNavigationSpacing: 0,
     controlNavigation: 'bullets',

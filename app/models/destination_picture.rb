@@ -7,6 +7,11 @@ class DestinationPicture < ActiveRecord::Base
   validates_attachment_size :destination_picture, :less_than => 1.megabytes
   
   has_attached_file :destination_picture, :styles => {
-    :default => {:geometry => '400x400#', :quality => 80, :format => 'jpg'}
+    :default => {:geometry => '400x400#', :quality => 80, :format => 'jpg'},
+    :large => {:geometry => '800x800>', :quality => 80, :format => 'jpg'}
   }
+
+#  has_attached_file :destination_picture_map, :styles => {
+#    :default => {:geometry => '200x400#', :quality => 80, :format => 'jpg'}
+#  }
 end

@@ -5,6 +5,12 @@ class CreateDestinationPictures < ActiveRecord::Migration
       t.string :destination_picture_content_type
       t.integer :destination_picture_file_size
       t.datetime :destination_picture_updated_at
+
+   #   t.string :destination_picture_map_file_name
+   #   t.string :destination_picture_map_content_type
+   #   t.integer :destination_picture_map_file_size
+   #   t.datetime :destination_picture_map_updated_at
+
       t.integer :destination_id
 
       t.timestamps
