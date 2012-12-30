@@ -1,0 +1,11 @@
+%p
+  %strong t('activerecord.attributes.offer.title')
+  = @offer.title
+%p
+  %strong t('activerecord.attributes.offer.description')
+  = @offer.description
+%p
+  %strong t('activerecord.attributes.offer.slug')
+  = @offer.slug
+
+== #{ link_to t('edit'), edit_offer_path(@offer) } | #{ link_to t('back'), offers_path }

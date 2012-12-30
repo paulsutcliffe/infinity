@@ -1,0 +1,5 @@
+%p
+  %strong t('activerecord.attributes.offer_season.title')
+  = @offer_season.title
+
+== #{ link_to t('edit'), edit_offer_season_path(@offer_season) } | #{ link_to t('back'), offer_seasons_path }

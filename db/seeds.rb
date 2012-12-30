@@ -106,6 +106,31 @@ Member.delete_all
   :member_picture => File.open(File.join(Rails.root, '/features/support/member_picture2.jpg')))
 end
 
+
+#############################################################################
+# Offer  Model has_many :offer_seasons
+#############################################################################
+Offer.delete_all
+['Aniversario Safari (2012)', 'Festival de San Patricio'].each do |i|
+  params = {
+    :offer_list => {
+      :title => i,
+      :description => long_text,
+      :offer_picture => File.open(File.join(Rails.root, '/features/support/offer_picture.jpg')) 
+    }
+  }
+  Offer.create(params[:offer_list])
+end
+
+OfferSeason.delete_all
+['Año Nuevo', 'Navidad', 'Verano', 'Vacaciones', 'Festividades'].each do |i| 
+  params = {
+    :season_list => {:title => i}
+  }
+  OfferSeason.create(params[:season_list])
+end
+
+
 #############################################################################
 # Packs Model
 #############################################################################

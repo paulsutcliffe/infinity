@@ -1,0 +1,20 @@
+%h1 
+  =t('offer_seasons.index.title')
+
+%table
+  %thead
+    %tr
+      %th 
+        =t('activerecord.attributes.offer_season.title')
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for offer_season in @offer_seasons
+      %tr{ :class => cycle(:odd, :even) }
+        %td= offer_season.title
+        %td= link_to t('show'), offer_season
+        %td= link_to t('edit'), edit_offer_season_path(offer_season)
+        %td= link_to t('destroy'), offer_season, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('offer_season.new'), new_offer_season_path

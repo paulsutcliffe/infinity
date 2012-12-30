@@ -1,0 +1,20 @@
+
+= breadcrumb :offers
+
+#sidebar-first
+  = render 'sidebar_first'
+
+#content
+  %h1.page-title
+    = I18n.t('offers.index')
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('offer.new'), new_offer_path, :class => 'button new'
+
+  .content
+    %p
+      Curabitur feugiat ornare tellus, eget ultrices libero consectetur non. Proin sed magna in metus consequat ullamcorper. 
+
+
+
+

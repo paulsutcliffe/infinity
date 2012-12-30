@@ -1,0 +1,6 @@
+%h1
+  = t('offer_season.edit.title')
+
+= render 'form'
+
+== #{ link_to t('show'), @offer_season } | #{ link_to t('back'), offer_seasons_path }

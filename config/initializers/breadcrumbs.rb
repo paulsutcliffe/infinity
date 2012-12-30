@@ -65,6 +65,14 @@ Gretel::Crumbs.layout do
     parent :destination, country.destination
   end
 
+  crumb :offers do
+    link I18n.t('offers.index'), offers_path
+  end
+
+  crumb :offer_seasons do
+    link I18n.t('offer_seasons.index'), offer_seasons_path
+  end
+
   # packs
   crumb :pack do
     link I18n.t('packs.index'), packs_path

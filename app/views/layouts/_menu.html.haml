@@ -5,9 +5,8 @@
 
     / menu_li(page_name, controller_name, path)
     = menu_li(I18n.t('homes.index'), 'homes', root_path)
-    = menu_li('Testimonies', 'testimonies', testimonies_path)
     = menu_li('Destinations', 'destinations', destinations_path)
-    = menu_li('Offers', 'offers', root_path)
+    = menu_li(I18n.t('offers.index'), 'offers', offers_path)
     = menu_li(I18n.t('packs.index'), 'packs', packs_path)
     = menu_li('Travels', 'travels', root_path)
     = menu_li('Bookings', 'bookings', root_path)
@@ -15,6 +14,7 @@
 
     - if current_admin
       = menu_li('Slides', 'slides', slides_path)
+      = menu_li('Testimonies', 'testimonies', testimonies_path)
       = menu_li('Members', 'members', members_path)
       = menu_li('Log out', 'any', destroy_admin_session_path)
 

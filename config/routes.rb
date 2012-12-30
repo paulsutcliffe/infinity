@@ -2,6 +2,8 @@ Infinity::Application.routes.draw do
 
 
 
+
+
   resources :testimonies
 
   scope() do
@@ -21,7 +23,14 @@ Infinity::Application.routes.draw do
       end
       resources :destination_pictures
     end
-    
+
+  
+    resources :offers, :path => I18n.t('offers.url') do
+     # get 'special_offers/:offer_season_id'      => "offers#special_offers", :on => :collection
+    end
+
+    resources :offer_seasons, :path => I18n.t('offer_seasons.url') 
+
     resources :packs, :path => I18n.t('packs.url')
 
     resources :posts, :path => I18n.t('posts.url') do

@@ -67,6 +67,18 @@ en:
     index: Members
   member:
     new: New Member
+
+  offers:
+    index: Offers
+    url: offers
+  offer:
+    new: New Offer
+
+  offer_seasons:
+    index: Offer Seasons
+    url: offer/offer_seasons
+  offer_season:
+    new: New Offer Season
  
   packs:
     index: Packs
