@@ -144,6 +144,8 @@ ActiveRecord::Schema.define(:version => 20121229222316) do
     t.string   "title"
     t.text     "description"
     t.string   "slug"
+    t.integer  "offer_season_id"
+    t.string   "offer_type"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "offer_picture_file_name"

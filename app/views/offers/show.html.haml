@@ -1,11 +1,17 @@
-%p
-  %strong t('activerecord.attributes.offer.title')
-  = @offer.title
-%p
-  %strong t('activerecord.attributes.offer.description')
-  = @offer.description
-%p
-  %strong t('activerecord.attributes.offer.slug')
-  = @offer.slug
+#sidebar-first
+  = render 'sidebar_first'
 
-== #{ link_to t('edit'), edit_offer_path(@offer) } | #{ link_to t('back'), offers_path }
+
+#content
+  %h1.page-title
+    = @offer_season.title + ' ' + I18n.t('offer_season.show')
+    
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('offer.new'), new_offer_season_offer_path(@offer_season), :class => 'button new'
+  .content
+    - @offer_seasons.each do |offer|
+      = link_to offer.title, offer_season_offer_path(@offer_season, offer)
+      %br
+
+

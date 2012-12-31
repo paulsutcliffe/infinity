@@ -24,15 +24,23 @@ Infinity::Application.routes.draw do
       resources :destination_pictures
     end
 
-  
-    resources :offers, :path => I18n.t('offers.url') do
-     # get 'special_offers/:offer_season_id'      => "offers#special_offers", :on => :collection
+
+    # offers
+
+
+    # offer_season has_many :offers
+    resources :offer_seasons, :path => I18n.t('offer_seasons.url') do
+      resources :offers, :path => I18n.t('offers.url') 
+        #get 'new_item' => "offers#new_item", :on => :collection
     end
+    
+    resources :offers, :path => I18n.t('offers.url') 
 
-    resources :offer_seasons, :path => I18n.t('offer_seasons.url') 
-
+    # packs
     resources :packs, :path => I18n.t('packs.url')
 
+
+    # posts has_many :news_and_events :press_releases
     resources :posts, :path => I18n.t('posts.url') do
       get 'news_and_events'   => "posts#news_and_events", :on => :collection
       get 'press_releases' => "posts#press_releases", :on => :collection

@@ -4,6 +4,8 @@ class CreateOffers < ActiveRecord::Migration
       t.string :title
       t.text :description
       t.string :slug
+      t.integer :offer_season_id
+      t.string :offer_type
 
       t.timestamps
     end

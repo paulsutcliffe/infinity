@@ -1,0 +1,40 @@
+
+%nav.navegate-by
+  %h2.title
+    = I18n.t('offers.index')
+  %ul
+    - @offers.each do |offer|
+      %li
+        = #link_to_unless_current offer.name, offer_countries_path(offer) do
+        = link_to_unless_current offer.title, offer_path(offer) do
+          %span
+            = offer.name
+        .controls
+          .navigation
+          - if current_admin
+            .admin
+              = link_to I18n.t('edit'), edit_offer_path(offer), :class => 'button edit'
+              = link_to I18n.t('destroy'), offer, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+
+
+
+%nav.navegate-by
+  %h2.title
+    = I18n.t('offer_seasons.index')
+  %ul
+    - @offer_seasons.each do |offer_season|
+      %li
+        = link_to_unless_current offer_season.title, (offer_season) do
+          %span
+            = offer_season.title
+        .controls
+          .navigation
+          - if current_admin
+            .admin
+              = link_to I18n.t('edit'), edit_offer_season_path(offer_season), :class => 'button edit'
+              = link_to I18n.t('destroy'), offer_season, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+
+
+   
+
+

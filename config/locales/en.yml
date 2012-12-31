@@ -76,8 +76,9 @@ en:
 
   offer_seasons:
     index: Offer Seasons
-    url: offer/offer_seasons
+    url: offers/offer_seasons
   offer_season:
+    show: Offers
     new: New Offer Season
  
   packs:

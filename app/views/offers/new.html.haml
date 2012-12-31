@@ -1,6 +1,18 @@
 %h1 
   =t('offer.new')
 
-= render 'form'
+-#
+  - form_for(@offer) do |f|
+    = render(:partial => 'form', :locals => {:f => f})
+    .actions
+      = f.submit I18n.t('submit')
 
-= link_to t('back'), offers_path
+
+
+= form_for(@offer, :url => {:offer_id => params[:offer_id], :action => 'create'}) do |f|
+  = render(:partial => 'form', :locals => {:f => f})
+  = f.collection_select :offer_type, OfferSeason.all, :title, :title
+  .actions
+    = f.submit I18n.t('submit')
+
+

@@ -108,8 +108,17 @@ end
 
 
 #############################################################################
-# Offer  Model has_many :offer_seasons
+# OfferSeason  Model has_many :offers
 #############################################################################
+OfferSeason.delete_all
+['Fuera de Temporada', 'Año Nuevo', 'Navidad', 'Verano', 'Vacaciones', 'Festividades'].each do |i| 
+  params = {
+    :season_list => {:title => i}
+  }
+  OfferSeason.create(params[:season_list])
+end
+
+
 Offer.delete_all
 ['Aniversario Safari (2012)', 'Festival de San Patricio'].each do |i|
   params = {
@@ -120,14 +129,6 @@ Offer.delete_all
     }
   }
   Offer.create(params[:offer_list])
-end
-
-OfferSeason.delete_all
-['Año Nuevo', 'Navidad', 'Verano', 'Vacaciones', 'Festividades'].each do |i| 
-  params = {
-    :season_list => {:title => i}
-  }
-  OfferSeason.create(params[:season_list])
 end
 
 
