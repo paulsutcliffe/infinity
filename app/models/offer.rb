@@ -1,7 +1,6 @@
 class Offer < ActiveRecord::Base
 
 belongs_to :offer_season
-#has_and_belongs_to_many :offer_seasons
 
 extend FriendlyId
 friendly_id :title, :use => :slugged

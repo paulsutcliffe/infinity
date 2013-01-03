@@ -7,20 +7,19 @@
 
 %nav.navegate-by
   %h2.title
-    = I18n.t('offers.index')
+    = I18n.t('offers.index') 
   %ul
-    - @offers.each do |offer|
+    - @offers_sidebar.each do |offer|
       %li
-        = #link_to_unless_current offer.name, offer_countries_path(offer) do
-        = link_to_unless_current offer.title + ' ' + offer.offer_type , offer_path(offer) do
+        = link_to_unless_current offer.title, offer_season_offer_path(offer.offer_season, offer) do
           %span
-            = offer.name
+            = offer.title
         .controls
           .navigation
           - if current_admin
             .admin
-              = link_to I18n.t('edit'), edit_offer_path(offer), :class => 'button edit'
-              = link_to I18n.t('destroy'), offer, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+              = #link_to I18n.t('edit'), edit_offer_path(offer), :class => 'button edit'
+              = #link_to I18n.t('destroy'), offer, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
 
 
 
@@ -28,7 +27,7 @@
   %h2.title
     = I18n.t('offer_seasons.index')
   %ul
-    - @offer_seasons.each do |offer_season|
+    - @offer_seasons_sidebar.each do |offer_season|
       %li
         = link_to_unless_current offer_season.title, offer_season_path(offer_season) do
           %span

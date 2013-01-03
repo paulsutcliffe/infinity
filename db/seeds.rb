@@ -108,7 +108,7 @@ end
 
 
 #############################################################################
-# OfferSeason  Model has_many :offers
+# Offer  Model has_many :offer_seasons
 #############################################################################
 OfferSeason.delete_all
 ['Fuera de Temporada', 'Año Nuevo', 'Navidad', 'Verano', 'Vacaciones', 'Festividades'].each do |i| 

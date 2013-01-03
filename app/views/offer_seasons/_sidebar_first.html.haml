@@ -3,10 +3,10 @@
   %h2.title
     = I18n.t('offers.index')
   %ul
-    - @offers.each do |offer|
+    - @offers_sidebar.each do |offer|
       %li
         = #link_to_unless_current offer.name, offer_countries_path(offer) do
-        = link_to_unless_current offer.title, offer_path(offer) do
+        = link_to_unless_current offer.title, offer_season_offer_path(@offer_season, offer) do
           %span
             = offer.name
         .controls
@@ -22,7 +22,7 @@
   %h2.title
     = I18n.t('offer_seasons.index')
   %ul
-    - @offer_seasons.each do |offer_season|
+    - @offer_seasons_sidebar.each do |offer_season|
       %li
         = link_to_unless_current offer_season.title, (offer_season) do
           %span
