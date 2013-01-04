@@ -1202,6 +1202,12 @@ body .destination_pictures_container.rsDefault .rsBullets {
 }
 
 /* END: Estilos slider */
+/* line 363, ../../app/assets/stylesheets/partials/_layout.scss */
+.field-picture {
+  float: left;
+  margin: 0 5px 5px 0;
+}
+
 /* line 5, ../../app/assets/stylesheets/partials/_admin.scss */
 .admin.create {
   width: 100%;

@@ -13,8 +13,14 @@
       = link_to I18n.t('offer.new'), new_offer_season_offer_path(@offer_season), :class => 'button new'
   .content
     - @offer_seasons_list.each do |offer|
-      = link_to offer.title, offer_season_offer_path(@offer_season, offer)
-      %br
+      .field-article
+        .field-picture
+          = link_to image_tag(offer.offer_picture(:thumb)), offer_season_offer_path(offer.offer_season, offer)
+        .field-content
+          %h2.title          
+            = link_to offer.title, offer_season_offer_path(@offer_season, offer)
+          = link_to paragraph_truncate(offer.description, 300) 
+        %br
 
     
 

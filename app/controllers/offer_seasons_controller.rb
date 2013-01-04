@@ -18,7 +18,7 @@ def show
 
   # show
   @offer_season = OfferSeason.find(params[:id])
-  @offer_seasons_list = @offer_season.offers.find(:all, :conditions => ['offer_type = ?', params[:id]] ) if params[:id].present?
+  @offer_seasons_list = @offer_season.offers.find(:all)# , :conditions => ['offer_type = ?', params[:id]] ) if params[:id].present?
   
   
 
