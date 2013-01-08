@@ -20,7 +20,7 @@
           %h2.title          
             = link_to offer.title, offer_season_offer_path(@offer_season, offer)
           = link_to paragraph_truncate(offer.description, 300) 
-        %br
+          = link_to I18n.t('moredetails'), offer_season_offer_path(offer.offer_season, offer), :class => 'button show'
 
     
 

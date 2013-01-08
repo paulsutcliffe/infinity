@@ -359,7 +359,7 @@ body .destination_pictures_container.rsDefault .rsBullets { top: 10px; right: 10
 /* END: Estilos slider */
 
 
-.field-article {}
+.field-article {width:100%; float:left; clear:left; margin-bottom: $space-bottom}
 .field-picture {float: left; margin:0 $space $space 0}
 .field-content {}
-
+.field-article .link {float: right; text-decoration: underline; color:$primary-color}

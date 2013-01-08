@@ -12,6 +12,6 @@
     .admin.create
       = link_to I18n.t('offer.new'), new_offer_season_offer_path(@offer_season), :class => 'button new'
   .content
-    = @offer.description
+    = paragraph(@offer.description)
 
 

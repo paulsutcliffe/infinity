@@ -1,0 +1,26 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js lt-ie9">
+/ [if gt IE 8]><!
+%html.no-js
+  / <![endif]
+  %head
+    %title= 'Mockup'
+
+    %link{"rel" => "stylesheet", "href" => "/stylesheets/maintenance.css", "type" => "text/css"}
+    %link{"href" => "http://fonts.googleapis.com/css?family=Dosis:500,400,300" }
+
+  %body{:id => bodyid, :class => bodyclass}
+
+    .wrapper
+      %header{:role => 'banner'}
+        = link_to image_tag('/images/logo.png'), root_path
+      %section.region{:role => 'main'}
+        #preface-top
+        = yield
+      
+
+
+  #postscript-bottom.partners
+

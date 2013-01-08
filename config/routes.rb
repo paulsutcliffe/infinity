@@ -4,6 +4,7 @@ Infinity::Application.routes.draw do
 
 
 
+
   resources :testimonies
 
   scope() do
@@ -25,6 +26,9 @@ Infinity::Application.routes.draw do
     end
 
 
+    # maintenance
+    get 'maintenance' => "maintenance#index"     
+
     # offers
 
 
@@ -42,10 +46,13 @@ Infinity::Application.routes.draw do
 
     # posts has_many :news_and_events :press_releases
     resources :posts, :path => I18n.t('posts.url') do
-      get 'news_and_events'   => "posts#news_and_events", :on => :collection
-      get 'press_releases' => "posts#press_releases", :on => :collection
+      resources :posts_and_events
+      resources :press_releases 
     end
-  end
+
+
+
+  end #scope
 
   devise_for :users, 
                :controllers => { :registrations => "users/registrations",
@@ -62,7 +69,6 @@ Infinity::Application.routes.draw do
 
 
 
-  resources :press_releases
 
   resources :carts
 

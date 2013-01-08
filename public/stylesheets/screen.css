@@ -1202,10 +1202,25 @@ body .destination_pictures_container.rsDefault .rsBullets {
 }
 
 /* END: Estilos slider */
+/* line 362, ../../app/assets/stylesheets/partials/_layout.scss */
+.field-article {
+  width: 100%;
+  float: left;
+  clear: left;
+  margin-bottom: 60px;
+}
+
 /* line 363, ../../app/assets/stylesheets/partials/_layout.scss */
 .field-picture {
   float: left;
   margin: 0 5px 5px 0;
+}
+
+/* line 365, ../../app/assets/stylesheets/partials/_layout.scss */
+.field-article .link {
+  float: right;
+  text-decoration: underline;
+  color: #67cddc;
 }
 
 /* line 5, ../../app/assets/stylesheets/partials/_admin.scss */

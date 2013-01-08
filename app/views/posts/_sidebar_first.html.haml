@@ -5,11 +5,11 @@
     = I18n.t('posts.index') 
   %ul
     %li
-      = link_to_unless_current I18n.t('posts.title'), news_and_events_posts_path do
+      = link_to_unless_current I18n.t('posts.title'), post_posts_and_events_path(@posts) do
         %span
           = I18n.t('posts.title')  
     %li
-      = link_to_unless_current I18n.t('press_releases.index'), press_releases_posts_path do
+      = link_to_unless_current I18n.t('press_releases.index'), 'post_press_releases_path(@post)' do
         %span
           = I18n.t('press_releases.index')  
 

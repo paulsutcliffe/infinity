@@ -5,13 +5,13 @@ def index
  # @offer_season = OfferSeason.find(params[:offer_season_id])
   @offers_sidebar = Offer.find(:all, :conditions => ['offer_type = ?', 'Fuera de Temporada'])
 
-  @offer_seasons_sidebar = OfferSeason.all
+  @offer_seasons_sidebar = OfferSeason.all - OfferSeason.find_by_id(39)
 end
 
 def show
   # sidebar
   @offers_sidebar = Offer.find(:all, :conditions => ['offer_type = ?', 'Fuera de Temporada'])
-  @offer_seasons_sidebar = OfferSeason.all
+  @offer_seasons_sidebar = OfferSeason.all - OfferSeason.find_by_id(39)
 
   # show
   @offer = Offer.find(params[:id])

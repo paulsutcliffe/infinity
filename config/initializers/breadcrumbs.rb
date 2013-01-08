@@ -89,19 +89,22 @@ Gretel::Crumbs.layout do
 
   # posts
   crumb :posts do
-    link I18n.t('posts.index'), news_and_events_posts_path
+    link I18n.t('posts.index'), posts_path
   end
 
   crumb :posts_news_and_events do |post|
-    link I18n.t('posts.title'), news_and_events_posts_path
+    link I18n.t('posts.title'), 'news_and_events_posts_path'
     parent :posts, post
   end
 
   crumb :posts_press_releases do |post|
-    link I18n.t('press_releases.index'), press_releases_posts_path
+    link I18n.t('press_releases.index'), 'press_releases_posts_path'
     parent :posts, post
   end
 
+  crumb :posts_news_and_events_post do |post|
+    link post.title, 'news'
+  end
  
   # crumb :project do |project|
   #   link lambda { |project| "#{project.name} (#{project.id.to_s})" }, project_path(project)

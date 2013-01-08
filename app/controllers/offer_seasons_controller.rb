@@ -13,12 +13,16 @@ end
 
 def show
   # render sidebar
-  @offers_sidebar = Offer.find(:all, :conditions => ['offer_type = ?', 'Fuera de Temporada'])
+  @offers_sidebar_ = OfferSeason.find(params[:id])
+  @offers_sidebar = @offers_sidebar_.offers
+
+  @fuera_de_temporada = Offer.find(:all, :conditions => ['offer_type = ?', 'Fuera de Temporada'])
+
   @offer_seasons_sidebar = OfferSeason.all
 
   # show
   @offer_season = OfferSeason.find(params[:id])
-  @offer_seasons_list = @offer_season.offers.find(:all)# , :conditions => ['offer_type = ?', params[:id]] ) if params[:id].present?
+  @offer_seasons_list = @offer_season.offers# , :conditions => ['offer_type = ?', params[:id]] ) if params[:id].present?
   
   
 

@@ -1,0 +1,18 @@
+    body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
+    /*div.dialog {
+      width: 25em;
+      padding: 0 4em;
+      margin: 4em auto 0 auto;
+      border: 1px solid #ccc;
+      border-right-color: #999;
+      border-bottom-color: #999;
+    }*/
+    #preface-top {height:100px; background: url(../images/backgrounds/bevel-cyan-small.jpg) no-repeat 50% 50% white;}
+h1 {
+ /* border-bottom: 1px solid #C4C4C4; */
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 0 0 10px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}

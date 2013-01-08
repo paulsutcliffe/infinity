@@ -23,6 +23,11 @@ en:
   back: Back
   logout: Logout
 
+  more: More
+  seemore: See more
+  readmore: Read more
+  moredetails: More details
+
   users:
     url: servicios
     session:

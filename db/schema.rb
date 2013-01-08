@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121229222316) do
+ActiveRecord::Schema.define(:version => 20130104052017) do
 
   create_table "abouts", :force => true do |t|
     t.string   "title_landing_page"
@@ -177,6 +177,14 @@ ActiveRecord::Schema.define(:version => 20121229222316) do
     t.string   "posts_picture_content_type"
     t.integer  "posts_picture_file_size"
     t.datetime "posts_picture_updated_at"
+  end
+
+  create_table "posts_and_events", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "press_releases", :force => true do |t|

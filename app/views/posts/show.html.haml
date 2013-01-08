@@ -1,3 +1,18 @@
+= breadcrumb :posts_press_releases
+
+#sidebar-first
+  = render 'sidebar_first'
+
+#content
+  %h1.page-title
+    = page_title! I18n.t('press_releases.index')
+
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('press_release.new'), new_press_release_path, :class => 'button create'
+
+
+
 #content
   = image_tag(@post.posts_picture(:default))
 
