@@ -1,8 +1,0 @@
-%p
-  %strong t('activerecord.attributes.posts_and_event.title')
-  = @posts_and_event.title
-%p
-  %strong t('activerecord.attributes.posts_and_event.description')
-  = @posts_and_event.description
-
-== #{ link_to t('edit'), edit_posts_and_event_path(@posts_and_event) } | #{ link_to t('back'), posts_and_events_path }
