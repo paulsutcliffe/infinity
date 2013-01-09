@@ -560,7 +560,7 @@ body .showgrid {
   background-size: 100% 18px, auto;
   background-position: left top;
 }
-/* line 16, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 17, ../../app/assets/stylesheets/partials/_layout.scss */
 body .wrapper {
   width: 950px;
   margin: 0 auto;
@@ -568,7 +568,7 @@ body .wrapper {
   *zoom: 1;
   /*  @include showgrid; */
 }
-/* line 19, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 20, ../../app/assets/stylesheets/partials/_layout.scss */
 body .wrapper header, body .wrapper nav, body .wrapper footer .inner {
   display: inline;
   float: left;
@@ -579,11 +579,11 @@ body .wrapper header, body .wrapper nav, body .wrapper footer .inner {
 * html body .wrapper header, * html body .wrapper nav, * html body .wrapper footer .inner {
   overflow-x: hidden;
 }
-/* line 25, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 26, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer {
   width: 100%;
 }
-/* line 27, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 28, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .inner {
   width: 950px;
   margin: 0 auto;
@@ -591,7 +591,7 @@ body footer .inner {
   *zoom: 1;
 }
 
-/* line 34, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 35, ../../app/assets/stylesheets/partials/_layout.scss */
 .region {
   display: inline;
   float: left;
@@ -603,7 +603,7 @@ body footer .inner {
   overflow-x: hidden;
 }
 
-/* line 38, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 39, ../../app/assets/stylesheets/partials/_layout.scss */
 .region:after {
   content: ".";
   display: block;
@@ -613,12 +613,12 @@ body footer .inner {
   height: 0;
 }
 
-/* line 41, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 42, ../../app/assets/stylesheets/partials/_layout.scss */
 .region {
   zoom: 1;
 }
 
-/* line 45, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 46, ../../app/assets/stylesheets/partials/_layout.scss */
 a {
   color: #3b3b3d;
   text-decoration: none;
@@ -629,12 +629,12 @@ a {
 HEADER - FOOTER
 =============================================================
 */
-/* line 61, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 62, ../../app/assets/stylesheets/partials/_layout.scss */
 .region {
   padding-bottom: 50px;
 }
 
-/* line 67, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 68, ../../app/assets/stylesheets/partials/_layout.scss */
 .site-info {
   position: absolute;
   top: 0px;
@@ -644,27 +644,27 @@ HEADER - FOOTER
   font-size: 17px;
   font-weight: lighter;
 }
-/* line 74, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 75, ../../app/assets/stylesheets/partials/_layout.scss */
 .site-info .phone-list, .site-info .email-list {
   color: tint(#3b3b3d, 50%);
 }
-/* line 77, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 78, ../../app/assets/stylesheets/partials/_layout.scss */
 .site-info span {
   border-left: 1px solid;
   padding-left: 5px;
 }
-/* line 80, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 81, ../../app/assets/stylesheets/partials/_layout.scss */
 .site-info span:first-child {
   border: 0;
 }
 
 /* SLIDER */
-/* line 92, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 93, ../../app/assets/stylesheets/partials/_layout.scss */
 .royalSlider .royalSlide, .royalSlider .royalWrapper {
   background: none !important;
 }
 
-/* line 93, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 94, ../../app/assets/stylesheets/partials/_layout.scss */
 .button, #preface-top .royalSlider .royalCaptionItem, #preface-top .royalSlider .royalCaptionItem {
   padding: 0;
   width: 75px;
@@ -673,30 +673,30 @@ HEADER - FOOTER
 
 /* Estructura DOM
 ======================================================= */
-/* line 99, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 100, ../../app/assets/stylesheets/partials/_layout.scss */
 html {
-  background: #67cddc;
+  background: url(../images/backgrounds/bg-cyan.jpg);
 }
 
-/* line 100, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 101, ../../app/assets/stylesheets/partials/_layout.scss */
 body {
-  background: white;
+  background: url(../images/backgrounds/bg.jpg);
 }
-/* line 102, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 103, ../../app/assets/stylesheets/partials/_layout.scss */
 body header {
   position: relative;
   margin: 25px 0 5px;
 }
-/* line 107, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 108, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer {
-  background: #67cddc;
+  background: url(../images/backgrounds/bg-cyan.jpg);
   height: 90px;
 }
-/* line 110, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 111, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer nav {
   width: 710px;
 }
-/* line 113, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 114, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .copyright {
   display: inline;
   float: left;
@@ -708,7 +708,7 @@ body footer .copyright {
 * html body footer .copyright {
   overflow-x: hidden;
 }
-/* line 117, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 118, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .author {
   display: inline;
   float: left;
@@ -721,7 +721,7 @@ body footer .author {
 * html body footer .author {
   overflow-x: hidden;
 }
-/* line 121, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 122, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .author a {
   position: relative;
   top: 2px;
@@ -736,11 +736,11 @@ body footer .author a {
   *display: inline;
 }
 
-/* line 131, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 132, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom {
-  background: #67cddc;
+  background: url(../images/backgrounds/bg-cyan.jpg);
 }
-/* line 133, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 134, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom h2.title {
   width: 100%;
   padding: 50px 0;
@@ -748,7 +748,7 @@ body footer .author a {
   border-bottom: 0;
   background: url(../images/backgrounds/bevel-cyan.jpg) no-repeat 50% 0 white;
 }
-/* line 137, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 138, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom h2.title:after {
   border-color: transparent transparent #67cddc;
   border-style: solid;
@@ -760,14 +760,14 @@ body footer .author a {
   bottom: 0;
   left: 48%;
 }
-/* line 143, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 144, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom .social-links {
   margin-bottom: 60px;
 }
 
 /* Headings
 ======================================================= */
-/* line 153, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 154, ../../app/assets/stylesheets/partials/_layout.scss */
 h1.page-title, h2.title {
   font-size: 24px;
   font-weight: lighter;
@@ -777,13 +777,13 @@ h1.page-title, h2.title {
   overflow: hidden;
   margin: 0 0 10px;
 }
-/* line 156, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 157, ../../app/assets/stylesheets/partials/_layout.scss */
 .partners h1.page-title, .partners h2.title {
   text-align: center;
   background: url(../images/backgrounds/bevel-cyan.jpg) no-repeat 50% 0 white;
 }
 
-/* line 162, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 163, ../../app/assets/stylesheets/partials/_layout.scss */
 h1.page-title {
   font-size: 32px;
   font-weight: lighter;
@@ -795,7 +795,7 @@ h1.page-title {
 
 /* Texts
 ======================================================= */
-/* line 170, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 171, ../../app/assets/stylesheets/partials/_layout.scss */
 .content p, section[role="main"] > article p,
 p {
   margin: 0 0 15px 0;
@@ -805,14 +805,14 @@ p {
   text-align: justify;
 }
 
-/* line 174, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 175, ../../app/assets/stylesheets/partials/_layout.scss */
 .current {
   font-weight: bold;
 }
 
 /* Navegación
 ======================================================= */
-/* line 180, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 181, ../../app/assets/stylesheets/partials/_layout.scss */
 header nav, footer nav {
   list-style: none;
   margin: 0;
@@ -873,15 +873,15 @@ header nav ul li.last a, footer nav ul li.last a {
   padding-right: 39px;
 }
 
-/* line 188, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 189, ../../app/assets/stylesheets/partials/_layout.scss */
 header nav li.last a {
   padding-right: 5px;
 }
-/* line 192, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 193, ../../app/assets/stylesheets/partials/_layout.scss */
 header nav .footer-only {
   display: none;
 }
-/* line 196, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 197, ../../app/assets/stylesheets/partials/_layout.scss */
 header nav ul:before,
 header nav ul:after {
   content: "";
@@ -892,14 +892,13 @@ header nav ul:after {
   bottom: 0;
   left: 0;
 }
-/* line 199, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 200, ../../app/assets/stylesheets/partials/_layout.scss */
 header nav ul:before {
   bottom: 38px;
   display: none;
 }
-/* line 201, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 202, ../../app/assets/stylesheets/partials/_layout.scss */
 footer nav {
-  background: #67cddc;
   color: white;
 }
 /* line 205, ../../app/assets/stylesheets/partials/_layout.scss */

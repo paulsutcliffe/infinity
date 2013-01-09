@@ -13,6 +13,7 @@ html body footer .copyright,
 body{
   @include blueprint-debug;
   font-family:$font-primary;
+  
   .wrapper {
     @include container;
   /*  @include showgrid; */
@@ -96,16 +97,16 @@ HEADER - FOOTER
 
 /* Estructura DOM
 ======================================================= */
-html {background: $primary-color;}
+html {background: url(../images/backgrounds/bg-cyan.jpg) }
 body {
-  background: white;
+  background: url(../images/backgrounds/bg.jpg);
   header {
     position:relative;
     margin: $space * 5 0 $space;
   }
 
   footer {
-    background:$primary-color ;
+    background: url(../images/backgrounds/bg-cyan.jpg);
     height:90px;
     nav {
       @include span(18);
@@ -129,7 +130,7 @@ body {
 
 
 #postscript-bottom {
-  background:$primary-color;
+  background: url(../images/backgrounds/bg-cyan.jpg);
   h2.title {
     width: 100%; padding: $space-block 0; position: relative;
     border-bottom: 0;
@@ -199,7 +200,6 @@ nav {
     ul:before { bottom: 38px; display: none}
   }
   footer & {
-    background: $primary-color;
     color:white;
     ul {
       li {
