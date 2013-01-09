@@ -22,6 +22,7 @@ group :development do
   gem 'viewcumber'
 end
 
+gem "country-select"
 gem "haml"
 #gem "haml-rails"
 gem "paperclip", "~>2.0"

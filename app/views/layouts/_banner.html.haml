@@ -8,5 +8,8 @@
   - unless current_user
     .login-links
       = link_to 'Admin Login', new_admin_session_path
-      = link_to 'Sign up', new_user_session_path
-      = link_to 'Compare travels', '#'
+      = link_to I18n.t('signin'), new_user_session_path
+      = link_to I18n.t('signup'), new_user_registration_path
+  - else
+    .login-links
+      = link_to I18n.t('signout'), destroy_user_session_path

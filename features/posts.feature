@@ -1,5 +1,4 @@
 # language: es
-@javascript
 Característica: administrar la página de noticias
 
 @admin

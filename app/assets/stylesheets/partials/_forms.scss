@@ -25,13 +25,22 @@ select {
   }
 }
 
+.field-items {margin:0 0 0 15px; @include  inline-block-('left') }
+
 label {
   width: $label-width;
   float: left;
+  .check-field & {
+    width: auto; 
+    float: none;
+  }
 }
 
 input {
   width: $input-width;
+  .check-field & {
+    width: auto;
+  }
 }
 
 .required {

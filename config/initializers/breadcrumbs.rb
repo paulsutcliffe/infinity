@@ -14,6 +14,11 @@ Gretel::Crumbs.layout do
     parent :user, user
   end
 
+  crumb :user_sign_up do |user|
+    link I18n.t('user.sign_up'), new_user_registration_path
+    parent :user, user
+  end
+
   # abouts
   crumb :about do
     link I18n.t('abouts.index'), abouts_path

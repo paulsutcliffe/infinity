@@ -1,5 +1,4 @@
 # language: es
-@javascript
 Característica: administrar los testimonios 
 
 @admin 
@@ -38,6 +37,8 @@ Escenario: eliminar un testimonio
   Y no debería ver "Pedro Perez"
 
 Escenario: el usuario puede ver los testimonios
-  Cuando hago click en "Testimonies"
+  Dado que existe el testimonio "Pedro Perez"
+  Y que estoy en la página inicial
+  Cuando hago click en "See all testimonies"
   Entonces debería ver "Pedro Perez"
   Y no debería ver los controles de administración

@@ -23,6 +23,9 @@ en:
   back: Back
   logout: Logout
 
+  signin: Sign In
+  signup: Register
+  signout: Sign Out
   more: More
   seemore: See more
   readmore: Read more
@@ -33,8 +36,9 @@ en:
     session:
       new: Sign In to Account
   user:
-    root: Services
+    root: Users
     sign_in: Sign In
+    sign_up: Register
     travel_agent_register: Register Travel Agent
     travel_register: Traveler Register
     client_comments: Client's Comments
@@ -119,6 +123,7 @@ en:
 
   testimonies:
     index: Testimonies
+    all: See all testimonies
 
   testimony:
     new: New Testimony

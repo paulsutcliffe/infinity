@@ -6,6 +6,10 @@
   %h1.page-title
     = page_title! I18n.t('testimonies.index')
 
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('testimony.new'), new_testimony_path, :class => 'button new'
+
 
   .content
     - for testimony in @testimonies

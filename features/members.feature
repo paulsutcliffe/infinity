@@ -10,13 +10,13 @@ Escenario: Agregar miembro
   Y lleno "Name" con "José Chavez"
   Y lleno "Email" con "jose@infinity.com" 
   Y lleno "Description" con "Descripción ampliada del perfil de José Chavez"
-  Y uso la imagen "member.jpg"
+  Y adjunto "member_picture.jpg" en "member_member_picture"
   Cuando presiono "Save"
-  Entonces debería ver "Member created successfully."
+  Entonces debería ver "Member was successfully created."
   Y debería ver "José Chavez"
   Y debería ver "jose@infinity.com"
   Y debería ver "Descripción ampliada del perfil de José Chavez"
-  Y debería ver la imagen "member.jpg"
+  Y debería ver la imagen "member_picture.jpg"
 
 @admin
 Escenario: Editar un miembro existente
@@ -25,11 +25,11 @@ Escenario: Editar un miembro existente
   Cuando hago click en "Members"
   Y hago click en "Edit"
   Y lleno "Name" con "Miguel Grau"
-  Y uso la imagen "member2.jpg"
+  Y adjunto "member_picture2.jpg" en "member_member_picture"
   Cuando presiono "Save"
   Entonces debería ver "Miembro updated successfully."
   Y debería ver "Miguel Grau"
-  Y debería ver la imagen "member2.jpg"
+  Y debería ver la imagen "member_picture2.jpg"
 
 @admin
 Escenario: Eliminar un miembro existente
