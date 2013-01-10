@@ -30,7 +30,7 @@ Gretel::Crumbs.layout do
   end
 
   crumb :about_awards do |about|
-    link I18n.t('about.awards'), awards_abouts_path
+    link I18n.t('about.milestones'), milestones_abouts_path
     parent :about, about
   end
 
@@ -47,6 +47,11 @@ Gretel::Crumbs.layout do
   crumb :about_work do |about|
     link I18n.t('about.work'), work_with_us_abouts_path
     parent :about, about 
+  end
+
+  crumb :about_work_new do |about|
+    link I18n.t('applicant.breadcrumb'), new_applicant_path
+    parent :about_work, about 
   end
 
   # destinations

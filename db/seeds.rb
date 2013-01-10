@@ -225,6 +225,7 @@ About.create(
   :text_landing_page => long_text,
   :history => long_text,
   :global_proyection => long_text,
+  :work_with_us => long_text,
   :picture_landing_page => File.new(File.join(Rails.root, '/features/support/about_picture.jpg')),
   :about_picture => File.new(File.join(Rails.root, '/features/support/about_picture.jpg')),
   :global_proyection_picture => File.new(File.join(Rails.root, '/features/support/about_picture.jpg')))

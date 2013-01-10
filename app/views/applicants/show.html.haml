@@ -1,0 +1,28 @@
+%p
+  %strong I18n.t('activerecord.attributes.applicant.name')
+  = @applicant.name
+%p
+  = @applicant.last_name
+%p
+  %strong 
+  = @applicant.address1
+%p
+  %strong I18n.t('activerecord.attributes.applicant.address2')
+  = @applicant.address2
+%p
+  %strong I18n.t('activerecord.attributes.applicant.department')
+  = @applicant.department
+%p
+  %strong I18n.t('activerecord.attributes.applicant.city')
+  = @applicant.city
+%p
+  %strong I18n.t('activerecord.attributes.applicant.postal_code')
+  = @applicant.postal_code
+%p
+  %strong I18n.t('activerecord.attributes.applicant.country')
+  = @applicant.country
+%p
+  %strong I18n.t('activerecord.attributes.applicant.phone')
+  = @applicant.phone
+
+== #{ link_to I18n.t('edit'), edit_applicant_path(@applicant) } | #{ link_to I18n.t('back'), applicants_path }

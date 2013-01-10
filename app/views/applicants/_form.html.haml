@@ -1,0 +1,47 @@
+- form_for(@applicant) do |f|
+  
+  - if @applicant.errors.any?
+    #errorExplanation
+      %h2= t('activerecord.errors.messages.applicant.invalid_record')
+      %ul
+      - @applicant.errors.full_messages.each do |msg|
+        %li= msg
+  .field
+    = f.label :name, I18n.t('activerecord.attributes.applicant.name')
+    %br
+    = f.text_field :name
+  .field
+    = f.label :last_name, I18n.t('activerecord.attributes.applicant.last_name')
+    %br
+    = f.text_field :last_name
+  .field
+    = f.label :address1, I18n.t('activerecord.attributes.applicant.address1')
+    %br
+    = f.text_field :address1
+  .field
+    = f.label :address2, I18n.t('activerecord.attributes.applicant.address2')
+    %br
+    = f.text_field :address2
+  .field
+    = f.label :department, I18n.t('activerecord.attributes.applicant.department')
+    %br
+    = f.text_field :department
+  .field
+    = f.label :city, I18n.t('activerecord.attributes.applicant.city')
+    %br
+    = f.text_field :city
+  .field
+    = f.label :postal_code, I18n.t('activerecord.attributes.applicant.postal_code')
+    %br
+    = f.text_field :postal_code
+  .field
+    = f.label :country, I18n.t('activerecord.attributes.applicant.country')
+    %br
+    = country_select("applicant", "country" )
+  .field
+    = f.label :phone, I18n.t('activerecord.attributes.applicant.phone')
+    %br
+    = f.text_field :phone
+
+  .actions
+    = f.submit I18n.t('send')

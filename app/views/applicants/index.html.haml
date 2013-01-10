@@ -1,0 +1,44 @@
+%h1 
+  =t('applicants.index.title')
+
+%table
+  %thead
+    %tr
+      %th 
+        =t('activerecord.attributes.applicant.name')
+      %th 
+        =t('activerecord.attributes.applicant.last_name')
+      %th 
+        =t('activerecord.attributes.applicant.address1')
+      %th 
+        =t('activerecord.attributes.applicant.address2')
+      %th 
+        =t('activerecord.attributes.applicant.department')
+      %th 
+        =t('activerecord.attributes.applicant.city')
+      %th 
+        =t('activerecord.attributes.applicant.postal_code')
+      %th 
+        =t('activerecord.attributes.applicant.country')
+      %th 
+        =t('activerecord.attributes.applicant.phone')
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for applicant in @applicants
+      %tr{ :class => cycle(:odd, :even) }
+        %td= applicant.name
+        %td= applicant.last_name
+        %td= applicant.address1
+        %td= applicant.address2
+        %td= applicant.department
+        %td= applicant.city
+        %td= applicant.postal_code
+        %td= applicant.country
+        %td= applicant.phone
+        %td= link_to t('show'), applicant
+        %td= link_to t('edit'), edit_applicant_path(applicant)
+        %td= link_to t('destroy'), applicant, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('applicant.new'), new_applicant_path

@@ -46,6 +46,24 @@ en:
   homes:
     index: Home
 
+  abouts:
+    index: About Us
+    url: about-us
+    title: Make the difference with Infinity
+  about:
+    edit: Edit About Infinity
+    history: History
+    milestones: Milestones
+    global: Global Proyection
+    staff: Know our Staff
+    work: Work with Us
+
+  applicants:
+    index: Work with us
+  applicant:
+    new: New Applicant
+    breadcrumb: Submit your information
+
   slides:
     index: Slides
   slide:
@@ -109,18 +127,6 @@ en:
   press_release:
     new: New Press Release
 
-  abouts:
-    index: About Us
-    url: about-us
-    title: Make the difference with Infinity
-  about:
-    edit: Edit About Infinity
-    history: History
-    awards: Awards
-    global: Global Proyection
-    staff: Know our Staff
-    work: Work with Us
-
   testimonies:
     index: Testimonies
     all: See all testimonies
@@ -134,3 +140,19 @@ en:
   milestone:
     new: New Milestone
 
+
+
+  activerecord:
+    attributes:
+      applicant:
+        name: Nombre
+        last_name: Last Name
+        address1: Address 1
+        address2: Address 2
+        department: Department
+        city: City
+        postal_code: Zip Code
+        country: Country
+        phone: Phone
+
+        

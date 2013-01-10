@@ -5,7 +5,7 @@ def about_infinity
   @about = About.limit(1)
 end
 
-def awards 
+def milestones
   @milestones = Milestone.all
   respond_to do |format|
     format.html 

@@ -4,11 +4,11 @@ before_filter :authenticate_admin!
 # find members in abouts#staff
 
 def create
-  create! { members_path }
+  create! { know_our_staff_abouts_path }
 end
 
 def update
-  update! { members_path }
+  update! { know_our_staff_abouts_path }
 end
 
 end

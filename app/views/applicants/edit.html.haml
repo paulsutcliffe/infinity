@@ -1,0 +1,6 @@
+%h1
+  = t('applicant.edit.title')
+
+= render 'form'
+
+== #{ link_to t('show'), @applicant } | #{ link_to t('back'), applicants_path }

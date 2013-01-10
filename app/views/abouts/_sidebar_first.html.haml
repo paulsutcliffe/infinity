@@ -14,11 +14,13 @@
         %span
           = I18n.t('about.history')  
     %li
-      = link_to_unless_current I18n.t('about.awards'), awards_abouts_path do
+      = link_to_unless_current I18n.t('about.milestones'), milestones_abouts_path do
         %span
-          = I18n.t('about.awards')  
+          = I18n.t('about.milestones')  
     %li
-      = link_to I18n.t('about.global'), global_proyection_abouts_path, :remote => true
+      = link_to_unless_current I18n.t('about.global'), global_proyection_abouts_path do #, :remote => true
+        %span
+          = I18n.t('about.global')
     %li
       = link_to_unless_current I18n.t('about.staff'), know_our_staff_abouts_path do
         %span
