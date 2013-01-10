@@ -6,6 +6,10 @@
 #content
   %h1.page-title
     = I18n.t('about.staff')
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('member.new'), new_member_path, :class => 'button new'
+
   .content
     .member-portraits
       - @members.each do |member|
@@ -20,4 +24,8 @@
             = member.position
             = member.email 
           = paragraph(member.description)
-          
+          - if current_admin
+            .admin.crud
+              = link_to I18n.t('edit'), edit_member_path(member), :class => 'button edit'
+              = link_to I18n.t('destroy'), member, :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button delete'
+   

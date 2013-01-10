@@ -11,7 +11,7 @@
   .content
     - for member in @members
       %div{ :class => 'block ' + cycle('odd', 'even') }
-        = image_tag member.member(:medium)
+        = image_tag member.member_picture(:medium)
         = member.name
         = member.email
         = member.position

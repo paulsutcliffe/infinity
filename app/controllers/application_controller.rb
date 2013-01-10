@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  
 
   def slides_in_all_pages
     @slides = Slide.all
