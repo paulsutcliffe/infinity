@@ -1,6 +1,9 @@
 %h1
   = t('country.edit.title')
 
-= render 'form'
+= form_for(@country, :url => {:country_id => params[:country_id], :action => 'update'}) do |f|
+  = render(:partial => 'form', :locals => {:f => f})
+  .actions
+    = f.submit I18n.t('submit')
 
-== #{ link_to t('show'), @country } | #{ link_to t('back'), countries_path }
+

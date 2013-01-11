@@ -1103,20 +1103,26 @@ h1.page-title + p {
   clear: left;
 }
 
+/* line 332, ../../app/assets/stylesheets/partials/_layout.scss */
+.foobar-message-wrapper {
+  font-family: "Dosis" !important;
+  font-weight: normal !important;
+}
+
 /* Estilos slider
 ======================================================= */
-/* line 335, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 337, ../../app/assets/stylesheets/partials/_layout.scss */
 #preface-top .royalSlider {
   width: 950px;
   height: 250px;
 }
 
-/* line 336, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 338, ../../app/assets/stylesheets/partials/_layout.scss */
 .rsOverflow {
   position: relative;
 }
 
-/* line 337, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 339, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsABlock {
   position: absolute;
   top: 5px;
@@ -1124,30 +1130,30 @@ body .rsABlock {
   right: 35px;
 }
 
-/* line 338, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 340, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsPreloader {
   background-image: url(/javascripts/libs/royal-slider-9.2/preloaders/preloader-white.gif);
 }
 
-/* line 339, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 341, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsCloseVideoIcn {
   background: url("/javascripts/libs/royal-slider-9.2/rs-default.png") -64px 0;
 }
 
-/* line 340, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 342, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom.partners ul.slider {
   width: 950px;
   height: 80px;
 }
 
-/* line 341, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 343, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom .rsABlock {
   position: absolute;
   top: 5px;
   left: 0;
 }
 
-/* line 343, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 345, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsBullets {
   background: none;
   bottom: auto;
@@ -1155,7 +1161,7 @@ body .rsDefault .rsBullets {
   padding-top: 15px;
 }
 
-/* line 345, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 347, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsBullet {
   height: 17px;
   width: 17px;
@@ -1163,22 +1169,22 @@ body .rsDefault .rsBullet {
   cursor: pointer;
 }
 
-/* line 347, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 349, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsBullet.rsNavSelected {
   background: url(../images/backgrounds/slider-controls.jpg) no-repeat 0px -3px;
 }
 
-/* line 348, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 350, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsArrowIcn {
   background-color: #67cddc;
 }
 
-/* line 349, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 351, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsArrowIcn:hover {
   background-color: #3b3b3d;
 }
 
-/* line 353, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 355, ../../app/assets/stylesheets/partials/_layout.scss */
 .destination_pictures_container {
   width: 400px;
   height: 400px;
@@ -1187,7 +1193,7 @@ body .rsDefault .rsArrowIcn:hover {
   margin: 0 0 20px;
 }
 
-/* line 354, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 356, ../../app/assets/stylesheets/partials/_layout.scss */
 body .destination_pictures_container .rsABlock {
   position: absolute;
   bottom: 20px;
@@ -1196,7 +1202,7 @@ body .destination_pictures_container .rsABlock {
   right: 15px;
 }
 
-/* line 355, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 357, ../../app/assets/stylesheets/partials/_layout.scss */
 body .destination_pictures_container.rsDefault .rsBullets {
   top: 10px;
   right: 10px;
@@ -1205,7 +1211,7 @@ body .destination_pictures_container.rsDefault .rsBullets {
   padding: 0;
 }
 
-/* line 357, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 359, ../../app/assets/stylesheets/partials/_layout.scss */
 .destination_pictures_container .links {
   position: absolute;
   bottom: 15px;
@@ -1213,13 +1219,13 @@ body .destination_pictures_container.rsDefault .rsBullets {
   text-align: right;
 }
 
-/* line 358, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 360, ../../app/assets/stylesheets/partials/_layout.scss */
 .destination_pictures_container .links a {
   margin-left: 10px;
 }
 
 /* END: Estilos slider */
-/* line 362, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 364, ../../app/assets/stylesheets/partials/_layout.scss */
 .field-article {
   width: 100%;
   float: left;
@@ -1227,13 +1233,13 @@ body .destination_pictures_container.rsDefault .rsBullets {
   margin-bottom: 60px;
 }
 
-/* line 363, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 365, ../../app/assets/stylesheets/partials/_layout.scss */
 .field-picture {
   float: left;
   margin: 0 5px 5px 0;
 }
 
-/* line 365, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 367, ../../app/assets/stylesheets/partials/_layout.scss */
 .field-article .link {
   float: right;
   text-decoration: underline;
