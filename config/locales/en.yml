@@ -73,6 +73,7 @@ en:
     index: Countrys
   country:
     new: New Country
+    flights: Flights
 
   country_picture:
     new: Add Country Picture

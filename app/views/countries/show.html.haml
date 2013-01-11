@@ -6,13 +6,6 @@
   = render 'sidebar_first'
 
 #content
-  %h1.page-title
-    = @country.name
-  - if current_admin
-    .admin.create
-      = link_to I18n.t('country_picture.new'), new_destination_country_country_picture_path(@country.destination, @country), :class => 'button new'
-      = link_to I18n.t('destroy'), @destination_country, :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button heading'
-      = link_to I18n.t('edit'), edit_destination_country_path(@country.destination, @country), :class => 'button new'
   .content
     - if !@country_pictures.blank?
       .destination_pictures_container.rsDefault
@@ -24,7 +17,19 @@
               - if current_admin
                 = link_to I18n.t('destroy'), destination_country_country_picture_url(@destination, @country, img), :confirm =>  I18n.t('confirm_delete'), :method => :delete, :class => 'button'
                 = link_to I18n.t('edit'), edit_destination_country_country_picture_path(@destination, @country, img), :class => 'button'
+    = @country.image_map
                
+  %h1.page-title
+    = @country.name
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('country_picture.new'), new_destination_country_country_picture_path(@country.destination, @country), :class => 'button new'
+      = link_to I18n.t('destroy'), @destination_country, :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button heading'
+      = link_to I18n.t('edit'), edit_destination_country_path(@country.destination, @country), :class => 'button new'
+
+  .content
+    = paragraph(@country.description)
+
 
 -# 
   ojo, al intentar borrar el country_picture, me arrojaba un error:

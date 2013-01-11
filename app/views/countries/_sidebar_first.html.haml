@@ -7,5 +7,18 @@
       %li
         = link_to_unless_current country.name, destination_country_path(country.destination, country) do
           = country.name
-   
+  
+.country-flight-details.sidebar-block
+  %h2.title
+    = I18n.t('country.flights')
+  %ul
+    %li
+      = @country.time_zone
+    %li
+      = @country.weather
+    %li
+      = @country.voltage
+    %li
+      = @country.currency
+
 

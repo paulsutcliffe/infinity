@@ -31,14 +31,15 @@
     @include prepend(0);
     @include append(1);
     margin-right: 0;
-    nav {
+    nav, .sidebar-block {
       @include span(6);
     }
-    nav, section {
+    nav, section, .sidebar-block {
       @include sidebarshadowbug(3px, 0);
       @include box-sizing;
     }
-    .navegate-by {
+    .navegate-by,
+    .sidebar-block {
       @include sombreado;
       @include span(6);
       @include default-list;
@@ -55,11 +56,13 @@
 
 
 #sidebar-first {
-  section, nav {
+  section, nav, .sidebar-block {
     @include sidebar-block;
     @include clearfix2;
     @include sidebarshadowbug(0, 3px);
     padding: $space * 2;
+    margin-bottom: $space*3;
+    float: left;
   }
   .search-travel {
     @include sombreado;
