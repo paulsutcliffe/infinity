@@ -6,7 +6,7 @@
     - @fuera_de_temporada.each do |fuera|
       %li
         = #link_to_unless_current offer.name, offer_countries_path(offer) do
-        = link_to_unless_current fuera.name, 'offer_season_travel_path(@offer_season, offer_season)' do
+        = link_to_unless_current fuera.name, offer_season_travel_path(fuera.offer_season, fuera) do
           %span
             = fuera.title
         .controls
