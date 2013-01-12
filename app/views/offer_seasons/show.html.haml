@@ -11,6 +11,8 @@
   - if current_admin
     .admin.create
       = link_to I18n.t('offer.new'), new_offer_season_travel_path(@offer_season), :class => 'button new'
+      = link_to I18n.t('edit'), edit_offer_season_path(@offer_season), :class => 'button'
+      = link_to I18n.t('destroy'), offer_season_path(@offer_season), :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button heading'
   .content
     - @travel_list.each do |travel|
       .field-article

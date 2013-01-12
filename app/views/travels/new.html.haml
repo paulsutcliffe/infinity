@@ -1,6 +1,8 @@
 %h1 
   =t('travel.new')
 
-= render 'form'
+= form_for(@travel, :url => {:travel_id => params[:travel_id], :action => 'create'}) do |f|
+  = render(:partial => 'form', :locals => {:f => f})
+  .actions
+    = f.submit I18n.t('submit')
 
-= link_to t('back'), travels_path

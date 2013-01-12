@@ -1,51 +1,52 @@
-- form_for(@travel) do |f|
-  
-  - if @travel.errors.any?
-    #errorExplanation
-      %h2= t('activerecord.errors.messages.travel.invalid_record')
-      %ul
-      - @travel.errors.full_messages.each do |msg|
-        %li= msg
-  .field
-    = f.label :name
-    %br
-    = f.text_field :name
-  .field
-    = f.label :overview
-    %br
-    = f.text_area :overview
-  .field
-    = f.label :advantages
-    %br
-    = f.text_area :advantages
-  .field
-    = f.label :price
-    %br
-    = f.text_field :price
-  .field
-    = f.label :days
-    %br
-    = f.text_field :days
-  .field
-    = f.label :departures
-    %br
-    = f.text_field :departures
-  .field
-    = f.label :maxgroupsize
-    %br
-    = f.text_field :maxgroupsize
-  .field
-    = f.label :travel_map
-    %br
-    = f.text_area :travel_map
-  .field
-    = f.label :notes
-    %br
-    = f.text_area :notes
-  .field
-    = f.label :country_id
-    %br
-    = f.text_field :country_id
 
-  .actions
-    = f.submit I18n.t('submit')
+- if @travel.errors.any?
+  #errorExplanation
+    %h2= t('activerecord.errors.messages.travel.invalid_record')
+    %ul
+    - @travel.errors.full_messages.each do |msg|
+      %li= msg
+.field
+  = f.label :name
+  %br
+  = f.text_field :name
+.field
+  = f.label :description
+  %br
+  = f.text_area :description
+.field
+  = f.label :overview
+  %br
+  = f.text_area :overview
+.field
+  = f.label :advantages
+  %br
+  = f.text_area :advantages
+.field
+  = f.label :price
+  %br
+  = f.text_field :price
+.field
+  = f.label :days
+  %br
+  = f.text_field :days
+.field
+  = f.label :departures
+  %br
+  = f.text_field :departures
+.field
+  = f.label :maxgroupsize
+  %br
+  = f.text_field :maxgroupsize
+.field
+  = f.label :travel_map
+  %br
+  = f.text_area :travel_map
+.field
+  = f.label :notes
+  %br
+  = f.text_area :notes
+.field
+  = f.label :country_id
+  %br
+  = f.text_field :country_id
+

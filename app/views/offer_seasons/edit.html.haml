@@ -1,6 +1,9 @@
 %h1
   = t('offer_season.edit.title')
 
-= render 'form'
+= form_for(@offer_season, :url => {:offer_season_id => params[:offer_season_id], :action => 'update'}) do |f|
+  = render(:partial => 'form', :locals => {:f => f})
+  .actions
+    = f.submit I18n.t('update')
 
 == #{ link_to t('show'), @offer_season } | #{ link_to t('back'), offer_seasons_path }

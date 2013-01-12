@@ -9,16 +9,27 @@ def index
 end
 
 def show
-  # sidebar
-  @travels_sidebar = Travel.find(:all, :conditions => ['travel_type = ?', 'Fuera de Temporada'])
-  @travel_seasons_sidebar = OfferSeason.all - OfferSeason.find_by_id(39)
-
-  # show
-  @offer = Travel.find(params[:id])
-
+  #call id from offer season
   @offer_season = OfferSeason.find(params[:offer_season_id])
-  @offer_seasons = @offer_season.offers.all
 
+  # render _sidebar
+  @offer_season_travels_sidebar = @offer_season.travels.all
+  @offer_seasons_sidebar = OfferSeason.all
+
+  # render show
+  @travel = @offer_season.travels.find(params[:id])
 end
+
+
+
+def update
+  update!{ offer_season_travel_path(@offer_season, @travel) }
+end
+
+def destroy
+  destroy!{ offer_season_path(@offer_season) }
+end
+
+
 
 end

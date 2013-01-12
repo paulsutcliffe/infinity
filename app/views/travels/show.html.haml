@@ -1,32 +1,16 @@
-%p
-  %strong t('activerecord.attributes.travel.name')
-  = @travel.name
-%p
-  %strong t('activerecord.attributes.travel.overview')
-  = @travel.overview
-%p
-  %strong t('activerecord.attributes.travel.advantages')
-  = @travel.advantages
-%p
-  %strong t('activerecord.attributes.travel.price')
-  = @travel.price
-%p
-  %strong t('activerecord.attributes.travel.days')
-  = @travel.days
-%p
-  %strong t('activerecord.attributes.travel.departures')
-  = @travel.departures
-%p
-  %strong t('activerecord.attributes.travel.maxgroupsize')
-  = @travel.maxgroupsize
-%p
-  %strong t('activerecord.attributes.travel.travel_map')
-  = @travel.travel_map
-%p
-  %strong t('activerecord.attributes.travel.notes')
-  = @travel.notes
-%p
-  %strong t('activerecord.attributes.travel.country_id')
-  = @travel.country_id
+=# breadcrumb :offer_season, @offer_season
 
-== #{ link_to t('edit'), edit_travel_path(@travel) } | #{ link_to t('back'), travels_path }
+#sidebar-first
+  = render 'sidebar_first'
+
+#content
+  %h1.page-title
+    = @travel.name 
+    
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('travel.new'), new_offer_season_travel_path(@offer_season), :class => 'button new'
+      = link_to I18n.t('edit'), edit_offer_season_travel_path(@offer_season), :class => 'button'
+      = link_to I18n.t('destroy'), offer_season_travel_path(@offer_season), :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button heading'
+  .content
+     
