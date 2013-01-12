@@ -4,8 +4,3 @@
 %p
   %strong t('activerecord.attributes.pack.description')
   = @pack.description
-%p
-  %strong t('activerecord.attributes.pack.slug')
-  = @pack.slug
-
-== #{ link_to t('edit'), edit_pack_path(@pack) } | #{ link_to t('back'), packs_path }

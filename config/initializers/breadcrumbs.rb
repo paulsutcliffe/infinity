@@ -93,8 +93,14 @@ Gretel::Crumbs.layout do
   end
 
   # packs
-  crumb :pack do
+  crumb :packs do
     link I18n.t('packs.index'), packs_path
+  end
+
+  # packs
+  crumb :pack do |pack|
+    link pack.title, pack_path(path)
+    parent :packs, pack
   end
 
   # posts
