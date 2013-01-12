@@ -124,37 +124,38 @@ season_new_year = OfferSeason.create(:title => 'Año Nuevo')
 #end
 
 Offer.delete_all
+Travel.delete_all
 ['Aniversario Safari (2012)', 'Poker desde Las Vegas'].each do |i|
   params = {
     :offer_list => {
-      :title => i,
+      :name => i,
       :description => long_text,
-      :offer_picture => File.open(File.join(Rails.root, '/features/support/offer_picture.jpg')) 
+      :travel_picture => File.open(File.join(Rails.root, '/features/support/offer_picture.jpg')) 
     }
   }
-  season_fuera_de_temporada.offers.create(params[:offer_list])
+  season_fuera_de_temporada.travels.create(params[:offer_list])
 end
 
 ['Miles de Feligreses Viajan', 'Festival de San Patricio'].each do |i|
   params = {
     :offer_list => {
-      :title => i,
+      :name => i,
       :description => long_text,
-      :offer_picture => File.open(File.join(Rails.root, '/features/support/offer_picture.jpg')) 
+      :travel_picture => File.open(File.join(Rails.root, '/features/support/offer_picture.jpg')) 
     }
   }
-  season_navidad.offers.create(params[:offer_list])
+  season_navidad.travels.create(params[:offer_list])
 end
 
 ['Gran Festival de Año Nuevo', 'Las Noticias Más Impactantes del 2012'].each do |i|
   params = {
     :offer_list => {
-      :title => i,
+      :name => i,
       :description => long_text,
-      :offer_picture => File.open(File.join(Rails.root, '/features/support/offer_picture.jpg')) 
+      :travel_picture => File.open(File.join(Rails.root, '/features/support/offer_picture.jpg')) 
     }
   }
-  season_new_year.offers.create(params[:offer_list])
+  season_new_year.travels.create(params[:offer_list])
 end
 
 

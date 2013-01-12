@@ -3,18 +3,18 @@
   %h2.title
     = I18n.t('offers.index')
   %ul
-    - @offers_sidebar.each do |offer|
+    - @offer_seasons_sidebar.each do |offer_season|
       %li
         = #link_to_unless_current offer.name, offer_countries_path(offer) do
-        = link_to_unless_current offer.title, offer_season_offer_path(@offer_season, offer) do
+        = link_to_unless_current offer_season.title, 'offer_season_travel_path(@offer_season, offer_season)' do
           %span
-            = offer.name
+            = offer_season.title
         .controls
           .navigation
           - if current_admin
             .admin
-              = link_to I18n.t('edit'), edit_offer_path(offer), :class => 'button edit'
-              = link_to I18n.t('destroy'), offer, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+              = link_to I18n.t('edit'), edit_travel_path(offer_season), :class => 'button edit'
+              = link_to I18n.t('destroy'), offer_season, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
 
 
 

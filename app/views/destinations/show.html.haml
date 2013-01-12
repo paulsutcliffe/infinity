@@ -27,6 +27,7 @@
     .admin.create
       = link_to I18n.t('destination_picture.new'), new_destination_destination_picture_path(@destination), :class => 'button new', :target => '_blank'
       = link_to I18n.t('country.new'), new_destination_country_path(@destination), :class => 'button heading'
+      = link_to I18n.t('edit'), edit_destination_path, :class => 'button'
 
   .content
     = paragraph(@destination.description)

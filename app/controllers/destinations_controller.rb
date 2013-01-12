@@ -8,4 +8,9 @@ class DestinationsController < InheritedResources::Base
     @destination_pictures = @destination.destination_pictures.all
   end
 
+
+  def update
+    update! { destination_path(@destination) }
+  end
+
 end

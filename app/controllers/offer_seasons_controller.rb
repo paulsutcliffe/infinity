@@ -2,7 +2,7 @@ class OfferSeasonsController < InheritedResources::Base
 
 def index
  # render sidebar
-  @offers_sidebar = Offer.find(:all, :conditions => ['offer_type = ?', 'Fuera de Temporada'])
+  @offers_sidebar = Travel.find(:all, :conditions => ['offer_type = ?', 'Fuera de Temporada'])
   @offer_seasons_sidebar = OfferSeason.all
 
 
@@ -13,16 +13,16 @@ end
 
 def show
   # render sidebar
-  @offers_sidebar_ = OfferSeason.find(params[:id])
-  @offers_sidebar = @offers_sidebar_.offers
+  @offer_seasons_sidebar_ = OfferSeason.find(params[:id])
+  #@travels_sidebar = @offers_sidebar.travels
 
-  @fuera_de_temporada = Offer.find(:all, :conditions => ['offer_type = ?', 'Fuera de Temporada'])
+  @fuera_de_temporada = Travel.find(:all) 
 
   @offer_seasons_sidebar = OfferSeason.all
 
   # show
   @offer_season = OfferSeason.find(params[:id])
-  @offer_seasons_list = @offer_season.offers# , :conditions => ['offer_type = ?', params[:id]] ) if params[:id].present?
+  @travel_list = @offer_season.travels
   
   
 

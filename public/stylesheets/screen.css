@@ -1303,29 +1303,39 @@ body .destination_pictures_container.rsDefault .rsBullets {
   right: 0;
   margin-right: 0;
 }
+/* line 15, ../../app/assets/stylesheets/partials/_admin.scss */
+#sidebar-first .admin {
+  padding-left: 17px;
+}
+/* line 17, ../../app/assets/stylesheets/partials/_admin.scss */
+#sidebar-first .admin a {
+  font-size: 12px !important;
+  float: left !important;
+  margin-right: 5px !important;
+}
 
-/* line 19, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 27, ../../app/assets/stylesheets/partials/_admin.scss */
 .admin a.button, .admin #preface-top .royalSlider a.royalCaptionItem, #preface-top .royalSlider .admin a.royalCaptionItem {
   /*float: none;*/
 }
 
-/* line 26, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 34, ../../app/assets/stylesheets/partials/_admin.scss */
 #slides .block, #milestones .block {
   width: 100%;
   margin: 0 0 20px;
   float: left;
   clear: left;
 }
-/* line 29, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 37, ../../app/assets/stylesheets/partials/_admin.scss */
 #slides .block img, #milestones .block img {
   float: left;
 }
-/* line 32, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 40, ../../app/assets/stylesheets/partials/_admin.scss */
 #slides .block .navigation, #milestones .block .navigation {
   float: left;
   clear: left;
 }
-/* line 35, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 43, ../../app/assets/stylesheets/partials/_admin.scss */
 #slides .block .admin, #milestones .block .admin {
   float: left;
 }

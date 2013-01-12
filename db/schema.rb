@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130110030822) do
+ActiveRecord::Schema.define(:version => 20130111050545) do
 
   create_table "abouts", :force => true do |t|
     t.string   "title_landing_page"
@@ -240,6 +240,7 @@ ActiveRecord::Schema.define(:version => 20130110030822) do
 
   create_table "travels", :force => true do |t|
     t.string   "name"
+    t.text     "description"
     t.text     "overview"
     t.text     "advantages"
     t.string   "price"
@@ -249,8 +250,14 @@ ActiveRecord::Schema.define(:version => 20130110030822) do
     t.text     "travel_map"
     t.text     "notes"
     t.integer  "country_id"
+    t.integer  "offer_season_id"
+    t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "travel_picture_file_name"
+    t.string   "travel_picture_content_type"
+    t.integer  "travel_picture_file_size"
+    t.datetime "travel_picture_updated_at"
   end
 
   create_table "users", :force => true do |t|

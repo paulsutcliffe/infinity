@@ -1,0 +1,45 @@
+-#
+  - if params[:action] == 'index'
+    - @page_name = 'Destinations'
+  - if params[:action] == 'show'
+    - @page_name = @travel.name
+
+
+%nav.navegate-by
+  %h2.title
+    = I18n.t('travels.index') 
+  %ul
+    - @offer_seasons_sidebar.each do |offer_season|
+      %li
+        = link_to_unless_current offer_season|.title, travel_season_travel_path(offer_season.travel_season, offer_season) do
+          %span
+            = offer_season.title
+        .controls
+          .navigation
+          - if current_admin
+            .admin
+              = #link_to I18n.t('edit'), edit_travel_path(travel), :class => 'button edit'
+              = #link_to I18n.t('destroy'), travel, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+
+
+
+%nav.navegate-by
+  %h2.title
+    = I18n.t('travel_seasons.index')
+  %ul
+    - @travel_seasons_sidebar.each do |travel_season|
+      %li
+        = link_to_unless_current travel_season.title, travel_season_path(travel_season) do
+          %span
+            = travel_season.name
+        .controls
+          .navigation
+          - if current_admin
+            .admin
+              = link_to I18n.t('edit'), edit_travel_season_path(travel_season), :class => 'button edit'
+              = link_to I18n.t('destroy'), travel_season, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+
+
+   
+
+

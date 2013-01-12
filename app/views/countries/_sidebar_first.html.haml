@@ -6,7 +6,8 @@
     - @countries.each do |country|
       %li
         = link_to_unless_current country.name, destination_country_path(country.destination, country) do
-          = country.name
+          %span
+            = country.name
   
 .country-flight-details.sidebar-block
   %h2.title

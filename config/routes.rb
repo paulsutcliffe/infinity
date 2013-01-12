@@ -35,7 +35,7 @@ Infinity::Application.routes.draw do
 
     # offer_season has_many :offers
     resources :offer_seasons, :path => I18n.t('offer_seasons.url') do
-      resources :offers, :path => I18n.t('offers.url') 
+      resources :travels, :path => I18n.t('travels.url') 
         #get 'new_item' => "offers#new_item", :on => :collection
     end
     
