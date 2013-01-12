@@ -80,10 +80,16 @@ Gretel::Crumbs.layout do
     link I18n.t('offers.index'), offers_path
   end
 
+  # offer_seasons
+  crumb :offer_seasons do
+    link I18n.t('offer_seasons.index'), offer_seasons_path
+  end
+
+
   # offer_season
   crumb :offer_season do |season|
-    link "#{season.title}", offer_season_path(season)
-    parent :offers
+    link season.title, offer_seasons_path(season)
+    parent :offer_seasons, season
   end
 
   # offer_season / travels 

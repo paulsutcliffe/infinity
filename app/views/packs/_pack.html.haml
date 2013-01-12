@@ -11,6 +11,8 @@
       = link_to I18n.t('destroy'), @pack, :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button heading'
 
   .content
+    .field-image
+      = image_tag pack.pack_picture(:default)
     = paragraph(pack.description)
 
 
