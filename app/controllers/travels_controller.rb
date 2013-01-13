@@ -1,6 +1,8 @@
 class TravelsController < InheritedResources::Base
 belongs_to :offer_season, :finder => :find_by_slug!
 
+
+
 def index
  # @offer_season = OfferSeason.find(params[:offer_season_id])
   @travels_sidebar = Travel.find(:all, :conditions => ['travel_type = ?', 'Fuera de Temporada'])
@@ -19,6 +21,8 @@ def show
   # render show
   @travel = @offer_season.travels.find(params[:id])
   @itineraries = @travel.itineraries.all
+
+
 
 end
 

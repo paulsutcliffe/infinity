@@ -1,6 +1,7 @@
 %h1
   = t('itinerary.edit.title')
 
-= render 'form'
-
-== #{ link_to t('show'), @itinerary } | #{ link_to t('back'), itineraries_path }
+- form_for(@itinerary, :url => {:itinerary_id => params[:itinerary_id], :action => 'update'}, :html => {:multipart => true}) do |f|
+  = render(:partial => 'form', :locals => {:f => f})
+  .actions
+    = f.submit I18n.t('update')

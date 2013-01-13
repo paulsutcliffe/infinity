@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130113031727) do
+ActiveRecord::Schema.define(:version => 20130113213736) do
 
   create_table "abouts", :force => true do |t|
     t.string   "title_landing_page"
@@ -134,11 +134,16 @@ ActiveRecord::Schema.define(:version => 20130113031727) do
 
   create_table "itinerary_contents", :force => true do |t|
     t.text     "content"
+    t.string   "hotel"
     t.integer  "offer_season_id"
     t.integer  "travel_id"
     t.integer  "itinerary_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "itinerary_content_picture_file_name"
+    t.string   "itinerary_content_picture_content_type"
+    t.integer  "itinerary_content_picture_file_size"
+    t.datetime "itinerary_content_picture_updated_at"
   end
 
   create_table "members", :force => true do |t|

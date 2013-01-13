@@ -9,6 +9,9 @@ belongs_to :travel, :finder => :find_by_slug!
 
     @itinerary = @travel.itineraries.new
     3.times { @itinerary.itinerary_contents.build }    
+    
+
+
 
     respond_to do |format|
       format.html # new.html.erb
@@ -17,15 +20,15 @@ belongs_to :travel, :finder => :find_by_slug!
   end
 
   def create
-    create! { offer_season_travel_path(@travel.offer_season_id, @travel) }
+    create! { offer_season_travel_path(@travel.offer_season, @travel) }
   end
 
   def update
-    update! { offer_season_travel_path(@travel.offer_season_id, @travel) }
+    update! { offer_season_travel_path(@travel.offer_season, @travel) }
   end
 
   def destroy
-    destroy! { offer_season_travel_path(@travel.offer_season_id, @travel)}
+    destroy! { offer_season_travel_path(@travel.offer_season, @travel)}
   end
 
 

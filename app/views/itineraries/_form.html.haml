@@ -10,13 +10,11 @@
   = f.label :title
   = f.text_field :title
 
-- f.fields_for :itineary_contents do |builder| 
-  .fields
-    %div
-      = builder.label :content, 'Question'
-      = remove_child_link "remove", builder
-      %br
-      = builder.text_area :content, :rows => 3
+
+
+
+- f.fields_for :itinerary_contents do |builder| 
+  = render 'itinerary_content_fields', :f => builder
 
 -#
   .field

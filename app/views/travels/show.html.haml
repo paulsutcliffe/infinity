@@ -13,11 +13,24 @@
       = link_to I18n.t('travel.new'), new_offer_season_travel_path(@offer_season), :class => 'button new'
       = link_to I18n.t('edit'), edit_offer_season_travel_path(@offer_season), :class => 'button'
       = link_to I18n.t('destroy'), offer_season_travel_path(@offer_season), :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button heading'
+
   .content
     - @itineraries.each do |itinerary|
-      = itinerary.title
+      %h2 Itinerary
+      .admin.create
+        = link_to I18n.t('edit'), edit_offer_season_travel_itinerary_path(@offer_season, @travel, itinerary), :class => 'button'
 
-    -#
-      - for itinerary in @travel.itinerary_contents
-        = itinerary.content
-     
+      - number = 1;
+      %ol
+      - itinerary.itinerary_contents.each do |itinerary_content|
+        %li
+          %span
+            Día
+            = number 
+            - number += 1;
+          = paragraph(itinerary_content.content)
+          = itinerary_content.hotel
+          = image_tag itinerary_content.itinerary_content_picture(:default)
+
+
+

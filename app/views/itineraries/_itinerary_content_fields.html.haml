@@ -1,0 +1,18 @@
+.fields
+  %div
+    = f.label :content, 'Question'
+    = remove_child_link "remove", f
+    %br
+    = f.text_area :content, :rows => 3 
+
+    %br
+    = f.label :hotel
+    = f.text_field :hotel
+    %br
+
+    = f.label :itinerary_content_picture
+    = f.file_field :itinerary_content_picture
+
+
+
+
