@@ -3,6 +3,8 @@ class Travel < ActiveRecord::Base
   belongs_to :offer_season
   has_many :prices
   has_many :extensions
+  has_many :itineraries, :dependent => :destroy
+  
 
   extend FriendlyId
   friendly_id :name, :use => :slugged

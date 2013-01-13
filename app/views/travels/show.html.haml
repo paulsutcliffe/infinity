@@ -9,8 +9,15 @@
     
   - if current_admin
     .admin.create
+      = link_to I18n.t('itinerary.new'), new_offer_season_travel_itinerary_path(@offer_season, @travel), :class => 'button'
       = link_to I18n.t('travel.new'), new_offer_season_travel_path(@offer_season), :class => 'button new'
       = link_to I18n.t('edit'), edit_offer_season_travel_path(@offer_season), :class => 'button'
       = link_to I18n.t('destroy'), offer_season_travel_path(@offer_season), :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button heading'
   .content
+    - @itineraries.each do |itinerary|
+      = itinerary.title
+
+    -#
+      - for itinerary in @travel.itinerary_contents
+        = itinerary.content
      

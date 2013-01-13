@@ -1,0 +1,29 @@
+
+- if @itinerary.errors.any?
+  #errorExplanation
+    %h2= t('activerecord.errors.messages.itinerary.invalid_record')
+    %ul
+    - @itinerary.errors.full_messages.each do |msg|
+      %li= msg
+
+.field
+  = f.label :title
+  = f.text_field :title
+
+- f.fields_for :itineary_contents do |builder| 
+  .fields
+    %div
+      = builder.label :content, 'Question'
+      = remove_child_link "remove", builder
+      %br
+      = builder.text_area :content, :rows => 3
+
+-#
+  .field
+  - f.fields_for :itinearies do |builder| 
+    = render 'itinerary_fields', :f => builder 
+%div
+  = add_child_link "Add Itinerary", f, :itinerary_contents
+
+
+

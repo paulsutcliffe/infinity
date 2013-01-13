@@ -1,0 +1,29 @@
+%h1 
+  =t('itineraries.index.title')
+
+%table
+  %thead
+    %tr
+      %th 
+        =t('activerecord.attributes.itinerary.day')
+      %th 
+        =t('activerecord.attributes.itinerary.description')
+      %th 
+        =t('activerecord.attributes.itinerary.slug')
+      %th 
+        =t('activerecord.attributes.itinerary.travel_id')
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for itinerary in @itineraries
+      %tr{ :class => cycle(:odd, :even) }
+        %td= itinerary.day
+        %td= itinerary.description
+        %td= itinerary.slug
+        %td= itinerary.travel_id
+        %td= link_to t('show'), itinerary
+        %td= link_to t('edit'), edit_itinerary_path(itinerary)
+        %td= link_to t('destroy'), itinerary, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('itinerary.new'), new_itinerary_path

@@ -11,11 +11,11 @@
     - @offers.each do |offer|
       .field-article
         .field-picture
-          = link_to image_tag(offer.travel_picture(:thumb)), offer_season_travel_path(offer.offer_season_id, offer)
+          = link_to image_tag(offer.travel_picture(:thumb)), offer_season_travel_path(offer.offer_season, offer)
         .field-content
           %h2.title          
-            = link_to offer.name, offer_season_travel_path(offer.offer_season_id, offer)
+            = link_to offer.name, offer_season_travel_path(offer.offer_season, offer)
           = paragraph_truncate(offer.description, 300) 
-          = link_to I18n.t('moredetails'), offer_season_travel_path(offer.offer_season_id, offer), :class => 'button show'
+          = link_to I18n.t('moredetails'), offer_season_travel_path(offer.offer_season, offer), :class => 'button show'
 
     

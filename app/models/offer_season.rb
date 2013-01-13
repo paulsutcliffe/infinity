@@ -1,7 +1,7 @@
 class OfferSeason < ActiveRecord::Base
 
-  has_many :offers, :dependent => :destroy
   has_many :travels, :dependent => :destroy
+  has_many :itineraries, :dependent => :destroy
 
   #scope :not_in_season, where("(select count(*) from offers where offer_season_id=offer.id) = 0")
 

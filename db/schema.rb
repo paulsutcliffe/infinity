@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130111050545) do
+ActiveRecord::Schema.define(:version => 20130113031727) do
 
   create_table "abouts", :force => true do |t|
     t.string   "title_landing_page"
@@ -119,6 +119,24 @@ ActiveRecord::Schema.define(:version => 20130111050545) do
 
   create_table "extensions", :force => true do |t|
     t.integer  "travel_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "itineraries", :force => true do |t|
+    t.string   "title"
+    t.string   "slug"
+    t.integer  "offer_season_id"
+    t.integer  "travel_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "itinerary_contents", :force => true do |t|
+    t.text     "content"
+    t.integer  "offer_season_id"
+    t.integer  "travel_id"
+    t.integer  "itinerary_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

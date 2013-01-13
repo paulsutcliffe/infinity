@@ -18,9 +18,9 @@ def show
 
   # render show
   @travel = @offer_season.travels.find(params[:id])
+  @itineraries = @travel.itineraries.all
+
 end
-
-
 
 def update
   update!{ offer_season_travel_path(@offer_season, @travel) }
