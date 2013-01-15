@@ -115,14 +115,6 @@ season_fuera_de_temporada = OfferSeason.create(:title => 'Fuera de Temporada')
 season_navidad = OfferSeason.create(:title => 'Navidad')
 season_new_year = OfferSeason.create(:title => 'Año Nuevo')
 
-
-#['Swiss', 'France', 'Germany', 'Russia', 'Italy'].each do |c|
-#  params = {
-#    :country_list => { :name => c }
-#  }
-#  destino_europa.countries.create(params[:country_list])
-#end
-
 Offer.delete_all
 Travel.delete_all
 ['Aniversario Safari (2012)', 'Poker desde Las Vegas'].each do |i|

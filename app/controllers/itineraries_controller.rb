@@ -1,6 +1,6 @@
 class ItinerariesController < InheritedResources::Base
-belongs_to :offer_season, :finder => :find_by_slug!
-belongs_to :travel, :finder => :find_by_slug!
+  belongs_to :offer_season, :finder => :find_by_slug!
+  belongs_to :travel, :finder => :find_by_slug!
 
 
   def new
@@ -10,9 +10,6 @@ belongs_to :travel, :finder => :find_by_slug!
     @itinerary = @travel.itineraries.new
     3.times { @itinerary.itinerary_contents.build }    
     
-
-
-
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @itinerary }

@@ -5,13 +5,6 @@ Infinity::Application.routes.draw do
 
 
 
-
-
-  resources :applicants
-
-  resources :testimonies
-
-
     resources :abouts, :path => I18n.t('abouts.url') do
       get 'work_with_us'        => "abouts#work", :on => :collection
       get 'history'             => "abouts#history", :on => :collection
@@ -39,6 +32,7 @@ Infinity::Application.routes.draw do
     resources :offer_seasons, :path => I18n.t('offer_seasons.url') do
       resources :travels, :path => I18n.t('travels.url')  do
         resources :itineraries
+        resources :prices
       end
     end
     
@@ -61,9 +55,13 @@ Infinity::Application.routes.draw do
 
 
 
+
+  resources :applicants
+
+  resources :testimonies
+
   resources :carts
 
-  resources :prices
 
   resources :extensions
 

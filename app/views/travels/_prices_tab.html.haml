@@ -1,0 +1,21 @@
+- @prices.each do |price|
+  %h2.title Price
+  .admin.create
+    = link_to I18n.t('edit'), edit_offer_season_travel_price_path(@offer_season, @travel, price), :class => 'button'
+  %table
+    %tr
+      %th Clase de Cuarto
+      %th Precio
+      %th Suplemento individual
+      %th Disponibilidad
+
+    - price.travel_days_prices_contents.each do |content|
+      %tr
+        %td
+          = content.room_class
+        %td
+          = content.travel_price
+        %td
+          = content.suplement
+        %td
+          = content.availability

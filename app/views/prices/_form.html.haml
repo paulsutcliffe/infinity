@@ -1,47 +1,19 @@
-- form_for(@price) do |f|
-  
-  - if @price.errors.any?
-    #errorExplanation
-      %h2= t('activerecord.errors.messages.price.invalid_record')
-      %ul
-      - @price.errors.full_messages.each do |msg|
-        %li= msg
-  .field
-    = f.label :class
-    %br
-    = f.text_field :class
-  .field
-    = f.label :price
-    %br
-    = f.text_field :price
-  .field
-    = f.label :single
-    %br
-    = f.text_field :single
-  .field
-    = f.label :internal_air
-    %br
-    = f.text_field :internal_air
-  .field
-    = f.label :available
-    %br
-    = f.text_field :available
-  .field
-    = f.label :start_date
-    %br
-    = f.date_select :start_date
-  .field
-    = f.label :due_date
-    %br
-    = f.date_select :due_date
-  .field
-    = f.label :party
-    %br
-    = f.text_field :party
-  .field
-    = f.label :travel_id
-    %br
-    = f.text_field :travel_id
+- if @price.errors.any?
+  #errorExplanation
+    %h2= t('activerecord.errors.messages.price.invalid_record')
+    %ul
+    - @price.errors.full_messages.each do |msg|
+      %li= msg
 
-  .actions
-    = f.submit I18n.t('submit')
+
+- f.fields_for :travel_days_prices_contents do |builder| 
+  = render 'travel_days_prices_content_fields', :f => builder
+
+%div
+  = add_child_link "Add Price", f, :travel_days_prices_contents
+
+
+
+
+
+

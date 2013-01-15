@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130113213736) do
+ActiveRecord::Schema.define(:version => 20130113220216) do
 
   create_table "abouts", :force => true do |t|
     t.string   "title_landing_page"
@@ -227,8 +227,7 @@ ActiveRecord::Schema.define(:version => 20130113213736) do
   add_index "press_releases", ["slug"], :name => "index_press_releases_on_slug", :unique => true
 
   create_table "prices", :force => true do |t|
-    t.string   "class"
-    t.float    "price"
+    t.float    "travel_price"
     t.float    "single"
     t.float    "internal_air"
     t.string   "available"
@@ -236,6 +235,8 @@ ActiveRecord::Schema.define(:version => 20130113213736) do
     t.date     "due_date"
     t.integer  "party"
     t.integer  "travel_id"
+    t.integer  "offer_season_id"
+    t.integer  "country_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -259,6 +260,18 @@ ActiveRecord::Schema.define(:version => 20130113213736) do
     t.string   "testimony_picture_content_type"
     t.integer  "testimony_picture_file_size"
     t.datetime "testimony_picture_updated_at"
+  end
+
+  create_table "travel_days_prices_contents", :force => true do |t|
+    t.string   "room_class"
+    t.string   "travel_price"
+    t.string   "suplement"
+    t.string   "availability"
+    t.integer  "offer_season_id"
+    t.integer  "travel_id"
+    t.integer  "price_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "travels", :force => true do |t|

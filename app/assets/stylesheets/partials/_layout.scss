@@ -365,3 +365,21 @@ body .destination_pictures_container.rsDefault .rsBullets { top: 10px; right: 10
 .field-picture {float: left; margin:0 $space $space 0}
 .field-content {}
 .field-article .link {float: right; text-decoration: underline; color:$primary-color}
+
+
+
+/* Coda slider */
+.coda-nav ul{width: 100% !important}
+
+#travels table {
+  width:100%;
+  th {
+    font-weight: bold; text-align: center;
+  }
+
+  td:nth-of-type(2),
+  td:nth-of-type(3) {
+    text-align: center;
+  }
+
+}

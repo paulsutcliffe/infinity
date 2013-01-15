@@ -1,6 +1,9 @@
-%h1
-  = t('price.edit.title')
+%h1 
+  =t('price.edit')
 
-= render 'form'
 
-== #{ link_to t('show'), @price } | #{ link_to t('back'), prices_path }
+= form_for(@price, :url => {:price_id => params[:price_id], :action => 'update'}) do |f|
+  = render(:partial => 'form', :locals => {:f => f})
+  .actions
+    = f.submit I18n.t('update')
+

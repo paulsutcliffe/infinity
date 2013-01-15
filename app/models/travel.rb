@@ -1,9 +1,10 @@
 class Travel < ActiveRecord::Base
   belongs_to :country
   belongs_to :offer_season
-  has_many :prices
   has_many :extensions
+
   has_many :itineraries, :dependent => :destroy
+  has_many :prices, :dependent => :destroy
   
 
   extend FriendlyId

@@ -90,7 +90,7 @@ en:
     title: Itineraries
     url: itineraries
   itinerary:
-    new: Add Itinerary Day
+    new: Add Itinerary 
 
   milestones:
     index: Milestones
@@ -133,6 +133,11 @@ en:
     index: Press Releases
   press_release:
     new: New Press Release
+
+  prices:
+    index: Prices
+  price:
+    new: New Price
 
   travels:
     index: Travels

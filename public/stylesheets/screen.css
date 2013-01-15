@@ -1283,6 +1283,27 @@ body .destination_pictures_container.rsDefault .rsBullets {
   color: #67cddc;
 }
 
+/* Coda slider */
+/* line 372, ../../app/assets/stylesheets/partials/_layout.scss */
+.coda-nav ul {
+  width: 100% !important;
+}
+
+/* line 374, ../../app/assets/stylesheets/partials/_layout.scss */
+#travels table {
+  width: 100%;
+}
+/* line 376, ../../app/assets/stylesheets/partials/_layout.scss */
+#travels table th {
+  font-weight: bold;
+  text-align: center;
+}
+/* line 381, ../../app/assets/stylesheets/partials/_layout.scss */
+#travels table td:nth-of-type(2),
+#travels table td:nth-of-type(3) {
+  text-align: center;
+}
+
 /* line 5, ../../app/assets/stylesheets/partials/_admin.scss */
 .admin.create {
   width: 100%;
