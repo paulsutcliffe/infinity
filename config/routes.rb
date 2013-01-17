@@ -12,8 +12,8 @@ Infinity::Application.routes.draw do
       get 'global_proyection'   => "abouts#global_proyection", :on => :collection
       get 'know_our_staff'      => "abouts#staff", :on => :collection
     end
-    
-    
+
+
     resources :destinations do
       resources :countries do
         resources :country_pictures
@@ -23,7 +23,7 @@ Infinity::Application.routes.draw do
 
 
     # maintenance
-    get 'maintenance' => "maintenance#index"     
+    get 'maintenance' => "maintenance#index"
 
     # offers
 
@@ -35,8 +35,8 @@ Infinity::Application.routes.draw do
         resources :prices
       end
     end
-    
-    resources :offers, :path => I18n.t('offers.url') 
+
+    resources :offers, :path => I18n.t('offers.url')
 
     # packs
     resources :packs, :path => I18n.t('packs.url')
@@ -45,11 +45,11 @@ Infinity::Application.routes.draw do
     # posts has_many :news_and_events :press_releases
     resources :posts, :path => I18n.t('posts.url')
 
-    resources :press_releases 
+    resources :press_releases
 
 
   devise_for :users
-  
+
   resources :abouts
 
 
@@ -80,6 +80,7 @@ Infinity::Application.routes.draw do
 
   get "home/index"
 
-  root :to => "home#index"
+  #root :to => "home#index"
+  root :to => "maintenance#index"
 
 end

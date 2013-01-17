@@ -22,8 +22,9 @@ production:
   host:
   database: infinity_production
   pool: 5
-  username:
-  password:
+  host: mysql.infinityperu.com
+  username: infinitydb
+  password: infinity99
 
 cucumber:
   <<: *test
