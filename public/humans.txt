@@ -1,0 +1,19 @@
+/* TEAM */
+
+       Development: Paul Sutcliffe, Ricardo Castañeda
+       Twitter: @paulyoyo, @castaneda_ricar
+
+       Frontend developer: Ricardo Castañeda
+       Twitter: @castaneda_ricar
+
+       Web design: Paul Sutcliffe
+       Twitter: @paulyoyo
+
+/* SITE */
+       Site launch: 2013/01/16
+       Last update:2013/01/16
+       Framework: Ruby on Rails 3.0.3
+       Language: English, Spanish.
+       Standards : HTML5, CSS3.
+       Components: jQuery, googlefonts, facebook developers, haml, sass, compass, blueprint, html5shim
+       Software: Photoshop, VIM, iTerm.
