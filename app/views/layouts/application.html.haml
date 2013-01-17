@@ -6,7 +6,7 @@
 %html.no-js
   / <![endif]
   %head
-    %title= 'Mockup'
+    %title= 'Infinity Peru - Travel Agent'
     = render 'layouts/head'
     = yield :javascript
 
@@ -14,7 +14,7 @@
     - if notice
       - javascript_tag do
         var alerta_mensaje =  "#{notice}"
- 
+
 
     .wrapper
       %header{:role => 'banner'}
@@ -27,7 +27,7 @@
         %br
         %br
         = yield
-      
+
 
 
   #postscript-bottom.partners
