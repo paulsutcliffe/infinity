@@ -1,4 +1,4 @@
-    body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
+    body { background-image:url('../images/backgrounds/bg.jpg'); color: #666; text-align: center; font-family: arial, sans-serif; }
     /*div.dialog {
       width: 25em;
       padding: 0 4em;
@@ -7,7 +7,7 @@
       border-right-color: #999;
       border-bottom-color: #999;
     }*/
-    #preface-top {height:100px; background: url(../images/backgrounds/bevel-cyan-small.jpg) no-repeat 50% 50% white;}
+    #preface-top {height:100px; background: url(../images/backgrounds/bevel-cyan-small-noise.png) no-repeat 50% 50%}
 h1 {
  /* border-bottom: 1px solid #C4C4C4; */
   font-size: 24px;
