@@ -22,13 +22,23 @@
       %div{:style => 'float:left; clear:left; margin-top:10px'}
         = link_to I18n.t('itinerary.new'), new_offer_season_travel_itinerary_path(@offer_season, @travel), :class => 'button'
         = link_to I18n.t('price.new'), new_offer_season_travel_price_path(@offer_season, @travel), :class => 'button'
+        = link_to I18n.t('extension.new'), new_offer_season_travel_extension_path(@offer_season, @travel), :class => 'button'
 
   .content
     #slider-id.coda-slider
       %div
-        = render 'itineraries_tab'
+        = render 'travels_tab'
+      - if !@itineraries.blank?
+        %div
+          = render 'itineraries_tab'
+      - if !@prices.blank?
+        %div
+          = render 'prices_tab'
+      - if !@extensions.blank?
+        %div
+          = render 'extensions_tab'
       %div
-        = render 'prices_tab'
-
+        = # render :partial => '/question_forms/form', :question_form => @question_form 
+  
 
 

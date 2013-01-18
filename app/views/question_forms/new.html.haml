@@ -1,0 +1,12 @@
+- form_for @question_form do |f|
+  = f.label :name
+  = f.text_field :name #, :required => false
+  %br
+  = f.label :email
+  = f.text_field :email #, :required => false
+  %br
+  = f.label :message
+  = f.text_area :message #, :as => :text, :required => false
+  .hidden
+    = # f.text_field :nickname, :hint => 'Leave this field blank!'
+  = f.submit 'Send message'

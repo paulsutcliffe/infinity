@@ -22,6 +22,7 @@ def show
   @travel = @offer_season.travels.find(params[:id])
   @itineraries = @travel.itineraries.all
   @prices = @travel.prices.all
+  @extensions = @travel.extensions.all
 
 
 end

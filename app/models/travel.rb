@@ -1,7 +1,8 @@
 class Travel < ActiveRecord::Base
-  belongs_to :country
-  belongs_to :offer_season
-  has_many :extensions
+  belongs_to :country, :dependent => :destroy
+  belongs_to :offer_season, :dependent => :destroy
+  has_many :extensions, :dependent => :destroy
+  has_many :question_forms 
 
   has_many :itineraries, :dependent => :destroy
   has_many :prices, :dependent => :destroy

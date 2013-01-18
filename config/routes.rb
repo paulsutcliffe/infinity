@@ -2,8 +2,7 @@ Infinity::Application.routes.draw do
 
 
 
-
-
+  resources :question_forms
 
     resources :abouts, :path => I18n.t('abouts.url') do
       get 'work_with_us'        => "abouts#work", :on => :collection
@@ -33,6 +32,7 @@ Infinity::Application.routes.draw do
       resources :travels, :path => I18n.t('travels.url')  do
         resources :itineraries
         resources :prices
+        resources :extensions
       end
     end
 
@@ -63,7 +63,6 @@ Infinity::Application.routes.draw do
   resources :carts
 
 
-  resources :extensions
 
   resources :travels
 
@@ -80,7 +79,9 @@ Infinity::Application.routes.draw do
 
   get "home/index"
 
-  #root :to => "home#index"
+  namespace :admin do
+    root :to => "home#index"
+  end
   root :to => "maintenance#index"
 
 end

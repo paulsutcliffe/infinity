@@ -22,6 +22,7 @@ group :development do
   gem 'viewcumber'
 end
 
+gem 'mail_form'
 gem "country-select"
 gem "haml"
 #gem "haml-rails"

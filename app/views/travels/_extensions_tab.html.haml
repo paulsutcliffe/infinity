@@ -1,0 +1,10 @@
+
+%h2.title Extensions
+- @extensions.each do |extension|
+  %h3 
+    = extension.title
+  .admin.create
+    = link_to I18n.t('edit'), edit_offer_season_travel_extension_path(@offer_season, @travel, extension), :class => 'button'
+    = link_to I18n.t('destroy'), offer_season_travel_extension_path(@offer_season, @travel, extension), :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button'
+  %div
+    = extension.price_from

@@ -86,6 +86,11 @@ en:
   destination_picture:
     new: Add Picture
 
+  extensions:
+    index: Extensions
+  extension:
+    new: New Extension
+
   itineraries:
     title: Itineraries
     url: itineraries

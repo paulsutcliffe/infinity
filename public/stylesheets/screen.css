@@ -823,7 +823,7 @@ body footer .author a {
 /* Headings
 ======================================================= */
 /* line 154, ../../app/assets/stylesheets/partials/_layout.scss */
-h1.page-title, h2.title {
+h1.page-title, h2.title, .h2-tab-title {
   font-size: 24px;
   font-weight: lighter;
   border-bottom: 1px solid tint(#3b3b3d, 70%);
@@ -833,7 +833,7 @@ h1.page-title, h2.title {
   margin: 0 0 10px;
 }
 /* line 157, ../../app/assets/stylesheets/partials/_layout.scss */
-.partners h1.page-title, .partners h2.title {
+.partners h1.page-title, .partners h2.title, .partners .h2-tab-title {
   text-align: center;
   background: url(../images/backgrounds/bevel-cyan.jpg) no-repeat 50% 0 white;
 }
@@ -861,7 +861,7 @@ p {
 }
 
 /* line 175, ../../app/assets/stylesheets/partials/_layout.scss */
-.current {
+span.current {
   font-weight: bold;
 }
 
@@ -1301,6 +1301,18 @@ body .destination_pictures_container.rsDefault .rsBullets {
 /* line 381, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels table td:nth-of-type(2),
 #travels table td:nth-of-type(3) {
+  text-align: center;
+}
+
+/* line 387, ../../app/assets/stylesheets/partials/_layout.scss */
+.hide {
+  display: none;
+}
+
+/* line 389, ../../app/assets/stylesheets/partials/_layout.scss */
+#content .coda-slider-wrapper .coda-nav a {
+  padding: 10px 20px;
+  min-width: 90px;
   text-align: center;
 }
 

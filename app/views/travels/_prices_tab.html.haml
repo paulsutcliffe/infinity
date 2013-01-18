@@ -2,6 +2,7 @@
   %h2.title Price
   .admin.create
     = link_to I18n.t('edit'), edit_offer_season_travel_price_path(@offer_season, @travel, price), :class => 'button'
+    = link_to I18n.t('delete'), offer_season_travel_price_path(@offer_season, @travel, price), :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button'
   %table
     %tr
       %th Clase de Cuarto

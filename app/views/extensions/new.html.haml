@@ -1,6 +1,8 @@
 %h1 
   =t('extension.new')
 
-= render 'form'
+- form_for(@extension, :url => {:extension_id => params[:extension_id], :action => 'create', :multipart => true}) do |f|
+  = render(:partial => 'form', :locals => {:f => f})
+  .actions
+    = f.submit I18n.t('submit')
 
-= link_to t('back'), extensions_path

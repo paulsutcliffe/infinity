@@ -118,7 +118,16 @@ ActiveRecord::Schema.define(:version => 20130113220216) do
   end
 
   create_table "extensions", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "price_from"
+    t.string   "days"
+    t.string   "departures"
+    t.string   "party"
+    t.text     "information"
+    t.text     "itinerary_text"
     t.integer  "travel_id"
+    t.integer  "offer_season"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -285,8 +294,10 @@ ActiveRecord::Schema.define(:version => 20130113220216) do
     t.integer  "maxgroupsize"
     t.text     "travel_map"
     t.text     "notes"
+    t.text     "weather"
     t.integer  "country_id"
     t.integer  "offer_season_id"
+    t.integer  "question_form"
     t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"

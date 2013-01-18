@@ -2,6 +2,7 @@
   %h2.title Itinerary
   .admin.create
     = link_to I18n.t('edit'), edit_offer_season_travel_itinerary_path(@offer_season, @travel, itinerary), :class => 'button'
+    = link_to I18n.t('destroy'), offer_season_travel_itinerary_path(@offer_season, @travel, itinerary), :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button'
 
   - number = 1;
   %ol
@@ -13,4 +14,5 @@
         - number += 1;
       = paragraph(itinerary_content.content)
       = itinerary_content.hotel
-      = image_tag itinerary_content.itinerary_content_picture(:default)
+      - if !itinerary_content.itinerary_content_picture.blank?
+        = image_tag itinerary_content.itinerary_content_picture(:default)

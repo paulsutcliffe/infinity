@@ -151,7 +151,7 @@ body {
 /* Headings
 ======================================================= */
 
-h1.page-title, h2.title {
+h1.page-title, h2.title, .h2-tab-title {
   @include title;
   margin: 0 0 $space-heading;
   .partners & {
@@ -172,7 +172,7 @@ p {margin: 0 0 $space-paragraph 0; line-height: $line-height-paragraph; font-wei
   text-align: justify }
 
 
-.current {font-weight: bold}
+span.current {font-weight: bold}
 
 /* Navegación
 ======================================================= */
@@ -383,3 +383,7 @@ body .destination_pictures_container.rsDefault .rsBullets { top: 10px; right: 10
   }
 
 }
+
+.hide {display: none}
+
+#content .coda-slider-wrapper .coda-nav a {padding: 10px 20px; min-width: 90px; text-align: center}

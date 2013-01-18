@@ -11,8 +11,10 @@ class CreateTravels < ActiveRecord::Migration
       t.integer :maxgroupsize
       t.text :travel_map
       t.text :notes
+      t.text :weather
       t.integer :country_id
       t.integer :offer_season_id
+      t.integer :question_form
       t.string :slug
 
       t.timestamps
