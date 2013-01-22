@@ -1,8 +1,14 @@
-- content_tag :css do
-  = stylesheet_link_tag '/javascripts/libs/codaslider-3.0/css/coda-slider.css'
+- content_for :css do
+  = stylesheet_link_tag '/javascripts/libs/codaslider-3.0/css/coda-slider.css', '/javascripts/libs/lightbox/themes/classic/jquery.lightbox.css'
 
-- content_tag :javascripts do
-  = javascript_include_tag '/javascripts/libs/codaslider-3.0/js/jquery-ui-1.8.20.custom.min.js', '/javascripts/libs/codaslider-3.0/js/jquery.coda-slider-3.0.min.js', '/javascripts/libs/codaslider-3.0/coda-init.js'
+- content_for :javascript do
+  = javascript_include_tag '/javascripts/libs/codaslider-3.0/js/jquery-ui-1.8.20.custom.min.js', '/javascripts/libs/codaslider-3.0/js/jquery.coda-slider-3.0.min.js', '/javascripts/libs/codaslider-3.0/coda-init.js', '/javascripts/libs/lightbox/jquery.lightbox.min.js'
+
+:javascript
+  $(document).ready(function() {
+    jQuery('.lightbox').lightbox();
+  });
+
 
 = breadcrumb :offer_season_travel, @travel
 
@@ -24,6 +30,7 @@
         = link_to I18n.t('price.new'), new_offer_season_travel_price_path(@offer_season, @travel), :class => 'button'
         = link_to I18n.t('extension.new'), new_offer_season_travel_extension_path(@offer_season, @travel), :class => 'button'
 
+
   .content
     #slider-id.coda-slider
       %div
@@ -39,6 +46,7 @@
           = render 'extensions_tab'
       %div
         = # render :partial => '/question_forms/form', :question_form => @question_form 
-  
-
-
+        = #render :partial => 'question_forms/form', :locals => {:question_form => QuestionForm.new}
+        = #render :partial => 'question_forms/form', :locals => {:question_form => @question_form}
+        = #render :partial => 'question_forms/form', :object => {:question_form => @question_form } 
+        = #render :partial => 'question_forms/form', :question_form => @question_form

@@ -2,15 +2,47 @@
 %h2.title.hide Información General
 .h2-tab-title
   = @travel.name
-.content
-  = @travel.description
-  = @travel.price
-  = @travel.days
-  = @travel.departures
-  = @travel.maxgroupsize
-  = @travel.travel_map
-  = @travel.notes
-  = @travel.weather
+.content.travel-tabs
+  .field-description
+    = paragraph(@travel.description)
+   
+  .group-field-information
+    .field-picture
+      = image_tag @travel.travel_picture(:thumb), :style => 'width: 130px'
+    .field-information
+      .field-items
+        Precio
+        .field-item
+          = @travel.price
 
+      .field-items
+        Days
+        .field-item
+          = @travel.days
 
+      .field-items
+        Departures Salidas
+        .field-item
+          = @travel.departures
+
+      .field-items
+        Grupo Máximo
+        .field-item
+          = @travel.maxgroupsize
+    .field-information-extra
+      .field-items
+        Información General
+      .field-items
+        Itinerario
+      .field-items
+        Fechas y Precios
+      .field-items.last
+        Comparar
+ 
+  .field-advantages
+    %h2.h2-tab-title
+      Infinity Ventajas
+    = paragraph(@travel.notes)
+    = paragraph(@travel.weather)
+    = paragraph(@travel.travel_map)
 

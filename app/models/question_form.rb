@@ -1,5 +1,4 @@
 class QuestionForm < MailForm::Base
-  belongs_to :travel
 
   attribute :name,     :validate => true
   attribute :email

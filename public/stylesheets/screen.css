@@ -598,6 +598,11 @@ html body footer .copyright,
 }
 
 /* line 13, ../../app/assets/stylesheets/partials/_layout.scss */
+b {
+  font-weight: bold;
+}
+
+/* line 15, ../../app/assets/stylesheets/partials/_layout.scss */
 body {
   font-family: "Dosis";
 }
@@ -615,7 +620,7 @@ body .showgrid {
   background-size: 100% 18px, auto;
   background-position: left top;
 }
-/* line 17, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 19, ../../app/assets/stylesheets/partials/_layout.scss */
 body .wrapper {
   width: 950px;
   margin: 0 auto;
@@ -623,7 +628,7 @@ body .wrapper {
   *zoom: 1;
   /*  @include showgrid; */
 }
-/* line 20, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 22, ../../app/assets/stylesheets/partials/_layout.scss */
 body .wrapper header, body .wrapper nav, body .wrapper footer .inner {
   display: inline;
   float: left;
@@ -634,11 +639,11 @@ body .wrapper header, body .wrapper nav, body .wrapper footer .inner {
 * html body .wrapper header, * html body .wrapper nav, * html body .wrapper footer .inner {
   overflow-x: hidden;
 }
-/* line 26, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 28, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer {
   width: 100%;
 }
-/* line 28, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 30, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .inner {
   width: 950px;
   margin: 0 auto;
@@ -646,7 +651,7 @@ body footer .inner {
   *zoom: 1;
 }
 
-/* line 35, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 37, ../../app/assets/stylesheets/partials/_layout.scss */
 .region {
   display: inline;
   float: left;
@@ -658,7 +663,7 @@ body footer .inner {
   overflow-x: hidden;
 }
 
-/* line 39, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 41, ../../app/assets/stylesheets/partials/_layout.scss */
 .region:after {
   content: ".";
   display: block;
@@ -668,12 +673,12 @@ body footer .inner {
   height: 0;
 }
 
-/* line 42, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 44, ../../app/assets/stylesheets/partials/_layout.scss */
 .region {
   zoom: 1;
 }
 
-/* line 46, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 48, ../../app/assets/stylesheets/partials/_layout.scss */
 a {
   color: #3b3b3d;
   text-decoration: none;
@@ -684,12 +689,12 @@ a {
 HEADER - FOOTER
 =============================================================
 */
-/* line 62, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 64, ../../app/assets/stylesheets/partials/_layout.scss */
 .region {
   padding-bottom: 50px;
 }
 
-/* line 68, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 70, ../../app/assets/stylesheets/partials/_layout.scss */
 .site-info {
   position: absolute;
   top: 0px;
@@ -699,27 +704,27 @@ HEADER - FOOTER
   font-size: 17px;
   font-weight: lighter;
 }
-/* line 75, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 77, ../../app/assets/stylesheets/partials/_layout.scss */
 .site-info .phone-list, .site-info .email-list {
   color: tint(#3b3b3d, 50%);
 }
-/* line 78, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 80, ../../app/assets/stylesheets/partials/_layout.scss */
 .site-info span {
   border-left: 1px solid;
   padding-left: 5px;
 }
-/* line 81, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 83, ../../app/assets/stylesheets/partials/_layout.scss */
 .site-info span:first-child {
   border: 0;
 }
 
 /* SLIDER */
-/* line 93, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 95, ../../app/assets/stylesheets/partials/_layout.scss */
 .royalSlider .royalSlide, .royalSlider .royalWrapper {
   background: none !important;
 }
 
-/* line 94, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 96, ../../app/assets/stylesheets/partials/_layout.scss */
 .button, #preface-top .royalSlider .royalCaptionItem, #preface-top .royalSlider .royalCaptionItem {
   padding: 0;
   width: 75px;
@@ -728,30 +733,30 @@ HEADER - FOOTER
 
 /* Estructura DOM
 ======================================================= */
-/* line 100, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 102, ../../app/assets/stylesheets/partials/_layout.scss */
 html {
   background: url(../images/backgrounds/bg-cyan.jpg);
 }
 
-/* line 101, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 103, ../../app/assets/stylesheets/partials/_layout.scss */
 body {
   background: url(../images/backgrounds/bg.jpg);
 }
-/* line 103, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 105, ../../app/assets/stylesheets/partials/_layout.scss */
 body header {
   position: relative;
   margin: 25px 0 5px;
 }
-/* line 108, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 110, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer {
   background: url(../images/backgrounds/bg-cyan.jpg);
   height: 90px;
 }
-/* line 111, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 113, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer nav {
   width: 710px;
 }
-/* line 114, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 116, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .copyright {
   display: inline;
   float: left;
@@ -763,7 +768,7 @@ body footer .copyright {
 * html body footer .copyright {
   overflow-x: hidden;
 }
-/* line 118, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 120, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .author {
   display: inline;
   float: left;
@@ -776,7 +781,7 @@ body footer .author {
 * html body footer .author {
   overflow-x: hidden;
 }
-/* line 122, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 124, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .author a {
   position: relative;
   top: 2px;
@@ -791,11 +796,11 @@ body footer .author a {
   *display: inline;
 }
 
-/* line 132, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 134, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom {
   background: url(../images/backgrounds/bg-cyan.jpg);
 }
-/* line 134, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 136, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom h2.title {
   width: 100%;
   padding: 50px 0;
@@ -803,7 +808,7 @@ body footer .author a {
   border-bottom: 0;
   background: url(../images/backgrounds/bevel-cyan.jpg) no-repeat 50% 0 white;
 }
-/* line 138, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 140, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom h2.title:after {
   border-color: transparent transparent #67cddc;
   border-style: solid;
@@ -815,14 +820,14 @@ body footer .author a {
   bottom: 0;
   left: 48%;
 }
-/* line 144, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 146, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom .social-links {
   margin-bottom: 60px;
 }
 
 /* Headings
 ======================================================= */
-/* line 154, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 156, ../../app/assets/stylesheets/partials/_layout.scss */
 h1.page-title, h2.title, .h2-tab-title {
   font-size: 24px;
   font-weight: lighter;
@@ -830,15 +835,16 @@ h1.page-title, h2.title, .h2-tab-title {
   border-bottom: 1px solid #c4c4c4;
   padding-bottom: 10px;
   overflow: hidden;
+  overflow: visible;
   margin: 0 0 10px;
 }
-/* line 157, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 160, ../../app/assets/stylesheets/partials/_layout.scss */
 .partners h1.page-title, .partners h2.title, .partners .h2-tab-title {
   text-align: center;
   background: url(../images/backgrounds/bevel-cyan.jpg) no-repeat 50% 0 white;
 }
 
-/* line 163, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 166, ../../app/assets/stylesheets/partials/_layout.scss */
 h1.page-title {
   font-size: 32px;
   font-weight: lighter;
@@ -850,7 +856,7 @@ h1.page-title {
 
 /* Texts
 ======================================================= */
-/* line 171, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 174, ../../app/assets/stylesheets/partials/_layout.scss */
 .content p, section[role="main"] > article p,
 p {
   margin: 0 0 15px 0;
@@ -860,14 +866,14 @@ p {
   text-align: justify;
 }
 
-/* line 175, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 178, ../../app/assets/stylesheets/partials/_layout.scss */
 span.current {
   font-weight: bold;
 }
 
 /* Navegación
 ======================================================= */
-/* line 181, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 184, ../../app/assets/stylesheets/partials/_layout.scss */
 header nav, footer nav {
   list-style: none;
   margin: 0;
@@ -928,15 +934,15 @@ header nav ul li.last a, footer nav ul li.last a {
   padding-right: 39px;
 }
 
-/* line 189, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 192, ../../app/assets/stylesheets/partials/_layout.scss */
 header nav li.last a {
   padding-right: 5px;
 }
-/* line 193, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 196, ../../app/assets/stylesheets/partials/_layout.scss */
 header nav .footer-only {
   display: none;
 }
-/* line 197, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 200, ../../app/assets/stylesheets/partials/_layout.scss */
 header nav ul:before,
 header nav ul:after {
   content: "";
@@ -947,45 +953,45 @@ header nav ul:after {
   bottom: 0;
   left: 0;
 }
-/* line 200, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 203, ../../app/assets/stylesheets/partials/_layout.scss */
 header nav ul:before {
   bottom: 38px;
   display: none;
 }
-/* line 202, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 205, ../../app/assets/stylesheets/partials/_layout.scss */
 footer nav {
   color: white;
 }
-/* line 205, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 208, ../../app/assets/stylesheets/partials/_layout.scss */
 footer nav ul li {
   margin: 0;
   float: left;
 }
-/* line 207, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 210, ../../app/assets/stylesheets/partials/_layout.scss */
 footer nav ul li a, footer nav ul li span {
   background: #3b3b3d;
   color: white;
   font-size: 14px;
   padding: 5px 10px 5px 10px;
 }
-/* line 212, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 215, ../../app/assets/stylesheets/partials/_layout.scss */
 footer nav ul li span {
   background: #c4c4c4;
 }
 
-/* line 220, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 223, ../../app/assets/stylesheets/partials/_layout.scss */
 .infinity-admin header nav ul:before {
   display: block;
 }
 
-/* line 225, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 228, ../../app/assets/stylesheets/partials/_layout.scss */
 #preface-top {
   padding: 0 0 40px;
   margin: 0 0 60px;
   background: url(../images/backgrounds/bevel-cyan-small.jpg) no-repeat 50% 0 white;
   background-position: 50% 100%;
 }
-/* line 230, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 233, ../../app/assets/stylesheets/partials/_layout.scss */
 .not-front #preface-top {
   margin-bottom: 0;
 }
@@ -995,7 +1001,7 @@ footer nav ul li span {
 APARIENCIA
 =============================================================
 */
-/* line 241, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 244, ../../app/assets/stylesheets/partials/_layout.scss */
 #content {
   display: inline;
   float: left;
@@ -1012,7 +1018,7 @@ APARIENCIA
 ======================================================= */
 /* Botones
 ======================================================= */
-/* line 253, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 256, ../../app/assets/stylesheets/partials/_layout.scss */
 a.button, #preface-top .royalSlider a.royalCaptionItem {
   background: #67cddc;
   color: #3b3b3d;
@@ -1027,7 +1033,7 @@ a.button, #preface-top .royalSlider a.royalCaptionItem {
   line-height: 115%;
 }
 
-/* line 256, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 259, ../../app/assets/stylesheets/partials/_layout.scss */
 a.button_ {
   background: #3b3b3d;
   color: white;
@@ -1042,7 +1048,7 @@ a.button_ {
   line-height: 115%;
 }
 
-/* line 260, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 263, ../../app/assets/stylesheets/partials/_layout.scss */
 button, .actions input {
   background: #3b3b3d;
   color: white;
@@ -1057,14 +1063,14 @@ button, .actions input {
   line-height: 115%;
 }
 
-/* line 265, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 268, ../../app/assets/stylesheets/partials/_layout.scss */
 .breadcrumbs {
   font-size: 14px;
 }
 
 /* Párrafos después de los títulos de página
 ======================================================= */
-/* line 272, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 275, ../../app/assets/stylesheets/partials/_layout.scss */
 h1.page-title + p {
   margin: 20px 0 50px;
   padding: 0 0 50px 0;
@@ -1072,7 +1078,7 @@ h1.page-title + p {
   background-position: 50% 100%;
 }
 
-/* line 278, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 281, ../../app/assets/stylesheets/partials/_layout.scss */
 .field.field-map,
 .field.field-link,
 .field.field-content {
@@ -1080,47 +1086,47 @@ h1.page-title + p {
   float: left;
   clear: left;
 }
-/* line 280, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 283, ../../app/assets/stylesheets/partials/_layout.scss */
 #destinations.show .field.field-map, #destinations.show
 .field.field-link, #destinations.show
 .field.field-content {
   width: auto;
 }
 
-/* line 285, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 288, ../../app/assets/stylesheets/partials/_layout.scss */
 #slider-destinations {
   background: url(../images/backgrounds/bevel-cyan-small.jpg) no-repeat 50% 0 white;
   background-position: 50% 100%;
   padding-bottom: 60px;
 }
 
-/* line 297, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 300, ../../app/assets/stylesheets/partials/_layout.scss */
 #content .not-front .content {
   width: 100%;
   float: left;
   clear: left;
 }
-/* line 301, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 304, ../../app/assets/stylesheets/partials/_layout.scss */
 #abouts.history.not-front #content img {
   margin: 0 15px 15px 0;
   float: left;
 }
 
-/* line 306, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 309, ../../app/assets/stylesheets/partials/_layout.scss */
 .block {
   width: 100%;
   float: left;
   clear: left;
 }
 
-/* line 309, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 312, ../../app/assets/stylesheets/partials/_layout.scss */
 #abouts.milestones .field-image {
   width: 150px;
   margin: 0 15px 15px 0;
   float: left;
 }
 
-/* line 316, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 319, ../../app/assets/stylesheets/partials/_layout.scss */
 #abouts.staff .field-member,
 #packs.index .field-image {
   margin: 0 0 60px;
@@ -1128,19 +1134,19 @@ h1.page-title + p {
   float: right;
 }
 
-/* line 322, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 325, ../../app/assets/stylesheets/partials/_layout.scss */
 #posts.news_and_events .field-image,
 #testimonies.index .field-image {
   margin: 0 15px 15px 0;
   float: left;
 }
 
-/* line 327, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 330, ../../app/assets/stylesheets/partials/_layout.scss */
 .break {
   clear: left;
 }
 
-/* line 332, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 335, ../../app/assets/stylesheets/partials/_layout.scss */
 .foobar-message-wrapper {
   font-family: "Dosis" !important;
   font-weight: normal !important;
@@ -1148,18 +1154,18 @@ h1.page-title + p {
 
 /* Estilos slider
 ======================================================= */
-/* line 337, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 340, ../../app/assets/stylesheets/partials/_layout.scss */
 #preface-top .royalSlider {
   width: 950px;
   height: 250px;
 }
 
-/* line 338, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 341, ../../app/assets/stylesheets/partials/_layout.scss */
 .rsOverflow {
   position: relative;
 }
 
-/* line 339, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 342, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsABlock {
   position: absolute;
   top: 5px;
@@ -1167,30 +1173,30 @@ body .rsABlock {
   right: 35px;
 }
 
-/* line 340, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 343, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsPreloader {
   background-image: url(/javascripts/libs/royal-slider-9.2/preloaders/preloader-white.gif);
 }
 
-/* line 341, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 344, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsCloseVideoIcn {
   background: url("/javascripts/libs/royal-slider-9.2/rs-default.png") -64px 0;
 }
 
-/* line 342, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 345, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom.partners ul.slider {
   width: 950px;
   height: 80px;
 }
 
-/* line 343, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 346, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom .rsABlock {
   position: absolute;
   top: 5px;
   left: 0;
 }
 
-/* line 345, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 348, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsBullets {
   background: none;
   bottom: auto;
@@ -1198,7 +1204,7 @@ body .rsDefault .rsBullets {
   padding-top: 15px;
 }
 
-/* line 347, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 350, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsBullet {
   height: 17px;
   width: 17px;
@@ -1206,22 +1212,22 @@ body .rsDefault .rsBullet {
   cursor: pointer;
 }
 
-/* line 349, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 352, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsBullet.rsNavSelected {
   background: url(../images/backgrounds/slider-controls.jpg) no-repeat 0px -3px;
 }
 
-/* line 350, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 353, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsArrowIcn {
   background-color: #67cddc;
 }
 
-/* line 351, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 354, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsArrowIcn:hover {
   background-color: #3b3b3d;
 }
 
-/* line 355, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 358, ../../app/assets/stylesheets/partials/_layout.scss */
 .destination_pictures_container {
   width: 400px;
   height: 400px;
@@ -1230,7 +1236,7 @@ body .rsDefault .rsArrowIcn:hover {
   margin: 0 0 20px;
 }
 
-/* line 356, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 359, ../../app/assets/stylesheets/partials/_layout.scss */
 body .destination_pictures_container .rsABlock {
   position: absolute;
   bottom: 20px;
@@ -1239,7 +1245,7 @@ body .destination_pictures_container .rsABlock {
   right: 15px;
 }
 
-/* line 357, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 360, ../../app/assets/stylesheets/partials/_layout.scss */
 body .destination_pictures_container.rsDefault .rsBullets {
   top: 10px;
   right: 10px;
@@ -1248,7 +1254,7 @@ body .destination_pictures_container.rsDefault .rsBullets {
   padding: 0;
 }
 
-/* line 359, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 362, ../../app/assets/stylesheets/partials/_layout.scss */
 .destination_pictures_container .links {
   position: absolute;
   bottom: 15px;
@@ -1256,13 +1262,13 @@ body .destination_pictures_container.rsDefault .rsBullets {
   text-align: right;
 }
 
-/* line 360, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 363, ../../app/assets/stylesheets/partials/_layout.scss */
 .destination_pictures_container .links a {
   margin-left: 10px;
 }
 
 /* END: Estilos slider */
-/* line 364, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 367, ../../app/assets/stylesheets/partials/_layout.scss */
 .field-article {
   width: 100%;
   float: left;
@@ -1270,13 +1276,13 @@ body .destination_pictures_container.rsDefault .rsBullets {
   margin-bottom: 60px;
 }
 
-/* line 365, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 368, ../../app/assets/stylesheets/partials/_layout.scss */
 .field-picture {
   float: left;
   margin: 0 5px 5px 0;
 }
 
-/* line 367, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 370, ../../app/assets/stylesheets/partials/_layout.scss */
 .field-article .link {
   float: right;
   text-decoration: underline;
@@ -1284,36 +1290,99 @@ body .destination_pictures_container.rsDefault .rsBullets {
 }
 
 /* Coda slider */
-/* line 372, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 375, ../../app/assets/stylesheets/partials/_layout.scss */
 .coda-nav ul {
   width: 100% !important;
 }
 
-/* line 374, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 376, ../../app/assets/stylesheets/partials/_layout.scss */
+#content .coda-slider-wrapper .coda-slider .panel .panel-wrapper {
+  padding: 20px 30px 20px 0;
+}
+
+/* line 378, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels table {
   width: 100%;
 }
-/* line 376, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 380, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels table th {
   font-weight: bold;
   text-align: center;
 }
-/* line 381, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 385, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels table td:nth-of-type(2),
 #travels table td:nth-of-type(3) {
   text-align: center;
 }
 
-/* line 387, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 391, ../../app/assets/stylesheets/partials/_layout.scss */
 .hide {
   display: none;
 }
 
-/* line 389, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 393, ../../app/assets/stylesheets/partials/_layout.scss */
 #content .coda-slider-wrapper .coda-nav a {
   padding: 10px 20px;
   min-width: 90px;
   text-align: center;
+}
+
+/* line 398, ../../app/assets/stylesheets/partials/_layout.scss */
+#travels .field-description {
+  float: left;
+  clear: left;
+  width: 100%;
+  margin: 0 0 30px;
+}
+/* line 403, ../../app/assets/stylesheets/partials/_layout.scss */
+#travels .group-field-information .field-picture {
+  float: left;
+  margin: 0 20px 0 0;
+}
+/* line 410, ../../app/assets/stylesheets/partials/_layout.scss */
+#travels .group-field-information .field-information {
+  width: 340px;
+  float: left;
+}
+/* line 414, ../../app/assets/stylesheets/partials/_layout.scss */
+#travels .group-field-information .field-information-extra {
+  float: right;
+  border: 1px solid;
+  padding: 10px;
+  position: relative;
+  top: -10px;
+}
+/* line 421, ../../app/assets/stylesheets/partials/_layout.scss */
+#travels .group-field-information .field-items {
+  display: block;
+  margin: 0 0 22px;
+}
+/* line 424, ../../app/assets/stylesheets/partials/_layout.scss */
+#travels .group-field-information .field-items.last {
+  margin-bottom: 0;
+}
+/* line 425, ../../app/assets/stylesheets/partials/_layout.scss */
+#travels .group-field-information .field-items .field-item {
+  float: right;
+  color: gray;
+}
+
+/* line 433, ../../app/assets/stylesheets/partials/_layout.scss */
+.field-element {
+  width: 100%;
+  float: left;
+  clear: left;
+  margin-bottom: 30px;
+}
+
+/* line 439, ../../app/assets/stylesheets/partials/_layout.scss */
+.travel-tabs .group-field-information {
+  clear: left;
+  width: 100%;
+}
+/* line 443, ../../app/assets/stylesheets/partials/_layout.scss */
+.itinerary-tabs .group-field-information {
+  clear: none;
 }
 
 /* line 5, ../../app/assets/stylesheets/partials/_admin.scss */

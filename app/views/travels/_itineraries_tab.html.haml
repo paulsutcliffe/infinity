@@ -5,14 +5,21 @@
     = link_to I18n.t('destroy'), offer_season_travel_itinerary_path(@offer_season, @travel, itinerary), :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button'
 
   - number = 1;
-  %ol
-  - itinerary.itinerary_contents.each do |itinerary_content|
-    %li
-      %span
-        Día
-        = number 
-        - number += 1;
-      = paragraph(itinerary_content.content)
-      = itinerary_content.hotel
-      - if !itinerary_content.itinerary_content_picture.blank?
-        = image_tag itinerary_content.itinerary_content_picture(:default)
+  %ol.itinerary-tabs
+    - itinerary.itinerary_contents.each do |itinerary_content|
+      %li.field-element
+        - if itinerary_content.itinerary_content_picture.file?
+          .field-picture
+            = lightbox(itinerary_content.itinerary_content_picture(:default), itinerary_content.itinerary_content_picture(:lightbox))
+            = #image_tag itinerary_content.itinerary_content_picture(:default)
+            .field-item
+            = itinerary_content.hotel
+        .group-field-information
+          %b
+            Día
+            = number 
+            - number += 1;
+          = paragraph(itinerary_content.content)
+
+
+

@@ -68,7 +68,12 @@ module ApplicationHelper
 #  end
 #
 
+#########################################################################
+# lightbox helper
 
+  def lightbox(image_picture, image_full)
+    link_to image_tag(image_picture), image_full, :class => 'lightbox', :rel => 'gallery'
+  end
 
 
 

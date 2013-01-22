@@ -6,6 +6,7 @@ class Travel < ActiveRecord::Base
 
   has_many :itineraries, :dependent => :destroy
   has_many :prices, :dependent => :destroy
+
   
 
   extend FriendlyId
@@ -18,7 +19,7 @@ class Travel < ActiveRecord::Base
   validates_attachment_size :travel_picture, :less_than => 1.megabytes
   
   has_attached_file :travel_picture, :styles => {
-    :thumb => {:geometry => '100x100#', :quality => 80, :format => 'jpg'},
+    :thumb => {:geometry => '130x130#', :quality => 80, :format => 'jpg'},
     :default => {:geometry => '400x300#', :quality => 80, :format => 'jpg'}
   }
 end

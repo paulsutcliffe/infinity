@@ -10,6 +10,8 @@ html body footer .copyright,
 .navigation li, header nav li{padding:0; margin:0}
 .typography p, .content p, section[role="main"] > article p{margin-top:0}
 
+b {font-weight: bold;}
+
 body{
   @include blueprint-debug;
   font-family:$font-primary;
@@ -153,6 +155,7 @@ body {
 
 h1.page-title, h2.title, .h2-tab-title {
   @include title;
+  overflow: visible;
   margin: 0 0 $space-heading;
   .partners & {
     text-align:center;
@@ -370,6 +373,7 @@ body .destination_pictures_container.rsDefault .rsBullets { top: 10px; right: 10
 
 /* Coda slider */
 .coda-nav ul{width: 100% !important}
+#content .coda-slider-wrapper .coda-slider .panel .panel-wrapper {padding: 20px 30px 20px 0}
 
 #travels table {
   width:100%;
@@ -387,3 +391,56 @@ body .destination_pictures_container.rsDefault .rsBullets { top: 10px; right: 10
 .hide {display: none}
 
 #content .coda-slider-wrapper .coda-nav a {padding: 10px 20px; min-width: 90px; text-align: center}
+
+
+
+#travels {
+  .field-description {
+    float: left; clear: left; width: 100%;
+    margin: 0 0 $space-bottom/2;
+  }
+  .group-field-information {
+    .field-picture {
+      float: left;
+      margin: 0 20px 0 0;
+      .field-item {
+        
+      }
+    }
+    .field-information {
+      width: 340px;
+      float: left;
+    }
+    .field-information-extra {
+      float: right;
+      border: 1px solid;
+      padding: 10px;
+      position: relative;
+      top: -10px;
+    }
+    .field-items {
+      display: block;
+      margin: 0 0 22px;
+      &.last {margin-bottom: 0}
+      .field-item {
+        float: right;
+        color: gray;
+      }
+    }
+  }
+}
+
+.field-element {
+  width: 100%; float: left; clear: left;
+  margin-bottom: $space-bottom/2;
+}
+
+.group-field-information {
+  .travel-tabs &{
+    clear: left; 
+    width: 100%;
+  } 
+  .itinerary-tabs & {
+    clear: none;
+  }
+}
