@@ -5,7 +5,6 @@
   %ul
     - @fuera_de_temporada.each do |fuera|
       %li
-        = #link_to_unless_current offer.name, offer_countries_path(offer) do
         = link_to_unless_current fuera.name, offer_season_travel_path(fuera.offer_season, fuera) do
           %span
             = fuera.title
@@ -13,7 +12,7 @@
           .navigation
           - if current_admin
             .admin
-              = link_to I18n.t('edit'), edit_travel_path(fuera), :class => 'button edit'
+              = link_to I18n.t('edit'), edit_offer_season_travel_path(fuera.offer_season, fuera), :class => 'button edit'
               = link_to I18n.t('destroy'), fuera, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
 
 

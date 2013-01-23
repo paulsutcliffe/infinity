@@ -1,8 +1,11 @@
-%h1 
-  =t('travel.new')
+#content
 
-= form_for(@travel, :url => {:travel_id => params[:travel_id], :action => 'create'}) do |f|
-  = render(:partial => 'form', :locals => {:f => f})
-  .actions
-    = f.submit I18n.t('submit')
+  %h1.page-title
+    =t('travel.new')
+
+  = form_for(@travel, :url => {:travel_id => params[:travel_id], :action => 'create'}) do |f|
+    = render(:partial => 'form', :locals => {:f => f})
+    .actions
+      = link_to I18n.t('cancel'), 'offer_season_travel_path(@travel.offer_season, @travel)', :class => 'btn cancel'
+      = f.submit I18n.t('submit')
 

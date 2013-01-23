@@ -7,6 +7,10 @@
   %h1.page-title
     = I18n.t('offer_seasons.index')
 
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('offer_season.new'), new_offer_season_path(@offer_season), :class => 'button new'
+
   .content
     - @offers.each do |offer|
       .field-article

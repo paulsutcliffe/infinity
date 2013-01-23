@@ -1,9 +1,14 @@
-%h1 
-  =t('offer_season.new')
+= breadcrumb :new_offer_season
+
+#content
+
+  %h1.page-title
+    =t('offer_season.new')
 
 
-= form_for(@offer_season, :url => {:offer_season_id => params[:offer_season_id], :action => 'create'}) do |f|
-  = render(:partial => 'form', :locals => {:f => f})
-  .actions
-    = f.submit I18n.t('submit')
+  = form_for(@offer_season, :url => {:offer_season_id => params[:offer_season_id], :action => 'create'}) do |f|
+    = render(:partial => 'form', :locals => {:f => f})
+    .actions
+      = link_to I18n.t('cancel'), offer_seasons_path, :class => 'btn cancel'
+      = f.submit I18n.t('submit')
 

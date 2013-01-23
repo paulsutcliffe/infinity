@@ -1,9 +1,14 @@
-%h1
-  = t('offer_season.edit.title')
+= breadcrumb :edit_offer_season, @offer_season
 
-= form_for(@offer_season, :url => {:offer_season_id => params[:offer_season_id], :action => 'update'}) do |f|
-  = render(:partial => 'form', :locals => {:f => f})
-  .actions
-    = f.submit I18n.t('update')
+#content
 
-== #{ link_to t('show'), @offer_season } | #{ link_to t('back'), offer_seasons_path }
+  %h1.page-title
+    = I18n.t('offer_season.edit') + ' ' + @offer_season.title
+    
+
+  = form_for(@offer_season, :url => {:offer_season_id => params[:offer_season_id], :action => 'update'}) do |f|
+    = render(:partial => 'form', :locals => {:f => f})
+    .actions
+      = link_to I18n.t('cancel'), offer_seasons_path, :class => 'btn cancel'
+      = f.submit I18n.t('update')
+

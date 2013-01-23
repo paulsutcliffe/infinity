@@ -6,6 +6,7 @@ class Travel < ActiveRecord::Base
 
   has_many :itineraries, :dependent => :destroy
   has_many :prices, :dependent => :destroy
+  has_many :hotels, :dependent => :destroy
 
   
 

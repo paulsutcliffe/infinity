@@ -2,6 +2,7 @@ Infinity::Application.routes.draw do
 
 
 
+
   resources :question_forms
 
     resources :abouts, :path => I18n.t('abouts.url') do
@@ -33,6 +34,7 @@ Infinity::Application.routes.draw do
         resources :itineraries
         resources :prices
         resources :extensions
+        resources :hotels
       end
     end
 

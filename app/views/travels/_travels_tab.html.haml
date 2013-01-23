@@ -8,27 +8,31 @@
    
   .group-field-information
     .field-picture
-      = image_tag @travel.travel_picture(:thumb), :style => 'width: 130px'
+      - if @travel.travel_picture.file?
+        = image_tag @travel.travel_picture(:thumb), :style => 'width: 130px'
     .field-information
-      .field-items
-        Precio
-        .field-item
-          = @travel.price
+      - if @travel.price.blank?
+        .field-items
+          Precio
+          .field-item
+            = @travel.price
+      - if !@travel.days.blank?
+        .field-items
+          Days
+          .field-item
+            = @travel.days
 
-      .field-items
-        Days
-        .field-item
-          = @travel.days
+      - if !@travel.departures.blank?
+        .field-items
+          Departures Salidas
+          .field-item
+            = @travel.departures
 
-      .field-items
-        Departures Salidas
-        .field-item
-          = @travel.departures
-
-      .field-items
-        Grupo Máximo
-        .field-item
-          = @travel.maxgroupsize
+      - if @travel.maxgroupsize?
+        .field-items
+          Grupo Máximo
+          .field-item
+            = @travel.maxgroupsize
     .field-information-extra
       .field-items
         Información General

@@ -2,7 +2,7 @@
   =t('itinerary.new')
 
 
-= form_for(@itinerary, :url => {:itinerary_id => params[:itinerary_id], :action => 'create'}) do |f|
+= form_for(@itinerary, :url => {:itinerary_id => params[:itinerary_id], :action => 'create'}, :html => {:multipart => true}) do |f|
   = render(:partial => 'form', :locals => {:f => f}) 
   .actions
     = f.submit I18n.t('submit')

@@ -34,7 +34,15 @@ end
 
 
 def create
-  create! { offers_season_path }
+  create! { offer_seasons_path }
+end
+
+def update
+  update! { offer_seasons_path }
+end
+
+def destroy
+  destroy! { offer_seasons_path }
 end
 
 

@@ -10,9 +10,23 @@
     = f.text_field :hotel
     %br
 
-    = f.label :itinerary_content_picture
-    = f.file_field :itinerary_content_picture
 
+
+
+
+
+
+
+
+
+
+
+    -#
+      - f.fields_for :hotel_pictures do |a| 
+        = render 'hotel_picture_fields', :f => a
+
+      %div
+        = add_child_link "Add Picture", f, :hotel_pictures
 
 
 

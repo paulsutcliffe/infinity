@@ -1,0 +1,6 @@
+%h1
+  = t('hotel.edit.title')
+
+= render 'form'
+
+== #{ link_to t('show'), @hotel } | #{ link_to t('back'), hotels_path }

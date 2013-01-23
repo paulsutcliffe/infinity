@@ -91,6 +91,18 @@ Gretel::Crumbs.layout do
     link season.title, offer_seasons_path(season)
     parent :offer_seasons, season
   end
+  
+  # offer_season_new
+  crumb :new_offer_season do |season|
+    link I18n.t('offer_season.new'), new_offer_season_path
+    parent :offer_seasons, season
+  end
+
+  # offer_season_edit
+  crumb :edit_offer_season do |season|
+    link I18n.t('offer_season.edit') + ' ' + season.title, edit_offer_season_path(season)
+    parent :offer_seasons, season
+  end
 
   # offer_season / travels 
   crumb :offer_season_travel do |travel|

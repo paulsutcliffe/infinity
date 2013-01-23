@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130113220216) do
+ActiveRecord::Schema.define(:version => 20130123024048) do
 
   create_table "abouts", :force => true do |t|
     t.string   "title_landing_page"
@@ -130,6 +130,33 @@ ActiveRecord::Schema.define(:version => 20130113220216) do
     t.integer  "offer_season"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "hotel_pictures", :force => true do |t|
+    t.integer  "offer_season_id"
+    t.integer  "travel_id"
+    t.integer  "itinerary_id"
+    t.integer  "itinerary_content_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "hotel_photo_file_name"
+    t.string   "hotel_photo_content_type"
+    t.integer  "hotel_photo_file_size"
+    t.datetime "hotel_photo_updated_at"
+  end
+
+  create_table "hotels", :force => true do |t|
+    t.string   "name"
+    t.integer  "offer_season_id"
+    t.integer  "travel_id"
+    t.integer  "itinerary_id"
+    t.integer  "itinerary_content_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "hotel_picture_file_name"
+    t.string   "hotel_picture_content_type"
+    t.integer  "hotel_picture_file_size"
+    t.datetime "hotel_picture_updated_at"
   end
 
   create_table "itineraries", :force => true do |t|
@@ -297,7 +324,6 @@ ActiveRecord::Schema.define(:version => 20130113220216) do
     t.text     "weather"
     t.integer  "country_id"
     t.integer  "offer_season_id"
-    t.integer  "question_form"
     t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"

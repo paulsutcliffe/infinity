@@ -1,7 +1,11 @@
 
 
+.new, .edit {
+  form {min-height: 150px}
+}
 
 .admin {
+
   &.create {
     width: 100%; margin-bottom: $space * 6;
     float: left; clear: left; position: relative; 

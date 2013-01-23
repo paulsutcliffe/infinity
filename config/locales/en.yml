@@ -20,6 +20,8 @@ en:
   confirm_delete: Are you sure?
   submit: Save
   send: Submit
+  update: Update
+  cancel: Cancel
   back: Back
   logout: Logout
 
@@ -119,6 +121,7 @@ en:
   offer_season:
     show: Offers
     new: New Offer Season
+    edit: Edit Offer Season
  
   packs:
     index: Packs
@@ -149,6 +152,7 @@ en:
     url: travels 
   travel:
     new: New Travel
+    edit: Edit Travel
 
   testimonies:
     index: Testimonies

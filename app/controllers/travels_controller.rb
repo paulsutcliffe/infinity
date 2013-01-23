@@ -27,6 +27,16 @@ def show
 
 end
 
+def new
+  #call id from offer_season
+  @offer_season = OfferSeason.find(params[:offer_season_id])
+
+  @travel = @offer_season.travels.new
+  @travel_back = @offer_season.travels.all
+  
+end
+
+
 def update
   update!{ offer_season_travel_path(@offer_season, @travel) }
 end

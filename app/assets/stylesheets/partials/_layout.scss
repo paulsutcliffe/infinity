@@ -260,10 +260,13 @@ a.button_{
   @include submit(left);
 }
 
-button, .actions input {
+button, .actions input, .cancel {
   @include submit(right);
 }
 
+a.cancel {
+  line-height: 145%; float: left;
+}
 
 .breadcrumbs {
   font-size: $font-size-small;

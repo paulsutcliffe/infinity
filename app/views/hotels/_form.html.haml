@@ -1,0 +1,12 @@
+
+- if @hotel.errors.any?
+  #errorExplanation
+    %h2= t('activerecord.errors.messages.hotel.invalid_record')
+    %ul
+    - @hotel.errors.full_messages.each do |msg|
+      %li= msg
+.field
+  = f.label :name
+  %br
+  = f.text_field :name
+

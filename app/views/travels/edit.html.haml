@@ -1,7 +1,9 @@
-%h1
-  = t('travel.edit.title')
+#content
 
-= form_for(@travel, :url => {:travel_id => params[:travel_id], :action => 'update'}) do |f|
-  = render(:partial => 'form', :locals => {:f => f})
-  .actions
-    = f.submit I18n.t('update')
+  %h1.page-title
+    = t('travel.edit') + ' ' + @travel.name
+
+  = form_for(@travel, :url => {:travel_id => params[:travel_id], :action => 'update'}) do |f|
+    = render(:partial => 'form', :locals => {:f => f})
+    .actions
+      = f.submit I18n.t('update')

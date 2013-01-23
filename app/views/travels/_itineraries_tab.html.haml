@@ -8,6 +8,10 @@
   %ol.itinerary-tabs
     - itinerary.itinerary_contents.each do |itinerary_content|
       %li.field-element
+        -#
+          - itinerary_content.hotel_pictures.each do |hotel_picture|
+            = image_tag hotel_picture.hotel_photo(:default)
+  
         - if itinerary_content.itinerary_content_picture.file?
           .field-picture
             = lightbox(itinerary_content.itinerary_content_picture(:default), itinerary_content.itinerary_content_picture(:lightbox))

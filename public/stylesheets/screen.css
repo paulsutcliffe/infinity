@@ -1049,7 +1049,7 @@ a.button_ {
 }
 
 /* line 263, ../../app/assets/stylesheets/partials/_layout.scss */
-button, .actions input {
+button, .actions input, .cancel {
   background: #3b3b3d;
   color: white;
   float: right;
@@ -1063,14 +1063,20 @@ button, .actions input {
   line-height: 115%;
 }
 
-/* line 268, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 267, ../../app/assets/stylesheets/partials/_layout.scss */
+a.cancel {
+  line-height: 145%;
+  float: left;
+}
+
+/* line 271, ../../app/assets/stylesheets/partials/_layout.scss */
 .breadcrumbs {
   font-size: 14px;
 }
 
 /* Párrafos después de los títulos de página
 ======================================================= */
-/* line 275, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 278, ../../app/assets/stylesheets/partials/_layout.scss */
 h1.page-title + p {
   margin: 20px 0 50px;
   padding: 0 0 50px 0;
@@ -1078,7 +1084,7 @@ h1.page-title + p {
   background-position: 50% 100%;
 }
 
-/* line 281, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 284, ../../app/assets/stylesheets/partials/_layout.scss */
 .field.field-map,
 .field.field-link,
 .field.field-content {
@@ -1086,47 +1092,47 @@ h1.page-title + p {
   float: left;
   clear: left;
 }
-/* line 283, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 286, ../../app/assets/stylesheets/partials/_layout.scss */
 #destinations.show .field.field-map, #destinations.show
 .field.field-link, #destinations.show
 .field.field-content {
   width: auto;
 }
 
-/* line 288, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 291, ../../app/assets/stylesheets/partials/_layout.scss */
 #slider-destinations {
   background: url(../images/backgrounds/bevel-cyan-small.jpg) no-repeat 50% 0 white;
   background-position: 50% 100%;
   padding-bottom: 60px;
 }
 
-/* line 300, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 303, ../../app/assets/stylesheets/partials/_layout.scss */
 #content .not-front .content {
   width: 100%;
   float: left;
   clear: left;
 }
-/* line 304, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 307, ../../app/assets/stylesheets/partials/_layout.scss */
 #abouts.history.not-front #content img {
   margin: 0 15px 15px 0;
   float: left;
 }
 
-/* line 309, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 312, ../../app/assets/stylesheets/partials/_layout.scss */
 .block {
   width: 100%;
   float: left;
   clear: left;
 }
 
-/* line 312, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 315, ../../app/assets/stylesheets/partials/_layout.scss */
 #abouts.milestones .field-image {
   width: 150px;
   margin: 0 15px 15px 0;
   float: left;
 }
 
-/* line 319, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 322, ../../app/assets/stylesheets/partials/_layout.scss */
 #abouts.staff .field-member,
 #packs.index .field-image {
   margin: 0 0 60px;
@@ -1134,19 +1140,19 @@ h1.page-title + p {
   float: right;
 }
 
-/* line 325, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 328, ../../app/assets/stylesheets/partials/_layout.scss */
 #posts.news_and_events .field-image,
 #testimonies.index .field-image {
   margin: 0 15px 15px 0;
   float: left;
 }
 
-/* line 330, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 333, ../../app/assets/stylesheets/partials/_layout.scss */
 .break {
   clear: left;
 }
 
-/* line 335, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 338, ../../app/assets/stylesheets/partials/_layout.scss */
 .foobar-message-wrapper {
   font-family: "Dosis" !important;
   font-weight: normal !important;
@@ -1154,18 +1160,18 @@ h1.page-title + p {
 
 /* Estilos slider
 ======================================================= */
-/* line 340, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 343, ../../app/assets/stylesheets/partials/_layout.scss */
 #preface-top .royalSlider {
   width: 950px;
   height: 250px;
 }
 
-/* line 341, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 344, ../../app/assets/stylesheets/partials/_layout.scss */
 .rsOverflow {
   position: relative;
 }
 
-/* line 342, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 345, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsABlock {
   position: absolute;
   top: 5px;
@@ -1173,30 +1179,30 @@ body .rsABlock {
   right: 35px;
 }
 
-/* line 343, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 346, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsPreloader {
   background-image: url(/javascripts/libs/royal-slider-9.2/preloaders/preloader-white.gif);
 }
 
-/* line 344, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 347, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsCloseVideoIcn {
   background: url("/javascripts/libs/royal-slider-9.2/rs-default.png") -64px 0;
 }
 
-/* line 345, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 348, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom.partners ul.slider {
   width: 950px;
   height: 80px;
 }
 
-/* line 346, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 349, ../../app/assets/stylesheets/partials/_layout.scss */
 #postscript-bottom .rsABlock {
   position: absolute;
   top: 5px;
   left: 0;
 }
 
-/* line 348, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 351, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsBullets {
   background: none;
   bottom: auto;
@@ -1204,7 +1210,7 @@ body .rsDefault .rsBullets {
   padding-top: 15px;
 }
 
-/* line 350, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 353, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsBullet {
   height: 17px;
   width: 17px;
@@ -1212,22 +1218,22 @@ body .rsDefault .rsBullet {
   cursor: pointer;
 }
 
-/* line 352, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 355, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsBullet.rsNavSelected {
   background: url(../images/backgrounds/slider-controls.jpg) no-repeat 0px -3px;
 }
 
-/* line 353, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 356, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsArrowIcn {
   background-color: #67cddc;
 }
 
-/* line 354, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 357, ../../app/assets/stylesheets/partials/_layout.scss */
 body .rsDefault .rsArrowIcn:hover {
   background-color: #3b3b3d;
 }
 
-/* line 358, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 361, ../../app/assets/stylesheets/partials/_layout.scss */
 .destination_pictures_container {
   width: 400px;
   height: 400px;
@@ -1236,7 +1242,7 @@ body .rsDefault .rsArrowIcn:hover {
   margin: 0 0 20px;
 }
 
-/* line 359, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 362, ../../app/assets/stylesheets/partials/_layout.scss */
 body .destination_pictures_container .rsABlock {
   position: absolute;
   bottom: 20px;
@@ -1245,7 +1251,7 @@ body .destination_pictures_container .rsABlock {
   right: 15px;
 }
 
-/* line 360, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 363, ../../app/assets/stylesheets/partials/_layout.scss */
 body .destination_pictures_container.rsDefault .rsBullets {
   top: 10px;
   right: 10px;
@@ -1254,7 +1260,7 @@ body .destination_pictures_container.rsDefault .rsBullets {
   padding: 0;
 }
 
-/* line 362, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 365, ../../app/assets/stylesheets/partials/_layout.scss */
 .destination_pictures_container .links {
   position: absolute;
   bottom: 15px;
@@ -1262,13 +1268,13 @@ body .destination_pictures_container.rsDefault .rsBullets {
   text-align: right;
 }
 
-/* line 363, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 366, ../../app/assets/stylesheets/partials/_layout.scss */
 .destination_pictures_container .links a {
   margin-left: 10px;
 }
 
 /* END: Estilos slider */
-/* line 367, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 370, ../../app/assets/stylesheets/partials/_layout.scss */
 .field-article {
   width: 100%;
   float: left;
@@ -1276,13 +1282,13 @@ body .destination_pictures_container.rsDefault .rsBullets {
   margin-bottom: 60px;
 }
 
-/* line 368, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 371, ../../app/assets/stylesheets/partials/_layout.scss */
 .field-picture {
   float: left;
   margin: 0 5px 5px 0;
 }
 
-/* line 370, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 373, ../../app/assets/stylesheets/partials/_layout.scss */
 .field-article .link {
   float: right;
   text-decoration: underline;
@@ -1290,61 +1296,61 @@ body .destination_pictures_container.rsDefault .rsBullets {
 }
 
 /* Coda slider */
-/* line 375, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 378, ../../app/assets/stylesheets/partials/_layout.scss */
 .coda-nav ul {
   width: 100% !important;
 }
 
-/* line 376, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 379, ../../app/assets/stylesheets/partials/_layout.scss */
 #content .coda-slider-wrapper .coda-slider .panel .panel-wrapper {
   padding: 20px 30px 20px 0;
 }
 
-/* line 378, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 381, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels table {
   width: 100%;
 }
-/* line 380, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 383, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels table th {
   font-weight: bold;
   text-align: center;
 }
-/* line 385, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 388, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels table td:nth-of-type(2),
 #travels table td:nth-of-type(3) {
   text-align: center;
 }
 
-/* line 391, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 394, ../../app/assets/stylesheets/partials/_layout.scss */
 .hide {
   display: none;
 }
 
-/* line 393, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 396, ../../app/assets/stylesheets/partials/_layout.scss */
 #content .coda-slider-wrapper .coda-nav a {
   padding: 10px 20px;
   min-width: 90px;
   text-align: center;
 }
 
-/* line 398, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 401, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels .field-description {
   float: left;
   clear: left;
   width: 100%;
   margin: 0 0 30px;
 }
-/* line 403, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 406, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels .group-field-information .field-picture {
   float: left;
   margin: 0 20px 0 0;
 }
-/* line 410, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 413, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels .group-field-information .field-information {
   width: 340px;
   float: left;
 }
-/* line 414, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 417, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels .group-field-information .field-information-extra {
   float: right;
   border: 1px solid;
@@ -1352,22 +1358,22 @@ body .destination_pictures_container.rsDefault .rsBullets {
   position: relative;
   top: -10px;
 }
-/* line 421, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 424, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels .group-field-information .field-items {
   display: block;
   margin: 0 0 22px;
 }
-/* line 424, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 427, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels .group-field-information .field-items.last {
   margin-bottom: 0;
 }
-/* line 425, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 428, ../../app/assets/stylesheets/partials/_layout.scss */
 #travels .group-field-information .field-items .field-item {
   float: right;
   color: gray;
 }
 
-/* line 433, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 436, ../../app/assets/stylesheets/partials/_layout.scss */
 .field-element {
   width: 100%;
   float: left;
@@ -1375,17 +1381,22 @@ body .destination_pictures_container.rsDefault .rsBullets {
   margin-bottom: 30px;
 }
 
-/* line 439, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 442, ../../app/assets/stylesheets/partials/_layout.scss */
 .travel-tabs .group-field-information {
   clear: left;
   width: 100%;
 }
-/* line 443, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 446, ../../app/assets/stylesheets/partials/_layout.scss */
 .itinerary-tabs .group-field-information {
   clear: none;
 }
 
-/* line 5, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 4, ../../app/assets/stylesheets/partials/_admin.scss */
+.new form, .edit form {
+  min-height: 150px;
+}
+
+/* line 9, ../../app/assets/stylesheets/partials/_admin.scss */
 .admin.create {
   width: 100%;
   margin-bottom: 30px;
@@ -1393,51 +1404,51 @@ body .destination_pictures_container.rsDefault .rsBullets {
   clear: left;
   position: relative;
 }
-/* line 8, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 12, ../../app/assets/stylesheets/partials/_admin.scss */
 .admin.create .button, .admin.create #preface-top .royalSlider .royalCaptionItem, #preface-top .royalSlider .admin.create .royalCaptionItem {
   float: left;
   margin-right: 10px;
 }
-/* line 11, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 15, ../../app/assets/stylesheets/partials/_admin.scss */
 .admin.create .heading.button, .admin.create #preface-top .royalSlider .heading.royalCaptionItem, #preface-top .royalSlider .admin.create .heading.royalCaptionItem {
   position: absolute;
   top: -50px;
   right: 0;
   margin-right: 0;
 }
-/* line 15, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 19, ../../app/assets/stylesheets/partials/_admin.scss */
 #sidebar-first .admin {
   padding-left: 17px;
 }
-/* line 17, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 21, ../../app/assets/stylesheets/partials/_admin.scss */
 #sidebar-first .admin a {
   font-size: 12px !important;
   float: left !important;
   margin-right: 5px !important;
 }
 
-/* line 27, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 31, ../../app/assets/stylesheets/partials/_admin.scss */
 .admin a.button, .admin #preface-top .royalSlider a.royalCaptionItem, #preface-top .royalSlider .admin a.royalCaptionItem {
   /*float: none;*/
 }
 
-/* line 34, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 38, ../../app/assets/stylesheets/partials/_admin.scss */
 #slides .block, #milestones .block {
   width: 100%;
   margin: 0 0 20px;
   float: left;
   clear: left;
 }
-/* line 37, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 41, ../../app/assets/stylesheets/partials/_admin.scss */
 #slides .block img, #milestones .block img {
   float: left;
 }
-/* line 40, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 44, ../../app/assets/stylesheets/partials/_admin.scss */
 #slides .block .navigation, #milestones .block .navigation {
   float: left;
   clear: left;
 }
-/* line 43, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 47, ../../app/assets/stylesheets/partials/_admin.scss */
 #slides .block .admin, #milestones .block .admin {
   float: left;
 }
