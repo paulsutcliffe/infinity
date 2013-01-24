@@ -51,3 +51,18 @@ a.button {
 
 
 }
+
+
+.new,
+.edit {
+  #preface-top {display: none}
+
+}
+
+.fields {
+  border-bottom: 1px solid #ddd;
+  margin: 0 0 $space*3;
+  width: 100%;
+  float: left;
+  clear: left
+}

@@ -7,10 +7,8 @@
       %li= msg
 
 .field
-  = f.label :title
-  = f.text_field :title
-
-
+  = # f.label :title
+  = # f.text_field :title
 
 
 - f.fields_for :itinerary_contents do |builder| 
@@ -20,8 +18,8 @@
   .field
   - f.fields_for :itinearies do |builder| 
     = render 'itinerary_fields', :f => builder 
-%div
-  = add_child_link "Add Itinerary", f, :itinerary_contents
+.fields
+  = add_child_link I18n.t('itinerary.add'), f, :itinerary_contents
 
 
 

@@ -1,9 +1,14 @@
-%h1 
-  =t('itinerary.new')
+= # breadcrumb :new_offer_season_travel_itinerary, @offer_season, @travel
+
+#content
+
+  %h1.page-title
+    =t('itinerary.new')
 
 
-= form_for(@itinerary, :url => {:itinerary_id => params[:itinerary_id], :action => 'create'}, :html => {:multipart => true}) do |f|
-  = render(:partial => 'form', :locals => {:f => f}) 
-  .actions
-    = f.submit I18n.t('submit')
+  = form_for(@itinerary, :url => {:itinerary_id => params[:itinerary_id], :action => 'create'}, :html => {:multipart => true}) do |f|
+    = render(:partial => 'form', :locals => {:f => f}) 
+    .actions
+      = link_to I18n.t('cancel'), offer_season_travel_path(@offer_season, @travel), :class => 'btn cancel'
+      = f.submit I18n.t('submit')
 

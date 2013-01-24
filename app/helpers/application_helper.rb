@@ -9,11 +9,11 @@ module ApplicationHelper
         render(:partial => partial, :locals => { :f => f })
       end
     end
-    template + link_to(name, "javascript:void(0)", :class => "add_child", :"data-association" => association)
+    template + link_to(name, "javascript:void(0)", :class => "add_child btn add", :"data-association" => association)
   end
 
   def remove_child_link(name, f)
-    f.hidden_field(:_destroy) + link_to(name, "javascript:void(0)", :class => "remove_child")
+    f.hidden_field(:_destroy) + link_to(name, "javascript:void(0)", :class => "remove_child btn remove")
   end
 
 

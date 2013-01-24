@@ -98,6 +98,9 @@ en:
     url: itineraries
   itinerary:
     new: Add Itinerary 
+    add: Add Day
+    description: Description
+    hotel: Hotel name
 
   milestones:
     index: Milestones

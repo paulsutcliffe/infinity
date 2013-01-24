@@ -88,7 +88,7 @@ Gretel::Crumbs.layout do
 
   # offer_season
   crumb :offer_season do |season|
-    link season.title, offer_seasons_path(season)
+    link "#{season.title}", offer_season_path(season)
     parent :offer_seasons, season
   end
   
@@ -104,10 +104,28 @@ Gretel::Crumbs.layout do
     parent :offer_seasons, season
   end
 
-  # offer_season / travels 
+  # offer_season / travel
   crumb :offer_season_travel do |travel|
     link "#{travel.name}", offer_season_travel_path(travel.offer_season, travel)
     parent :offer_season, travel.offer_season
+  end
+
+  # offer_season / travel / new
+  crumb :new_offer_season_travel do |travel|
+    link I18n.t('travel.new'), new_offer_season_travel_path(travel)
+    parent :offer_season_travel, travel
+  end
+
+  # offer_season / travel / edit
+  crumb :edit_offer_season_travel do |travel|
+    link I18n.t('travel.edit') + ' ' + travel.name, edit_offer_season_travel_path(travel.offer_season, travel)
+    parent :offer_season_travel, travel
+  end
+
+  # offer_season / travel / itinerary / new
+  crumb :new_offer_season_travel_itinerary do |itinerary|
+    link I18n.t('itinerary.new'), new_offer_season_travel_itinerary_path(itinerary.offer_season, itinerary.travel, itinerary)
+    parent :offer_season, itinerary.offer_season
   end
 
   # packs
