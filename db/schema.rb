@@ -231,6 +231,7 @@ ActiveRecord::Schema.define(:version => 20130123024048) do
     t.text     "content"
     t.boolean  "important",                  :default => false
     t.boolean  "landing_page",               :default => false
+    t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "posts_picture_file_name"

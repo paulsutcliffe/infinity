@@ -1,6 +1,7 @@
-%h1 
-  =t('post.new')
-
-= render 'form'
-
-= link_to t('back'), posts_path
+#content
+  %h1.page-title
+    =t('post.new')
+  
+  = render 'form'
+  
+  = link_to t('back'), posts_path, :class => 'btn cancel'

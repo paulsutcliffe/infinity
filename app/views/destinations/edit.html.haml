@@ -1,6 +1,8 @@
-%h1
-  = t('destination.edit.title')
+#content
 
-= render 'form'
-
-== #{ link_to t('show'), @destination } | #{ link_to t('back'), destinations_path }
+  %h1.page-title
+    = t('destination.edit')
+  
+  = render 'form'
+  
+  == #{ link_to t('show'), @destination, :class => 'btn cancel' } #{ link_to t('back'), destinations_path, :class => 'btn cancel' }

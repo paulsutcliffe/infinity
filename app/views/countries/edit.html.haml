@@ -1,9 +1,11 @@
-%h1
-  = t('country.edit.title')
-
-= form_for(@country, :url => {:country_id => params[:country_id], :action => 'update'}) do |f|
-  = render(:partial => 'form', :locals => {:f => f})
-  .actions
-    = f.submit I18n.t('submit')
+#content
+  %h1.page-title
+    = t('country.edit.title')
+  
+  = form_for(@country, :url => {:country_id => params[:country_id], :action => 'update'}) do |f|
+    = render(:partial => 'form', :locals => {:f => f})
+    .actions
+      = link_to I18n.t('cancel'), destination_path(@destination), :class => 'btn cancel'
+      = f.submit I18n.t('submit')
 
 

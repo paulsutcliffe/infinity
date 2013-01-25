@@ -5,6 +5,7 @@ class CreatePosts < ActiveRecord::Migration
       t.text :content
       t.boolean :important, :default => false
       t.boolean :landing_page, :default => false
+      t.string :slug
 
       t.timestamps
     end

@@ -6,6 +6,9 @@
 #content
   %h1.page-title
     = page_title! I18n.t('packs.index')
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('pack.new'), new_pack_path, :class => 'button new'
 
 
   .content

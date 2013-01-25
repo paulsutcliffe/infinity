@@ -45,7 +45,12 @@ Infinity::Application.routes.draw do
 
 
     # posts has_many :news_and_events :press_releases
-    resources :posts, :path => I18n.t('posts.url')
+    resources :posts, :path => I18n.t('posts.url') do
+     # match 'posts', :on => :collection
+     # match 'news_and_events/:id' => 'posts#show', :on => :collection
+      get 'news_and_events' => 'posts#news_and_events', :on => :collection
+      get 'press_releases' => 'posts#press_releases', :on => :collection
+    end
 
     resources :press_releases
 

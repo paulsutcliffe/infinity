@@ -84,9 +84,11 @@ en:
     index: Destinations
   destination:
     new: New Destination
+    edit: Edit Destination
 
   destination_picture:
     new: Add Picture
+    edit: Edit Picture
 
   extensions:
     index: Extensions
@@ -131,6 +133,7 @@ en:
     url: packs
   pack:
     new: New Pack
+    edit: Edit Pack
 
   posts:
     index: News
@@ -139,11 +142,13 @@ en:
     important: Noticia Importante
   post:
     new: New Post
+    edit: Edit Post
 
   press_releases:
     index: Press Releases
   press_release:
     new: New Press Release
+    edit: Edit Press Release
 
   prices:
     index: Prices
