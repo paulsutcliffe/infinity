@@ -17,7 +17,7 @@
         = paragraph(about_infinity.text_landing_page)
         = image_tag(about_infinity.picture_landing_page(:landing_page))
       - if current_admin
-        = link_to I18n.t('edit'), edit_about_path(about_infinity)
+        = link_to I18n.t('edit'), edit_about_path(about_infinity), :class => 'btn button'
  
   %section.noticia
     - @last_post.each do |last_post|

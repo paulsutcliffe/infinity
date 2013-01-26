@@ -6,6 +6,10 @@
     = I18n.t('user.root') 
   %ul
     %li
+      = link_to_unless_current I18n.t('user.sign_up'), new_user_registration_path do
+        %span
+          = I18n.t('user.sign_up')
+    %li
       = link_to_unless_current I18n.t('user.sign_in'), new_user_session_path do
         %span
           = I18n.t('user.sign_in')  
