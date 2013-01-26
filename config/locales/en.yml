@@ -44,6 +44,7 @@ en:
     travel_agent_register: Register Travel Agent
     travel_register: Traveler Register
     client_comments: Client's Comments
+    forgot_password: Forgot your password?
 
   homes:
     index: Home

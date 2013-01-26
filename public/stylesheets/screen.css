@@ -104,15 +104,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 20, ../../app/assets/stylesheets/partials/_forms.scss */
 .field {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  width: 100%;
+  float: left;
+  clear: left;
 }
-/* line 22, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 25, ../../app/assets/stylesheets/partials/_forms.scss */
 .field .description {
   font-size: 14px;
   margin: 5px 0 0 150px;
 }
+/* line 30, ../../app/assets/stylesheets/partials/_forms.scss */
+.field .field_with_errors {
+  position: relative;
+  float: left;
+}
+/* line 33, ../../app/assets/stylesheets/partials/_forms.scss */
+.field .field_with_errors input + label {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: red;
+}
 
-/* line 28, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 42, ../../app/assets/stylesheets/partials/_forms.scss */
 .field-items {
   margin: 0 0 0 15px;
   display: inline-block;
@@ -121,27 +136,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-align: "left";
 }
 
-/* line 30, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 44, ../../app/assets/stylesheets/partials/_forms.scss */
 label {
   width: 150px;
   float: left;
 }
-/* line 33, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 47, ../../app/assets/stylesheets/partials/_forms.scss */
 .check-field label {
   width: auto;
   float: none;
 }
 
-/* line 39, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 53, ../../app/assets/stylesheets/partials/_forms.scss */
 input {
   width: 200px;
 }
-/* line 41, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 55, ../../app/assets/stylesheets/partials/_forms.scss */
 .check-field input {
   width: auto;
 }
 
-/* line 46, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 60, ../../app/assets/stylesheets/partials/_forms.scss */
 .required {
   font-size: 14px;
   padding-bottom: 15px;
@@ -150,7 +165,7 @@ input {
   background-position: 0 100%;
 }
 
-/* line 54, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 68, ../../app/assets/stylesheets/partials/_forms.scss */
 input[type="submit"], submit {
   cursor: pointer;
 }
@@ -392,8 +407,8 @@ ul.default-list li span {
 * html #sidebar-first {
   overflow-x: hidden;
 }
-/* line 28, ../../app/assets/stylesheets/partials/_sidebar.scss */
-.not-front.sidebar-first #sidebar-first, #devise-sessions.new #sidebar-first, #devise-registrations.new #sidebar-first, #testimonies.index #sidebar-first, .login #sidebar-first {
+/* line 29, ../../app/assets/stylesheets/partials/_sidebar.scss */
+.not-front.sidebar-first #sidebar-first, #devise-sessions.new #sidebar-first, #devise-registrations.new #sidebar-first, #devise-passwords.new #sidebar-first, #testimonies.index #sidebar-first, .login #sidebar-first {
   float: left;
   display: inline;
   float: left;
@@ -404,15 +419,15 @@ ul.default-list li span {
   margin-right: 0;
 }
 /* line 147, ../../../../../.rvm/gems/ruby-1.8.7-p352/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html .not-front.sidebar-first #sidebar-first, * html #devise-sessions.new #sidebar-first, * html #devise-registrations.new #sidebar-first, * html #testimonies.index #sidebar-first, * html .login #sidebar-first {
+* html .not-front.sidebar-first #sidebar-first, * html #devise-sessions.new #sidebar-first, * html #devise-registrations.new #sidebar-first, * html #devise-passwords.new #sidebar-first, * html #testimonies.index #sidebar-first, * html .login #sidebar-first {
   overflow-x: hidden;
 }
-/* line 34, ../../app/assets/stylesheets/partials/_sidebar.scss */
-.not-front.sidebar-first #sidebar-first nav, .not-front.sidebar-first #sidebar-first .sidebar-block, #devise-sessions.new #sidebar-first nav, #devise-sessions.new #sidebar-first .sidebar-block, #devise-registrations.new #sidebar-first nav, #devise-registrations.new #sidebar-first .sidebar-block, #testimonies.index #sidebar-first nav, #testimonies.index #sidebar-first .sidebar-block, .login #sidebar-first nav, .login #sidebar-first .sidebar-block {
+/* line 35, ../../app/assets/stylesheets/partials/_sidebar.scss */
+.not-front.sidebar-first #sidebar-first nav, .not-front.sidebar-first #sidebar-first .sidebar-block, #devise-sessions.new #sidebar-first nav, #devise-sessions.new #sidebar-first .sidebar-block, #devise-registrations.new #sidebar-first nav, #devise-registrations.new #sidebar-first .sidebar-block, #devise-passwords.new #sidebar-first nav, #devise-passwords.new #sidebar-first .sidebar-block, #testimonies.index #sidebar-first nav, #testimonies.index #sidebar-first .sidebar-block, .login #sidebar-first nav, .login #sidebar-first .sidebar-block {
   width: 230px;
 }
-/* line 37, ../../app/assets/stylesheets/partials/_sidebar.scss */
-.not-front.sidebar-first #sidebar-first nav, .not-front.sidebar-first #sidebar-first section, .not-front.sidebar-first #sidebar-first .sidebar-block, #devise-sessions.new #sidebar-first nav, #devise-sessions.new #sidebar-first section, #devise-sessions.new #sidebar-first .sidebar-block, #devise-registrations.new #sidebar-first nav, #devise-registrations.new #sidebar-first section, #devise-registrations.new #sidebar-first .sidebar-block, #testimonies.index #sidebar-first nav, #testimonies.index #sidebar-first section, #testimonies.index #sidebar-first .sidebar-block, .login #sidebar-first nav, .login #sidebar-first section, .login #sidebar-first .sidebar-block {
+/* line 38, ../../app/assets/stylesheets/partials/_sidebar.scss */
+.not-front.sidebar-first #sidebar-first nav, .not-front.sidebar-first #sidebar-first section, .not-front.sidebar-first #sidebar-first .sidebar-block, #devise-sessions.new #sidebar-first nav, #devise-sessions.new #sidebar-first section, #devise-sessions.new #sidebar-first .sidebar-block, #devise-registrations.new #sidebar-first nav, #devise-registrations.new #sidebar-first section, #devise-registrations.new #sidebar-first .sidebar-block, #devise-passwords.new #sidebar-first nav, #devise-passwords.new #sidebar-first section, #devise-passwords.new #sidebar-first .sidebar-block, #testimonies.index #sidebar-first nav, #testimonies.index #sidebar-first section, #testimonies.index #sidebar-first .sidebar-block, .login #sidebar-first nav, .login #sidebar-first section, .login #sidebar-first .sidebar-block {
   margin-left: 3px;
   margin-right: 0;
   -moz-box-sizing: border-box;
@@ -420,11 +435,12 @@ ul.default-list li span {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 42, ../../app/assets/stylesheets/partials/_sidebar.scss */
+/* line 43, ../../app/assets/stylesheets/partials/_sidebar.scss */
 .not-front.sidebar-first #sidebar-first .navegate-by,
 .not-front.sidebar-first #sidebar-first .sidebar-block, #devise-sessions.new #sidebar-first .navegate-by,
 #devise-sessions.new #sidebar-first .sidebar-block, #devise-registrations.new #sidebar-first .navegate-by,
-#devise-registrations.new #sidebar-first .sidebar-block, #testimonies.index #sidebar-first .navegate-by,
+#devise-registrations.new #sidebar-first .sidebar-block, #devise-passwords.new #sidebar-first .navegate-by,
+#devise-passwords.new #sidebar-first .sidebar-block, #testimonies.index #sidebar-first .navegate-by,
 #testimonies.index #sidebar-first .sidebar-block, .login #sidebar-first .navegate-by,
 .login #sidebar-first .sidebar-block {
   -webkit-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
@@ -440,7 +456,8 @@ ul.default-list li span {
 .not-front.sidebar-first #sidebar-first .navegate-by li,
 .not-front.sidebar-first #sidebar-first .sidebar-block li, #devise-sessions.new #sidebar-first .navegate-by li,
 #devise-sessions.new #sidebar-first .sidebar-block li, #devise-registrations.new #sidebar-first .navegate-by li,
-#devise-registrations.new #sidebar-first .sidebar-block li, #testimonies.index #sidebar-first .navegate-by li,
+#devise-registrations.new #sidebar-first .sidebar-block li, #devise-passwords.new #sidebar-first .navegate-by li,
+#devise-passwords.new #sidebar-first .sidebar-block li, #testimonies.index #sidebar-first .navegate-by li,
 #testimonies.index #sidebar-first .sidebar-block li, .login #sidebar-first .navegate-by li,
 .login #sidebar-first .sidebar-block li {
   width: 100%;
@@ -451,7 +468,8 @@ ul.default-list li span {
 .not-front.sidebar-first #sidebar-first .navegate-by li:before,
 .not-front.sidebar-first #sidebar-first .sidebar-block li:before, #devise-sessions.new #sidebar-first .navegate-by li:before,
 #devise-sessions.new #sidebar-first .sidebar-block li:before, #devise-registrations.new #sidebar-first .navegate-by li:before,
-#devise-registrations.new #sidebar-first .sidebar-block li:before, #testimonies.index #sidebar-first .navegate-by li:before,
+#devise-registrations.new #sidebar-first .sidebar-block li:before, #devise-passwords.new #sidebar-first .navegate-by li:before,
+#devise-passwords.new #sidebar-first .sidebar-block li:before, #testimonies.index #sidebar-first .navegate-by li:before,
 #testimonies.index #sidebar-first .sidebar-block li:before, .login #sidebar-first .navegate-by li:before,
 .login #sidebar-first .sidebar-block li:before {
   width: 10px;
@@ -474,7 +492,8 @@ ul.default-list li span {
 .not-front.sidebar-first #sidebar-first .navegate-by li:before,
 .not-front.sidebar-first #sidebar-first .sidebar-block li:before, #devise-sessions.new #sidebar-first .navegate-by li:before,
 #devise-sessions.new #sidebar-first .sidebar-block li:before, #devise-registrations.new #sidebar-first .navegate-by li:before,
-#devise-registrations.new #sidebar-first .sidebar-block li:before, #testimonies.index #sidebar-first .navegate-by li:before,
+#devise-registrations.new #sidebar-first .sidebar-block li:before, #devise-passwords.new #sidebar-first .navegate-by li:before,
+#devise-passwords.new #sidebar-first .sidebar-block li:before, #testimonies.index #sidebar-first .navegate-by li:before,
 #testimonies.index #sidebar-first .sidebar-block li:before, .login #sidebar-first .navegate-by li:before,
 .login #sidebar-first .sidebar-block li:before {
   *display: inline;
@@ -486,7 +505,9 @@ ul.default-list li span {
 #devise-sessions.new #sidebar-first .sidebar-block li a,
 #devise-sessions.new #sidebar-first .sidebar-block li span, #devise-registrations.new #sidebar-first .navegate-by li a, #devise-registrations.new #sidebar-first .navegate-by li span,
 #devise-registrations.new #sidebar-first .sidebar-block li a,
-#devise-registrations.new #sidebar-first .sidebar-block li span, #testimonies.index #sidebar-first .navegate-by li a, #testimonies.index #sidebar-first .navegate-by li span,
+#devise-registrations.new #sidebar-first .sidebar-block li span, #devise-passwords.new #sidebar-first .navegate-by li a, #devise-passwords.new #sidebar-first .navegate-by li span,
+#devise-passwords.new #sidebar-first .sidebar-block li a,
+#devise-passwords.new #sidebar-first .sidebar-block li span, #testimonies.index #sidebar-first .navegate-by li a, #testimonies.index #sidebar-first .navegate-by li span,
 #testimonies.index #sidebar-first .sidebar-block li a,
 #testimonies.index #sidebar-first .sidebar-block li span, .login #sidebar-first .navegate-by li a, .login #sidebar-first .navegate-by li span,
 .login #sidebar-first .sidebar-block li a,
@@ -497,19 +518,20 @@ ul.default-list li span {
 .not-front.sidebar-first #sidebar-first .navegate-by li span,
 .not-front.sidebar-first #sidebar-first .sidebar-block li span, #devise-sessions.new #sidebar-first .navegate-by li span,
 #devise-sessions.new #sidebar-first .sidebar-block li span, #devise-registrations.new #sidebar-first .navegate-by li span,
-#devise-registrations.new #sidebar-first .sidebar-block li span, #testimonies.index #sidebar-first .navegate-by li span,
+#devise-registrations.new #sidebar-first .sidebar-block li span, #devise-passwords.new #sidebar-first .navegate-by li span,
+#devise-passwords.new #sidebar-first .sidebar-block li span, #testimonies.index #sidebar-first .navegate-by li span,
 #testimonies.index #sidebar-first .sidebar-block li span, .login #sidebar-first .navegate-by li span,
 .login #sidebar-first .sidebar-block li span {
   font-weight: bold;
 }
-/* line 47, ../../app/assets/stylesheets/partials/_sidebar.scss */
-.not-front.sidebar-first #sidebar-first b, #devise-sessions.new #sidebar-first b, #devise-registrations.new #sidebar-first b, #testimonies.index #sidebar-first b, .login #sidebar-first b {
+/* line 48, ../../app/assets/stylesheets/partials/_sidebar.scss */
+.not-front.sidebar-first #sidebar-first b, #devise-sessions.new #sidebar-first b, #devise-registrations.new #sidebar-first b, #devise-passwords.new #sidebar-first b, #testimonies.index #sidebar-first b, .login #sidebar-first b {
   font-weight: bold;
   margin-bottom: 15px;
   display: block;
 }
 
-/* line 59, ../../app/assets/stylesheets/partials/_sidebar.scss */
+/* line 60, ../../app/assets/stylesheets/partials/_sidebar.scss */
 #sidebar-first section, #sidebar-first nav, #sidebar-first .sidebar-block {
   margin: 0 0 30px 0;
   margin-left: 0;
@@ -531,7 +553,7 @@ ul.default-list li span {
 #sidebar-first section:after, #sidebar-first nav:after, #sidebar-first .sidebar-block:after {
   *zoom: 1;
 }
-/* line 67, ../../app/assets/stylesheets/partials/_sidebar.scss */
+/* line 68, ../../app/assets/stylesheets/partials/_sidebar.scss */
 #sidebar-first .search-travel {
   -webkit-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
   -moz-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
@@ -541,16 +563,16 @@ ul.default-list li span {
   -o-box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
   box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
 }
-/* line 72, ../../app/assets/stylesheets/partials/_sidebar.scss */
+/* line 73, ../../app/assets/stylesheets/partials/_sidebar.scss */
 #sidebar-first .contact-us .attention-number {
   font-size: 36px;
   display: block;
 }
-/* line 76, ../../app/assets/stylesheets/partials/_sidebar.scss */
+/* line 77, ../../app/assets/stylesheets/partials/_sidebar.scss */
 #sidebar-first .contact-us .attention-days {
   font-size: 14px;
 }
-/* line 81, ../../app/assets/stylesheets/partials/_sidebar.scss */
+/* line 82, ../../app/assets/stylesheets/partials/_sidebar.scss */
 #sidebar-first .health, #sidebar-first .testimony {
   -webkit-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
   -moz-box-shadow: tint(#3b3b3d, 70%) 1px 1px 5px, tint(#3b3b3d, 70%) -1px -1px 5px;
@@ -561,11 +583,11 @@ ul.default-list li span {
   box-shadow: #c4c4c4 1px 1px 5px, #c4c4c4 -1px -1px 5px;
 }
 
-/* line 93, ../../app/assets/stylesheets/partials/_sidebar.scss */
+/* line 94, ../../app/assets/stylesheets/partials/_sidebar.scss */
 #sidebar-first dl dt {
   margin-bottom: 5px;
 }
-/* line 96, ../../app/assets/stylesheets/partials/_sidebar.scss */
+/* line 97, ../../app/assets/stylesheets/partials/_sidebar.scss */
 #sidebar-first dl dd {
   border-bottom: 1px solid tint(#3b3b3d, 70%);
   padding-bottom: 5px;
@@ -573,7 +595,7 @@ ul.default-list li span {
   font-size: 14px;
 }
 
-/* line 106, ../../app/assets/stylesheets/partials/_sidebar.scss */
+/* line 107, ../../app/assets/stylesheets/partials/_sidebar.scss */
 #sidebar-second {
   float: right;
 }

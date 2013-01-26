@@ -19,6 +19,10 @@ Gretel::Crumbs.layout do
     parent :user, user
   end
 
+  crumb :user_forgot_password do |user|
+
+  end
+
   # abouts
   crumb :about do
     link I18n.t('abouts.index'), abouts_path

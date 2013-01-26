@@ -24,6 +24,7 @@
   .not-front.sidebar-first &,
   #devise-sessions.new &,
   #devise-registrations.new &,
+  #devise-passwords.new &,
   #testimonies.index &,
   .login & {
     @include sidebar(left);
