@@ -47,7 +47,7 @@ Infinity::Application.routes.draw do
     # posts has_many :news_and_events :press_releases
     resources :posts, :path => I18n.t('posts.url') do
      # match 'posts', :on => :collection
-     # match 'news_and_events/:id' => 'posts#show', :on => :collection
+    #  match "/:id" => 'posts#show', :on => :collection, :as => :news_and_events
       get 'news_and_events' => 'posts#news_and_events', :on => :collection
       get 'press_releases' => 'posts#press_releases', :on => :collection
     end
@@ -56,12 +56,9 @@ Infinity::Application.routes.draw do
 
 
   devise_for :users
+  resources :users
 
   resources :abouts
-
-
-
-
 
   resources :applicants
 
@@ -69,16 +66,11 @@ Infinity::Application.routes.draw do
 
   resources :carts
 
-
-
   resources :travels
-
 
   resources :members
 
-
   resources :milestones
-
 
   devise_for :admins
 

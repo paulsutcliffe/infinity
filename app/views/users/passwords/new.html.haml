@@ -1,4 +1,4 @@
-= breadcrumb :user_sign_in
+= breadcrumb :user_forgot_password
 
 #sidebar-first
   = render 'users/sidebar_first'
@@ -18,4 +18,4 @@
         = f.email_field :email
       .actions
         = f.submit "Send me reset password instructions"
-    = render :partial => "devise/shared/links"
+    = render :partial => "users/shared/links"

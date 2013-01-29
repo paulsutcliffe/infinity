@@ -22,9 +22,9 @@
   margin-right:0;
 
   .not-front.sidebar-first &,
-  #devise-sessions.new &,
-  #devise-registrations.new &,
-  #devise-passwords.new &,
+  #devise-sessions &,
+  #devise-registrations &,
+  #devise-passwords &,
   #testimonies.index &,
   .login & {
     @include sidebar(left);
@@ -107,4 +107,8 @@ dl {
 #sidebar-second {
   float: right;
 }
+
+
+// some class helpers for devise
+.shared-link {float: left}
 

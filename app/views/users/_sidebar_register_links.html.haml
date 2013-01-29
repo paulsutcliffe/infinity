@@ -1,0 +1,30 @@
+%nav.navegate-by
+  %h2.title
+    = I18n.t('user.root') 
+  %ul
+    %li
+      = link_to_unless_current I18n.t('user.sign_up'), new_user_registration_path do
+        %span
+          = I18n.t('user.sign_up')
+    %li
+      = link_to_unless_current I18n.t('user.sign_in'), new_user_session_path do
+        %span
+          = I18n.t('user.sign_in')  
+    %li
+      = link_to_unless_current I18n.t('user.forgot_password'), new_user_password_path do
+        %span
+          = I18n.t('user.forgot_password')
+    %li
+      = link_to_unless_current I18n.t('user.travel_agent_register'), '' do
+        %span
+          = I18n.t('user.travel_agent_register')
+
+    %li
+      = link_to_unless_current I18n.t('user.travel_register'), '' do
+        %span
+          = I18n.t('user.travel_register')
+
+    %li
+      = link_to_unless_current I18n.t('user.client_comments'), testimonies_path do
+        %span
+          = I18n.t('user.client_comments')

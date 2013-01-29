@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130123024048) do
+ActiveRecord::Schema.define(:version => 20130129020450) do
 
   create_table "abouts", :force => true do |t|
     t.string   "title_landing_page"
@@ -246,6 +246,10 @@ ActiveRecord::Schema.define(:version => 20130123024048) do
     t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "press_release_picture_file_name"
+    t.string   "press_release_picture_content_type"
+    t.integer  "press_release_picture_file_size"
+    t.datetime "press_release_picture_updated_at"
   end
 
   add_index "press_releases", ["slug"], :name => "index_press_releases_on_slug", :unique => true

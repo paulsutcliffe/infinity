@@ -1,0 +1,11 @@
+= breadcrumb :user_sign_in
+
+#sidebar-first
+  = render 'users/sidebar_first'
+
+#content
+  %h1.page-title
+    = page_title! @user.name  #I18n.t('user.name')
+
+
+  .content

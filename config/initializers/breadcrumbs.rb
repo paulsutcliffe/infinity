@@ -20,7 +20,8 @@ Gretel::Crumbs.layout do
   end
 
   crumb :user_forgot_password do |user|
-
+    link I18n.t('user.forgot_password'), user_password_path
+    parent :user, user
   end
 
   # abouts

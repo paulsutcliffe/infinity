@@ -12,4 +12,5 @@
       = link_to I18n.t('signup'), new_user_registration_path
   - else
     .login-links
+      = link_to I18n.t('user.profile'), users_path(@user)
       = link_to I18n.t('signout'), destroy_user_session_path

@@ -39,6 +39,7 @@ en:
       new: Sign In to Account
   user:
     root: Users
+    profile: My Account
     sign_in: Sign In
     sign_up: Register
     travel_agent_register: Register Travel Agent
