@@ -23,6 +23,7 @@ en:
   update: Update
   cancel: Cancel
   back: Back
+  login: Login
   logout: Logout
 
   signin: Sign In

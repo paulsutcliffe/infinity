@@ -9,7 +9,7 @@
 
 
   .content
-    = form_for(resource, :as => resource_name, :url => session_path(resource_name), :validate => true) do |f|
+    = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
       .field
         = f.label :email
         = f.email_field :email
@@ -21,5 +21,5 @@
           = f.check_box :remember_me
           = f.label :remember_me
       .actions
-        = f.submit I18n.t('submit')
+        = f.submit I18n.t('login')
     = render :partial => "users/shared/links"
