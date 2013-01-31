@@ -1,0 +1,14 @@
+%nav.navegate-by
+  %h2.title
+    = I18n.t('healths.index')
+  %ul
+    -#
+      .controls
+        .navigation
+        - if current_admin
+          .admin
+            = link_to I18n.t('edit'), edit_offer_season_travel_path(fuera.offer_season, fuera), :class => 'button edit'
+            = link_to I18n.t('destroy'), fuera, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+
+
+

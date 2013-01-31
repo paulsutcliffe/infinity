@@ -1,0 +1,8 @@
+%p
+  %strong t('activerecord.attributes.health.title')
+  = @health.title
+%p
+  %strong t('activerecord.attributes.health.url')
+  = @health.url
+
+== #{ link_to t('edit'), edit_health_path(@health) } | #{ link_to t('back'), healths_path }

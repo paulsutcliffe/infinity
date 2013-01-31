@@ -1,0 +1,10 @@
+#sidebar-first
+  = render 'sidebar_first'
+
+#content
+  %h1.page-title
+    = t('health.edit') + ' ' + @health.title
+
+  = render 'form'
+
+  == #{ link_to t('back'), healths_path, :class => 'btn cancel' }

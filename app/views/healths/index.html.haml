@@ -1,0 +1,25 @@
+
+#sidebar-first
+  = render 'sidebar_first'
+
+#content
+  %h1.page-title
+    = I18n.t('healths.index')
+
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('health.new'), new_health_path(@health), :class => 'button new'
+
+  .content
+    %table
+      - @healths.each do |health|
+        %tr
+          %td
+            = image_tag health.health_picture(:thumb)
+          %td
+            = health.title
+          %td
+            = health.url
+          %td
+            = link_to I18n.t('edit'), edit_health_path(health), :class => 'btn edit'
+            = link_to I18n.t('destroy'), health, :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'btn delete'
