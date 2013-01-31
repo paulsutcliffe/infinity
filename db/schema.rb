@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130129020450) do
+ActiveRecord::Schema.define(:version => 20130131015208) do
 
   create_table "abouts", :force => true do |t|
     t.string   "title_landing_page"
@@ -132,6 +132,31 @@ ActiveRecord::Schema.define(:version => 20130129020450) do
     t.datetime "updated_at"
   end
 
+  create_table "healths", :force => true do |t|
+    t.string   "title"
+    t.string   "url"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "health_picture_file_name"
+    t.string   "health_picture_content_type"
+    t.integer  "health_picture_file_size"
+    t.datetime "health_picture_updated_at"
+  end
+
+  create_table "hotel_pictures", :force => true do |t|
+    t.integer  "offer_season_id"
+    t.integer  "travel_id"
+    t.integer  "itinerary_id"
+    t.integer  "itinerary_content_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "hotel_photo_file_name"
+    t.string   "hotel_photo_content_type"
+    t.integer  "hotel_photo_file_size"
+    t.datetime "hotel_photo_updated_at"
+  end
+
   create_table "hotels", :force => true do |t|
     t.string   "name"
     t.integer  "offer_season_id"
@@ -231,7 +256,6 @@ ActiveRecord::Schema.define(:version => 20130129020450) do
     t.text     "content"
     t.boolean  "important",                  :default => false
     t.boolean  "landing_page",               :default => false
-    t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "posts_picture_file_name"

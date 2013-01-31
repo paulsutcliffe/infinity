@@ -3,6 +3,8 @@ Infinity::Application.routes.draw do
 
 
 
+  resources :healths
+
   resources :question_forms
 
     resources :abouts, :path => I18n.t('abouts.url') do

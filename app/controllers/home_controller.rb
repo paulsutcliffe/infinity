@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     @about_infinity = About.limit(1)
     @last_post = Post.limit(1).where(:landing_page => true)
     @last_testimony = Testimony.limit(1).where(:landing_page => true)
-
+    @health_random_link = Health.all.choice
   end
 
 end

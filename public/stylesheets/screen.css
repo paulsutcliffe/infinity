@@ -1418,6 +1418,21 @@ body .destination_pictures_container.rsDefault .rsBullets {
   clear: none;
 }
 
+/* line 458, ../../app/assets/stylesheets/partials/_layout.scss */
+section.health {
+  width: 99%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 461, ../../app/assets/stylesheets/partials/_layout.scss */
+#healths #content .content {
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
 /* line 4, ../../app/assets/stylesheets/partials/_admin.scss */
 .new form, .edit form {
   min-height: 150px;
@@ -1488,7 +1503,7 @@ body .destination_pictures_container.rsDefault .rsBullets {
 
 /* line 62, ../../app/assets/stylesheets/partials/_admin.scss */
 .fields {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd;
   margin: 0 0 15px;
   width: 100%;
   float: left;

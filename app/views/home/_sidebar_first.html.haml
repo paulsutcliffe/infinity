@@ -35,10 +35,8 @@
   %h2.title
     Health
   .content
-    %p
-      Far far away, behind the word mountains, far from the countries Vokalia
-    = image_tag '/images/img-sidebar-front.jpg'
-
+    - if !@health_random_link.blank?
+      = @health_random_link.title
 %section.testimony
   %h2.title
     Testimony

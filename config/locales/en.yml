@@ -97,7 +97,13 @@ en:
     index: Extensions
   extension:
     new: New Extension
-
+  
+  healths:
+    index: Health
+  health:
+    new: New Health
+    edit: Edit Health
+  
   itineraries:
     title: Itineraries
     url: itineraries
