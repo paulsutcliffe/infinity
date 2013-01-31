@@ -3,6 +3,8 @@ Infinity::Application.routes.draw do
 
 
 
+  resources :partners
+
   resources :healths
 
   resources :question_forms

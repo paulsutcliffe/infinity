@@ -1,0 +1,8 @@
+%p
+  %strong t('activerecord.attributes.partner.title')
+  = @partner.title
+%p
+  %strong t('activerecord.attributes.partner.url')
+  = @partner.url
+
+== #{ link_to t('edit'), edit_partner_path(@partner) } | #{ link_to t('back'), partners_path }

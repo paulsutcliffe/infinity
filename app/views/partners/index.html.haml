@@ -1,0 +1,23 @@
+%h1 
+  =t('partners.index.title')
+
+%table
+  %thead
+    %tr
+      %th 
+        =t('activerecord.attributes.partner.title')
+      %th 
+        =t('activerecord.attributes.partner.url')
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for partner in @partners
+      %tr{ :class => cycle(:odd, :even) }
+        %td= partner.title
+        %td= partner.url
+        %td= link_to t('show'), partner
+        %td= link_to t('edit'), edit_partner_path(partner)
+        %td= link_to t('destroy'), partner, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('partner.new'), new_partner_path

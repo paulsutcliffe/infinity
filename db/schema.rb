@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130131015208) do
+ActiveRecord::Schema.define(:version => 20130131041004) do
 
   create_table "abouts", :force => true do |t|
     t.string   "title_landing_page"
@@ -249,6 +249,17 @@ ActiveRecord::Schema.define(:version => 20130131015208) do
     t.string   "pack_picture_content_type"
     t.integer  "pack_picture_file_size"
     t.datetime "pack_picture_updated_at"
+  end
+
+  create_table "partners", :force => true do |t|
+    t.string   "title"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "partner_picture_file_name"
+    t.string   "partner_picture_content_type"
+    t.integer  "partner_picture_file_size"
+    t.datetime "partner_picture_updated_at"
   end
 
   create_table "posts", :force => true do |t|

@@ -1,0 +1,6 @@
+%h1
+  = t('partner.edit.title')
+
+= render 'form'
+
+== #{ link_to t('show'), @partner } | #{ link_to t('back'), partners_path }
