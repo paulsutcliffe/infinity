@@ -35,8 +35,10 @@
   %h2.title
     Health
   .content
-    - if !@health_random_link.blank?
-      = @health_random_link.title
+    - if !@health_random.blank?
+      = image_tag @health_random.health_picture(:front)
+      = link_to @health_random.title, @health_random.url
+      = paragraph(@health_random.description)
 %section.testimony
   %h2.title
     Testimony
