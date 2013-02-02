@@ -1,23 +1,20 @@
-%h1 
-  =t('partners.index.title')
+#sidebar-first
+  = render 'sidebar_first'
 
-%table
-  %thead
-    %tr
-      %th 
-        =t('activerecord.attributes.partner.title')
-      %th 
-        =t('activerecord.attributes.partner.url')
-      %th{ :colspan => 3 }
-  
-  %tbody
-    - for partner in @partners
-      %tr{ :class => cycle(:odd, :even) }
-        %td= partner.title
-        %td= partner.url
-        %td= link_to t('show'), partner
-        %td= link_to t('edit'), edit_partner_path(partner)
-        %td= link_to t('destroy'), partner, :confirm => I18n.t('confirm_delete'), :method => :delete
+#content
 
-%br
-= link_to t('partner.new'), new_partner_path
+  %h1.page-title
+    = I18n.t('partners.index')
+
+    - if current_admin
+      .admin.create
+        = link_to I18n.t('partner.new'), new_partner_path(@partner), :class => 'button new'
+
+  .content
+    %ul
+      - @partners.each do |partner|
+        %li
+          .field-image
+            = link_to image_tag(partner.partner_picture(:thumb)), partner
+          .field-title
+            = link_to partner.title, partner

@@ -144,6 +144,12 @@ en:
     new: New Pack
     edit: Edit Pack
 
+  partners:
+    index: Partners
+  partner:
+    new: New Partner
+    edit: Edit Partner
+
   posts:
     index: News
     url: news

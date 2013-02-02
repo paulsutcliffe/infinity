@@ -144,19 +144,6 @@ ActiveRecord::Schema.define(:version => 20130131041004) do
     t.datetime "health_picture_updated_at"
   end
 
-  create_table "hotel_pictures", :force => true do |t|
-    t.integer  "offer_season_id"
-    t.integer  "travel_id"
-    t.integer  "itinerary_id"
-    t.integer  "itinerary_content_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "hotel_photo_file_name"
-    t.string   "hotel_photo_content_type"
-    t.integer  "hotel_photo_file_size"
-    t.datetime "hotel_photo_updated_at"
-  end
-
   create_table "hotels", :force => true do |t|
     t.string   "name"
     t.integer  "offer_season_id"
@@ -267,6 +254,7 @@ ActiveRecord::Schema.define(:version => 20130131041004) do
     t.text     "content"
     t.boolean  "important",                  :default => false
     t.boolean  "landing_page",               :default => false
+    t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "posts_picture_file_name"

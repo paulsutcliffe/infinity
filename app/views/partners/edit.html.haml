@@ -1,6 +1,12 @@
-%h1
-  = t('partner.edit.title')
+#sidebar-first
+  = render 'sidebar_first'
 
-= render 'form'
+#content
+  %h1.page-title
+    =t('partner.edit') + ' ' + partner.title
 
-== #{ link_to t('show'), @partner } | #{ link_to t('back'), partners_path }
+  .content
+    = render 'form'
+
+    = link_to t('back'), partners_path, :class => 'btn cancel'
+

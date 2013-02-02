@@ -3,61 +3,14 @@
   Infinity Perú is partner of:
 .wrapper
   %ul.slider
-    %li.rsContent
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-1.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-2.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-3.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-4.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-5.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-6.png', :class => 'rsImg'
-    %li.rsContent
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-1.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-2.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-3.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-4.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-5.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-6.png', :class => 'rsImg'
-    %li.rsContent
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-1.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-2.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-3.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-4.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-5.png', :class => 'rsImg'
-      .partner
-        .rsABlock
-          = image_tag '/images/partners/img-brands-6.png', :class => 'rsImg'
+    - partners_in_all_pages.each_slice(6) do |slice|
+      %li.rsContent
+        - slice.each do |partner|
+          .partner
+            .rsABlock
+              = link_to image_tag(partner.partner_picture(:thumb)), partner.url, :class => 'rsImg', :title => partner.title, :target => '_blank'
+
+
+
+
   = render 'layouts/social_links'

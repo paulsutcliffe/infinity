@@ -164,6 +164,23 @@ Pack.delete_all
 end
 
 #############################################################################
+# Parnters Model
+#############################################################################
+Partner.delete_all
+1.upto(6) do |i|
+  Partner.create(
+    :title => File.read(File.join(Rails.root, '/features/support/partners/title-' + "#{i}" + '.txt')),
+    :url => 'http://www.google.com',
+    :partner_picture => File.open(File.join(Rails.root, '/features/support/partners/img-brands-' + "#{i}" + '.png'))
+  )
+end
+Partner.create(
+  :title => 'Coca Cola',
+  :partner_picture => File.open(File.join(Rails.root, '/features/support/partners/img-brands-4.png'))
+)
+
+
+#############################################################################
 # Post Model
 #############################################################################
 Post.delete_all

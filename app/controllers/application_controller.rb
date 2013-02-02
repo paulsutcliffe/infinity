@@ -2,6 +2,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   
+  def partners_in_all_pages
+    @partners = Partner.all
+  end
+
 
   def slides_in_all_pages
     @slides = Slide.all
@@ -41,6 +45,7 @@ class ApplicationController < ActionController::Base
     @bodyclass = @bodyclass + ' ' + @front + ' ' + @admin + ' ' + @user + ' ' + @sidebar
   end
 
+  helper_method :partners_in_all_pages
   helper_method :slides_in_all_pages
   helper_method :bodyid
   helper_method :bodyclass
