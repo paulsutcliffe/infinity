@@ -71,6 +71,23 @@ destino_latino.destination_pictures.create(
   :destination_picture => File.open(File.join(Rails.root, '/features/support/destinations/latin-america2.jpeg'))
 )
 
+#############################################################################
+# Health Model
+#############################################################################
+Health.delete_all
+Health.create(
+  :title => 'Título 1',
+  :url => 'http://www.google.com',
+  :description => long_text,
+  :health_picture => File.open(File.join(Rails.root, '/features/support/img-show-destinations-1.jpg')) 
+)
+Health.create(
+  :title => 'Título 2',
+  :url => 'http://www.yahoo.com',
+  :description => long_text,
+  :health_picture => File.open(File.join(Rails.root, '/features/support/img-show-destinations-mapa.jpg')) 
+)
+
 
 #############################################################################
 # Milestone Model
