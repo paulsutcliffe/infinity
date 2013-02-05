@@ -69,6 +69,11 @@ en:
     new: New Applicant
     breadcrumb: Submit your information
 
+  bookings:
+    index: Review Bookings
+  booking:
+    new: Bookings
+    
   slides:
     index: Slides
   slide:

@@ -1,0 +1,14 @@
+%p
+  %strong t('activerecord.attributes.booking.title')
+  = @booking.title
+%p
+  %strong t('activerecord.attributes.booking.email')
+  = @booking.email
+%p
+  %strong t('activerecord.attributes.booking.comment')
+  = @booking.comment
+%p
+  %strong t('activerecord.attributes.booking.slug')
+  = @booking.slug
+
+== #{ link_to t('edit'), edit_booking_path(@booking) } | #{ link_to t('back'), bookings_path }
