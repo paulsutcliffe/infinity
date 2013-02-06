@@ -9,6 +9,7 @@ Escenario: llenar formulario
   Y hago click en "Submit your information"
   Y lleno "Name" con "David"
   Y lleno "Last Name" con "Heinemeier Hansson"
+  Y lleno "Email" con "david@google.com"
   Y lleno "Address 1" con "avenida La Mar 123"
   Y lleno "Address 2" con "monterrico 456"
   Y lleno "Department" con "Lima"

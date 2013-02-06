@@ -4,7 +4,7 @@
     =t('country.new')
   
   
-  = form_for(@country, :url => {:country_id => params[:country_id], :action => 'create'}) do |f|
+  = form_for(@country, :url => {:country_id => params[:country_id], :action => 'create', :html => {:multipart => true}}) do |f|
     = render(:partial => 'form', :locals => {:f => f})
     .actions
       = link_to I18n.t('cancel'), destination_path(@destination), :class => 'btn cancel'

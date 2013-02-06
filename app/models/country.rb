@@ -7,4 +7,8 @@ class Country < ActiveRecord::Base
 
   extend FriendlyId
   friendly_id :name, :use => :slugged
+
+  has_attached_file :map, :styles => {
+    :regular => {:geometry => '50x50#'}
+  }
 end

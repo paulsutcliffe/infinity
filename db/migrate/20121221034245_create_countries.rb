@@ -10,6 +10,10 @@ class CreateCountries < ActiveRecord::Migration
       t.text :image_map
       t.integer :destination_id
       t.string :slug
+      t.string :map_file_name
+      t.string :map_content_type
+      t.integer :map_file_size
+      t.datetime :map_updated_at
 
       t.timestamps
     end

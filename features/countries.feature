@@ -1,4 +1,5 @@
 #language: es
+@javascript
 Característica: administración los paises
 
 Antecedentes: Paises pertencen a un Destino
@@ -14,7 +15,7 @@ Escenario: Agregar un país
   Entonces debería ver "Country created successfully."
   Y debería ver "Peru"
 
-@admin
+@admin 
 Escenario: Editar un país existente
   Dado que existe el país "Peru" del destino "South America"
   Cuando hago click en "Edit"

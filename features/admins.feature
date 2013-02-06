@@ -1,4 +1,5 @@
 #language: es
+@javascript
 Característica: administración de los contenidos de la web
 
 Escenario: Ingresar como administrador

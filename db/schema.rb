@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
   create_table "applicants", :force => true do |t|
     t.string   "name"
     t.string   "last_name"
+    t.string   "email"
     t.string   "address1"
     t.string   "address2"
     t.string   "department"
@@ -95,6 +96,10 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.text     "image_map"
     t.integer  "destination_id"
     t.string   "slug"
+    t.string   "map_file_name"
+    t.string   "map_content_type"
+    t.integer  "map_file_size"
+    t.datetime "map_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

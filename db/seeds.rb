@@ -39,7 +39,7 @@ Slide.create(
 #############################################################################
 Destination.delete_all
 destino_latino = Destination.create(
-  :name => 'Latino América',
+  :name => 'South America',
   :description => long_text )
 destino_europa = Destination.create(
   :name => 'Europa',
@@ -47,7 +47,7 @@ destino_europa = Destination.create(
 
 Country.delete_all
 countries_latino = destino_latino.countries.create(
-  :name => 'Perú'
+  :name => 'Peru'
 )
 ['Ecuador', 'Chile', 'Argentina', 'Brasil'].each do |c|
   params = { 
