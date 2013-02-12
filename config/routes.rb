@@ -85,8 +85,8 @@ Infinity::Application.routes.draw do
   get "home/index"
 
 #  namespace :admin do
-    root :to => "home#index"
+   #root :to => "home#index"
 #  end
-#  root :to => "maintenance#index"
+  root :to => "maintenance#index"
 
 end
