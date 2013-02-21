@@ -1,4 +1,5 @@
 Cuando /^existe la imagen "(.*?)" del país "(.*?)"$/ do |imagen, pais|
-  country = Pais.find_by_name(pais)
-  PaisPicture.new(:country_id => country, :pais_picture => File.new("features/support/pais_picture.jpg", "r")).save!
+  country = Country.find_by_name(pais)
+  CountryPicture.new(:country_id => country, :country_picture => File.new("features/support/#{imagen}", "r")).save!
+  visit('/')
 end

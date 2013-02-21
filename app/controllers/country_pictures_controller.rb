@@ -2,15 +2,15 @@ class CountryPicturesController < InheritedResources::Base
 belongs_to :country
 
 def create
-  create! {destination_country_path(@country.destination, @country)}
+  create!(:notice => 'Picture created successfully.') {destination_country_path(@country.destination, @country)}
 end
 
 def update
-  update! {destination_country_path(@country.destination, @country)}
+  update!(:notice => 'Picture updated successfully.') {destination_country_path(@country.destination, @country)}
 end
 
 def destroy
-  destroy! {destination_country_path(@country.destination, @country)}
+  destroy!(:notice => 'Picture deleted successfully.') {destination_country_path(@country.destination, @country)}
 end
 
 end

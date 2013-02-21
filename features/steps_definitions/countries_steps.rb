@@ -16,3 +16,9 @@ Dado /^que existe el país "(.*?)" del destino "(.*?)"$/ do |nombre, destino|
   end
   Country.new(:destination_id => @destination, :name => nombre, :description => "Come and see the magic of " + nombre, :map => File.new("features/support/country_map.jpg", "r")).save!
 end
+
+Cuando /^hago click (accept|dismiss) en la alerta "(.*?)"$/ do |action, text|
+  alert = page.driver.browser.switch_to.alert
+  alert.text.should eq(text)
+  alert.send(action)
+end

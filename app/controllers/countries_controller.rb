@@ -12,15 +12,15 @@ def show
 end
 
 def create
-  create! (:notice => 'Country created successfully.'){ destination_country_path(@destination, @country) }
+  create!(:notice => 'Country created successfully.') { destination_country_path(@destination, @country) }
 end
 
 def update
-  update! (:notice => 'Country updated successfully.') {destination_country_path(@destination, @country)}
+  update!(:notice => 'Country updated successfully.') { destination_country_path(@destination, @country) }
 end
 
 def destroy
-  destroy! (:notice => 'Country destroyed successfully.') {destination_path(@destination)}
+  destroy!(:notice => 'Country deleted successfully.') { destination_path(@destination) }
 end
 
 end

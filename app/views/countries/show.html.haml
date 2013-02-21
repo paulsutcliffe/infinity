@@ -15,10 +15,10 @@
             .links
               = link_to I18n.t('fullsize'), img.country_picture(:large), :class => 'button', :target => '_blank'
               - if current_admin
-                = link_to I18n.t('destroy'), destination_country_country_picture_url(@destination, @country, img), :confirm =>  I18n.t('confirm_delete'), :method => :delete, :class => 'button'
+                = link_to I18n.t('destroy_picture'), destination_country_country_picture_url(@destination, @country, img), :confirm =>  I18n.t('confirm_delete'), :method => :delete, :class => 'button'
                 = link_to I18n.t('edit'), edit_destination_country_country_picture_path(@destination, @country, img), :class => 'button'
     = @country.image_map
-               
+
   %h1.page-title
     = @country.name
   - if current_admin
@@ -31,17 +31,17 @@
     = paragraph(@country.description)
 
 
--# 
+-#
   ojo, al intentar borrar el country_picture, me arrojaba un error:
-  ActionController::InvalidAuthenticityToken 
+  ActionController::InvalidAuthenticityToken
 
   Links de soluciones:
   http://stackoverflow.com/questions/3364492/actioncontrollerinvalidauthenticitytoken
   http://stackoverflow.com/questions/4678095/getting-rid-of-actioncontrollerinvalidauthenticitytoken-rails-3-webrick-dev
 
   Se empleó el segundo, que dice que en el config/environments/development.rb hay que agregar esta línea:
-  config.action_controller.allow_forgery_protection = false 
-   
+  config.action_controller.allow_forgery_protection = false
+
 
 
 

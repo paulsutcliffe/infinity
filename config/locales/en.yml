@@ -3,20 +3,21 @@
 
 en:
   fullsize: See full size
-  
+
   will_paginate:
     previous_label: "Previous"
     next_label: "Next"
     page_gap: "&hellip;"
 
   app:
-    name: Infinity 
+    name: Infinity
   layout:
     copyright: All rights reserved.
     desenvolvimento: Web design and Web Development by
   show: Show
   edit: Edit
   destroy: Delete
+  destroy_picture: Delete Image
   confirm_delete: Are you sure?
   submit: Save
   send: Submit
@@ -73,7 +74,7 @@ en:
     index: Review Bookings
   booking:
     new: Bookings
-    
+
   slides:
     index: Slides
   slide:
@@ -102,18 +103,18 @@ en:
     index: Extensions
   extension:
     new: New Extension
-  
+
   healths:
     index: Health
   health:
     new: New Health
     edit: Edit Health
-  
+
   itineraries:
     title: Itineraries
     url: itineraries
   itinerary:
-    new: Add Itinerary 
+    new: Add Itinerary
     add: Add Day
     description: Description
     hotel: Hotel name
@@ -141,7 +142,7 @@ en:
     show: Offers
     new: New Offer Season
     edit: Edit Offer Season
- 
+
   packs:
     index: Packs
     url: packs
@@ -177,7 +178,7 @@ en:
 
   travels:
     index: Travels
-    url: travels 
+    url: travels
   travel:
     new: New Travel
     edit: Edit Travel
@@ -210,4 +211,4 @@ en:
         country: Country
         phone: Phone
 
-        
+

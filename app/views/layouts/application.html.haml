@@ -12,7 +12,7 @@
 
   %body{:id => bodyid, :class => bodyclass}
     - if notice
-      - javascript_tag do
+      = javascript_tag do
         var alerta_mensaje =  "#{notice}"
 
 

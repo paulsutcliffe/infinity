@@ -1,5 +1,5 @@
 #language: es
-@javascript
+
 Característica: administración los paises
 
 Antecedentes: Paises pertencen a un Destino
@@ -15,17 +15,24 @@ Escenario: Agregar un país
   Entonces debería ver "Country created successfully."
   Y debería ver "Peru"
 
-@admin 
+@admin
 Escenario: Editar un país existente
   Dado que existe el país "Peru" del destino "South America"
-  Cuando hago click en "Edit"
+  Cuando hago click en "Destinations"
+  Y hago click en "South America"
+  Y hago click en "Peru"
+  Y hago click en "Edit"
   Y lleno el formulario para el país "Colombia"
+  Cuando presiono "Save"
   Entonces debería ver "Country updated successfully."
   Y debería ver "Colombia"
 
 @admin
 Escenario: Eliminar un país existente
   Dado que existe el país "Peru" del destino "South America"
+  Cuando hago click en "Destinations"
+  Y hago click en "South America"
+  Y hago click en "Peru"
   Cuando hago click en "Delete"
   Entonces debería ver "Country deleted successfully."
   Y no debería ver "Peru"

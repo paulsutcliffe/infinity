@@ -40,7 +40,7 @@ Cuando /^lleno el formulario para el destino "(.*?)"$/ do |nombre|
 end
 
 Entonces /^no debería ver "(.*?)"$/ do |resultado|
-  page.should have_no_content(resultado)
+  page.has_no_content?(resultado)
 end
 
 Entonces /^no debería ver los controles de administración$/ do
