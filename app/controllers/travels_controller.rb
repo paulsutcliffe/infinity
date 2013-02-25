@@ -33,7 +33,7 @@ def new
 
   @travel = @offer_season.travels.new
   @travel_back = @offer_season.travels.all
-  
+
 end
 
 

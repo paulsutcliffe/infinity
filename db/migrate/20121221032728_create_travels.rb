@@ -12,6 +12,7 @@ class CreateTravels < ActiveRecord::Migration
       t.text :travel_map
       t.text :notes
       t.text :weather
+      t.text :travel_type
       t.integer :country_id
       t.integer :offer_season_id
       t.string :slug

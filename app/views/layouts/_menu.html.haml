@@ -8,7 +8,6 @@
     = menu_li('Destinations', 'destinations', destinations_path)
     = menu_li(I18n.t('offers.index'), 'offers', offer_seasons_path)
     = menu_li(I18n.t('packs.index'), 'packs', packs_path)
-    = menu_li('Travels', 'travels', root_path)
     = menu_li('Bookings', 'bookings', new_booking_path(@booking))
     = menu_li(I18n.t('posts.index'), 'posts', posts_path )
 
@@ -21,6 +20,6 @@
       = menu_li('Log out', 'any', destroy_admin_session_path)
       = menu_li_footer('Milestones', 'milestones', milestones_path)
 
-    = menu_li_footer('Members', 'members', members_path) 
+    = menu_li_footer('Members', 'members', members_path)
     = menu_li_footer(I18n.t('abouts.index'), 'abouts', abouts_path)
     = menu_li_footer('Terms of Usage', 'terms', '#')

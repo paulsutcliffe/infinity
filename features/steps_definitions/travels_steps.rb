@@ -10,8 +10,8 @@ Cuando /^lleno el formulario para el viaje "(.*?)"$/ do |viaje|
 end
 
 Dado /^que existe el viaje "(.*?)" del país "(.*?)"$/ do |viaje, pais|
-  country = Pais.find_by_name(pais)
-  Trave.new(:country_id => country, :name => viaje, :overview => "a nice trip", :advantages => "amazing landscapes", :price => "Starting at 950.00", :days => 4, :departures => 5, :maxgroupsize => 12, :notes => "always carry a flashlight").save!
+  country = Country.find_by_name(pais)
+  Travel.new(:country_id => country, :name => viaje, :overview => "a nice trip", :advantages => "amazing landscapes", :price => "Starting at 950.00", :days => 4, :departures => 5, :maxgroupsize => 12, :notes => "always carry a flashlight").save!
 end
 
 Cuando /^estoy en la página del país "(.*?)"$/ do |pais|
