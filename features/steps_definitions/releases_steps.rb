@@ -1,9 +1,5 @@
-Dado /^que existe "(.*?)"$/ do |publicacion|
-  Release.new(:title => publicacion, 
-              :description => "Contenido escrito de la publicación").save!
-end
-
 Cuando /^existe "(.*?)"$/ do |publicacion|
-  Release.new(:title => publicacion, 
-              :description => "Contenido escrito de la publicación").save!
+  PressRelease.new(:title => publicacion,
+              :content => "Contenido escrito de la publicación").save!
+  visit('/press_releases')
 end

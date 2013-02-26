@@ -44,8 +44,8 @@ Entonces /^no debería ver "(.*?)"$/ do |resultado|
 end
 
 Entonces /^no debería ver los controles de administración$/ do
-  page.should have_no_content("Edit")
-  page.should have_no_content("Delete")
+  page.has_no_content?("Edit")
+  page.has_no_content?("Delete")
   #page.should have_no_content("New")
 end
 
