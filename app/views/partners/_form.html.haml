@@ -1,5 +1,5 @@
 - form_for(@partner, :html => {:multipart => true}, :validate => true) do |f|
-  
+
   - if @partner.errors.any?
     #errorExplanation
       %h2= t('activerecord.errors.messages.partner.invalid_record')
@@ -13,7 +13,7 @@
     = f.label :url
     = f.text_field :url
   .field
-    = f.label :partner_picture
+    = f.label :partner_picture, "Picture"
     = f.file_field :partner_picture
 
   .actions

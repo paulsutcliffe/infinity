@@ -18,3 +18,14 @@
             = link_to image_tag(partner.partner_picture(:thumb)), partner
           .field-title
             = link_to partner.title, partner
+
+        .controls
+          .navigation
+            = link_to I18n.t('show'), partner, :class => 'button show'
+          - if current_admin
+            .admin
+              = link_to I18n.t('edit'), edit_partner_path(partner), :class => 'button edit'
+              = link_to I18n.t('destroy'), partner, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
+
+
+
