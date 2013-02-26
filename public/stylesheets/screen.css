@@ -1495,15 +1495,20 @@ section.health {
   float: left;
 }
 
-/* line 58, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 57, ../../app/assets/stylesheets/partials/_admin.scss */
+.navigation .admin a {
+  margin-right: 1px;
+}
+
+/* line 63, ../../app/assets/stylesheets/partials/_admin.scss */
 .new #preface-top,
 .edit #preface-top {
   display: none;
 }
 
-/* line 62, ../../app/assets/stylesheets/partials/_admin.scss */
+/* line 67, ../../app/assets/stylesheets/partials/_admin.scss */
 .fields {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
   margin: 0 0 15px;
   width: 100%;
   float: left;
