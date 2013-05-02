@@ -5,7 +5,7 @@ gem 'rails', '3.0.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem "mysql2", "~> 0.2.7"
+gem "mysql2"
 
 # Deploy with Capistrano
 gem "capistrano"
@@ -19,7 +19,6 @@ group :development do
   gem 'compass', '>= 0.13.alpha.0'
   gem 'compass-rails', '>= 1.0.2'
   gem 'susy'
-  gem 'viewcumber'
 end
 
 gem 'mail_form'
@@ -38,11 +37,12 @@ gem "devise"
 gem "auto_html"
 gem "page_title_helper"
 gem "sitemap_generator"
-gem 'rdoc'
-gem "rake", "~>0.9.2"
+# gem 'rdoc'
+# gem "rake", "~>0.9.2"
 gem 'gretel'
 
 group :test do
+  gem 'capybara', '~>1.1.3'
   gem 'cucumber-rails'
   gem 'database_cleaner'
 end
