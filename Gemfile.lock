@@ -38,6 +38,8 @@ GEM
       activesupport (= 3.0.3)
       arel (~> 2.0.2)
       tzinfo (~> 0.3.23)
+    activerecord-mysql2-adapter (0.0.3)
+      mysql2
     activeresource (3.0.3)
       activemodel (= 3.0.3)
       activesupport (= 3.0.3)
@@ -217,6 +219,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-mysql2-adapter
   auto_html
   barista
   capistrano
@@ -236,7 +239,7 @@ DEPENDENCIES
   json
   mail_form
   metamagic
-  mysql2 (= 0.2.18)
+  mysql2 (~> 0.2.7)
   page_title_helper
   paper_trail
   paperclip (~> 2.0)
