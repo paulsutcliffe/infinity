@@ -6,7 +6,6 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem "mysql2", "0.2.6"
-gem "activerecord-mysql2-adapter"
 
 # Deploy with Capistrano
 gem "capistrano"
