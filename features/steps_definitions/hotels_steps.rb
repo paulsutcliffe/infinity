@@ -1,3 +1,4 @@
+#coding: utf-8
 Dado /^que existe el día "(.*?)" del viaje a "(.*?)"$/ do |dia, viaje|
   if Day.find_by_name(dia)
     @day = Day.find_by_name(dia)

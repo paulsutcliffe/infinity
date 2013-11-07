@@ -1,3 +1,4 @@
+#coding: utf-8
 Cuando /^hago click en "(.*?)"$/ do |link|
   click_link(link)
 end

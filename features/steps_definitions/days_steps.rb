@@ -1,3 +1,4 @@
+#coding: utf-8
 Cuando /^estoy en la página del viaje "(.*?)"$/ do |viaje|
   visit(country_travel_path(viaje.country, viaje))
 end

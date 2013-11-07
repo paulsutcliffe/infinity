@@ -1,3 +1,4 @@
+#coding: utf-8
 Cuando /^lleno el formulario para el precio de "(.*?)" a "(.*?)"$/ do |incio, fin|
 end
 

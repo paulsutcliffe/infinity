@@ -1,3 +1,4 @@
+#coding: utf-8
 Cuando /^lleno el formulario para el país "(.*?)"$/ do |nombre|
   fill_in("Name", :with => nombre)
   fill_in("Time Zone", :with => "GMT-5")

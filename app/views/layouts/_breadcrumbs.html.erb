@@ -1,11 +1,8 @@
-
-
-
-<% breadcrumbs(:autoroot => true, :show_root_alone => false).each_with_index do |crumb, index| %>
-  <% if index > 0 %> &gt;<% end %>
-  <% if crumb.current? %>
-    <span class="current"><%= crumb.text %></span>
-  <% else %>
-    <%= link_to crumb.text, crumb.url %>
+<% breadcrumbs do |links| %>
+  <% if links.any? %>
+    You are here:
+    <% links.each do |link| %>
+      <%= link_to link.text, link.url %>
+    <% end %>
   <% end %>
 <% end %>

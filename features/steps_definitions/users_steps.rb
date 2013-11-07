@@ -1,3 +1,4 @@
+#coding: utf-8
 Cuando /^en "(.*?)" elijo "(.*?)"$/ do |label, option|
   choose(option)
 end

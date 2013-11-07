@@ -1,3 +1,4 @@
+#coding: utf-8
 email = 'webmaster@infinity.com'
 password = 'infinity99'
 

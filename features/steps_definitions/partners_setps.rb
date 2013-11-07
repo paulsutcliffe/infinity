@@ -1,3 +1,4 @@
+#coding: utf-8
 Entonces /^no debería ver la imagen "(.*?)"$/ do |archivo|
   page.has_no_xpath?("//img[contains(@src, \"#{archivo}\")]")
 end

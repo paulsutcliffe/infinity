@@ -1,3 +1,4 @@
+#coding: utf-8
 Cuando /^estoy en la página del hotel "(.*?)"$/ do |hotel|
   visit(day_hotel_path(hotel.day, hotel))
 end

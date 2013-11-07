@@ -1,3 +1,4 @@
+#coding: utf-8
 Dado /^que existe el hito "(.*?)"$/ do |titulo|
   Milestone.new(:title => titulo,
                 :description => "Texto que complementa el título Premio a la mejor agencia de viajes",

@@ -1,3 +1,4 @@
+#coding: utf-8
 Dado /^que existe el testimonio "(.*?)"$/ do |titulo|
   Testimony.new(
     :name => 'Pedro Perez',

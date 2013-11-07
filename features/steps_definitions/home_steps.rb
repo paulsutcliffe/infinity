@@ -1,3 +1,4 @@
+#coding: utf-8
 Cuando /^estoy en la página inicial$/ do
 end
 

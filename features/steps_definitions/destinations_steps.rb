@@ -1,3 +1,4 @@
+#coding: utf-8
 Dado /^que existe el destino "(.*?)"$/ do |nombre|
   unless Destination.find_by_name(nombre)
     Destination.new(:name => nombre,

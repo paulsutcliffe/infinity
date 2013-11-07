@@ -1,3 +1,4 @@
+#coding: utf-8
 Cuando /^lleno el formulario para el viaje "(.*?)"$/ do |viaje|
   fill_in("Name", :with => viaje)
   fill_in("Overview", :with => "a nice trip")

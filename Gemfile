@@ -1,50 +1,71 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem 'rails', '3.0.3'
+gem 'rails', '3.2.14'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem "mysql2", "0.2.6"
+gem 'mysql2'
+
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'uglifier', '>= 1.0.3'
+end
+
+gem 'jquery-rails'
+
+# To use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+
+# To use Jbuilder templates for JSON
+# gem 'jbuilder'
+
+# Use unicorn as the app server
+gem "unicorn"
 
 # Deploy with Capistrano
 gem "capistrano"
 
-group :development do
-  gem 'barista'
-  gem 'yui-compressor', :require => 'yui/compressor'
-  gem 'sass'
-  gem 'json' # sprocket dependency for Ruby 1.8 only
-  gem 'sprockets', :git => 'git://github.com/sstephenson/sprockets.git'
-  gem 'compass', '>= 0.13.alpha.0'
-  gem 'compass-rails', '>= 1.0.2'
-  gem 'susy'
-end
+# To use debugger
+# gem 'debugger'
 
-gem 'mail_form'
+gem "bootstrap-sass", "~> 3.0.0.0"
+gem "sass-rails", ">= 3.2"
+
+
+gem "mail_form"
 gem "country-select"
+gem "rvm-capistrano"
 gem "haml"
-#gem "haml-rails"
-gem "paperclip", "~>2.0"
+gem "haml-rails"
 gem "will_paginate"
 gem "inherited_resources"
 gem "client_side_validations"
-gem "jquery-rails"
 gem "paper_trail"
+gem "page_title_helper"
 gem "metamagic"
-gem "friendly_id", "~>4.0.0.beta14"
+gem "friendly_id", "~> 4.0.9"
 gem "devise"
 gem "auto_html"
 gem "page_title_helper"
 gem "sitemap_generator"
-# gem 'rdoc'
-# gem "rake", "~>0.9.2"
-gem 'gretel'
+gem "gretel"
+gem "paperclip", "~> 3.0"
 
-group :test do
-  gem 'capybara', '~>1.1.3'
-  gem 'cucumber-rails'
-  gem 'database_cleaner'
+group :development, :test do
+  gem 'cucumber-rails', :require => false
+  gem "faker"
+  gem "capybara", "~> 2.0.2"
+  gem "database_cleaner", "~> 0.9.1"
+  gem "launchy", "~> 2.2.0"
+  gem "rspec-rails", "~> 2.13.0"
+  gem "factory_girl_rails", "~> 4.2.1"
+  gem "compass-rails"
+  gem "rails_layout"
 end
 
-gem 'rspec-rails', :group => [:development, :test]
+
+

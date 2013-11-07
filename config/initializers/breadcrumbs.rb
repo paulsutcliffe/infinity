@@ -1,5 +1,5 @@
 Gretel::Crumbs.layout do
-  
+
   crumb :root do
     link I18n.t('homes.index'), root_path
   end
@@ -46,17 +46,17 @@ Gretel::Crumbs.layout do
 
   crumb :about_staff do |about|
     link I18n.t('about.staff'), know_our_staff_abouts_path
-    parent :about, about 
+    parent :about, about
   end
 
   crumb :about_work do |about|
     link I18n.t('about.work'), work_with_us_abouts_path
-    parent :about, about 
+    parent :about, about
   end
 
   crumb :about_work_new do |about|
     link I18n.t('applicant.breadcrumb'), new_applicant_path
-    parent :about_work, about 
+    parent :about_work, about
   end
 
   # destinations
@@ -73,7 +73,7 @@ Gretel::Crumbs.layout do
  #   link 'paises', 'peru.com'
  #   parent :destination
  # end
- 
+
   # countries belongs_to :destination
   crumb :destination_country do |country|
     link "#{country.name}", destination_country_path(country.destination, country)
@@ -96,7 +96,7 @@ Gretel::Crumbs.layout do
     link "#{season.title}", offer_season_path(season)
     parent :offer_seasons, season
   end
-  
+
   # offer_season_new
   crumb :new_offer_season do |season|
     link I18n.t('offer_season.new'), new_offer_season_path
@@ -162,20 +162,21 @@ Gretel::Crumbs.layout do
   crumb :posts_news_and_events_post do |post|
     link post.title, 'news'
   end
- 
+
   # crumb :project do |project|
   #   link lambda { |project| "#{project.name} (#{project.id.to_s})" }, project_path(project)
   #   parent :projects
   # end
-  
+
   # crumb :project_issues do |project|
   #   link "Issues", project_issues_path(project)
   #   parent :project, project
   # end
-  
+
   # crumb :issue do |issue|
   #   link issue.name, issue_path(issue)
   #   parent :project_issues, issue.project
   # end
 
 end
+

@@ -1,0 +1,35 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js lt-ie9">
+/ [if gt IE 8]><!
+%html.no-js
+  / <![endif]
+  %head
+    %title= 'Infinity Peru - Travel Agent'
+    = render 'layouts/head'
+    = yield :javascript
+
+  %body{:id => bodyid, :class => bodyclass}
+    - if notice
+      = javascript_tag do
+        var alerta_mensaje =  "#{notice}"
+
+
+    .wrapper
+      %header{:role => 'banner'}
+        = link_to image_tag('/assets/logo.png'), root_path
+        = render 'layouts/banner'
+        = render 'layouts/menu'
+      %section.region{:role => 'main'}
+        = render 'layouts/slider'
+        = render 'layouts/breadcrumbs'
+        %br
+        %br
+        = yield
+
+
+
+  #postscript-bottom.partners
+    = render 'layouts/partners'
+  = render 'layouts/footer'

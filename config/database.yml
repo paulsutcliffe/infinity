@@ -5,26 +5,21 @@ defaults: &defaults
   pool: 5
   username: root
   password: chimpance99
-  socket: /tmp/mysql.sock
 
 development:
   database: infinity_development
+  socket: /tmp/mysql.sock
   <<: *defaults
 
 test: &test
   database: infinity_test
+  socket: /tmp/mysql.sock
   <<: *defaults
 
 production:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  host:
+  host: localhost
   database: infinity_production
-  pool: 5
-  host: mysql.infinityperu.com
-  username: infinitydb
-  password: infinity99
+  <<: *defaults
 
 cucumber:
   <<: *test
