@@ -1,4 +1,4 @@
-class AddColumnsToUsers < ActiveRecord::Migration
+class AddAttributesToUsers < ActiveRecord::Migration
   def self.up
     add_column :users, :name, :string
     add_column :users, :last_name, :string
@@ -11,11 +11,9 @@ class AddColumnsToUsers < ActiveRecord::Migration
     add_column :users, :phone, :string
     add_column :users, :travel_agent, :string
     add_column :users, :code, :string
-
   end
 
   def self.down
-
     remove_column :users, :name
     remove_column :users, :last_name
     remove_column :users, :address1
@@ -27,6 +25,5 @@ class AddColumnsToUsers < ActiveRecord::Migration
     remove_column :users, :phone
     remove_column :users, :travel_agent
     remove_column :users, :code
-
   end
 end

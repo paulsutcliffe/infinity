@@ -1,5 +1,6 @@
 class HotelPicture < ActiveRecord::Base
   belongs_to :itinerary_content
+  attr_accessible :hotel_photo
 
 
   has_attached_file :hotel_photo,

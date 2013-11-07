@@ -1,8 +1,13 @@
 <% breadcrumbs do |links| %>
+
   <% if links.any? %>
-    You are here:
+
     <% links.each do |link| %>
+
       <%= link_to link.text, link.url %>
+
     <% end %>
+
   <% end %>
+
 <% end %>

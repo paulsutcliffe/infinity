@@ -2,6 +2,7 @@ class Post < ActiveRecord::Base
 
   extend FriendlyId
   friendly_id :title, :use => :slugged
+  attr_accessible :title, :content, :important, :landing_page, :slug, :posts_picture
 
   has_attached_file :posts_picture,
     :path => ":rails_root/public/system/:attachment/:id/:style/:filename",

@@ -1,5 +1,6 @@
 class CountryPicture < ActiveRecord::Base
   belongs_to :country
+  attr_accessible :country_picture, :country_id
 
   validates :country_picture, :presence => true
   #validates_attachment_content_type :country_picture, :content_type => ['image/png', 'image/jpg', 'image/jpeg']

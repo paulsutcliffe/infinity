@@ -3,7 +3,7 @@ class Partner < ActiveRecord::Base
   validates :partner_picture, :presence => true
   #validates_attachment_content_type :partner_picture, :content_type => ['image/png']
   #validates_attachment_size :partner_picture, :less_than => 1.megabytes
-
+  attr_accessible :title, :url, :partner_picture
   has_attached_file :partner_picture,
     :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
     :url => "/system/:attachment/:id/:style/:filename",

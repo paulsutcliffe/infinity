@@ -1,4 +1,5 @@
 class Member < ActiveRecord::Base
+  attr_accessible  :name, :email, :position, :description, :member_picture
 
 
 

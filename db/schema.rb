@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130205024900) do
+ActiveRecord::Schema.define(:version => 20131107220613) do
 
   create_table "abouts", :force => true do |t|
     t.string   "title_landing_page"
@@ -32,23 +32,21 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.string   "global_proyection_picture_content_type"
     t.integer  "global_proyection_picture_file_size"
     t.datetime "global_proyection_picture_updated_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
   end
 
   create_table "admins", :force => true do |t|
-    t.string   "email",                                 :default => "", :null => false
-    t.string   "encrypted_password",     :limit => 128, :default => "", :null => false
+    t.string   "email",                  :default => "", :null => false
+    t.string   "encrypted_password",     :default => "", :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",                         :default => 0
+    t.integer  "sign_in_count",          :default => 0,  :null => false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   add_index "admins", ["email"], :name => "index_admins_on_email", :unique => true
@@ -65,8 +63,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.string   "postal_code"
     t.string   "country"
     t.string   "phone"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "bookings", :force => true do |t|
@@ -76,15 +74,15 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.string   "phone"
     t.text     "comment"
     t.string   "slug"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "carts", :force => true do |t|
     t.integer  "quantity"
     t.integer  "travel_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "countries", :force => true do |t|
@@ -101,8 +99,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.string   "map_content_type"
     t.integer  "map_file_size"
     t.datetime "map_updated_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "country_pictures", :force => true do |t|
@@ -111,8 +109,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.integer  "country_picture_file_size"
     t.datetime "country_picture_updated_at"
     t.integer  "country_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
   end
 
   create_table "destination_pictures", :force => true do |t|
@@ -121,8 +119,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.integer  "destination_picture_file_size"
     t.datetime "destination_picture_updated_at"
     t.integer  "destination_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                       :null => false
+    t.datetime "updated_at",                       :null => false
   end
 
   create_table "destinations", :force => true do |t|
@@ -130,8 +128,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.text     "description"
     t.text     "image_map"
     t.text     "slug"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "extensions", :force => true do |t|
@@ -145,16 +143,16 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.text     "itinerary_text"
     t.integer  "travel_id"
     t.integer  "offer_season"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "healths", :force => true do |t|
     t.string   "title"
     t.string   "url"
     t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
     t.string   "health_picture_file_name"
     t.string   "health_picture_content_type"
     t.integer  "health_picture_file_size"
@@ -167,8 +165,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.integer  "travel_id"
     t.integer  "itinerary_id"
     t.integer  "itinerary_content_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
     t.string   "hotel_picture_file_name"
     t.string   "hotel_picture_content_type"
     t.integer  "hotel_picture_file_size"
@@ -180,8 +178,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.string   "slug"
     t.integer  "offer_season_id"
     t.integer  "travel_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "itinerary_contents", :force => true do |t|
@@ -190,8 +188,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.integer  "offer_season_id"
     t.integer  "travel_id"
     t.integer  "itinerary_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
     t.string   "itinerary_content_picture_file_name"
     t.string   "itinerary_content_picture_content_type"
     t.integer  "itinerary_content_picture_file_size"
@@ -203,8 +201,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.string   "email"
     t.string   "position"
     t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
     t.string   "member_picture_file_name"
     t.string   "member_picture_content_type"
     t.integer  "member_picture_file_size"
@@ -214,8 +212,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
   create_table "milestones", :force => true do |t|
     t.string   "title"
     t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
     t.string   "milestone_picture_file_name"
     t.string   "milestone_picture_content_type"
     t.integer  "milestone_picture_file_size"
@@ -225,8 +223,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
   create_table "offer_seasons", :force => true do |t|
     t.string   "title"
     t.string   "slug"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "offers", :force => true do |t|
@@ -235,8 +233,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.string   "slug"
     t.integer  "offer_season_id"
     t.string   "offer_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
     t.string   "offer_picture_file_name"
     t.string   "offer_picture_content_type"
     t.integer  "offer_picture_file_size"
@@ -247,8 +245,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.string   "title"
     t.text     "description"
     t.string   "slug"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.string   "pack_picture_file_name"
     t.string   "pack_picture_content_type"
     t.integer  "pack_picture_file_size"
@@ -258,8 +256,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
   create_table "partners", :force => true do |t|
     t.string   "title"
     t.string   "url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
     t.string   "partner_picture_file_name"
     t.string   "partner_picture_content_type"
     t.integer  "partner_picture_file_size"
@@ -272,8 +270,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.boolean  "important",                  :default => false
     t.boolean  "landing_page",               :default => false
     t.string   "slug"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                                    :null => false
+    t.datetime "updated_at",                                    :null => false
     t.string   "posts_picture_file_name"
     t.string   "posts_picture_content_type"
     t.integer  "posts_picture_file_size"
@@ -284,8 +282,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.string   "title"
     t.string   "content"
     t.string   "slug"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
     t.string   "press_release_picture_file_name"
     t.string   "press_release_picture_content_type"
     t.integer  "press_release_picture_file_size"
@@ -305,13 +303,13 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.integer  "travel_id"
     t.integer  "offer_season_id"
     t.integer  "country_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "slides", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
     t.string   "slide_file_name"
     t.string   "slide_content_type"
     t.integer  "slide_file_size"
@@ -322,8 +320,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.string   "name"
     t.text     "description"
     t.boolean  "landing_page",                   :default => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                                        :null => false
+    t.datetime "updated_at",                                        :null => false
     t.string   "testimony_picture_file_name"
     t.string   "testimony_picture_content_type"
     t.integer  "testimony_picture_file_size"
@@ -338,8 +336,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.integer  "offer_season_id"
     t.integer  "travel_id"
     t.integer  "price_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "travels", :force => true do |t|
@@ -358,8 +356,8 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
     t.integer  "country_id"
     t.integer  "offer_season_id"
     t.string   "slug"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
     t.string   "travel_picture_file_name"
     t.string   "travel_picture_content_type"
     t.integer  "travel_picture_file_size"
@@ -367,18 +365,16 @@ ActiveRecord::Schema.define(:version => 20130205024900) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                                 :default => "", :null => false
-    t.string   "encrypted_password",     :limit => 128, :default => "", :null => false
+    t.string   "email",                  :default => "", :null => false
+    t.string   "encrypted_password",     :default => "", :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",                         :default => 0
+    t.integer  "sign_in_count",          :default => 0,  :null => false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.string   "name"
     t.string   "last_name"
     t.string   "address1"

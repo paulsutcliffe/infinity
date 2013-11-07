@@ -5,6 +5,7 @@ class OfferSeason < ActiveRecord::Base
   has_many :prices, :dependent => :destroy
   has_many :extensions, :dependent => :destroy
   has_many :hotels, :dependent => :destroy
+  attr_accessible :title, :slug
 
   #scope :not_in_season, where("(select count(*) from offers where offer_season_id=offer.id) = 0")
 

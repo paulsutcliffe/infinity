@@ -1,5 +1,7 @@
 class About < ActiveRecord::Base
 
+  attr_accessible :title_landing_page, :text_landing_page, :about_us, :history, :global_proyection, :work_with_us, :picture_landing_page, :about_picture, :global_proyection_picture
+
   has_attached_file :picture_landing_page,
     :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
     :url => "/system/:attachment/:id/:style/:filename",

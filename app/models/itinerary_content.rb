@@ -2,6 +2,7 @@ class ItineraryContent < ActiveRecord::Base
 
   belongs_to :itinerary
   has_one :hotel, :dependent => :destroy
+  attr_accessible :content, :hotel, :offer_season_id, :travel_id, :itinerary_id, :itinerary_content_picture
 
 
   has_attached_file :itinerary_content_picture,

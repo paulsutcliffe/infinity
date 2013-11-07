@@ -1,4 +1,5 @@
 class Testimony < ActiveRecord::Base
+  attr_accessible :name, :description, :landing_page, :testimony_picture
 
   has_attached_file :testimony_picture,
     :path => ":rails_root/public/system/:attachment/:id/:style/:filename",

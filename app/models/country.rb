@@ -3,6 +3,7 @@ class Country < ActiveRecord::Base
   has_many :travels, :dependent => :destroy
   has_many :prices, :dependent => :destroy
   belongs_to :destination
+  attr_accessible  :name, :time_zone, :weather, :voltage, :currency, :description, :image_map, :destination_id, :slug, :map
 
   extend FriendlyId
   friendly_id :name, :use => :slugged

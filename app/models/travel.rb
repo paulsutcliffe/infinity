@@ -7,6 +7,7 @@ class Travel < ActiveRecord::Base
   has_many :itineraries, :dependent => :destroy
   has_many :prices, :dependent => :destroy
   has_many :hotels, :dependent => :destroy
+  attr_accessible :name, :description, :overview, :advantages, :price, :days, :departures, :maxgroupsize, :travel_map, :notes, :weather, :travel_type, :country_id, :offer_season_id, :slug, :travel_picture
 
 
 
