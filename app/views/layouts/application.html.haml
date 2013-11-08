@@ -6,18 +6,23 @@
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Infinity'}"}
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
+    = render 'layouts/head'
+    = yield :javascript
     = csrf_meta_tags
-  %body
-    .container
+  %body{:id => bodyid, :class => bodyclass}
+    .wrapper
       %header{:role => 'banner'}
         = link_to image_tag('/assets/logo.png'), root_path
+        = render 'layouts/messages'
         = render 'layouts/banner'
         = render 'layouts/navigation'
-      %main{:role => "main"}
-        .content
-          = render 'layouts/messages'
-          = render 'layouts/slider'
-          = render 'layouts/breadcrumbs'
-          = yield
-      %footer
-    = render 'shared/google_analytics'
+      %section.region{:role => "main"}
+        = render 'layouts/slider'
+        = render 'layouts/breadcrumbs'
+        %br
+        = yield
+
+  #postscript-bottom.partners
+    = render 'layouts/partners'
+  =# render 'layouts/footer'
+  = render 'shared/google_analytics'
