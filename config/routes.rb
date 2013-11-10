@@ -62,6 +62,8 @@ Infinity::Application.routes.draw do
 
 
   devise_for :users
+
+  match '/terms' => 'abouts#terms', via: :get
   resources :users
 
   resources :abouts

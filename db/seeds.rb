@@ -1,3 +1,4 @@
+#coding: utf-8
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -50,7 +51,7 @@ countries_latino = destino_latino.countries.create(
   :name => 'Peru'
 )
 ['Ecuador', 'Chile', 'Argentina', 'Brasil'].each do |c|
-  params = { 
+  params = {
     :country_list => { :name => c }
   }
   destino_latino.countries.create(params[:country_list])
@@ -79,13 +80,13 @@ Health.create(
   :title => 'Título 1',
   :url => 'http://www.google.com',
   :description => long_text,
-  :health_picture => File.open(File.join(Rails.root, '/features/support/img-show-destinations-1.jpg')) 
+  :health_picture => File.open(File.join(Rails.root, '/features/support/img-show-destinations-1.jpg'))
 )
 Health.create(
   :title => 'Título 2',
   :url => 'http://www.yahoo.com',
   :description => long_text,
-  :health_picture => File.open(File.join(Rails.root, '/features/support/img-show-destinations-mapa.jpg')) 
+  :health_picture => File.open(File.join(Rails.root, '/features/support/img-show-destinations-mapa.jpg'))
 )
 
 
@@ -98,7 +99,7 @@ Milestone.delete_all
     :title => 'Premio ' + "#{i}" +' a la mejor agencia de viajes',
     :description => 'Texto que complementa el título Mejor servicio imposible',
     :milestone_picture => File.open(File.join(Rails.root, '/features/support/milestone_picture.jpg')))
-  
+
   Milestone.create(
     :title => 'Avión de Oro 2012',
     :description => 'Galardón otorgado por haber recibido la mayor cantidad de turistas desde distintas partes del mundo.',
@@ -139,7 +140,7 @@ Travel.delete_all
     :offer_list => {
       :name => i,
       :description => long_text,
-      :travel_picture => File.open(File.join(Rails.root, '/features/support/offer_picture.jpg')) 
+      :travel_picture => File.open(File.join(Rails.root, '/features/support/offer_picture.jpg'))
     }
   }
   season_fuera_de_temporada.travels.create(params[:offer_list])
@@ -150,7 +151,7 @@ end
     :offer_list => {
       :name => i,
       :description => long_text,
-      :travel_picture => File.open(File.join(Rails.root, '/features/support/offer_picture.jpg')) 
+      :travel_picture => File.open(File.join(Rails.root, '/features/support/offer_picture.jpg'))
     }
   }
   season_navidad.travels.create(params[:offer_list])
@@ -161,7 +162,7 @@ end
     :offer_list => {
       :name => i,
       :description => long_text,
-      :travel_picture => File.open(File.join(Rails.root, '/features/support/offer_picture.jpg')) 
+      :travel_picture => File.open(File.join(Rails.root, '/features/support/offer_picture.jpg'))
     }
   }
   season_new_year.travels.create(params[:offer_list])

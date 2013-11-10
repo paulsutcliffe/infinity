@@ -1,0 +1,73 @@
+
+
+.new, .edit {
+  form {min-height: 150px}
+}
+
+.admin {
+
+  &.create {
+    width: 100%; margin-bottom: $space * 6;
+    float: left; clear: left; position: relative; 
+    .button {
+      float: left; margin-right: 10px;
+    }
+    .button.heading {
+      position: absolute; top: -50px; right: 0; margin-right: 0;
+    }
+  }
+  #sidebar-first & {
+    padding-left:17px;
+    a{
+      font-size: 12px !important;
+      float: left !important;
+      margin-right:5px !important;
+    }
+  }
+}
+
+a.button {
+
+  .admin & {
+    /*float: none;*/
+  }
+}
+
+
+#slides, #milestones {
+  .block {
+    width: 100%; margin: 0 0 $space * 4;
+    float: left; clear: left;
+    img {
+      float: left;
+    }
+    .navigation {
+      float: left; clear: left;
+    }
+    .admin {
+      float: left;
+    }
+  }
+
+
+}
+
+.navigation {
+  .admin {
+    a {margin-right:1px}
+  }
+}
+
+.new,
+.edit {
+  #preface-top {display: none}
+
+}
+
+.fields {
+  border-bottom: 1px solid #ddd;
+  margin: 0 0 $space*3;
+  width: 100%;
+  float: left;
+  clear: left
+}
