@@ -1,4 +1,5 @@
 #language: es
+@javascript
 
 Característica: administración los paises
 
@@ -18,7 +19,7 @@ Escenario: Agregar un país
 @admin
 Escenario: Editar un país existente
   Dado que existe el país "Peru" del destino "South America"
-  Cuando hago click en "Destinations"
+  Cuando hago click en "Destinations" en el menú
   Y hago click en "South America"
   Y hago click en "Peru"
   Y hago click en "Edit"

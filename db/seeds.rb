@@ -17,22 +17,19 @@ title_pack  = File.read(File.join(Rails.root, '/features/support/packs/title-1.t
 #############################################################################
 Admin.delete_all
 Admin.create(
-    :email => 'paul@kosmyka.com',
-    :password => '1234567'
+    :email => 'email@domain.com',
+    :password => '12345678'
   )
-Admin.create(
-    :email => 'ricardo@kosmyka.com',
-    :password => '1234567'
-  )
+
 
 #############################################################################
 # Slide Model
 #############################################################################
 Slide.delete_all
-Slide.create(
+Slide.create(:link => 'http://www.kosmyka.com',
   :slide => File.open(File.join(Rails.root, '/features/support/img-slide.jpg')))
 
-Slide.create(
+Slide.create(:link => 'http://www.kosmyka.com',
   :slide => File.open(File.join(Rails.root, '/features/support/img-slide-2.jpg')))
 
 #############################################################################

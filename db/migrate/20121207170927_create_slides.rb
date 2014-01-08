@@ -1,6 +1,7 @@
 class CreateSlides < ActiveRecord::Migration
   def self.up
     create_table :slides do |t|
+      t.string :link
 
       t.timestamps
     end

@@ -1,12 +1,21 @@
--# content_for :scripts do
-= # render 'layouts/royal_slider'
-= # render 'layouts/royal_slider_init'
+#carousel-generic.carousel.slide
 
-#preface-top.test
-  .royalSlider.rsDefault
+  %ol.carousel-indicators
     - if slides_in_all_pages
-      - slides_in_all_pages.each do |slide|
-        .rsContent
-          = image_tag slide.slide(:full), :class => 'rsImg'
-          = link_to 'Ver más', '', :class => 'button rsABlock'
+      - slides_in_all_pages.each_with_index do |slide, index|
+        - if index == 0
+          %li.active{:'data-target' => '#carousel-generic', :'data-slide-to' => index}
+        - else
+          %li{:'data-target' => '#carousel-generic', :'data-slide-to' => index}
 
+  .carousel-inner
+    - if slides_in_all_pages
+      - slides_in_all_pages.each_with_index do |slide, index|
+        - if index == 0
+          .item.active
+            = image_tag slide.slide(:full), :class => 'rsImg'
+            = link_to 'Ver más', slide.link, :class => 'button rsABlock'
+        - else
+          .item
+            = image_tag slide.slide(:full), :class => 'rsImg'
+            = link_to 'Ver más', slide.link, :class => 'button rsABlock'

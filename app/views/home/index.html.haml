@@ -3,7 +3,7 @@
 
 
 
-  
+
 
 #sidebar-first
   = render 'sidebar_first'
@@ -18,7 +18,7 @@
         = image_tag(about_infinity.picture_landing_page(:landing_page))
       - if current_admin
         = link_to I18n.t('edit'), edit_about_path(about_infinity), :class => 'btn button'
- 
+
   %section.noticia
     - @last_post.each do |last_post|
       %h2.title
@@ -27,7 +27,7 @@
       .content
         = last_post.content
       = link_to 'Read More', post_path(last_post), :class => 'button'
-  
+
   %section.promotion-package
     = image_tag '/assets/img-front-promotion.jpg'
     %h2.title
@@ -36,7 +36,7 @@
       %p
         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
       = link_to 'Read More', '#', :class => 'button'
-  
+
   .video
-    = image_tag '/assets/video-size.jpg'
-  
+    =# image_tag '/assets/video-size.jpg'
+

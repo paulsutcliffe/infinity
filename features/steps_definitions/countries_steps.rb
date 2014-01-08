@@ -23,3 +23,9 @@ Cuando /^hago click (accept|dismiss) en la alerta "(.*?)"$/ do |action, text|
   alert.text.should eq(text)
   alert.send(action)
 end
+
+Cuando /^hago click en "(.*?)" en el menú$/ do |link|
+  within('ul.menu') do
+    click_link(link)
+  end
+end

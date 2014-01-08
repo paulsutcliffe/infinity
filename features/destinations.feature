@@ -14,7 +14,7 @@ Escenario: Agregar un destino
 @admin
 Escenario: Editar un destino existente
   Dado que existe el destino "South America"
-  Cuando hago click en "Destinations"
+  Cuando hago click en "Destinations" en el menu
   Y hago click en "Edit"
   Y lleno el formulario para el destino "Africa"
   Cuando presiono "Save"

@@ -107,7 +107,7 @@ en:
     new: New Extension
 
   healths:
-    index: Health
+    index: Health & Care
   health:
     new: New Health
     edit: Edit Health
@@ -132,7 +132,7 @@ en:
     new: New Member
 
   offers:
-    index: Offers
+    index: Special Offers
     url: offers
   offer:
     new: New Offer

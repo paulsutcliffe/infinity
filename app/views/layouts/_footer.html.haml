@@ -1,8 +1,7 @@
 %footer
   .inner
-    = render 'layouts/menu'
     .copyright
-      © 2012 Infinity Perú. Copyright.
+      = '© ' + Time.now.year.to_s + 'Infinity Perú. Copyright.'
     .author
       Web design and web development by
       = link_to image_tag('/assets/kosmyka.png'), '#', :id => 'website-author'
