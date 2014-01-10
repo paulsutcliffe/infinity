@@ -308,6 +308,8 @@ ActiveRecord::Schema.define(:version => 20131107220613) do
   end
 
   create_table "slides", :force => true do |t|
+    t.string   "title"
+    t.string   "description"
     t.string   "link"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false

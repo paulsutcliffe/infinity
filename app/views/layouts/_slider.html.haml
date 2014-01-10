@@ -13,9 +13,14 @@
       - slides_in_all_pages.each_with_index do |slide, index|
         - if index == 0
           .item.active
-            = image_tag slide.slide(:full), :class => 'rsImg'
-            = link_to 'Ver más', slide.link, :class => 'button rsABlock'
+            = link_to image_tag(slide.slide(:full), :class => 'rsImg'), slide.link
+            .carousel-caption
+              %h3= slide.title
+              %p= slide.description
         - else
           .item
-            = image_tag slide.slide(:full), :class => 'rsImg'
-            = link_to 'Ver más', slide.link, :class => 'button rsABlock'
+            = link_to image_tag(slide.slide(:full), :class => 'rsImg'), slide.link
+            .carousel-caption
+              %h3= slide.title
+              %p= slide.description
+

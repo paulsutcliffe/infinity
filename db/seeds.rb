@@ -26,10 +26,10 @@ Admin.create(
 # Slide Model
 #############################################################################
 Slide.delete_all
-Slide.create(:link => 'http://www.kosmyka.com',
+Slide.create(:title => 'Tour', :description => 'Very nice place', :link => 'http://www.kosmyka.com',
   :slide => File.open(File.join(Rails.root, '/features/support/img-slide.jpg')))
 
-Slide.create(:link => 'http://www.kosmyka.com',
+Slide.create(:title => 'Tour', :description => 'Very nice place', :link => 'http://www.kosmyka.com',
   :slide => File.open(File.join(Rails.root, '/features/support/img-slide-2.jpg')))
 
 #############################################################################
