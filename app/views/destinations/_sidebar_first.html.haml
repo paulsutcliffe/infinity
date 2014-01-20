@@ -6,8 +6,9 @@
 
 %nav.navegate-by
   %h2.title
-    = @page_name
-  %ul
+    = 'Navigate by'
+  %ul.navba
+    %li.defualt LATIN AMERICA
     - if params[:action] == 'index'
       - @destinations.each do |destination|
         %li
