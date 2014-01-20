@@ -3,6 +3,9 @@ Infinity::Application.routes.draw do
 
 
 
+  resources :questions
+
+
   resources :bookings
 
   resources :partners
