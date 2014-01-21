@@ -1,6 +1,4 @@
 #content {
-
-
   .not-front.sidebar-first &,
   #destinations &,
   .login & {
@@ -14,19 +12,13 @@
   }
 }
 
-#sidebar-first {
-  // revisar en blocks.scss demás parámetros
-  @include column(7);
-  @include prepend(1);
-  float:right;
-  margin-right:0;
-
-  .not-front.sidebar-first &,
-  #devise-sessions &,
-  #devise-registrations &,
-  #devise-passwords &,
-  #testimonies.index &,
-  .login & {
+//.region-navbar {
+  /*.not-front.sidebar-first &,
+  /*#devise-sessions &,
+  /*#devise-registrations &,
+  //#devise-passwords &,
+  //#testimonies.index &,
+  /*.login & {
     @include sidebar(left);
     @include column(6);
     @include prepend(0);
@@ -35,6 +27,8 @@
     nav, .sidebar-block {
       @include span(6);
     }
+   */
+.region-navbar{
     nav, section, .sidebar-block {
       @include sidebarshadowbug(3px, 0);
       @include box-sizing;
@@ -50,13 +44,11 @@
       margin-bottom: $space*3;
       display: block;
     }
-
-  }
 }
 
 
 
-#sidebar-first {
+.region-navbar {
   section, nav, .sidebar-block {
     @include sidebar-block;
     @include clearfix2;

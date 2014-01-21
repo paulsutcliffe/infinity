@@ -185,14 +185,43 @@ span.current {font-weight: bold}
 
 /* Navegación
 ======================================================= */
+ul.menu {
+overflow:hidden; /* hidden auto, makes sure the container fits the floated list-items below */
+}
+ul.menu li{
+position:relative; /* allows us to set the z-index */
+z-index:5; /* raises the z-index of the line item 5 levels all other elements */
+float:left; /* floats list items to the left, creating a horizontal menu */
+}
+
+ul.menu {
+    text-align: right; margin: 0;
+     li {
+         @include inline-block; margin-left: 10px;
+          border-bottom: 6px solid transparent;
+         a, span {padding: 0 20px 6px; @include inline-block;
+              &:hover {text-decoration: none;}
+          }
+          }
+          .main-header & {
+           @include absolute(bottom, right, 0, 0);
+       }
+         .main-footer & {
+             float: left; margin: 0;
+             li {float: left;
+              margin: 0 20px 0 0;
+    }
+ }
+}
+
 
 header, footer {
-  nav {
+  .menu {
     @include navigation;
   }
 }
 
-nav {
+.menu{
   header & {
     li.last {
           a {
@@ -461,7 +490,6 @@ body .destination_pictures_container.rsDefault .rsBullets { top: 10px; right: 10
   }
 }
 
-section.health {width: 99%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box}
 
 
 #healths #content .content{float: left; clear:left; width:100%;}

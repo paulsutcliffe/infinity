@@ -14,3 +14,6 @@
 //= require jquery_ujs
 // require_tree .
 //= require bootstrap
+//= require libs/navigation/lavalamp_0.1.0/jquery.easing.min.js
+//= requier navigation/jquery-lavalamp-1.3.5/jquery.lavalamp-1.3.5.min.js
+//= requier navigation/jquery-lavalamp-1.3.5/jquery.lavalamp-init.j

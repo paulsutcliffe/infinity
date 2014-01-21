@@ -2,20 +2,15 @@
 = # javascript_include_tag "/javascripts/libs/royal-slider-9.2/jquery.royalslider.custom.min.js", "/javascripts/libs/royal-slider-9.2/jquery.easing-1.3.js"
 
 
-
-
-
-#sidebar-first
-  = render 'sidebar_first'
-
-#content
+.region-central 
+  <!-- content -->
   %section.infinity-description
     - @about_infinity.each do |about_infinity|
       %h2.title
         = about_infinity.title_landing_page
       .content
         = paragraph(about_infinity.text_landing_page)
-        = image_tag(about_infinity.picture_landing_page(:landing_page))
+        = image_tag(about_infinity.picture_landing_page(:landing_page), class:'img-responsive')
       - if current_admin
         = link_to I18n.t('edit'), edit_about_path(about_infinity), :class => 'btn button'
 
@@ -29,7 +24,7 @@
       = link_to 'Read More', post_path(last_post), :class => 'button'
 
   %section.promotion-package
-    = image_tag '/assets/img-front-promotion.jpg'
+    = image_tag '/assets/img-front-promotion.jpg', class: 'img-responsive'
     %h2.title
       Promotion Package
     .content
@@ -40,3 +35,7 @@
   .video
     =# image_tag '/assets/video-size.jpg'
 
+
+.region-side 
+  /*#sidebar-first*/
+  = render 'sidebar_first'

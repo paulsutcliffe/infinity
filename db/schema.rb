@@ -315,6 +315,9 @@ ActiveRecord::Schema.define(:version => 20140110180435) do
   end
 
   create_table "slides", :force => true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.string   "link"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
     t.string   "slide_file_name"

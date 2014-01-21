@@ -1,19 +1,21 @@
 
 = breadcrumb :destinations
+.container
+  .row
+    .region-navbar
+      = render 'sidebar_first'
 
-#sidebar-first
-  = render 'sidebar_first'
+    /*#content*/
+    .region-texto
+      %h1.page-title
+        = I18n.t('destinations.index')
+      - if current_admin
+        .admin.create
+          = link_to I18n.t('destination.new'), new_destination_path, :class => 'button new'
 
-#content
-  %h1.page-title
-    = 'Infinity Destinations'  #I18n.t('destinations.index')
-  - if current_admin
-    .admin.create
-      = link_to I18n.t('destination.new'), new_destination_path, :class => 'button new'
-
-  .content
-    %p
-      Curabitur feugiat ornare tellus, eget ultrices libero consectetur non. Proin sed magna in metus consequat ullamcorper. 
+      .content
+        %p
+          Curabitur feugiat ornare tellus, eget ultrices libero consectetur non. Proin sed magna in metus consequat ullamcorper. 
 
 
 

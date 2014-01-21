@@ -216,14 +216,14 @@ Post.create(
 #############################################################################
 # PressReleases Model
 #############################################################################
-PressRelease.delete_all
-1.upto(4) do |i|
-  PressRelease.create(
-    #:title => File.read(File.join(Rails.root, '/features/support/titles/title-' + "#{i}" + '.txt')),
-    :title => File.read(File.join(Rails.root, "#{title_url %i}")),
-    :content => long_text
-  )
-end
+# PressRelease.delete_all
+# 1.upto(4) do |i|
+#   PressRelease.create(
+#     #:title => File.read(File.join(Rails.root, '/features/support/titles/title-' + "#{i}" + '.txt')),
+#     :title => File.read(File.join(Rails.root, "#{title_url %i}")),
+#     :content => long_text
+#   )
+# end
 
 #############################################################################
 # Testimonies Model

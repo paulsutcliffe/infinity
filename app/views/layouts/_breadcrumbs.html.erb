@@ -3,8 +3,8 @@
   <% if links.any? %>
 
     <% links.each do |link| %>
-
-      <%= link_to link.text, link.url %>
+  
+       <%=  link_to  link.text, link.url, class:'breadcrumb' %>
 
     <% end %>
 

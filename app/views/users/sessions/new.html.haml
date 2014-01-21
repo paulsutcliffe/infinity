@@ -10,14 +10,14 @@
 
   .content
     = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
-      .form_group
+      .form-group
         = f.label :email
         = f.email_field :email
-      .form_group
+      .form-group
         = f.label :password
         = f.password_field :password
       - if devise_mapping.rememberable?
-        .checkbox
+        .form-group
           = f.label :remember_me
           = f.check_box :remember_me
       .actions
