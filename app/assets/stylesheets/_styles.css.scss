@@ -1,3 +1,48 @@
 .region a{
 margin-bottom: 20px;
 }
+
+header .navbar ul:before, header .navbar ul:after{
+  background: none repeat scroll 0 0 #67CDDC;
+  bottom: 0;
+  content: "";
+  height: 5px;
+  left: 0;
+  position: absolute;
+  width: 960px;
+}
+header .navbar{
+  margin-top: 20px;
+  min-height: 40px !important;
+}
+
+header .navbar ul li a, header .navbar ul li span{
+display: block;
+font-size: 18px;
+text-align: center;
+width: 100px;
+}
+header .menu li{
+padding-left: 2px !important;
+}
+
+.carousel-indicators li{
+     background:url("/assets/backgrounds/slider-controls.jpg") no-repeat scroll 0px -4px rgba(0, 0, 0, 0);
+    height: 17px;
+    width: 17px;
+   }
+.carousel-indicators li .active{
+    background:url("/assets/backgrounds/slider-controls.jpg") no-repeat scroll -20px -4px rgba(0, 0, 0, 0);
+    height:17px !important !important;
+    width: 17px !important !important;
+}
+header #carousel-generic{
+  background: url("/assets/backgrounds/bevel-cyan-small.jpg") no-repeat scroll 50% 100% #FFFFFF;
+  padding-bottom:50px;
+  margin-bottom: 100px;
+}
+
+header .line{
+  background: url("/assets/backgrounds/bevel-cyan.jpg") no-repeat scroll 50% 100% #FFFFFF;
+  height: 50px;
+}

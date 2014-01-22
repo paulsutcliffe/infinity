@@ -4,6 +4,7 @@
 
 .region-central 
   <!-- content -->
+  %section.line
   %section.infinity-description
     - @about_infinity.each do |about_infinity|
       %h2.title
@@ -13,7 +14,7 @@
         = image_tag(about_infinity.picture_landing_page(:landing_page), class:'img-responsive')
       - if current_admin
         = link_to I18n.t('edit'), edit_about_path(about_infinity), :class => 'btn button'
-
+        
   %section.noticia
     - @last_post.each do |last_post|
       %h2.title
