@@ -1,41 +1,41 @@
 .form-group
   = f.label :name
-  = f.text_field :name
+  = f.text_field :name, class:'form-control'
 .form-group
   = f.label :last_name
-  = f.text_field :last_name
+  = f.text_field :last_name, class: 'form-control'
 .form-group
   = f.label :email
-  = f.email_field :email
+  = f.email_field :email, class:'form-control'
 .form-group
   = f.label :password
-  = f.password_field :password
+  = f.password_field :password, class:'form-control'
 .form-group
   = f.label :password_confirmation
-  = f.password_field :password_confirmation
+  = f.password_field :password_confirmation, class:'form-control'
 .form-group
   = f.label :address1
-  = f.text_field :address1
+  = f.text_field :address1, class:'form-control'
 .form-group
   = f.label :address2
-  = f.text_field :address2
+  = f.text_field :address2, class:'form-control'
 .form-group
   = f.label :state
-  = f.text_field :state
+  = f.text_field :state, class:'form-control'
 .form-group
   = f.label :city
-  = f.text_field :city
+  = f.text_field :city, class:'form-control'
 .form-group
   = f.label :zipcode, "Zip Code"
-  = f.text_field :zipcode
+  = f.text_field :zipcode, class:'form-control'
 .form-group
   = f.label :country
   = country_select("user", "country" )
 
 .form-group
   = f.label :phone
-  = f.text_field :phone
-.field.check-field
+  = f.text_field :phone, class:'form-control'
+.form-group.check-field
   = f.label :travel_agent, "Are you travel agent?"
   .field-items
     = f.radio_button :travel_agent, 'Yes'
@@ -45,4 +45,4 @@
 
 .form-group
   = f.label :code
-  = f.text_field :code
+  = f.text_field :code, class:'form-control'

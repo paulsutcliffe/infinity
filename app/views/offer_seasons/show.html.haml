@@ -1,10 +1,10 @@
 = breadcrumb :offer_season, @offer_season
 
-#sidebar-first
+.region-navbar
   = render 'sidebar_first'
 
 
-#content
+.region-texto
   %h1.page-title
     = @offer_season.title + ' ' + I18n.t('offer_season.show')
     

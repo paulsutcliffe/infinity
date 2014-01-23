@@ -50,13 +50,14 @@ label {
   }
 }
 
+/*
 input {
   width: $input-width;
   .check-field & {
     width: auto;
   }
 }
-
+*/
 .required {
   font-size: $font-size-small;
   padding-bottom: $space-paragraph;

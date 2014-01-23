@@ -5,7 +5,7 @@
     %ul
     - @travel.errors.full_messages.each do |msg|
       %li= msg
-.field
+.form-group
   = f.label :name
   %br
   = f.text_field :name
@@ -13,43 +13,43 @@
 
 
 
-.field
+.form-group
   = f.label :description
   %br
   = f.text_area :description
-.field
+.form-group
   = f.label :overview
   %br
   = f.text_area :overview
-.field
+.form-group
   = f.label :advantages
   %br
   = f.text_area :advantages
-.field
+.form-group
   = f.label :price
   %br
   = f.text_field :price
-.field
+.form-group
   = f.label :days
   %br
   = f.text_field :days
-.field
+.form-group
   = f.label :departures
   %br
   = f.text_field :departures
-.field
+.form-group
   = f.label :maxgroupsize
   %br
   = f.text_field :maxgroupsize
-.field
+.form-group
   = f.label :travel_map
   %br
   = f.text_area :travel_map
-.field
+.form-group
   = f.label :notes
   %br
   = f.text_area :notes
-.field
+.form-group
   = f.label :country_id
   %br
   = f.text_field :country_id

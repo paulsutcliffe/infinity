@@ -1,9 +1,9 @@
 = breadcrumb :posts_press_releases
 
-#sidebar-first
+.region-navbar
   = render 'sidebar_first'
 
-#content
+.region-texto
   %h1.page-title
     = page_title! @post.title
 
@@ -13,8 +13,8 @@
 
 
 
-#content
-  = image_tag(@post.posts_picture(:medium))
+.region-texto
+  = image_tag(@post.posts_picture(:medium), class:'img-responsive')
   .content
     = paragraph(@post.content)
     .controls

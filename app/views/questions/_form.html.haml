@@ -6,10 +6,10 @@
         - @question.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
+  .form-group
     = f.label :questions
     = f.text_field :questions
-  .field
+  .form-group
     = f.label :answer
     = f.text_area :answer
   .actions

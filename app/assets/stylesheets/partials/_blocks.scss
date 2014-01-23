@@ -32,6 +32,13 @@
   @extend .col-md-8;
   @extend .col-lg-8;
 }
+
+.region-form{
+  @extend .col-sm-4;
+  @extend .col-md-4;
+  @extend .col-lg-4;
+  @extend .col-xs-8;
+}
 // BLOCKS
 /*#content {
   .infinity-description,

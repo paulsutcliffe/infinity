@@ -6,13 +6,13 @@
       %ul
       - @pack.errors.full_messages.each do |msg|
         %li= msg
-  .field
+  .form-group
     = f.label :title
     = f.text_field :title
-  .field
+  .form-group
     = f.label :description
     = f.text_area :description
-  .field
+  .form-group
     = f.label :pack_picture
     = f.file_field :pack_picture
 

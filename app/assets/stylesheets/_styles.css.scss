@@ -16,16 +16,20 @@ header .navbar{
   min-height: 40px !important;
 }
 
+header .menu li{
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+
 header .navbar ul li a, header .navbar ul li span{
 display: block;
 font-size: 18px;
 text-align: center;
-width: 100px;
-}
-header .menu li{
-padding-left: 2px !important;
+width: 100%;
 }
 
+.region-texto{margin-top:30px;}
+.region-navbar{margin-top:30px;}
 .carousel-indicators li{
      background:url("/assets/backgrounds/slider-controls.jpg") no-repeat scroll 0px -4px rgba(0, 0, 0, 0);
     height: 17px;
@@ -45,4 +49,27 @@ header #carousel-generic{
 header .line{
   background: url("/assets/backgrounds/bevel-cyan.jpg") no-repeat scroll 50% 100% #FFFFFF;
   height: 50px;
+}
+
+.menu li:hover{
+border-bottom:5px solid black;
+}
+
+.menu li a:hover{
+background-color: white !important;
+color:black !important;
+}
+
+.rsContent > img{
+width: 320px;
+}
+.rsContent{
+display: inline-block;
+}
+
+
+#offer_seasons{
+.region-texto{
+padding: 0 0 0 35px;
+}
 }

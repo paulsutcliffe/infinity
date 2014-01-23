@@ -2,10 +2,10 @@
 = content_for :javascript do
   = javascript_include_tag '/assets/destination_slider.js'
 
-#sidebar-first
+.region-navbar
   = render 'sidebar_first'
 
-#content
+.region-texto
   .content
     - if !@country_pictures.blank?
       .destination_pictures_container.rsDefault

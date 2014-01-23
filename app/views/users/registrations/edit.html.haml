@@ -5,21 +5,21 @@
   .form-group
     = f.label :email
     %br/
-    = f.email_field :email
+    = f.email_field :email, class:'form-control'
   .form-group
     = f.label :password
     %i (leave blank if you don't want to change it)
     %br/
-    = f.password_field :password
+    = f.password_field :password, class:'form-control'
   .form-group
     = f.label :password_confirmation
     %br/
-    = f.password_field :password_confirmation
+    = f.password_field :password_confirmation, class:'form-control'
   .form-group
     = f.label :current_password
     %i (we need your current password to confirm your changes)
     %br/
-    = f.password_field :current_password
+    = f.password_field :current_password, class: 'form-control'
   .form-group
     = f.submit "Update"
 %h3 Cancel my account
