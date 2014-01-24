@@ -8,19 +8,19 @@
         %li= msg
   .form-group
     = f.label :name
-    = f.text_field :name
+    = f.text_field :name, class:'form-control'
   .form-group
     = f.label :last_name
-    = f.text_field :last_name
+    = f.text_field :last_name, class:'form-control'
   .form-group
     = f.label :email
-    = f.text_field :email
+    = f.text_field :email, class:'form-control'
   .form-group
     = f.label :phone
-    = f.text_field :phone
+    = f.text_field :phone, class:'form-control'
   .form-group 
     = f.label :comment
-    = f.text_area :comment
+    = f.text_area :comment, class:'form-control'
   .form-group
     .actions
       = f.submit I18n.t('submit')

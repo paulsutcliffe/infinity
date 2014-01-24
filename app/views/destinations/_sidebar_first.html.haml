@@ -8,7 +8,7 @@
   %h2.title
     = 'Navigate by'
   %ul.navbar
-    %li.defualt LATIN AMERICA
+    %li.defualt 
     - if params[:action] == 'index'
       - @destinations.each do |destination|
         %li
@@ -30,3 +30,6 @@
             %span
               = country.name
    
+  - if current_admin
+    .admin.create
+      = link_to I18n.t('destination.new'), new_destination_path, :class => 'button new'

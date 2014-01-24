@@ -10,7 +10,7 @@
   });
 
 
-= breadcrumb :offer_season_travel, @travel
+- breadcrumb :offer_season_travel, @travel
 
 // START MARKUP
 .region-navbar
@@ -29,7 +29,6 @@
         = link_to I18n.t('itinerary.new'), new_offer_season_travel_itinerary_path(@offer_season, @travel), :class => 'button'
         = link_to I18n.t('price.new'), new_offer_season_travel_price_path(@offer_season, @travel), :class => 'button'
         = link_to I18n.t('extension.new'), new_offer_season_travel_extension_path(@offer_season, @travel), :class => 'button'
-    
         = link_to 'Hotel', new_offer_season_travel_hotel_path(@offer_season, @travel), :class => 'button'
 
 

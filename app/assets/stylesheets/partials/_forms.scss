@@ -4,11 +4,6 @@ $label-width             : $space * 30;
 $input-width             : $space * 40;
 
 
-form {
-  #sidebar-first & {
-    @include span(6);
-  }
-}
 
 select {
   #sidebar-first & {
@@ -44,6 +39,7 @@ select {
 label {
   width: $label-width;
   float: left;
+  margin-bottom: 10px;
   .check-field & {
     width: auto; 
     float: none;

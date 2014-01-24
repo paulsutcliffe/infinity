@@ -1,9 +1,9 @@
 = breadcrumb :user_forgot_password
 
-#sidebar-first
+.region-navbar
   = render 'users/sidebar_first'
 
-#content
+.region-texto
   %h1.page-title
     = page_title! I18n.t('user.forgot_password')
 
@@ -12,10 +12,10 @@
 
     = form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }, :validate => true) do |f|
       = devise_error_messages!
-      .field
+      .form-group
         = f.label :email
         %br/
-        = f.email_field :email
+        = f.email_field :email, class:'form-control'
       .actions
         = f.submit "Send me reset password instructions"
     = render :partial => "users/shared/links"

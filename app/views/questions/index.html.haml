@@ -1,21 +1,19 @@
-%h1 Listing questions
-
-%table
-  %tr
-    %th Questions
-    %th Answer
-    %th
-    %th
-    %th
-
+%h2.title 
+  FAQS
+.container
+  - if current_admin
+    = link_to 'New Question', new_question_path, class:'button'
   - @questions.each do |question|
-    %tr
-      %td= question.questions
-      %td= question.answer
-      %td= link_to 'Show', question
-      %td= link_to 'Edit', edit_question_path(question)
-      %td= link_to 'Destroy', question, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Question', new_question_path
+    .region-faqs
+      .questiona
+        %b
+          = question.questions
+      %br/
+      .answer 
+        = question.answer
+        
+      - if current_admin
+        = link_to 'Edit', edit_question_path(question), class: 'button'
+        = link_to 'Destroy', question, class: 'button', :method => :delete, :data => { :confirm => 'Are you sure?' }
+        
+  

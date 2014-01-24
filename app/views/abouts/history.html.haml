@@ -1,10 +1,10 @@
 
 = breadcrumb :about_history
 
-#sidebar-first
+.region-navbar
   = render 'sidebar_first'
 
-#content
+.region-texto
   - about_infinity.each do |about|
     = image_tag(about.about_picture(:default)) 
     %h1.page-title
