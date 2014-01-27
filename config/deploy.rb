@@ -5,7 +5,7 @@ require "rvm/capistrano"
 set :rvm_ruby_string, '1.9.3'
 set :rvm_type, :user  # Don't use system-wide RVM
 
-server "rubyonrailsperu.com", :web, :app, :db, primary: true
+server "infinityperu.com", :web, :app, :db, primary: true
 
 set :application, "infinity"
 set :user, "paul"
