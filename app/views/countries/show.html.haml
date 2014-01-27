@@ -6,7 +6,7 @@
   = render 'sidebar_first'
 
 .region-texto
-  .content
+  -#.content
     /*SLIDER*/
     - if !@country_pictures.blank?
       .destination_pictures_container.rsDefault
@@ -18,17 +18,49 @@
               - if current_admin
                 = link_to I18n.t('destroy_picture'), destination_country_country_picture_url(@destination, @country, img), :confirm =>  I18n.t('confirm_delete'), :method => :delete, :class => 'button'
                 = link_to I18n.t('edit'), edit_destination_country_country_picture_path(@destination, @country, img), :class => 'button'
-
-  %h1.page-title
-    = @country.name
-  - if current_admin
-    .admin.create
-      = link_to I18n.t('country_picture.new'), new_destination_country_country_picture_path(@country.destination, @country), :class => 'button new'
-      = link_to I18n.t('destroy'), @destination_country, :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button heading'
-      = link_to I18n.t('edit'), edit_destination_country_path(@country.destination, @country), :class => 'button new'
-
   .content
-    = image_tag @country.map(:regular)
+    %h1.page-title
+      = @country.name
+    - if current_admin
+      .admin.create
+        = link_to I18n.t('country_picture.new'), new_destination_country_country_picture_path(@country.destination, @country), :class => 'button new'
+        = link_to I18n.t('destroy'), @destination_country, :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button heading'
+        = link_to I18n.t('edit'), edit_destination_country_path(@country.destination, @country), :class => 'button new'
+
+    - if @country_pictures
+      #carousel-generic2.carousel.slide
+        %ol.carousel-indicators
+          - @country_pictures.each_with_index do |image, index|
+            - if index == 0
+              %li.active{:'data-target' => '#carousel-generic2', :'data-slide-to' => index}
+            - else
+              %li{:'data-target' => '#carousel-generic2', :'data-slide-to' => index}
+
+        .carousel-inner
+          - @country_pictures.each_with_index do |image, index|
+            - if index == 0
+              .item.active
+                = image_tag(image.country_picture(:default))
+              
+                - if current_admin
+                  = link_to I18n.t('destroy'), destination_country_country_picture_path(@country.destination, @country, image), :confirm => I18n.t('cofirm_delete'), :method => :delete, :class => 'button'
+                -#= link_to I18n.t('edit'), edit_destination_destination_picture_path(@destination, image), :class => 'button'
+            - else
+              .item
+                = image_tag(image.country_picture(:default), :class => 'rsImg')
+                - if current_admin  
+                  = link_to I18n.t('destroy'), destination_country_country_picture_path(@country.destination, @country, image), :confirm => I18n.t('cofirm_delete'), :method => :delete, :class => 'button'
+
+  
+
+
+
+
+
+
+
+
+    = image_tag @country.map(:regular), class:"img-responsive map" 
     = paragraph(@country.description)
 
 

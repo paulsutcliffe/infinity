@@ -14,12 +14,13 @@
       = link_to_unless_current I18n.t('user.forgot_password'), new_user_password_path do
         %span
           = I18n.t('user.forgot_password')
-    %li
+    
+    -#%li
       = link_to_unless_current I18n.t('user.travel_agent_register'), '' do
         %span
           = I18n.t('user.travel_agent_register')
 
-    %li
+    -#%li
       = link_to_unless_current I18n.t('user.travel_register'), '' do
         %span
           = I18n.t('user.travel_register')

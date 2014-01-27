@@ -12,6 +12,7 @@ class Country < ActiveRecord::Base
     :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
     :url => "/system/:attachment/:id/:style/:filename",
     :styles => {
-    :regular => {:geometry => '400x200#'}
+
+    :regular => {:geometry => '400x400#'}
   }
 end

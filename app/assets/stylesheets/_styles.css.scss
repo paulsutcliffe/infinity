@@ -31,14 +31,18 @@ width: 100%;
 .region-texto{margin-top:30px;}
 .region-navbar{margin-top:30px;}
 .carousel-indicators li{
-     background:url("/assets/backgrounds/slider-controls.jpg") no-repeat scroll 0px -4px rgba(0, 0, 0, 0);
+     background-color:#67CDDC;
     height: 17px;
     width: 17px;
+    border: 1px solid #67CDDC;
    }
 .carousel-indicators li .active{
-    background:url("/assets/backgrounds/slider-controls.jpg") no-repeat scroll -20px -4px rgba(0, 0, 0, 0);
     height:17px !important !important;
+    background-color:white;
     width: 17px !important !important;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+margin: 0 auto;
 }
 header #carousel-generic{
   background: url("/assets/backgrounds/bevel-cyan-small.jpg") no-repeat scroll 50% 100% #FFFFFF;
@@ -46,9 +50,9 @@ header #carousel-generic{
   margin-bottom: 100px;
 }
 
-header .line{
+.line{
   background: url("/assets/backgrounds/bevel-cyan.jpg") no-repeat scroll 50% 100% #FFFFFF;
-  height: 50px;
+  height: 5px;
 }
 
 .menu li:hover{
@@ -67,9 +71,45 @@ width: 320px;
 display: inline-block;
 }
 
-
+#destinations{
+  .region-texto{
+    .content{
+      margin-top:30px;
+    }
+  }
+}
 #offer_seasons{
 .region-texto{
 padding: 0 0 0 35px;
 }
 }
+
+.footer-only li{
+list-style:none;
+}
+
+#countries{
+#carousel-generic2{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+      }
+
+  .map{
+    display:inline-block;
+    width: 45%;
+  }
+  .region-texto img{
+    height: 350px;
+  }
+  .region-texto p{
+  margin-top: 30px;
+  }
+}
+
+.menu{
+width:100%;
+margin-left:0px !important;
+}
+
+
