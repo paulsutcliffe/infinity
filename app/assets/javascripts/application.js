@@ -14,7 +14,6 @@
 //= require /navigation/jquery.lavalamp-1.3.5/tutorials/jquery.lavalamp-1.3.5.min.js
 //= require /navigation/jquery.lavalamp-1.3.5/jquery.lavalamp-init.js
 //= require /navigation/jquery.lavalamp-1.3.5/jquery.lavalamp.css
-//= require /navigation/jquery.lavalamp-1.3.5/jquery.lavalamp.css
 //= require jquery
 //= require jquery_ujs
 // require_tree .
