@@ -34,6 +34,8 @@ gem "capistrano"
 
 gem "bootstrap-sass", "~> 3.0.0.0"
 gem "sass-rails", ">= 3.2"
+gem "compass"
+gem "compass-rails"
 
 
 gem "mail_form"
@@ -62,7 +64,6 @@ group :development, :test do
   gem "launchy", "~> 2.2.0"
   gem "rspec-rails", "~> 2.13.0"
   gem "factory_girl_rails", "~> 4.2.1"
-  gem "compass-rails"
   gem "rails_layout"
 end
 

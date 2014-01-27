@@ -260,6 +260,7 @@ DEPENDENCIES
   capybara (~> 2.0.2)
   client_side_validations
   coffee-rails (~> 3.2.1)
+  compass
   compass-rails
   country-select
   cucumber-rails
