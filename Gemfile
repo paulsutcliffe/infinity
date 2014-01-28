@@ -53,7 +53,7 @@ gem "friendly_id", "~> 4.0.9"
 gem "devise"
 gem "auto_html"
 gem "sitemap_generator"
-gem "gretel", "2.1.0"
+gem "gretel"
 gem "paperclip", "~> 3.0"
 
 group :development, :test do

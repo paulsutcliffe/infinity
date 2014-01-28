@@ -12,7 +12,8 @@
   %body{:id => bodyid, :class => bodyclass}
     .container
       %header{:role => 'banner'}
-        = link_to image_tag('/assets/logo.png', class:'img-responsive'), root_path
+        .logo
+          = link_to image_tag('/assets/logo.png', class:'img-responsive'), root_path
         = render 'layouts/messages'
         = render 'layouts/banner'
         = render 'layouts/navigation'

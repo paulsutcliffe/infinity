@@ -26,6 +26,9 @@
   background: url(../assets/backgrounds/bevel-cyan-small.jpg) no-repeat 50% 0 white;
 }
 
+@mixin bg {
+  background: url(../assets/backgrounds/bg.jpg) repeat 50% 0 white;
+}
 @mixin box-sizing {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;
 }

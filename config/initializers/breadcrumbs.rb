@@ -1,18 +1,17 @@
-Gretel::Crumbs.layout do
+# Root crumb
+crumb :root do
+  link I18n.t('homes.index'), root_path
+end
 
-  crumb :root do
-    link I18n.t('homes.index'), root_path
-  end
+# users
+crumb :user do
+  link I18n.t('user.root'), new_user_session_path
+end
 
-  # users
-  crumb :user do
-    link I18n.t('user.root'), new_user_session_path
-  end
-
-  crumb :user_sign_in do |user|
-    link I18n.t('user.sign_in'), new_user_session_path
-    parent :user, user
-  end
+crumb :user_sign_in do |user|
+  link I18n.t('user.sign_in'), new_user_session_path
+  parent :user, user
+end
 
   crumb :user_sign_up do |user|
     link I18n.t('user.sign_up'), new_user_registration_path
@@ -177,6 +176,3 @@ Gretel::Crumbs.layout do
   #   link issue.name, issue_path(issue)
   #   parent :project_issues, issue.project
   # end
-
-end
-

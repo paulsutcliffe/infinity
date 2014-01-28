@@ -30,17 +30,20 @@ width: 100%;
 
 .region-texto{margin-top:30px;}
 .region-navbar{margin-top:30px;}
+
 .carousel-indicators li{
-     background-color:#67CDDC;
+     background-color:white;
     height: 17px;
     width: 17px;
-    border: 1px solid #67CDDC;
-   }
-.carousel-indicators li .active{
-    height:17px !important !important;
-    background-color:white;
-    width: 17px !important !important;
-}
+    border: 1px solid #67CDDC !important;
+  }
+.carousel-indicators .active{
+    height: 17px !important;
+    width: 17px !important;
+    background-color:#67CDDC !important;
+    } 
+
+
 .carousel-inner > .item > img, .carousel-inner > .item > a > img{
 margin: 0 auto;
 }
@@ -112,4 +115,21 @@ width:100%;
 margin-left:0px !important;
 }
 
+.partners{
+list-style:none;
+}
 
+.navegate-by{
+max-width: 100%;
+}
+
+.logo{
+display: inline-block;
+position: relative;
+max-width: 100%;
+}
+
+.navbar-default{
+@include bg;
+border: none;
+}
