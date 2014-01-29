@@ -44,9 +44,8 @@
   %h2.title
     Testimony
   .content
-    - @last_testimony.each do |last_testimony|
-      %h3
-        = last_testimony.name
-      = paragraph_truncate(last_testimony.description, 30)
-      = image_tag(last_testimony.testimony_picture(:landing_page), class:'img-responsive')
+    %h3
+      = @last_testimony.name
+      = paragraph_truncate(@last_testimony.description, 30)
+      = image_tag(@last_testimony.testimony_picture(:landing_page), class:'img-responsive')
     = link_to I18n.t('testimonies.all'), testimonies_path, :class => 'link'
