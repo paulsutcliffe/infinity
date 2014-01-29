@@ -6,20 +6,10 @@
     - @itinerary.errors.full_messages.each do |msg|
       %li= msg
 
-.field
-  = # f.label :title
-  = # f.text_field :title
-
-
-- f.fields_for :itinerary_contents do |builder| 
+= f.fields_for :itinerary_contents do |builder| 
   = render 'itinerary_content_fields', :f => builder
 
 -#
   .field
   - f.fields_for :itinearies do |builder| 
     = render 'itinerary_fields', :f => builder 
-.fields
-  = add_child_link I18n.t('itinerary.add'), f, :itinerary_contents
-
-
-

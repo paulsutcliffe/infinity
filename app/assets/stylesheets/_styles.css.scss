@@ -11,13 +11,16 @@ header .navbar ul:before, header .navbar ul:after{
   position: absolute;
   width: 960px;
 }
+header .menu li, footer .menu li {
+height: 31px;
+}
 header .navbar{
   margin-top: 20px;
   min-height: 40px !important;
 }
 
 header .menu li{
-padding-left: 0px !important;
+padding-left: 0px;
 padding-right: 0px !important;
 }
 
@@ -48,14 +51,16 @@ width: 100%;
 margin: 0 auto;
 }
 header #carousel-generic{
-  background: url("/assets/backgrounds/bevel-cyan-small.jpg") no-repeat scroll 50% 100% #FFFFFF;
+  @include bg;
   padding-bottom:50px;
-  margin-bottom: 100px;
 }
 
 .line{
   background: url("/assets/backgrounds/bevel-cyan.jpg") no-repeat scroll 50% 100% #FFFFFF;
   height: 5px;
+}
+.space-line{
+margin-bottom: 80px;
 }
 
 .menu li:hover{
@@ -65,6 +70,9 @@ border-bottom:5px solid black;
 .menu li a:hover{
 background-color: white !important;
 color:black !important;
+}
+.breadcrumb{
+@include bg;
 }
 
 .rsContent > img{
@@ -133,3 +141,8 @@ max-width: 100%;
 @include bg;
 border: none;
 }
+
+
+.region-navbar .country-flight-details {
+    max-width: 100%;
+  }

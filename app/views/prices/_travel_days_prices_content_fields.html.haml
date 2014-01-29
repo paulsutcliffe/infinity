@@ -1,19 +1,18 @@
-.fields
-  %div
-    = f.label :room_class
-    = f.text_field :room_class
-    %br
-    = f.label :travel_price
-    = f.text_field :travel_price
-    %br
-    = f.label :suplement
-    = f.text_field :suplement
-    %br
-    = f.label :availability
-    = f.text_field :availability
-    %br 
+.form-group
+  = f.label :room_class
+  = f.text_field :room_class, class:'form-control'
+  %br
+  = f.label :travel_price
+  = f.text_field :travel_price, class:'form-control'
+  %br
+  = f.label :suplement
+  = f.text_field :suplement, class:'form-control'
+  %br
+  = f.label :availability
+  = f.text_field :availability, class:'form-control'
+  %br 
 
-    = remove_child_link "remove", f
+  = remove_child_link "remove", f
 
 %br
 %br

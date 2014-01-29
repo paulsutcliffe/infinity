@@ -1,6 +1,9 @@
 .region-texto
   %h1.page-title
-    = t('post.edit') + ' ' + @post.title
+    = t('post.edit')
+    %br
+    %br
+    =' ' + @post.title
   
   = render 'form'
   

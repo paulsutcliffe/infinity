@@ -4,7 +4,11 @@ header .menu li{
   }
 }
 
-
+@media (max-width: 800px){
+header .menu li {
+    margin-left: 2px !important !important;
+  }
+}
 @media (min-width: 768px) and (max-width: 979px){
 header .menu li{
   margin-left: -3px !important;
@@ -15,5 +19,67 @@ header .menu li{
   header .menu li{
     width: 100% !important;
   }
+    .navbar.navbar-default {
+        top: 70px;
+      }
+      .carousel {
+            top: 70px;
+          }
 
+}
+@media (min-width: 768px){
+
+  .region-navbar{ 
+  @extend .col-sm-3;
+  @extend .col-xs-3;
+  @extend .col-md-3; 
+  @extend .col-lg-3;
+  }
+
+  .region-texto{
+  @extend .col-sm-9;
+  @extend .col-xs-9;
+  @extend .col-md-9;
+  @extend .col-lg-9;
+  }
+
+}
+
+@media (max-width: 360px){
+  .region-navbar{
+  @extend .col-sm-12;
+  @extend .col-xs-12;
+  @extend .col-md-12;
+  @extend .col-lg-12;
+  }
+
+  .region-texto{
+  max-width:100%;
+  min-width:100%;
+  width:100%;
+  #carousel-generic2{
+  width: 100% !important;
+  }
+  img{
+  width: 100% !important;
+  }
+  }
+
+  #offer_seasons .region-texto {
+      padding: 0;
+    }
+  .region-navbar .navegate-by, .region-navbar .sidebar-block {
+        width: 100% !important;
+        max-width: 100%;
+      }
+#travels .group-field-information .field-information {
+      width: 100% !important;
+    }      
+
+.region-side{
+width:100% !important;
+}
+.region-central{
+width:100% !important;
+}
 }

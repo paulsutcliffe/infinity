@@ -4,34 +4,34 @@
     %ul
     - @extension.errors.full_messages.each do |msg|
       %li= msg
-.field
+.form-group
   = f.label :title
-  = f.text_field :title
+  = f.text_field :title, class:'form-control'
 
-.field
+.form-group
   = f.label :description
-  = f.text_area :description
+  = f.text_area :description, class:'form-control'
 
-.field
+.form-group
   = f.label :price_from
-  = f.text_field :price_from
+  = f.text_field :price_from, class:'form-control'
 
-.field
+.form-group
   = f.label :days
-  = f.text_field :days
+  = f.text_field :days, class:'form-control'
 
-.field
+.form-group
   = f.label :departures
-  = f.text_field :departures
+  = f.text_field :departures, class:'form-control'
 
-.field
+.form-group
   = f.label :party
-  = f.text_field :party
+  = f.text_field :party, class:'form-control'
 
-.field
+.form-group
   = f.label :information
-  = f.text_area :information
+  = f.text_area :information, class:'form-control'
 
-.field
+.form-group
   = f.label :itinerary_text
-  = f.text_area :itinerary_text
+  = f.text_area :itinerary_text, class:'form-control'

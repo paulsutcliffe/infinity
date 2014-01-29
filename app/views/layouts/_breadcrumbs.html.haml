@@ -1,4 +1,6 @@
 - breadcrumbs do |links|
-  -if links.any?
-    -links.each do |link|
-      =  link_to  link.text, link.url, class:'breadcrumb'
+  %ol.breadcrumb
+    -if links.any?
+      -links.each do |link|
+        %li  
+          =  link_to  link.text, link.url

@@ -10,37 +10,40 @@
 
   .form-group
     = f.label :title_landing_page
-    = f.text_field :title_landing_page
+    = f.text_field :title_landing_page, class:'form-control'
 
   .form-group
     = f.label :text_landing_page
-    = f.text_area :text_landing_page
+    = f.text_area :text_landing_page, class:'form-control'
 
   .form-group
+    %br
     = f.label :picture_landing_page
     = f.file_field :picture_landing_page
 
   .form-group
     = f.label :about_us
-    = f.text_area :about_us
+    = f.text_area :about_us, class:'form-control'
 
   .form-group
+    %br
     = f.label :about_picture
     = f.file_field :about_picture
 
   .form-group
     = f.label :history
-    = f.text_area :history
+    = f.text_area :history, class:'form-control'
 
   .form-group
     = f.label :global_proyection
-    = f.text_area :global_proyection
+    = f.text_area :global_proyection, class:'form-control'
   .form-group
+    %br
     = f.label :global_proyection_picture
     = f.file_field :global_proyection_picture
   .form-group
     = f.label :work_with_us
-    = f.text_area :work_with_us
+    = f.text_area :work_with_us, class:'form-control'
 
   .actions
     = f.submit I18n.t('submit')

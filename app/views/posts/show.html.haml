@@ -7,7 +7,7 @@
   %h1.page-title
     = page_title! @post.title
 
-  - if current_admin
+  -# if current_admin
     .admin.create
       = link_to I18n.t('press_release.new'), new_press_release_path, :class => 'button create'
 

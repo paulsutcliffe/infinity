@@ -8,9 +8,9 @@
 
   .form-group
     = f.label :questions
-    = f.text_field :questions
+    = f.text_field :questions, class:'form-control'
   .form-group
     = f.label :answer
-    = f.text_area :answer
+    = f.text_area :answer, class:'form-control'
   .actions
     = f.submit 'Save'

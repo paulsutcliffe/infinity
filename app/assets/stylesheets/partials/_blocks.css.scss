@@ -5,12 +5,6 @@
   margin: 0 0 $space-top 0;
 }
 
-.region-navbar{
-  @extend .col-sm-3;
-  @extend .col-xs-3;
-  @extend .col-md-3;
-  @extend .col-lg-3;
-}
 
 .region-texto{
   @extend .col-sm-9;

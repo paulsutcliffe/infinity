@@ -1,7 +1,6 @@
 %h1 
   =t('price.new')
 
-
 = form_for(@price, :url => {:price_id => params[:price_id], :action => 'create'}) do |f|
   = render(:partial => 'form', :locals => {:f => f})
   .actions

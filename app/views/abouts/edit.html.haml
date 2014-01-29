@@ -1,7 +1,7 @@
-#content
+.region-texto
   %h1.page-title
     = t('about.edit')
 
   = render 'form'
 
-== #{ link_to t('show'), @about } | #{ link_to t('back'), abouts_path }
+== #{ link_to t('show'), @about } | #{ link_to t('back'), root_path }
