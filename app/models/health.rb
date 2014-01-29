@@ -1,6 +1,6 @@
 class Health < ActiveRecord::Base
 
-  validates :title, :url, :presence => true
+  #validates :title, :url, :presence => true
   #validates_attachment_content_type :health_picture, :content_type => ['image/png', 'image/jpg', 'image/jpeg']
   #validates_attachment_size :health_picture, :less_than => 1.megabytes
   attr_accessible :title , :url, :description, :health_picture

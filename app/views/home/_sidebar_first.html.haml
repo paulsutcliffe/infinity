@@ -1,5 +1,5 @@
 
-%section.search-travel
+-# %section.search-travel
   .content
     %form
       %h2.title Find the travel you need
@@ -22,14 +22,12 @@
 
 %section.ways-to-travel
   %h2.title
-    Ways to travel
+    Infinity & You
   %dl
-    %dt Group
-    %dd Far far away, behind the word mountains. far from the
-    %dt Independent
-    %dd Far far away, behind the word mountains. far from the
-    %dt Alone
-    %dd Far far away, behind the word mountains. far from the
+    %dt Above & Beyond - Luxury service
+    %dd Deluxe - Private collection
+    %dt Escorted groups
+    %dd Live like a local -  Eco tours 
 
 %section.health
   %h2.title
@@ -46,6 +44,6 @@
   .content
     %h3
       = @last_testimony.name
-      = paragraph_truncate(@last_testimony.description, 30)
+      = paragraph_truncate(@last_testimony.description, 130)
       = image_tag(@last_testimony.testimony_picture(:landing_page), class:'img-responsive')
     = link_to I18n.t('testimonies.all'), testimonies_path, :class => 'link'
