@@ -34,9 +34,12 @@
     Health
   .content
     - if !@health_random.blank?
-      = link_to image_tag(@health_random.health_picture(:front), class:'img-responsive'), @health_random.url
-      = paragraph_truncate(@health_random.description, 100)
       = link_to @health_random.title, @health_random.url
+      %br
+      %br
+      = link_to image_tag(@health_random.health_picture(:front), class:'img-responsive'), @health_random.url
+      %br
+      = paragraph_truncate(@health_random.description, 100)
 
 %section.testimony
   %h2.title
@@ -44,6 +47,8 @@
   .content
     %h3
       = @last_testimony.name
-      = paragraph_truncate(@last_testimony.description, 130)
-      = image_tag(@last_testimony.testimony_picture(:landing_page), class:'img-responsive')
+    %br  
+    = paragraph_truncate(@last_testimony.description, 130)
+    = image_tag(@last_testimony.testimony_picture(:landing_page), class:'img-responsive')
+    %br
     = link_to I18n.t('testimonies.all'), testimonies_path, :class => 'link'

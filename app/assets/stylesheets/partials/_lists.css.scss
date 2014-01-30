@@ -3,7 +3,6 @@
 ul {
   @include horizontal-list;
   &.breadcrumb {
-    margin-bottom: $space-block/2;
     overflow: visible;
     @include full-line-break;
   }
