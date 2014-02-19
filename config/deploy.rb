@@ -13,6 +13,8 @@ set :deploy_to, "/var/www/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
+set :keep_releases, 1
+
 set :scm, "git"
 set :repository, "git@github.com:paulsutcliffe/#{application}.git"
 set :branch, "master"

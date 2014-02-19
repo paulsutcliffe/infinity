@@ -10,7 +10,7 @@ class Slide < ActiveRecord::Base
     :url => "/system/:attachment/:id/:style/:filename",
     :styles => {
     :medium => {:geometry => '475x125>', :quality => 50, :format => 'jpg'},
-    :full => {:geometry => '950x250>', :quality => 90, :format => 'jpg'}
+    :full => {:geometry => '950x450>', :quality => 90, :format => 'jpg'}
   }
 
 end
