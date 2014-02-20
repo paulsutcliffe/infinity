@@ -15,12 +15,10 @@
           .item.active
             = link_to image_tag(slide.slide(:full), :class => 'rsImg'), slide.link
             .carousel-caption
-              %h3= slide.title
-              %p= slide.description
+              %p= slide.title
         - else
           .item
             = link_to image_tag(slide.slide(:full), :class => 'rsImg'), slide.link
             .carousel-caption
-              %h3= slide.title
-              %p= slide.description
+              %p= slide.title
 .line

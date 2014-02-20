@@ -7,9 +7,11 @@
       - @slide.errors.full_messages.each do |msg|
         %li= msg
 
-  .field
+  .form-group
+    = f.label :title
+    = f.text_field :title
+  .form-group
     = f.label :slide, 'Picture'
-    %br
     = f.file_field :slide
   .actions
     = f.submit I18n.t('submit')
