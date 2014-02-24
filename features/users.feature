@@ -5,7 +5,7 @@ Escenario: Registrarse como un usuario
   Dado que estoy en la página inicial
   Cuando hago click en "Register"
   Y lleno "Email" con "paul@kosmyka.com"
-  Y lleno "Password" con "hackme"
+  Y lleno "user[password]" con "hackme"
   Y lleno "Password confirmation" con "hackme"
   Y lleno "Name" con "Paul"
   Y lleno "Last name" con "Sutcliffe"

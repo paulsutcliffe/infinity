@@ -66,6 +66,8 @@ Infinity::Application.routes.draw do
 
   devise_for :users
 
+  match '/users/new-travel-agent' => 'users#new_travel_agent', via: :get, as: 'new_travel_agent'
+
   match '/terms' => 'abouts#terms', via: :get
   resources :users
 

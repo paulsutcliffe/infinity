@@ -25,6 +25,9 @@ Cuando /^lleno el formulario con los datos del administrador$/ do
 end
 
 Dado /^que estoy en la página inicial$/ do
+  Testimony.create(:name => "adriel",
+                   :description => "hola",
+                   :testimony_picture => File.new("features/support/testimony_picture.jpg")).save!
   visit('/')
 end
 

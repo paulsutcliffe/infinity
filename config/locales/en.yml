@@ -44,7 +44,10 @@ en:
     profile: My Account
     sign_in: Sign In
     sign_up: Register
+    new_travel_agent: New Travel Agent
+    travel_agent_registration: Travel Agent Registration
     travel_agent_register: Register Travel Agent
+    traveller_registration: Traveller Registration
     travel_register: Traveler Register
     client_comments: Client's Comments
     forgot_password: Forgot your password?

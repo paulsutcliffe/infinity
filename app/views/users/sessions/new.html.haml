@@ -6,16 +6,24 @@
 .region-texto
   %h1.page-title
     = page_title! I18n.t('user.sign_in')
-
+  %p
+    We are happy to extend a warm welcome for all our guest and
+    thank you all for choosing us and becoming an Infinity member.
 
   .content
     = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+      %p.help-block
+        Mandatory information need to be fill up *
       .form-group
         = f.label :email
         = f.email_field :email, class:'form-control'
+        %p.help-block
+          If you already set up a User ID you can use it to log in as well
       .form-group
         = f.label :password
         = f.password_field :password, class:'form-control'
+        %p.help-block
+          Create a password for your Infinity Account
       - if devise_mapping.rememberable?
         .form-group
           = f.label :remember_me
