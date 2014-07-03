@@ -9,8 +9,8 @@ class Post < ActiveRecord::Base
     :url => "/system/:attachment/:id/:style/:filename",
     :styles => {
     :landing_page => {:geometry => '630x360#', :quality => 80, :format => 'jpg'},
-    :default => {:geometry => '620x166#', :quality => 80, :format => 'jpg'},
-    :medium => {:geometry => '670x360#', :quality => 80, :format => 'jpg'}
+    :default => {:geometry => '620x166#', :quality => 90, :format => 'jpg'},
+    :medium => {:geometry => '620x166#', :quality => 90, :format => 'jpg'}
   }
 
 end
