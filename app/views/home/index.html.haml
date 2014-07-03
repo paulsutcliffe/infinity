@@ -2,7 +2,7 @@
 = # javascript_include_tag "/javascripts/libs/royal-slider-9.2/jquery.royalslider.custom.min.js", "/javascripts/libs/royal-slider-9.2/jquery.easing-1.3.js"
 
 
-.region-central 
+.region-central
   <!-- content -->
   %section.infinity-description
     - @about_infinity.each do |about_infinity|
@@ -14,7 +14,7 @@
           = image_tag(about_infinity.picture_landing_page(:landing_page), class:'img-responsive')
       - if current_admin
         = link_to I18n.t('edit'), edit_about_path(about_infinity), :class => 'btn button'
-        
+
   %section.noticia
     - @last_post.each do |last_post|
       %h2.title
@@ -34,9 +34,9 @@
       = link_to 'Read More', '#', :class => 'button'
 
   .video
-    =# image_tag '/assets/video-size.jpg'
+    = render 'video'
 
 
-.region-side 
+.region-side
   /*#sidebar-first*/
   = render 'sidebar_first'

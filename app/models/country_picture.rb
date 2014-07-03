@@ -10,8 +10,8 @@ class CountryPicture < ActiveRecord::Base
     :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
     :url => "/system/:attachment/:id/:style/:filename",
     :styles => {
-    :default => {:geometry => '400x400#', :quality => 80, :format => 'jpg'},
-    :large => {:geometry => '800x800>', :quality => 80, :format => 'jpg'}
+    :default => {:geometry => '698x750#', :quality => 90, :format => 'jpg'},
+    :large => {:geometry => '800x800>', :quality => 90, :format => 'jpg'}
   }
 
 end
