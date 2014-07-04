@@ -45,7 +45,7 @@ width: 100%;
     height: 17px !important;
     width: 17px !important;
     background-color:#67CDDC !important;
-    } 
+    }
 
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img{
@@ -149,3 +149,15 @@ border: none;
 .region-navbar .country-flight-details {
     max-width: 100%;
   }
+
+.terms-n-conditions {
+  p { margin-top: 10px; margin-bottom: 10px;}
+  li {
+    margin: 14px;
+    list-style: circle;
+    list-style-type: circle;
+    float: none;
+    display: block;
+    padding-left: 0;
+  }
+}
