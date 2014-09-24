@@ -1,9 +1,6 @@
-.form-group
-  = f.label :name
-  = f.text_field :name, class:'form-control'
-.form-group
-  = f.label :last_name
-  = f.text_field :last_name, class: 'form-control'
+%p
+  %b Register
+
 .form-group
   = f.label :email
   = f.email_field :email, class:'form-control'
@@ -13,6 +10,41 @@
 .form-group
   = f.label :password_confirmation
   = f.password_field :password_confirmation, class:'form-control'
+
+%p
+  %b Guest Information
+
+.form-group
+  = f.label :name
+  = f.text_field :name, class:'form-control'
+.form-group
+  = f.label :last_name
+  = f.text_field :last_name, class: 'form-control'
+.form-group.check-field
+  = f.label :travel_agent, "Are you travel agent?"
+  .field-items
+    = f.radio_button :travel_agent, 'Yes'
+    = f.label :travel_agent_yes, 'Yes'
+    = f.radio_button :travel_agent, 'No', :checked => true
+    = f.label :travel_agent_no, 'No'
+
+%p
+  %b Travel Agent Information
+
+.form-group
+  = f.label :code, "IATA/ CLIA/ CODE"
+  = f.text_field :code, class:'form-control'
+.form-group.check-field
+  = f.label :home_based, "Are you home based agent?"
+  .field-items
+    = f.radio_button :travel_agent, 'Yes'
+    = f.label :travel_agent_yes, 'Yes'
+    = f.radio_button :travel_agent, 'No', :checked => true
+    = f.label :travel_agent_no, 'No'
+
+%p
+  %b Contact Information
+
 .form-group
   = f.label :address1
   = f.text_field :address1, class:'form-control'
@@ -31,18 +63,6 @@
 .form-group
   = f.label :country
   = country_select("user", "country" )
-
 .form-group
   = f.label :phone
   = f.text_field :phone, class:'form-control'
-.form-group.check-field
-  = f.label :travel_agent, "Are you travel agent?"
-  .field-items
-    = f.radio_button :travel_agent, 'Yes'
-    = f.label :travel_agent_yes, 'Yes'
-    = f.radio_button :travel_agent, 'No', :checked => true
-    = f.label :travel_agent_no, 'No'
-
-.form-group
-  = f.label :code, "IATA/ CLIA/ CODE"
-  = f.text_field :code, class:'form-control'

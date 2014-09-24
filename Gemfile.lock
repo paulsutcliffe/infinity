@@ -35,6 +35,9 @@ GEM
       redcarpet (~> 2.0)
       rinku (~> 1.5.0)
     bcrypt-ruby (3.1.2)
+    better_errors (1.1.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
     bootstrap-sass (3.0.0.0)
       sass (~> 3.2)
     builder (3.0.4)
@@ -54,11 +57,15 @@ GEM
     childprocess (0.4.0)
       ffi (~> 1.0, >= 1.0.11)
     chunky_png (1.2.9)
+    ckeditor (4.0.11)
+      mime-types
+      orm_adapter (~> 0.5.0)
     client_side_validations (3.2.6)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.3)
       climate_control (>= 0.0.3, < 1.0)
+    coderay (1.1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -167,6 +174,8 @@ GEM
       cocaine (~> 0.5.3)
       mime-types
     polyglot (0.3.3)
+    quiet_assets (1.0.3)
+      railties (>= 3.1, < 5.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -256,9 +265,11 @@ PLATFORMS
 
 DEPENDENCIES
   auto_html
+  better_errors
   bootstrap-sass (~> 3.0.0.0)
   capistrano
   capybara (~> 2.0.2)
+  ckeditor
   client_side_validations
   coffee-rails (~> 3.2.1)
   compass
@@ -282,6 +293,7 @@ DEPENDENCIES
   page_title_helper
   paper_trail
   paperclip (~> 3.0)
+  quiet_assets
   rails (= 3.2.14)
   rails_layout
   rspec-rails (~> 2.13.0)

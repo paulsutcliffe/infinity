@@ -10,7 +10,6 @@
   });
 
 
-- breadcrumb :offer_season_travel, @travel
 
 // START MARKUP
 .region-navbar
@@ -18,8 +17,8 @@
 
 .region-texto
   %h1.page-title
-    = @travel.name 
-    
+    = @country.name
+
   - if current_admin
     .admin.create
       = link_to I18n.t('travel.new'), new_offer_season_travel_path(@offer_season), :class => 'button new'
@@ -46,8 +45,8 @@
         %div
           = render 'extensions_tab'
       %div
-        = # render :partial => '/question_forms/form', :question_form => @question_form 
+        = # render :partial => '/question_forms/form', :question_form => @question_form
         = #render :partial => 'question_forms/form', :locals => {:question_form => QuestionForm.new}
         = #render :partial => 'question_forms/form', :locals => {:question_form => @question_form}
-        = #render :partial => 'question_forms/form', :object => {:question_form => @question_form } 
+        = #render :partial => 'question_forms/form', :object => {:question_form => @question_form }
         = #render :partial => 'question_forms/form', :question_form => @question_form

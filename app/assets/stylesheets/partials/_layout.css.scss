@@ -203,7 +203,7 @@ ul.menu {
      li {
          @include inline-block; margin-left: 10px;
           border-bottom: 6px solid transparent;
-         a, span {padding: 0 20px 6px; @include inline-block;
+         a, span {padding: 0 18px 6px; @include inline-block;
               &:hover {text-decoration: none;}
           }
           }

@@ -55,6 +55,7 @@ gem "auto_html"
 gem "sitemap_generator"
 gem "gretel"
 gem "paperclip", "~> 3.0"
+gem "ckeditor"
 
 group :development, :test do
   gem 'cucumber-rails', :require => false
@@ -65,6 +66,8 @@ group :development, :test do
   gem "rspec-rails", "~> 2.13.0"
   gem "factory_girl_rails", "~> 4.2.1"
   gem "rails_layout"
+  gem "better_errors"
+  gem "quiet_assets"
 end
 
 

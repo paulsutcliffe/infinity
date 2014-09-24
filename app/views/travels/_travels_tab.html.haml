@@ -1,11 +1,11 @@
 
-%h2.title.hide Información General
+%h2.title.hide General Information
 .h2-tab-title
   = @travel.name
 .content.travel-tabs
   .field-description
     = paragraph(@travel.description)
-   
+
   .group-field-information
     .field-picture
       - if @travel.travel_picture.file?
@@ -13,35 +13,35 @@
     .field-information
       - if @travel.price.blank?
         .field-items
-          Precio
+          Price
           .field-item
             = @travel.price
-      - if !@travel.days.blank?
+      - unless @travel.days.blank?
         .field-items
           Days
           .field-item
             = @travel.days
 
-      - if !@travel.departures.blank?
+      - unless @travel.departures.blank?
         .field-items
-          Departures Salidas
+          Departures
           .field-item
             = @travel.departures
 
       - if @travel.maxgroupsize?
         .field-items
-          Grupo Máximo
+          Max group size
           .field-item
             = @travel.maxgroupsize
     .field-information-extra
       .field-items
-        Información General
+        General Information
       .field-items
-        Itinerario
+        Itinerary
       .field-items
-        Fechas y Precios
+        Dates and Prices
       .field-items.last
-        Comparar
+        Last
   /*???????*/
   .field-advantages
     /*%h2.h2-tab-title Infinity Ventajas*/

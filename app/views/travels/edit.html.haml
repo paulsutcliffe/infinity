@@ -1,12 +1,9 @@
-- breadcrumb :edit_offer_season_travel, @travel
-
 .region-texto
 
   %h1.page-title
     = t('travel.edit') + ' ' + @travel.name
 
-  = form_for(@travel, :url => {:travel_id => params[:travel_id], :action => 'update'}) do |f|
+  = form_for(@travel, :url => {:travel_id => params[:travel_id], :action => 'update'}, :html => { :multipart => true }) do |f|
     = render(:partial => 'form', :locals => {:f => f})
     .actions
-      = link_to I18n.t('cancel'), offer_season_travel_path(@travel.offer_season, @travel), :class => 'btn cancel'
       = f.submit I18n.t('update')

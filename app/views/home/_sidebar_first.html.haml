@@ -1,17 +1,12 @@
 
--# %section.search-travel
+%section.search-travel
   .content
-    %form
-      %h2.title Find the travel you need
-      %select{:name => 'search-travel-destination'}
-        %option 'Search by Travel Destination'
-      %select{:name => 'search-travel-interest'}
-        %option 'Search by Travel Interest (optional)'
-      %select{:name => 'search-travel-month'}
-        %option 'Search by Travel Month (optional)'
-      %select{:name => 'search-travel-price'}
-        %option 'Search by Price Range (optional)'
-      %button Search
+    %h2.title Find the travel you need
+    = form_tag search_results_path, method: :get, class: 'form' do
+      .form-group
+        = select_tag "destination", options_from_collection_for_select(@destinations, "id", "name"), prompt: "Search by Travel Destination"
+        = select_tag "interest", options_from_collection_for_select(@interests, "id", "name"), prompt: "Search by Travel Interest (optional)"
+      = submit_tag 'SEARCH', name: nil, class: 'button'
 
 %section.contact-us
   %h2.title
@@ -39,7 +34,9 @@
       %br
       = link_to image_tag(@health_random.health_picture(:front), class:'img-responsive'), @health_random.url
       %br
-      = paragraph_truncate(@health_random.description, 100)
+      = raw(@health_random.description)
+      %br
+      = link_to 'See More', healths_path, :class => 'button'
 
 %section.testimony
   %h2.title
@@ -48,7 +45,9 @@
     %h3
       = @last_testimony.name
     %br
-    = paragraph_truncate(@last_testimony.description, 130)
     = image_tag(@last_testimony.testimony_picture(:landing_page), class:'img-responsive')
     %br
-    = link_to I18n.t('testimonies.all'), testimonies_path, :class => 'link'
+    = raw(@last_testimony.description)
+    %br
+    %br
+    = link_to I18n.t('testimonies.all'), testimonies_path, :class => 'button'

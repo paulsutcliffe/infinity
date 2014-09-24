@@ -5,10 +5,10 @@
     = link_to I18n.t('delete'), offer_season_travel_price_path(@offer_season, @travel, price), :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button'
   %table
     %tr
-      %th Clase de Cuarto
-      %th Precio
-      %th Suplemento individual
-      %th Disponibilidad
+      %th Room Class
+      %th Price
+      %th Suplement
+      %th Availability
 
     - price.travel_days_prices_contents.each do |content|
       %tr

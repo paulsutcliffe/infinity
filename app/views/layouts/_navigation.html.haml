@@ -11,7 +11,7 @@
         / menu_li(page_name, controller_name, path)
         = menu_li(I18n.t('homes.index'), 'homes', root_path)
         = menu_li('Destinations', 'destinations', destinations_path)
-        = menu_li(I18n.t('offers.index'), 'offers', offer_seasons_path)
+        = menu_li('Tours & Packages', 'travels', country_travel_path(Travel.first.country, Travel.first))
         / menu_li(I18n.t('packs.index'), 'packs', packs_path)
         = menu_li('Bookings', 'bookings', new_booking_path(@booking))
         = menu_li(I18n.t('posts.index'), 'posts', posts_path )

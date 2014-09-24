@@ -13,4 +13,9 @@ class DestinationsController < InheritedResources::Base
     update! { destination_path(@destination) }
   end
 
+  def search_results
+    destination = Destination.find(params[:destination])
+    redirect_to destination_path(destination)
+  end
+
 end

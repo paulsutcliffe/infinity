@@ -1,45 +1,15 @@
--#
-  - if params[:action] == 'index'
-    - @page_name = 'Destinations'
-  - if params[:action] == 'show'
-    - @page_name = @travel.name
-
-
 %nav.navegate-by
   %h2.title
-    = I18n.t('travels.index') 
+    = I18n.t('travels.index')
   %ul
-    - @offer_season_travels_sidebar.each do |travel|
+    - @country_travels.each do |travel|
       %li
-        = link_to_unless_current travel.name, offer_season_travel_path(travel.offer_season, travel) do
+        = link_to_unless_current travel.name, country_travel_path(travel.country, travel) do
           %span
             = travel.name
         .controls
           .navigation
           - if current_admin
             .admin
-              = #link_to I18n.t('edit'), edit_travel_path(travel), :class => 'button edit'
-              = #link_to I18n.t('destroy'), travel, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
-
-
-
-%nav.navegate-by
-  %h2.title
-    = I18n.t('offer_seasons.index')
-  %ul
-    - @offer_seasons_sidebar.each do |offer_season|
-      %li
-        = link_to_unless_current offer_season.title, offer_season_path(offer_season) do
-          %span
-            = offer_season.title
-        .controls
-          .navigation
-          - if current_admin
-            .admin
-              = link_to I18n.t('edit'), edit_offer_season_path(offer_season), :class => 'button edit'
-              = link_to I18n.t('destroy'), offer_season, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
-  
-
-   
-
-
+              = link_to I18n.t('edit'), edit_travel_path(travel), :class => 'button edit'
+              = link_to I18n.t('destroy'), travel, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete

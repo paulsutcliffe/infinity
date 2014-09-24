@@ -13,10 +13,10 @@
         .field-picture
           = image_tag health.health_picture(:front)
         .field-content
-          %h2.title 
+          %h2.title
             = health.title
-          %p 
-            = health.description
+          %p
+            = raw(health.description)
         - if current_admin
           .admin.create
             = link_to I18n.t('edit'), edit_health_path(health), :class => 'button edit'
