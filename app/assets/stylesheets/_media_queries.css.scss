@@ -6,7 +6,7 @@ header .menu li{
 
 @media (max-width: 800px){
 header .menu li {
-    margin-left: 2px !important !important;
+    margin-left: 2px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 979px){
@@ -29,10 +29,10 @@ header .menu li{
 }
 @media (min-width: 768px){
 
-  .region-navbar{ 
+  .region-navbar{
   @extend .col-sm-3;
   @extend .col-xs-3;
-  @extend .col-md-3; 
+  @extend .col-md-3;
   @extend .col-lg-3;
   }
 
@@ -74,7 +74,7 @@ header .menu li{
       }
 #travels .group-field-information .field-information {
       width: 100% !important;
-    }      
+    }
 
 .region-side{
 width:100% !important;

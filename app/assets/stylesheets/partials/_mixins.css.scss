@@ -100,7 +100,7 @@
 
 @mixin inline-block-($direction) {
   display:inline-block;
-  *display:inline; *zoom:1;
+  display:inline; zoom:1;
   text-align:$direction;
 }
 
@@ -109,7 +109,7 @@
     content: "."; display: block; line-height: 0; clear: both; visibility: hidden; height: 0;
   }
   &:after {
-    *zoom: 1;
+    zoom: 1;
   }
 }
 
